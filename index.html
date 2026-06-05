@@ -7,6 +7,15 @@
   <meta name="google-adsense-account" content="ca-pub-4300260005676352">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4300260005676352"
      crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFEYJ27K5H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NFEYJ27K5H');
+  </script>
   <style>
     :root {
       color-scheme: dark;
@@ -364,26 +373,26 @@
   <div class="lang-switch" id="lang-switch">
     <button type="button" aria-haspopup="listbox" aria-expanded="false" id="lang-button">
       <span class="lang-label">
-        <img class="lang-icon" data-current-lang-icon src="/gah/img/flag-kr.svg" alt="" aria-hidden="true">
+        <img class="lang-icon" data-current-lang-icon src="img/flag-kr.svg" alt="" aria-hidden="true">
         <span class="lang-code" data-current-lang-code>KR</span>
       </span>
       <span class="lang-caret" aria-hidden="true">▾</span>
     </button>
     <div class="lang-menu" role="listbox" aria-label="Language">
-      <button type="button" role="option" data-lang="en" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="/gah/img/flag-us.svg" alt="" aria-hidden="true"><span class="lang-code">EN</span></span></button>
-      <button type="button" role="option" data-lang="ko" aria-selected="true"><span class="lang-label"><img class="lang-icon" src="/gah/img/flag-kr.svg" alt="" aria-hidden="true"><span class="lang-code">KR</span></span></button>
-      <button type="button" role="option" data-lang="de" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="/gah/img/flag-de.svg" alt="" aria-hidden="true"><span class="lang-code">DE</span></span></button>
-      <button type="button" role="option" data-lang="fr" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="/gah/img/flag-fr.svg" alt="" aria-hidden="true"><span class="lang-code">FR</span></span></button>
-      <button type="button" role="option" data-lang="ja" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="/gah/img/flag-jp.svg" alt="" aria-hidden="true"><span class="lang-code">JP</span></span></button>
-      <button type="button" role="option" data-lang="es" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="/gah/img/flag-es.svg" alt="" aria-hidden="true"><span class="lang-code">ES</span></span></button>
+      <button type="button" role="option" data-lang="en" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-us.svg" alt="" aria-hidden="true"><span class="lang-code">EN</span></span></button>
+      <button type="button" role="option" data-lang="ko" aria-selected="true"><span class="lang-label"><img class="lang-icon" src="img/flag-kr.svg" alt="" aria-hidden="true"><span class="lang-code">KR</span></span></button>
+      <button type="button" role="option" data-lang="de" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-de.svg" alt="" aria-hidden="true"><span class="lang-code">DE</span></span></button>
+      <button type="button" role="option" data-lang="fr" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-fr.svg" alt="" aria-hidden="true"><span class="lang-code">FR</span></span></button>
+      <button type="button" role="option" data-lang="ja" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-jp.svg" alt="" aria-hidden="true"><span class="lang-code">JP</span></span></button>
+      <button type="button" role="option" data-lang="es" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-es.svg" alt="" aria-hidden="true"><span class="lang-code">ES</span></span></button>
     </div>
   </div>
 
   <main class="page">
     <header class="hero">
       <p class="eyebrow">Board Game Reference</p>
-      <h1 data-i18n="heroTitle">보드게임 레퍼런스 게이트</h1>
-      <p class="intro" data-i18n="heroIntro">플레이 중 자주 확인하는 카드, 룰, 보너스 정보를 빠르게 찾아가는 레퍼런스 허브입니다.</p>
+      <h1 data-i18n="heroTitle">보드게임 레퍼런스</h1>
+      <p class="intro" data-i18n="heroIntro">플레이 중 자주 확인하는 카드, 타일 정보를 빠르게 찾아가는 레퍼런스 허브입니다.</p>
     </header>
 
     <section class="game-grid" aria-label="보드게임 레퍼런스 목록" data-i18n-aria-label="gameListLabel">
@@ -416,104 +425,99 @@
             <span class="tag" data-i18n="marrakechTag">타일</span>
           </div>
           <h2 class="game-title">Marrakech</h2>
-          <p class="game-desc" data-i18n="marrakechDesc">마라케시 레퍼런스 페이지를 추가할 수 있는 예약 슬롯입니다.</p>
+          <p class="game-desc" data-i18n="marrakechDesc">마라케시 레퍼런스 페이지가 추가될 예정입니다.</p>
         </div>
         <div class="game-action" aria-hidden="true"><span data-i18n="comingSoonAction">준비중</span></div>
       </article>
     </section>
 
-    <p class="note" data-i18n-html="coverNote">표지 이미지는 각 배너의 <code>--cover-image: url('/img/파일명.jpg')</code> 값으로 교체하면 됩니다.</p>
   </main>
-
+  <footer style="text-align:center; margin:16px 0 12px; font-size:11px; color:#94a3b8;">
+    <a href="mailto:ossonida@gmail.com" style="color: #e2e8f0; text-decoration: none;">ⓒfunnyda</a> 
+  </footer>
   <script>
     const translations = {
       ko: {
         documentTitle: "보드게임 레퍼런스",
-        heroTitle: "보드게임 레퍼런스 게이트",
-        heroIntro: "플레이 중 자주 확인하는 카드, 룰, 보너스 정보를 빠르게 찾아가는 레퍼런스 허브입니다.",
+        heroTitle: "보드게임 레퍼런스",
+        heroIntro: "플레이 중 자주 확인하는 카드, 타일 정보를 빠르게 찾아가는 레퍼런스 허브입니다.",
         gameListLabel: "보드게임 레퍼런스 목록",
         gahTag: "카드 / 타일",
         gahDesc: "그랜드 오스트리아 호텔 카드와 설명을 빠르게 확인합니다.",
         enterAction: "입장",
         marrakechTag: "타일",
-        marrakechDesc: "마라케시 레퍼런스 페이지를 추가할 수 있는 예약 슬롯입니다.",
-        comingSoonAction: "준비중",
-        coverNote: "표지 이미지는 각 배너의 <code>--cover-image: url('/img/파일명.jpg')</code> 값으로 교체하면 됩니다."
+        marrakechDesc: "마라케시 레퍼런스 페이지가 추가될 예정입니다.",
+        comingSoonAction: "준비중"
       },
       en: {
         documentTitle: "Board Game Reference",
-        heroTitle: "Board Game Reference Gate",
-        heroIntro: "A quick hub for checking cards, tiles, and bonus details during play.",
+        heroTitle: "Board Game Reference",
+        heroIntro: "A quick reference hub for checking cards and tiles during play.",
         gameListLabel: "Board game reference list",
         gahTag: "Cards / Tiles",
         gahDesc: "Quickly check Grand Austria Hotel cards and descriptions.",
         enterAction: "Enter",
         marrakechTag: "Tiles",
-        marrakechDesc: "Reserved slot for the upcoming Marrakech reference page.",
-        comingSoonAction: "Coming soon",
-        coverNote: "Cover images can be replaced with each banner's <code>--cover-image: url('/img/file-name.jpg')</code> value."
+        marrakechDesc: "The Marrakech reference page will be added soon.",
+        comingSoonAction: "Coming soon"
       },
       de: {
         documentTitle: "Brettspiel-Referenz",
-        heroTitle: "Brettspiel-Referenzportal",
-        heroIntro: "Ein schneller Hub für Karten, Plättchen und Bonusdetails während des Spiels.",
+        heroTitle: "Brettspiel-Referenz",
+        heroIntro: "Ein schneller Referenz-Hub für Karten und Plättchen während des Spiels.",
         gameListLabel: "Liste der Brettspiel-Referenzen",
         gahTag: "Karten / Plättchen",
         gahDesc: "Karten und Beschreibungen zu Grand Austria Hotel schnell nachschlagen.",
         enterAction: "Öffnen",
         marrakechTag: "Plättchen",
-        marrakechDesc: "Reservierter Platz für die kommende Marrakech-Referenzseite.",
-        comingSoonAction: "In Vorbereitung",
-        coverNote: "Titelbilder können über den Wert <code>--cover-image: url('/img/dateiname.jpg')</code> jedes Banners ersetzt werden."
+        marrakechDesc: "Die Marrakech-Referenzseite wird demnächst hinzugefügt.",
+        comingSoonAction: "In Vorbereitung"
       },
       fr: {
         documentTitle: "Référence Jeux de Société",
-        heroTitle: "Portail de Références",
-        heroIntro: "Un hub rapide pour consulter cartes, tuiles et bonus pendant la partie.",
+        heroTitle: "Références de Jeux de Société",
+        heroIntro: "Un hub de référence rapide pour consulter cartes et tuiles pendant la partie.",
         gameListLabel: "Liste des références de jeux",
         gahTag: "Cartes / Tuiles",
         gahDesc: "Consultez rapidement les cartes et descriptions de Grand Austria Hotel.",
         enterAction: "Entrer",
         marrakechTag: "Tuiles",
-        marrakechDesc: "Emplacement réservé pour la future page de référence Marrakech.",
-        comingSoonAction: "Bientôt",
-        coverNote: "Les images de couverture peuvent être remplacées avec la valeur <code>--cover-image: url('/img/nom-fichier.jpg')</code> de chaque bannière."
+        marrakechDesc: "La page de référence Marrakech sera bientôt ajoutée.",
+        comingSoonAction: "Bientôt"
       },
       ja: {
         documentTitle: "ボードゲームリファレンス",
-        heroTitle: "ボードゲームリファレンスゲート",
-        heroIntro: "プレイ中によく確認するカード、タイル、ボーナス情報へすばやく移動するためのハブです。",
+        heroTitle: "ボードゲームリファレンス",
+        heroIntro: "プレイ中によく確認するカードとタイル情報へすばやく移動するためのリファレンスハブです。",
         gameListLabel: "ボードゲームリファレンス一覧",
         gahTag: "カード / タイル",
         gahDesc: "グランドオーストリアホテルのカードと説明をすばやく確認します。",
         enterAction: "入場",
         marrakechTag: "タイル",
-        marrakechDesc: "マラケシュのリファレンスページを追加するための予約枠です。",
-        comingSoonAction: "準備中",
-        coverNote: "表紙画像は各バナーの <code>--cover-image: url('/img/file-name.jpg')</code> の値で差し替えできます。"
+        marrakechDesc: "マラケシュのリファレンスページは今後追加予定です。",
+        comingSoonAction: "準備中"
       },
       es: {
         documentTitle: "Referencia de Juegos de Mesa",
-        heroTitle: "Portal de Referencias",
-        heroIntro: "Un centro rápido para consultar cartas, losetas y detalles de bonificación durante la partida.",
+        heroTitle: "Referencia de Juegos de Mesa",
+        heroIntro: "Un centro de referencia rápido para consultar cartas y losetas durante la partida.",
         gameListLabel: "Lista de referencias de juegos de mesa",
         gahTag: "Cartas / Losetas",
         gahDesc: "Consulta rápidamente las cartas y descripciones de Grand Austria Hotel.",
         enterAction: "Entrar",
         marrakechTag: "Losetas",
-        marrakechDesc: "Espacio reservado para la futura página de referencia de Marrakech.",
-        comingSoonAction: "Próximamente",
-        coverNote: "Las imágenes de portada se pueden reemplazar con el valor <code>--cover-image: url('/img/nombre-archivo.jpg')</code> de cada banner."
+        marrakechDesc: "La página de referencia de Marrakech se añadirá próximamente.",
+        comingSoonAction: "Próximamente"
       }
     };
 
     const languageMeta = {
-      en: { code: "EN", icon: "/gah/img/flag-us.svg" },
-      ko: { code: "KR", icon: "/gah/img/flag-kr.svg" },
-      de: { code: "DE", icon: "/gah/img/flag-de.svg" },
-      fr: { code: "FR", icon: "/gah/img/flag-fr.svg" },
-      ja: { code: "JP", icon: "/gah/img/flag-jp.svg" },
-      es: { code: "ES", icon: "/gah/img/flag-es.svg" }
+      en: { code: "EN", icon: "img/flag-us.svg" },
+      ko: { code: "KR", icon: "img/flag-kr.svg" },
+      de: { code: "DE", icon: "img/flag-de.svg" },
+      fr: { code: "FR", icon: "img/flag-fr.svg" },
+      ja: { code: "JP", icon: "img/flag-jp.svg" },
+      es: { code: "ES", icon: "img/flag-es.svg" }
     };
 
     const supportedLanguages = Object.keys(translations);
