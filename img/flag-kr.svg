@@ -1,21 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#fff"/>
-  <g transform="rotate(-33.69 16 16)">
-    <path fill="#cd2e3a" d="M16 7.5a8.5 8.5 0 0 1 0 17 4.25 4.25 0 0 1 0-8.5 4.25 4.25 0 0 0 0-8.5z"/>
-    <path fill="#0047a0" d="M16 24.5a8.5 8.5 0 0 1 0-17 4.25 4.25 0 0 1 0 8.5 4.25 4.25 0 0 0 0 8.5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 13" role="img" aria-label="Korea flag">
+  <rect width="19" height="13" fill="#fff"/>
+  <g transform="translate(9.5 6.5)">
+    <clipPath id="c"><circle r="3"/></clipPath>
+    <g clip-path="url(#c)">
+      <rect x="-3" y="-3" width="6" height="3" fill="#cd2e3a"/>
+      <rect x="-3" y="0" width="6" height="3" fill="#0047a0"/>
+      <path d="M0-3a3 3 0 0 1 0 6 1.5 1.5 0 0 0 0-3 1.5 1.5 0 0 1 0-3z" fill="#cd2e3a"/>
+      <path d="M0 3a3 3 0 0 1 0-6 1.5 1.5 0 0 0 0 3 1.5 1.5 0 0 1 0 3z" fill="#0047a0"/>
+    </g>
   </g>
-  <g stroke="#111" stroke-width="1.45" stroke-linecap="square">
-    <g transform="rotate(-33.69 8.2 8.2)">
-      <path d="M4.5 5.7h7.4M4.5 8.2h7.4M4.5 10.7h7.4"/>
-    </g>
-    <g transform="rotate(-33.69 23.8 23.8)">
-      <path d="M20.1 21.3h7.4M20.1 23.8h7.4M20.1 26.3h7.4"/>
-    </g>
-    <g transform="rotate(33.69 23.8 8.2)">
-      <path d="M20.1 5.7h2.9M24.6 5.7h2.9M20.1 8.2h7.4M20.1 10.7h2.9M24.6 10.7h2.9"/>
-    </g>
-    <g transform="rotate(33.69 8.2 23.8)">
-      <path d="M4.5 21.3h7.4M4.5 23.8h2.9M9 23.8h2.9M4.5 26.3h7.4"/>
-    </g>
+  <g stroke="#000" stroke-width=".35" stroke-linecap="square">
+    <path d="M2 2h2M2 2.9h2M2 3.8h2"/>
+    <path d="M15 2h2M15 2.9h2M15 3.8h2"/>
+    <path d="M2 9.2h2M2 10.1h2M2 11h2"/>
+    <path d="M15 9.2h2M15 10.1h2M15 11h2"/>
   </g>
 </svg>
