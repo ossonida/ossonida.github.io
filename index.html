@@ -53,11 +53,45 @@
       text-decoration: none;
     }
 
-    .lang-switch {
+    .top-controls {
       position: fixed;
       top: 18px;
       right: 18px;
       z-index: 10;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .coffee-sponsor-banner {
+      display: inline-grid;
+      width: 39px;
+      height: 39px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(13, 16, 23, 0.72);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(16px);
+      color: var(--accent-strong);
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .coffee-sponsor-banner:hover,
+    .coffee-sponsor-banner:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(255, 211, 138, 0.56);
+      background: rgba(216, 173, 102, 0.18);
+      outline: none;
+    }
+
+    .coffee-sponsor-icon {
+      font-size: 1.22rem;
+      line-height: 1;
+    }
+
+    .lang-switch {
+      position: relative;
       min-width: 92px;
       color: var(--text);
       font-size: 0.82rem;
@@ -343,9 +377,15 @@
         padding: 82px 0 34px;
       }
 
-      .lang-switch {
+      .top-controls {
         top: 14px;
         right: 12px;
+        gap: 8px;
+      }
+
+      .coffee-sponsor-banner {
+        width: 38px;
+        height: 38px;
       }
 
       .game-banner {
@@ -372,7 +412,18 @@
   </style>
 </head>
 <body>
-  <div class="lang-switch" id="lang-switch">
+  <div class="top-controls">
+    <a
+      href="https://github.com/sponsors/ossonida"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="coffee-sponsor-banner"
+      aria-label="GitHub Sponsors로 후원하기"
+      title="GitHub Sponsors"
+    >
+      <span class="coffee-sponsor-icon" aria-hidden="true">☕ Coffee</span>
+    </a>
+    <div class="lang-switch" id="lang-switch">
     <button type="button" aria-haspopup="listbox" aria-expanded="false" id="lang-button">
       <span class="lang-label">
         <img class="lang-icon" data-current-lang-icon src="img/flag-kr.svg" alt="" aria-hidden="true">
@@ -388,6 +439,7 @@
       <button type="button" role="option" data-lang="ja" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-jp.svg" alt="" aria-hidden="true"><span class="lang-code">JP</span></span></button>
       <button type="button" role="option" data-lang="es" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-es.svg" alt="" aria-hidden="true"><span class="lang-code">ES</span></span></button>
     </div>
+  </div>
   </div>
 
   <main class="page">
