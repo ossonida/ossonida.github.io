@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BoardGame Reference hub</title>
+  <title>BoardGame Wiki - BGW</title>
   <meta name="description" content="BoardGame Wiki - BGW는 보드게임 플레이 중 카드, 타일, 규칙 참조 자료를 빠르게 찾는 다국어 보드게임 레퍼런스 허브입니다." />
   <meta name="keywords" content="보드게임 위키, 보드게임 레퍼런스, 보드게임 참조, BoardGame Wiki, Board Game Reference, boardgame wiki, boardgame reference, BGW, Brettspiel Wiki, Brettspiel Referenz, jeux de société référence, référence jeux de société, ボードゲームウィキ, ボードゲームリファレンス, referencia juegos de mesa, wiki juegos de mesa" />
   <meta name="author" content="ossonida" />
@@ -388,6 +388,25 @@
       background: linear-gradient(90deg, transparent, rgba(13, 16, 23, 0.66));
     }
 
+    .cover img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cover.is-unavailable::before {
+      content: "BGW";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: var(--accent-strong);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+
     .game-info {
       align-self: center;
       padding: 30px 34px;
@@ -521,14 +540,14 @@
       <span class="coffee-sponsor-icon" aria-hidden="true">☕</span>
     </a>
     <div class="lang-switch" id="lang-switch">
-    <button type="button" aria-haspopup="listbox" aria-expanded="false" id="lang-button">
+    <button type="button" aria-label="Language" aria-haspopup="listbox" aria-controls="lang-menu" aria-expanded="false" id="lang-button">
       <span class="lang-label">
         <img class="lang-icon" data-current-lang-icon src="img/flag-kr.svg" alt="" aria-hidden="true">
         <span class="lang-code" data-current-lang-code>KR</span>
       </span>
       <span class="lang-caret" aria-hidden="true">▾</span>
     </button>
-    <div class="lang-menu" role="listbox" aria-label="Language">
+    <div class="lang-menu" id="lang-menu" role="listbox" aria-label="Language">
       <button type="button" role="option" data-lang="en" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-us.svg" alt="" aria-hidden="true"><span class="lang-code">EN</span></span></button>
       <button type="button" role="option" data-lang="ko" aria-selected="true"><span class="lang-label"><img class="lang-icon" src="img/flag-kr.svg" alt="" aria-hidden="true"><span class="lang-code">KR</span></span></button>
       <button type="button" role="option" data-lang="de" aria-selected="false"><span class="lang-label"><img class="lang-icon" src="img/flag-de.svg" alt="" aria-hidden="true"><span class="lang-code">DE</span></span></button>
@@ -554,8 +573,8 @@
           Search terms: Board Game Reference, Brettspiel Referenz, référence jeux de société, ボードゲームリファレンス, referencia juegos de mesa.
         </p>
         <ul>
-          <li><a href="/gah/">BGW : Grand Austria Hotel</a></li>
-          <li><a href="https://ossonida.github.io/marrakesh/">BGW : Marrakech</a></li>
+          <li><a href="./gah/">BGW : Grand Austria Hotel</a></li>
+          <li><a href="./marrakesh/">BGW : Marrakech</a></li>
           <li>BGW : The Castles of Burgundy - 준비중</li>
           <li>BGW : Civolution - 준비중</li>
           <li>BGW : Arkham Horror: The Card Game - 준비중</li>
@@ -572,6 +591,7 @@
   <footer style="text-align:center; margin:16px 0 12px; font-size:11px; color:#94a3b8;">
     <a href="mailto:bgame.wiki@gmail.com" style="color: #e2e8f0; text-decoration: none;">bgame.wiki@gmail.com</a> 
   </footer>
+  <script src="assets/site.js"></script>
   <script>
     const SITE_TITLE = "BoardGame Wiki - BGW";
     const GAME_SITE_TITLE_PREFIX = "BGW : ";
@@ -580,7 +600,7 @@
     const games = [
       {
         title: "Grand Austria Hotel",
-        href: "/gah/",
+        href: "./gah/",
         tagKey: "gahTag",
         descKey: "gahDesc",
         actionKey: "enterAction",
@@ -590,7 +610,7 @@
       },
       {
         title: "Marrakech",
-        href: "https://ossonida.github.io/marrakesh/",
+        href: "./marrakesh/",
         tagKey: "marrakechTag",
         descKey: "marrakechDesc",
         actionKey: "enterAction",
@@ -857,10 +877,10 @@
         const banner = document.createElement("a");
         banner.className = `game-banner${isDisabled ? " is-disabled" : ""}`;
         banner.style.setProperty("--game-bg", game.bg);
-        banner.style.setProperty("--cover-image", `url("${game.cover}")`);
 
         if (game.href) {
           banner.href = game.href;
+          banner.dataset.siteLink = "";
         } else {
           banner.setAttribute("aria-disabled", "true");
           banner.tabIndex = -1;
@@ -869,6 +889,16 @@
         const cover = document.createElement("div");
         cover.className = "cover";
         cover.setAttribute("aria-hidden", "true");
+        const coverImage = document.createElement("img");
+        coverImage.alt = "";
+        coverImage.loading = "lazy";
+        coverImage.decoding = "async";
+        coverImage.addEventListener("error", () => {
+          coverImage.remove();
+          cover.classList.add("is-unavailable");
+        }, { once: true });
+        coverImage.src = game.cover;
+        cover.append(coverImage);
 
         const info = document.createElement("div");
         info.className = "game-info";
@@ -910,29 +940,29 @@
       gameGrid.replaceChildren(fragment);
     }
 
-    function setLanguageMenuOpen(isOpen) {
+    function setLanguageMenuOpen(isOpen, restoreFocus = false) {
       langSwitch.classList.toggle("is-open", isOpen);
       langButton.setAttribute("aria-expanded", String(isOpen));
+      if (isOpen) {
+        const selected = Array.from(languageButtons).find((button) => button.getAttribute("aria-selected") === "true");
+        languageButtons.forEach((button) => { button.tabIndex = button === selected ? 0 : -1; });
+        (selected || languageButtons[0]).focus();
+      } else if (restoreFocus) {
+        langButton.focus();
+      }
     }
 
     function getInitialLanguage() {
-      const params = new URLSearchParams(window.location.search);
-      const requestedLanguage = params.get("lang");
-      const savedLanguage = localStorage.getItem("referenceLanguage");
-      const browserLanguage = navigator.language.slice(0, 2);
-
-      if (supportedLanguages.includes(requestedLanguage)) return requestedLanguage;
-      if (supportedLanguages.includes(savedLanguage)) return savedLanguage;
-      if (supportedLanguages.includes(browserLanguage)) return browserLanguage;
-      return "ko";
+      return BGW.getLanguage(supportedLanguages);
     }
 
-    function applyLanguage(language) {
+    function applyLanguage(language, updateUrl = false) {
+      if (!supportedLanguages.includes(language)) language = "ko";
       const copy = translations[language] || translations.ko;
       const meta = languageMeta[language] || languageMeta.ko;
       document.documentElement.lang = language;
       document.title = copy.documentTitle;
-      localStorage.setItem("referenceLanguage", language);
+      BGW.setLanguage(language, { updateUrl });
 
       document.querySelectorAll("[data-i18n]").forEach((element) => {
         element.textContent = copy[element.dataset.i18n];
@@ -948,6 +978,7 @@
 
       languageButtons.forEach((button) => {
         button.setAttribute("aria-selected", String(button.dataset.lang === language));
+        button.tabIndex = button.dataset.lang === language ? 0 : -1;
       });
 
       currentLangIcon.src = meta.icon;
@@ -960,15 +991,38 @@
     });
 
     languageButtons.forEach((button) => {
-      button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+      button.addEventListener("click", () => {
+        applyLanguage(button.dataset.lang, true);
+        langButton.focus();
+      });
     });
 
     document.addEventListener("click", (event) => {
       if (!langSwitch.contains(event.target)) setLanguageMenuOpen(false);
     });
 
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") setLanguageMenuOpen(false);
+    langSwitch.addEventListener("keydown", (event) => {
+      const buttons = Array.from(languageButtons);
+      const index = buttons.indexOf(document.activeElement);
+      if (["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) {
+        event.preventDefault();
+        if (!langSwitch.classList.contains("is-open")) {
+          setLanguageMenuOpen(true);
+          return;
+        }
+        const nextIndex = event.key === "Home" ? 0
+          : event.key === "End" ? buttons.length - 1
+          : (index + (event.key === "ArrowDown" ? 1 : -1) + buttons.length) % buttons.length;
+        buttons.forEach((button, position) => { button.tabIndex = position === nextIndex ? 0 : -1; });
+        buttons[nextIndex].focus();
+      } else if (event.key === "Escape" && langSwitch.classList.contains("is-open")) {
+        event.preventDefault();
+        setLanguageMenuOpen(false, true);
+      }
+    });
+
+    langSwitch.addEventListener("focusout", (event) => {
+      if (!langSwitch.contains(event.relatedTarget)) setLanguageMenuOpen(false);
     });
 
     renderGameBanners();

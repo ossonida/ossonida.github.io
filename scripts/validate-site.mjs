@@ -1,0 +1,58 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const root=process.cwd(), origin='https://ossonida.github.io';
+const read=p=>fs.readFileSync(p,'utf8');
+let count=0;
+function check(value,base){
+ if(!value||value.includes('${'))return;
+ const u=new URL(value.replaceAll('&amp;','&'),base);
+ if(u.origin!==origin)return;
+ let target=path.join(root,decodeURIComponent(u.pathname));
+ if(fs.statSync(target).isDirectory())target=path.join(target,'index.html');
+ let dir=root;
+ for(const part of path.relative(root,target).split(path.sep)){
+  assert.ok(fs.readdirSync(dir).includes(part),`Missing or wrong case: ${target}`);dir=path.join(dir,part);
+ }
+ count++;
+}
+for(const file of ['index.html','gah/index.html','marrakesh/index.html']){
+ const html=read(file), base=new URL(file,origin+'/');
+ for(const [tag] of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/gi)){
+  for(const [,value] of tag.matchAll(/(?:href|src)="([^"]+)"/g))check(value,base);
+ }
+ for(const [,attrs,code] of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){
+  if(attrs.includes('application/ld+json'))JSON.parse(code);else new vm.Script(code,{filename:file});
+ }
+ for(const [,value] of html.matchAll(/["']((?:\.\.?\/|img\/)[^"'<>\s]+)["']/g))check(value,base);
+ assert.ok(html.indexOf('assets/site.js')<html.indexOf('BGW.getLanguage('));
+}
+const data=vm.createContext({window:{}});
+for(const file of ['marrakesh/reference-data.js','marrakesh/reference-translations.js'])vm.runInContext(read(file),data);
+for(const rows of Object.values(data.window.referenceData))for(const item of rows)if(item.image)check(item.image,origin+'/marrakesh/');
+const urls=[...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+assert.equal(new Set(urls).size,22);urls.forEach(u=>check(u,origin));
+const langs=['ko','en','de','fr','ja','es'];
+function env(href,links=[],prefs={},blocked=false){
+ const location=new URL(href),store=new Map(Object.entries(prefs));
+ const window={location,history:{state:{},replaceState(s,t,u){location.href=String(u);}}};
+ const c=vm.createContext({window,URL,URLSearchParams,navigator:{language:'en-US'},document:{querySelectorAll:()=>links},localStorage:{getItem(k){if(blocked)throw Error();return store.get(k);},setItem(k,v){if(blocked)throw Error();store.set(k,v);}}});
+ vm.runInContext(read('assets/site.js'),c);return {api:window.BGW,location,store};
+}
+const link=href=>({href,dataset:{},getAttribute(){return this.href;}});
+assert.equal(env(origin+'/?lang=ja',[],{referenceLanguage:'de'}).api.getLanguage(langs),'ja');
+assert.equal(env(origin+'/',[],{'gah-lang':'de'}).api.getLanguage(langs,'gah-lang'),'de');
+assert.equal(env(origin+'/',[],{referenceLanguage:'fr','gah-lang':'de'}).api.getLanguage(langs,'gah-lang'),'fr');
+for(const prefix of ['/','/preview/'])for(const lang of langs)for(const game of ['gah','marrakesh']){
+ const entry=link('./'+game+'/'),hub=env(origin+prefix+'?keep=1#top',[entry],{},true);
+ hub.api.setLanguage(lang,{updateUrl:true});
+ assert.equal(hub.location.searchParams.get('keep'),'1');assert.equal(hub.location.hash,'#top');
+ assert.equal(entry.href,origin+prefix+game+'/?lang='+lang);
+ const home=link('../'),page=env(entry.href,[home],{},true);
+ assert.equal(page.api.getLanguage(langs),lang);page.api.setLanguage(lang);
+ assert.equal(home.href,origin+prefix+'?lang='+lang);
+}
+const home=link('../'),zh=env(origin+'/marrakesh/?lang=zh',[home]);
+assert.equal(zh.api.getLanguage([...langs,'zh']),'zh');zh.api.setLanguage('zh');assert.equal(home.href,origin+'/?lang=en');
+console.log(`PASS: 3 pages, JavaScript/JSON syntax, ${count} local references (including dynamic images), 22 sitemap URLs, language round trips and blocked storage.`);

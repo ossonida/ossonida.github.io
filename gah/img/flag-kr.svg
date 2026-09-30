@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 13" role="img" aria-label="Korea flag">
+  <rect width="19" height="13" fill="#fff"/>
+  <g transform="translate(9.5 6.5)">
+    <clipPath id="c"><circle r="3"/></clipPath>
+    <g clip-path="url(#c)">
+      <rect x="-3" y="-3" width="6" height="3" fill="#cd2e3a"/>
+      <rect x="-3" y="0" width="6" height="3" fill="#0047a0"/>
+      <path d="M0-3a3 3 0 0 1 0 6 1.5 1.5 0 0 0 0-3 1.5 1.5 0 0 1 0-3z" fill="#cd2e3a"/>
+      <path d="M0 3a3 3 0 0 1 0-6 1.5 1.5 0 0 0 0 3 1.5 1.5 0 0 1 0 3z" fill="#0047a0"/>
+    </g>
+  </g>
+  <g stroke="#000" stroke-width=".35" stroke-linecap="square">
+    <path d="M2 2h2M2 2.9h2M2 3.8h2"/>
+    <path d="M15 2h2M15 2.9h2M15 3.8h2"/>
+    <path d="M2 9.2h2M2 10.1h2M2 11h2"/>
+    <path d="M15 9.2h2M15 10.1h2M15 11h2"/>
+  </g>
+</svg>

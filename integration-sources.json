@@ -1,0 +1,14 @@
+{
+  "marrakesh": {
+    "repository": "https://github.com/ossonida/marrakesh.git",
+    "branch": "main",
+    "commit": "ab48ecc26a0681dacd0badd08a0127e281434685",
+    "files": 323
+  },
+  "gah": {
+    "repository": "https://github.com/ossonida/gah.git",
+    "branch": "main",
+    "commit": "ca9288529e7e6ba44f12cfe7b622ff8c69d2e8b8",
+    "files": 60
+  }
+}
