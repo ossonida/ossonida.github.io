@@ -1,0 +1,371 @@
+{
+  "text": {
+    "setup": {
+      "ko": "셋업",
+      "en": "Setup",
+      "de": "Spielaufbau",
+      "fr": "Mise en place",
+      "ja": "セットアップ",
+      "es": "Preparación",
+      "zh": "设置"
+    },
+    "scope": {
+      "ko": "본판 2–4인 기준 · 확장·솔로 제외",
+      "en": "Base game, 2–4 players · excludes expansions and solo",
+      "de": "Grundspiel, 2–4 Spieler · ohne Erweiterungen/Solo",
+      "fr": "Jeu de base, 2–4 joueurs · hors extensions/solo",
+      "ja": "基本ゲーム2～4人用・拡張とソロは対象外",
+      "es": "Juego base, 2–4 jugadores · sin expansiones ni solitario",
+      "zh": "基础游戏2–4人；不含扩展及单人模式"
+    },
+    "item": {
+      "ko": "준비 항목",
+      "en": "Setup item",
+      "de": "Vorbereitung",
+      "fr": "Élément",
+      "ja": "準備項目",
+      "es": "Elemento",
+      "zh": "准备项目"
+    },
+    "p2": {
+      "ko": "2인",
+      "en": "2 players",
+      "de": "2 Spieler",
+      "fr": "2 joueurs",
+      "ja": "2人",
+      "es": "2 jugadores",
+      "zh": "2人"
+    },
+    "p3": {
+      "ko": "3인",
+      "en": "3 players",
+      "de": "3 Spieler",
+      "fr": "3 joueurs",
+      "ja": "3人",
+      "es": "3 jugadores",
+      "zh": "3人"
+    },
+    "p4": {
+      "ko": "4인",
+      "en": "4 players",
+      "de": "4 Spieler",
+      "fr": "4 joueurs",
+      "ja": "4人",
+      "es": "4 jugadores",
+      "zh": "4人"
+    },
+    "common": {
+      "ko": "공통 준비",
+      "en": "Common setup",
+      "de": "Gemeinsamer Aufbau",
+      "fr": "Préparation commune",
+      "ja": "共通の準備",
+      "es": "Preparación común",
+      "zh": "共同准备"
+    },
+    "board": {
+      "ko": "게임판·타일 배치",
+      "en": "Board and tile spaces",
+      "de": "Spielplan und Plättchenfelder",
+      "fr": "Plateau et cases de tuiles",
+      "ja": "ボードとタイル配置",
+      "es": "Tablero y espacios",
+      "zh": "主板与板块位置"
+    },
+    "b2": {
+      "ko": "2·3인 면: 안쪽 일반 타일 12칸 + 검은 저장소 4칸",
+      "en": "2/3-player side: 12 inner regular spaces + 4 black-depot spaces",
+      "de": "2/3-Spieler-Seite: 12 innere Felder + 4 schwarze Depotfelder",
+      "fr": "Face 2/3 joueurs : 12 cases intérieures + 4 cases noires",
+      "ja": "2・3人面：内側の通常12マス＋黒い集積所4マス",
+      "es": "Cara 2/3 jugadores: 12 espacios interiores + 4 negros",
+      "zh": "2/3人面：内侧普通12格＋黑色仓库4格"
+    },
+    "b3": {
+      "ko": "2·3인 면: 2인용 칸에 더해 ‘3’ 표시 8칸도 사용",
+      "en": "2/3-player side: use the 2-player spaces plus all eight spaces marked 3",
+      "de": "2/3-Spieler-Seite: 2-Spieler-Felder plus acht mit 3 markierte Felder",
+      "fr": "Face 2/3 joueurs : cases à 2 joueurs plus les huit cases marquées 3",
+      "ja": "2・3人面：2人用に加え「3」の8マスも使用",
+      "es": "Cara 2/3 jugadores: espacios de 2 más los ocho marcados 3",
+      "zh": "2/3人面：在2人位置外加标有3的8格"
+    },
+    "b4": {
+      "ko": "4인 면: 일반 저장소 6곳×4칸 + 검은 저장소 8칸",
+      "en": "4-player side: 6 regular depots × 4 spaces + 8 black spaces",
+      "de": "4-Spieler-Seite: 6 Depots × 4 Felder + 8 schwarze Felder",
+      "fr": "Face 4 joueurs : 6 dépôts × 4 cases + 8 cases noires",
+      "ja": "4人面：通常6か所×4マス＋黒い集積所8マス",
+      "es": "Cara de 4: 6 depósitos × 4 espacios + 8 negros",
+      "zh": "4人面：6个普通仓库×4格＋黑色8格"
+    },
+    "depot6": {
+      "ko": "6번 저장소 예외",
+      "en": "Depot 6 exception",
+      "de": "Sonderfall Depot 6",
+      "fr": "Exception du dépôt 6",
+      "ja": "集積所6の例外",
+      "es": "Excepción del depósito 6",
+      "zh": "6号仓库例外"
+    },
+    "normal": {
+      "ko": "인쇄된 색상대로 보충",
+      "en": "Refill by printed colors",
+      "de": "Nach aufgedruckter Farbe auffüllen",
+      "fr": "Remplir selon les couleurs imprimées",
+      "ja": "印刷された色で補充",
+      "es": "Reponer según colores impresos",
+      "zh": "按印刷颜色补充"
+    },
+    "b3swap": {
+      "ko": "진초록 칸: A·C·E 단계는 성, B·D 단계는 광산",
+      "en": "Dark-green space: castle in A/C/E, mine in B/D",
+      "de": "Dunkelgrünes Feld: Burg in A/C/E, Mine in B/D",
+      "fr": "Case vert foncé : château en A/C/E, mine en B/D",
+      "ja": "濃緑マス：A・C・Eは城、B・Dは鉱山",
+      "es": "Espacio verde oscuro: castillo en A/C/E, mina en B/D",
+      "zh": "深绿格：A/C/E阶段为城堡，B/D为矿山"
+    },
+    "workers": {
+      "ko": "시작 일꾼 · 선부터 시계방향",
+      "en": "Starting workers · clockwise from first player",
+      "de": "Startarbeiter · im Uhrzeigersinn ab Startspieler",
+      "fr": "Ouvriers initiaux · depuis le premier, sens horaire",
+      "ja": "初期労働者・先手から時計回り",
+      "es": "Trabajadores iniciales · desde el primero, sentido horario",
+      "zh": "起始工人：从首位顺时针"
+    },
+    "bcommon": {
+      "ko": "기념판 기준. 각자 성 1개, 무작위 상품 3개, 은화 1개, 자기 색 주사위 2개. 상품은 A–E에 5개씩 5더미를 준비합니다. 다리 첫 칸에 선 플레이어부터 위→아래로 말을 쌓고 선이 흰 주사위를 받습니다.",
+      "en": "Anniversary edition. Each player: 1 castle, 3 random goods, 1 coin, 2 dice. Prepare five stacks of five goods for A–E. Stack turn markers on bridge space 1, first player on top; first player takes the white die.",
+      "de": "Jubiläumsausgabe. Pro Spieler: 1 Burg, 3 zufällige Waren, 1 Silberling, 2 Würfel. Für A–E je 5 Waren stapeln. Marker auf Brückenfeld 1 stapeln, Startspieler oben; er erhält den weißen Würfel.",
+      "fr": "Édition anniversaire. Par joueur : 1 château, 3 marchandises aléatoires, 1 pièce, 2 dés. Cinq piles de cinq marchandises pour A–E. Marqueurs sur la première case du pont, premier joueur au sommet ; il prend le dé blanc.",
+      "ja": "記念版。各自、城1枚・無作為の商品3枚・銀貨1枚・自分のダイス2個。A～Eに商品5枚ずつの山を準備。橋の1マス目に先手を一番上として重ね、先手が白ダイスを受け取ります。",
+      "es": "Edición aniversario. Cada jugador: 1 castillo, 3 mercancías aleatorias, 1 moneda y 2 dados. Cinco pilas de cinco mercancías para A–E. Marcadores en la primera casilla del puente, primero encima; este recibe el dado blanco.",
+      "zh": "周年版。每人1城堡、3随机货物、1银币、2枚个人骰。A–E各放5货物。顺序标记叠于桥第1格，首位在顶端并拿白骰。"
+    },
+    "dice": {
+      "ko": "사용 주사위 수",
+      "en": "Dice in play",
+      "de": "Würfelanzahl",
+      "fr": "Nombre de dés",
+      "ja": "使用ダイス数",
+      "es": "Dados en juego",
+      "zh": "使用骰子数"
+    },
+    "order": {
+      "ko": "순서 타일",
+      "en": "Turn-order tiles",
+      "de": "Reihenfolgeplättchen",
+      "fr": "Tuiles d’ordre",
+      "ja": "手番順タイル",
+      "es": "Losetas de orden",
+      "zh": "顺序板块"
+    },
+    "o2": {
+      "ko": "뒷면 2인 표시 세트 · 차례 1→2→2→1",
+      "en": "Use the 2-player set · order 1→2→2→1",
+      "de": "2-Spieler-Satz · Folge 1→2→2→1",
+      "fr": "Lot 2 joueurs · ordre 1→2→2→1",
+      "ja": "裏が2人用の組・順番1→2→2→1",
+      "es": "Juego para 2 · orden 1→2→2→1",
+      "zh": "使用2人套组；顺序1→2→2→1"
+    },
+    "o3": {
+      "ko": "뒷면 3인 표시 세트 · 차례 1→2→3→3→2→1",
+      "en": "Use the 3-player set · order 1→2→3→3→2→1",
+      "de": "3-Spieler-Satz · Folge 1→2→3→3→2→1",
+      "fr": "Lot 3 joueurs · ordre 1→2→3→3→2→1",
+      "ja": "裏が3人用の組・順番1→2→3→3→2→1",
+      "es": "Juego para 3 · orden 1→2→3→3→2→1",
+      "zh": "使用3人套组；顺序1→2→3→3→2→1"
+    },
+    "o4": {
+      "ko": "뒷면 4인 표시 세트 · 차례 1→2→3→4→4→3→2→1",
+      "en": "Use the 4-player set · order 1→2→3→4→4→3→2→1",
+      "de": "4-Spieler-Satz · Folge 1→2→3→4→4→3→2→1",
+      "fr": "Lot 4 joueurs · ordre 1→2→3→4→4→3→2→1",
+      "ja": "裏が4人用の組・順番1→2→3→4→4→3→2→1",
+      "es": "Juego para 4 · orden 1→2→3→4→4→3→2→1",
+      "zh": "使用4人套组；顺序1→2→3→4→4→3→2→1"
+    },
+    "guest": {
+      "ko": "최초 무료 손님 선택 순서",
+      "en": "Initial free guest selection",
+      "de": "Ersten kostenlosen Gast wählen",
+      "fr": "Choix du premier client gratuit",
+      "ja": "最初の無料客の選択順",
+      "es": "Elección del primer huésped gratis",
+      "zh": "首位免费客人选择顺序"
+    },
+    "gcommon": {
+      "ko": "선 플레이어를 무작위로 정하고 시계방향으로 순서 타일을 나눕니다. 각자 10크로네, 커피·와인·케이크·슈트루델 1개씩, 직원 6장. 손님 5장을 공개하고 목표·황제 타일은 A/B/C 각 1개씩 사용합니다. 마지막 플레이어부터 반시계방향으로 무료 손님 1명씩 선택하고 매번 보충합니다. 각자 객실을 최대 3개 준비하며 왼쪽 아래부터 인접하게, 색을 맞추고 비용을 지불합니다.",
+      "en": "Choose a random first player; assign order tiles clockwise. Each player: 10 krones, one coffee/wine/cake/strudel, 6 staff cards. Reveal 5 guests; use one A/B/C objective and emperor tile each. Choose one free guest each in reverse order, refilling after each choice. Prepare up to 3 rooms, starting bottom-left, adjacent and color-matched; pay their costs.",
+      "de": "Startspieler zufällig bestimmen, Reihenfolgeplättchen im Uhrzeigersinn verteilen. Je 10 Kronen, je 1 Kaffee/Wein/Torte/Strudel und 6 Personalkarten. 5 Gäste auslegen; je ein A/B/C-Ziel und Kaiserplättchen. In umgekehrter Reihenfolge je einen kostenlosen Gast wählen und nachfüllen. Bis zu 3 Zimmer ab unten links benachbart und farbgleich vorbereiten; Kosten bezahlen.",
+      "fr": "Premier joueur aléatoire ; distribuer les tuiles dans le sens horaire. Chacun : 10 couronnes, un café/vin/gâteau/strudel, 6 personnels. Révéler 5 clients ; un objectif et une tuile empereur de chaque A/B/C. Choisir un client gratuit en ordre inverse, en remplaçant après chaque choix. Préparer jusqu’à 3 chambres depuis le bas gauche, adjacentes, de même couleur, en payant leur coût.",
+      "ja": "先手を無作為に決め、時計回りに順番タイルを配ります。各自10クローネ、コーヒー・ワイン・ケーキ・シュトゥルーデル各1個、スタッフ6枚。客5枚を公開し、目標と皇帝はA/B/C各1枚。逆順で無料の客を1枚ずつ選び毎回補充。客室は左下から隣接・同色を守り、費用を払って最大3室準備。",
+      "es": "Primer jugador aleatorio; repartir orden en sentido horario. Cada uno: 10 coronas, un café/vino/pastel/strudel y 6 empleados. Revelar 5 huéspedes; un objetivo y emperador de cada A/B/C. Elegir un huésped gratis en orden inverso, reponiendo cada vez. Preparar hasta 3 habitaciones desde abajo a la izquierda, adyacentes y del color correcto; pagar sus costes.",
+      "zh": "随机首位，顺时针分配顺序板块。每人10克朗，咖啡、酒、蛋糕、卷饼各1个，6张员工。公开5客人；目标和皇帝各用A/B/C各1。逆序各选1免费客人，每次补充。客房从左下起相邻、同色、支付费用，最多准备3间。"
+    },
+    "oasis": {
+      "ko": "오아시스 트랙의 초기 케시 · 1인당",
+      "en": "Initial oasis-track keshis · per player",
+      "de": "Start-Keshis der Oasenleiste · pro Spieler",
+      "fr": "Keshis initiaux de piste oasis · par joueur",
+      "ja": "オアシストラック初期ケシ・1人分",
+      "es": "Keshis iniciales de oasis · por jugador",
+      "zh": "绿洲轨起始凯希：每人"
+    },
+    "draw": {
+      "ko": "케시 추첨 준비",
+      "en": "Prepare the keshi draw",
+      "de": "Keshi-Ziehung vorbereiten",
+      "fr": "Préparer le tirage",
+      "ja": "ケシ抽選の準備",
+      "es": "Preparar el sorteo",
+      "zh": "抽取凯希准备"
+    },
+    "drawrule": {
+      "ko": "노랑·보라·주황·갈색을 제외한 8색을 1개씩 주머니에 넣고 추첨. 뽑은 케시는 오아시스 트랙의 케시 칸에 원하는 순서로 배치",
+      "en": "Bag one keshi of each of the eight colors except yellow/purple/orange/brown. Draw and place on the oasis-track keshi spaces in any order.",
+      "de": "Je einen Keshi der acht Farben außer Gelb/Lila/Orange/Braun in den Beutel. Ziehen und beliebig auf den Keshi-Feldern der Oasenleiste anordnen.",
+      "fr": "Mettre un keshi des huit couleurs sauf jaune/violet/orange/brun dans le sac. Tirer puis placer librement sur les cases keshi de la piste oasis.",
+      "ja": "黄・紫・橙・茶を除く8色を各1個袋へ。引いたケシをオアシストラックのケシ欄に任意の順で配置。",
+      "es": "Poner en la bolsa uno de los ocho colores salvo amarillo/morado/naranja/marrón. Extraer y colocar en cualquier orden en las casillas keshi de oasis.",
+      "zh": "除黄、紫、橙、棕外8色各1入袋。抽取后任意顺序放在绿洲轨凯希格。"
+    },
+    "mcommon": {
+      "ko": "나머지 본판 준비는 동일합니다. 각자 10점, 물·대추·디나르 1개씩, 12색 케시 각 1개, 오아시스 6개, 식량공급 타일 3개(첫 계절용 1개 공개). 두루마리는 종류별로 3더미, 사치품은 5더미, 교환소 3개, 강 타일은 계절별 1개를 준비합니다. 공방마다 성문 8개를 놓고 선 플레이어를 무작위로 정합니다.",
+      "en": "Other base setup is unchanged. Each player: 10 VP, one water/date/dinar, one keshi of each of 12 colors, 6 oases, 3 provision tiles (reveal one for season 1). Prepare 3 scroll stacks per type, 5 luxury stacks, 3 exchange offices, one river tile per season and 8 gates per workshop. Random first player.",
+      "de": "Übriger Grundaufbau unverändert. Je Spieler: 10 Punkte, je 1 Wasser/Dattel/Dinar, je ein Keshi aller 12 Farben, 6 Oasen, 3 Versorgungskärtchen (eines für Saison 1 offen). Je Schriftrollentyp 3 Stapel, 5 Luxuswarenstapel, 3 Wechselstuben, je Saison 1 Flussplättchen und je Werkstatt 8 Tore. Zufälliger Startspieler.",
+      "fr": "Autre préparation identique. Chacun : 10 PV, une eau/datte/dinar, un keshi de chacune des 12 couleurs, 6 oasis, 3 provisions (une révélée pour saison 1). Trois piles par type de parchemin, 5 piles de luxe, 3 bureaux de change, une rivière par saison et 8 portes par atelier. Premier joueur aléatoire.",
+      "ja": "その他の基本準備は同じです。各自10点、水・ナツメヤシ・ディナール各1、12色のケシ各1、オアシス6枚、供給タイル3枚（第1季節用1枚公開）。巻物は種類別3山、高級品5山、両替所3枚、川は季節ごと1枚、工房ごと門8枚。先手は無作為。",
+      "es": "El resto no cambia. Cada uno: 10 PV, un agua/dátil/dinar, un keshi de cada uno de los 12 colores, 6 oasis y 3 provisiones (una visible para estación 1). Tres pilas por tipo de pergamino, 5 de lujo, 3 casas de cambio, una loseta de río por estación y 8 puertas por taller. Primer jugador al azar.",
+      "zh": "其他基础准备相同。每人10分、水/椰枣/第纳尔各1、12色凯希各1、6绿洲、3供给板块（首季公开1）。卷轴每类3堆，奢侈品5堆，兑换所3枚，每季1河流板块，每工坊8门。随机首位。"
+    },
+    "noResults": {
+      "ko": "검색 결과가 없습니다.",
+      "en": "No matching setup entries.",
+      "de": "Keine passenden Einträge.",
+      "fr": "Aucun résultat.",
+      "ja": "該当する項目はありません。",
+      "es": "Sin resultados.",
+      "zh": "无匹配结果。"
+    }
+  },
+  "games": {
+    "burgundy": {
+      "rows": [
+        [
+          "board",
+          "b2",
+          "b3",
+          "b4"
+        ],
+        [
+          "depot6",
+          "normal",
+          "b3swap",
+          "normal"
+        ],
+        [
+          "workers",
+          {
+            "value": "1 / 2"
+          },
+          {
+            "value": "1 / 2 / 3"
+          },
+          {
+            "value": "1 / 2 / 3 / 4"
+          }
+        ]
+      ],
+      "common": "bcommon",
+      "source": {
+        "url": "https://images.amainhobbies.com/images/resources/RVB26925/Manuals/1-RVB26925_The_Castles_of_Burgundy_Board_Game_Manual.pdf",
+        "pages": [
+          2,
+          3,
+          11
+        ],
+        "edition": "2019 anniversary"
+      }
+    },
+    "gah": {
+      "rows": [
+        [
+          "dice",
+          {
+            "value": "10"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "14"
+          }
+        ],
+        [
+          "order",
+          "o2",
+          "o3",
+          "o4"
+        ],
+        [
+          "guest",
+          {
+            "value": "2 → 1"
+          },
+          {
+            "value": "3 → 2 → 1"
+          },
+          {
+            "value": "4 → 3 → 2 → 1"
+          }
+        ]
+      ],
+      "common": "gcommon",
+      "source": {
+        "url": "https://cdn.1j1ju.com/medias/fa/5d/33-grand-austria-hotel-rulebook.pdf",
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "edition": "Lookout base rules"
+      }
+    },
+    "marrakesh": {
+      "rows": [
+        [
+          "oasis",
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          }
+        ],
+        [
+          "draw",
+          "drawrule",
+          "drawrule",
+          "drawrule"
+        ]
+      ],
+      "common": "mcommon",
+      "source": {
+        "url": "https://rules.queen-games.com/marrakesh_en.pdf",
+        "pages": [
+          4,
+          5
+        ],
+        "edition": "Queen Games base rules"
+      }
+    }
+  }
+}

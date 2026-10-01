@@ -158,3 +158,11 @@
     button,input { font:inherit; }
     button:focus-visible,a:focus-visible,input:focus-visible { outline:2px solid var(--accent);outline-offset:3px; }
     @media(max-width:700px) { body{padding:14px 10px}.card{padding:14px 10px 10px}.page-title{font-size:21px}.top-actions{gap:5px}.page-top-row{flex-wrap:wrap}.filter-tabs{gap:6px}.filter-tabs button{padding:7px 9px;font-size:13px} }
+
+/* Player-count setup panel, shared by all reference pages. */
+.setup-panel[hidden]{display:none!important}
+.setup-mode [data-section],.setup-mode #results,.setup-mode #global-empty,.setup-mode #empty,.setup-mode #count{display:none!important}
+.setup-table{min-width:620px;table-layout:fixed;line-height:1.6}
+.setup-table th:first-child{width:22%}
+.setup-common{line-height:1.7}.setup-common h3{font-size:16px;margin-bottom:6px}
+.setup-no-results{color:var(--muted)}

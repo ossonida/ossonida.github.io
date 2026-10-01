@@ -4,6 +4,8 @@ const catalog = JSON.parse(fs.readFileSync('data/games.json','utf8'));
 const esc = (value) => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const js = (value) => JSON.stringify(value).replaceAll('<','\\u003c');
 const common = ['ko','en','de','fr','ja','es'];
+const setup=JSON.parse(fs.readFileSync('data/setup.json','utf8'));
+fs.writeFileSync('assets/setup-data.js','// Generated from data/setup.json.\nwindow.BGW_SETUP = '+js(setup)+';\n');
 assert.equal(new Set(catalog.map(g=>g.id)).size,catalog.length,'Duplicate game ID');
 fs.writeFileSync('assets/games.js', '// Generated from data/games.json; run node scripts/build-site.mjs.\nwindow.BGW_GAMES = '+js(catalog)+';\n');
 for(const game of catalog.filter(g=>g.reference)) {
@@ -38,7 +40,7 @@ ${alternates}
   <meta property="og:url" content="${canonical}">
   <link rel="stylesheet" href="../assets/reference-layout.css">
   <link rel="stylesheet" href="../assets/reference.css">
-</head><body>
+</head><body data-setup-game="${esc(data.id)}">
 <a class="skip" id="skip" href="#results">레퍼런스로 이동</a>
 <main class="layout">
 <div class="page-top">
@@ -55,6 +57,7 @@ ${alternates}
 </main>
 <dialog id="image-dialog" aria-labelledby="modal-title"><button type="button" id="modal-close">닫기</button><h2 id="modal-title"></h2><img id="modal-image" alt=""><p id="modal-text"></p></dialog>
 <script src="../assets/site.js"></script><script src="reference-data.js"></script><script src="../assets/reference.js"></script>
+<script src="../assets/setup-data.js"></script><script src="../assets/setup.js"></script>
 </body></html>\n`);
 }
 let hub=fs.readFileSync('index.html','utf8');

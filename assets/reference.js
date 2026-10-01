@@ -128,6 +128,7 @@
       return button;
     }));
     BGW.setLanguage(language, {updateUrl}); renderResults();
+    window.BGWSetup?.sync(language);
   }
   search.addEventListener("input", renderResults);
   get("modal-close").addEventListener("click", () => modal.close());

@@ -47,6 +47,7 @@
       }
     }
     syncLinks(language);
+    window.BGWSetup?.sync(language);
   }
 
   window.BGW = Object.freeze({ getLanguage, setLanguage, syncLinks });
