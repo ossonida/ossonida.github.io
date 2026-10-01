@@ -658,7 +658,7 @@
     const keyedLangValue = (data, lang, fallback = '') => data?.[lang] ?? data?.en ?? data?.ko ?? fallback;
     const translations = {
       ko: {
-        pageTitle: 'GAH 카드/타일 설명',
+        pageTitle: "그랜드 오스트리아 호텔",
         support: '☕ Coffee',
         tabs: ['전체','손님카드','직원카드','목표카드','황제 타일','유명인사(왈츠)','호텔입구(왈츠)'],
         search: '카드번호·이름·내용을 입력하세요',
@@ -667,7 +667,7 @@
         objectiveNote: '목표는 내 턴에만, 추가 행동으로만 달성(획득)할 수 있다.<br/>황제 점수계산 중(황제 보상으로 조건을 만족한 경우 포함)에 조건을 만족해도, 다음 내 턴까지 기다렸다가 목표를 달성(획득)해야 한다.'
       },
       en: {
-        pageTitle: 'GAH Cards / Tiles Reference',
+        pageTitle: "Grand Austria Hotel",
         support: '☕ Coffee',
         tabs: ['All','Guests','Staff','Objectives','Emperor Tiles','Celebrities (Waltz)','Hotel Entrances (Waltz)'],
         search: 'Search by number, name, or text',
@@ -676,7 +676,7 @@
         objectiveNote: 'Remember: You can claim an objective only on your turn, as an additional action. If you meet the requirement during an Emperor scoring, from getting the Emperor reward, you must wait until your next turn to claim the objective.'
       },
       de: {
-        pageTitle: 'GAH Karten-/Plättchenreferenz',
+        pageTitle: "Grand Austria Hotel",
         support: '☕ Coffee',
         tabs: ['Alle','Gäste','Personal','Ziele','Kaiserplättchen','Berühmtheiten (Walzer)','Hoteleingänge (Walzer)'],
         search: 'Nach Nummer, Name oder Text suchen',
@@ -685,7 +685,7 @@
         objectiveNote: 'Hinweis: Ein Ziel kann nur in deinem Zug als zusätzliche Aktion erfüllt werden. Wenn du die Bedingung während einer Kaiserwertung erfüllst, auch durch eine Kaiserbelohnung, musst du bis zu deinem nächsten Zug warten.'
       },
       fr: {
-        pageTitle: 'Référence GAH cartes / tuiles',
+        pageTitle: "Grand Austria Hotel",
         support: '☕ Coffee',
         tabs: ['Tout','Clients','Personnel','Objectifs','Tuiles Empereur','Célébrités (Valse)','Entrées d’hôtel (Valse)'],
         search: 'Rechercher par numéro, nom ou texte',
@@ -694,7 +694,7 @@
         objectiveNote: 'Rappel : vous ne pouvez valider un objectif que pendant votre tour, comme action supplémentaire. Si vous remplissez la condition pendant un décompte de l’Empereur, y compris grâce à la récompense de l’Empereur, vous devez attendre votre prochain tour.'
       },
       ja: {
-        pageTitle: 'GAH カード / タイルリファレンス',
+        pageTitle: "グランドオーストリアホテル",
         support: '☕ Coffee',
         tabs: ['すべて','ゲスト','スタッフ','目標','皇帝タイル','著名人（ワルツ）','ホテル入口（ワルツ）'],
         search: '番号・名前・テキストで検索',
@@ -703,7 +703,7 @@
         objectiveNote: '注意：目標は自分の手番中に、追加アクションとしてのみ達成できます。皇帝得点計算中に条件を満たした場合、皇帝報酬による場合も含めて、次の自分の手番まで待つ必要があります。'
       },
       es: {
-        pageTitle: 'Referencia GAH de cartas / losetas',
+        pageTitle: "Grand Austria Hotel",
         support: '☕ Coffee',
         tabs: ['Todo','Huéspedes','Personal','Objetivos','Losetas de Emperador','Celebridades (Vals)','Entradas de hotel (Vals)'],
         search: 'Buscar por número, nombre o texto',
@@ -3084,6 +3084,7 @@
       document.documentElement.lang = activeLang;
       document.documentElement.setAttribute('data-lang', activeLang);
       document.getElementById('page-title').textContent = t.pageTitle;
+      document.title = `BGW : ${t.pageTitle}`;
       if (supportLink) {
         const supportText = t.support || translations.en.support;
         supportLink.textContent = supportText;
@@ -3128,7 +3129,7 @@
     }
   </script>
   <footer style="text-align:center; margin:16px 0 12px; font-size:11px; color:#94a3b8;">
-    <a href="mailto:bgame.wiki@gmail.com" style="color: #e2e8f0; text-decoration: none;">ⓒossonida</a> 
+    <a href="mailto:bgame.wiki@gmail.com" style="color: #e2e8f0; text-decoration: none;">Any Feedback</a>
   </footer>
 <script src="../assets/setup-data.js"></script>
 <script src="../assets/setup.js"></script>

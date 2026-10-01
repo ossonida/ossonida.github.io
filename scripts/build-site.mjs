@@ -10,6 +10,7 @@ assert.equal(new Set(catalog.map(g=>g.id)).size,catalog.length,'Duplicate game I
 fs.writeFileSync('assets/games.js', '// Generated from data/games.json; run node scripts/build-site.mjs.\nwindow.BGW_GAMES = '+js(catalog)+';\n');
 for(const game of catalog.filter(g=>g.reference)) {
  const data=JSON.parse(fs.readFileSync(game.reference,'utf8'));
+ data.titles = game.titles;
  assert.equal(data.schemaVersion,1);
  assert.equal(data.id,game.id);
  assert.deepEqual(data.languages,game.languages);
@@ -53,7 +54,7 @@ ${alternates}
 <p class="count" id="count" role="status" aria-live="polite"></p></div>
 <div class="reference-results" id="results"></div><p class="empty" id="empty" hidden></p>
 <noscript>${fallback}</noscript>
-<footer><a href="mailto:bgame.wiki@gmail.com">bgame.wiki@gmail.com</a></footer>
+<footer>${data.communityBadge ? `<div class="community-badge"><img src="${esc(data.communityBadge)}" alt="Community Created Content" loading="lazy"></div>` : ""}<a href="mailto:bgame.wiki@gmail.com">Any Feedback</a></footer>
 </main>
 <dialog id="image-dialog" aria-labelledby="modal-title"><button type="button" id="modal-close">닫기</button><h2 id="modal-title"></h2><img id="modal-image" alt=""><p id="modal-text"></p></dialog>
 <script src="../assets/site.js"></script><script src="reference-data.js"></script><script src="../assets/reference.js"></script>

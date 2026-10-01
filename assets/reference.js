@@ -55,19 +55,22 @@
   function renderResults() {
     const copy = labels[language];
     const query = search.value.trim().normalize("NFKC").toLowerCase();
+    const selectedSection = data.categories.find(section => section.id === category);
     const filtered = data.items.filter(item => {
       const text = [item.number || "", ...Object.values(item.name), ...Object.values(item.text)].join(" ").normalize("NFKC").toLowerCase();
-      return (category === "all" || item.category === category) && (!query || text.includes(query));
+      const belongs = category === "all" || item.category === category || selectedSection?.items?.includes(item.id);
+      return belongs && (!query || text.includes(query));
     });
     const fragment = document.createDocumentFragment();
-    for (const section of data.categories) {
-      const items = filtered.filter(item => item.category === section.id);
+    const visibleSections = category === "all" ? data.categories.filter(section => !section.items) : data.categories.filter(section => section.id === category);
+    for (const section of visibleSections) {
+      const items = section.items ? section.items.map(id => filtered.find(item => item.id === id)).filter(Boolean) : filtered.filter(item => item.category === section.id);
       if (!items.length) continue;
       const card = el("section", undefined, "card"); card.dataset.section = section.id;
       const heading = el("div", undefined, "card-header");
       heading.append(el("h2", pick(section.name)), el("span", `${items.length} ${copy[2]}`, "count-tag"));
       const wrap = el("div", undefined, "table-wrap");
-      const allItems = data.items.filter(item => item.category === section.id);
+      const allItems = section.items ? section.items.map(id => data.items.find(item => item.id === id)).filter(Boolean) : data.items.filter(item => item.category === section.id);
       const withImage = allItems.some(item => item.image), withNumber = allItems.some(item => item.number);
       const table = el("table", undefined, `reference-table${withImage ? "" : " text-only"}`);
       const columns = [...(withImage ? [[copy[6],"image-col"]] : []), ...(withNumber ? [[copy[7],"number-col"]] : []), [copy[8],"name-col"], [copy[9],"text-col"]];
@@ -99,7 +102,9 @@
         row.append(el("td", pick(item.name)), el("td", pick(item.text)));
         tbody.append(row);
       }
-      table.append(colgroup, thead, tbody); wrap.append(table); card.append(heading, wrap); fragment.append(card);
+      table.append(colgroup, thead, tbody); wrap.append(table); card.append(heading);
+      if (section.description) card.append(el("p", pick(section.description), "section-note"));
+      card.append(wrap); fragment.append(card);
     }
     results.replaceChildren(fragment);
     get("count").textContent = `${filtered.length} / ${data.items.length} ${copy[2]}`;
@@ -108,8 +113,9 @@
   function applyLanguage(updateUrl = false) {
     const copy = labels[language];
     document.documentElement.lang = language;
-    document.title = `BGW : ${data.title}`;
-    get("page-title").textContent = data.title;
+    const title = data.titles?.[language] || data.title;
+    document.title = `BGW : ${title}`;
+    get("page-title").textContent = title;
     get("lang-icon").src = `../img/flag-${meta[language][1]}.svg`;
     get("lang-code").textContent = meta[language][0];
     langButton.setAttribute("aria-label", meta[language][2]);

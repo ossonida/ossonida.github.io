@@ -243,15 +243,18 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
           appendTranslatedText(status, "comingSoonAction");
         }
 
-        const tag = appendTranslatedText(document.createElement("span"), game.tagKey);
+        const tag = game.tag ? document.createElement("span") : appendTranslatedText(document.createElement("span"), game.tagKey);
+        if (game.tag) tag.dataset.gameCopy = `${game.id}:tag`;
         tag.className = "tag";
         meta.append(status, tag);
 
         const title = document.createElement("h2");
         title.className = "game-title";
         title.textContent = game.title;
+        title.dataset.gameId = game.id;
 
-        const desc = appendTranslatedText(document.createElement("p"), game.descKey);
+        const desc = game.description ? document.createElement("p") : appendTranslatedText(document.createElement("p"), game.descKey);
+        if (game.description) desc.dataset.gameCopy = `${game.id}:description`;
         desc.className = "game-desc";
 
         info.append(meta, title, desc);
@@ -291,6 +294,15 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
       const meta = languageMeta[language] || languageMeta.ko;
       document.documentElement.lang = language;
       document.title = copy.documentTitle;
+      document.querySelectorAll('[data-game-copy]').forEach(element => {
+        const [id, field] = element.dataset.gameCopy.split(':');
+        const game = window.BGW_GAMES.find(game => game.id === id);
+        element.textContent = game[field][language] || game[field].en;
+      });
+      document.querySelectorAll('.game-title[data-game-id]').forEach(element => {
+        const game = window.BGW_GAMES.find(game => game.id === element.dataset.gameId);
+        element.textContent = game.titles?.[language] || game.title;
+      });
       BGW.setLanguage(language, { updateUrl });
 
       document.querySelectorAll("[data-i18n]").forEach((element) => {

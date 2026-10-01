@@ -1,0 +1,39 @@
+[
+    {
+        "id":  "xenophobia",
+        "name":  "Xenophobia",
+        "author":  "Evil Steve",
+        "version":  "1.0.0",
+        "source":  "https://www.botcscripts.com/script/1727/1.0.0",
+        "sourceJson":  "https://www.botcscripts.com/api/scripts/2989/json/",
+        "roles":  [
+                      "librarian",
+                      "empath",
+                      "highpriestess",
+                      "balloonist",
+                      "dreamer",
+                      "snakecharmer",
+                      "monk",
+                      "gossip",
+                      "amnesiac",
+                      "philosopher",
+                      "huntsman",
+                      "magician",
+                      "virgin",
+                      "sweetheart",
+                      "plaguedoctor",
+                      "recluse",
+                      "mutant",
+                      "damsel",
+                      "barber",
+                      "godfather",
+                      "baron",
+                      "marionette",
+                      "organgrinder",
+                      "fanggu",
+                      "bureaucrat",
+                      "thief",
+                      "judge"
+                  ]
+    }
+]

@@ -83,3 +83,18 @@ Burgundy supports Korean, English, German, French, Japanese and Spanish for all
 51 entries, category labels and controls. Marrakesh additionally retains Chinese.
 Update every supported language in `burgundy/reference.json` when changing rules.
 Run the build and both validation scripts after changes.
+
+
+## Blood on the Clocktower
+
+`/clocktower/` uses the shared reference renderer: three base scripts (72 characters),
+15 Travellers, core rules, night orders, and setup counts for 5–15 non-Traveller players.
+Six languages come from TPI’s translation repository; they are not independently
+certified translations of each physical edition. The Carousel adds 72 characters, including Storm Catcher (classified as Loric in the app). Other experimental roles are excluded. Product names use publisher-confirmed titles; unverified localized expansion names retain The Carousel.
+
+Edit `clocktower/reference.json` and run `node scripts/build-site.mjs`.
+For a deliberate upstream refresh, download the files documented in
+`scripts/import-clocktower.py`, then run `python scripts/import-clocktower.py <snapshot-dir>`.
+The importer replaces this game's data and catalog entry; review the diff before publishing.
+Official resource URLs and the community content policy are recorded in the source metadata.
+Role icons are local snapshots; the page displays TPI's community-created-content badge.

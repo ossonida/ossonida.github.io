@@ -7,7 +7,7 @@
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #281a13 0%, #69472c 48%, #1c1310 100%)",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkQ_XkZBEZFWoyCta3_j6y-1hzT_Ai-oTVPqaKy-yqA&s",
+    "cover": "assets/covers/grand-austria-hotel.jpg",
     "id": "gah",
     "languages": [
       "ko",
@@ -16,17 +16,25 @@
       "fr",
       "ja",
       "es"
-    ]
+    ],
+    "titles": {
+      "ko": "그랜드 오스트리아 호텔",
+      "en": "Grand Austria Hotel",
+      "de": "Grand Austria Hotel",
+      "fr": "Grand Austria Hotel",
+      "ja": "グランドオーストリアホテル",
+      "es": "Grand Austria Hotel"
+    }
   },
   {
-    "title": "Marrakech",
+    "title": "Marrakesh",
     "href": "./marrakesh/",
     "tagKey": "marrakechTag",
     "descKey": "marrakechDesc",
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #3b1f16 0%, #a45d34 50%, #21110d 100%)",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQN-fKTcTmOeKT8C7gdimvF3jMB0oP1JlUxw&s",
+    "cover": "assets/covers/marrakesh.jpg",
     "id": "marrakesh",
     "languages": [
       "ko",
@@ -36,14 +44,23 @@
       "ja",
       "es",
       "zh"
-    ]
+    ],
+    "titles": {
+      "ko": "마라케시",
+      "en": "Marrakesh",
+      "de": "Marrakesh",
+      "fr": "Marrakesh",
+      "ja": "マラケシュ",
+      "es": "Marrakesh",
+      "zh": "马拉喀什"
+    }
   },
   {
     "title": "The Castles of Burgundy",
     "tagKey": "burgundyTag",
     "descKey": "burgundyDesc",
     "bg": "linear-gradient(135deg, #173540 0%, #6fa878 48%, #18251a 100%)",
-    "cover": "burgundy/images/cover.png",
+    "cover": "assets/covers/castles-of-burgundy.webp",
     "id": "burgundy",
     "href": "./burgundy/",
     "actionKey": "enterAction",
@@ -56,7 +73,57 @@
       "ja",
       "es"
     ],
-    "reference": "burgundy/reference.json"
+    "reference": "burgundy/reference.json",
+    "titles": {
+      "ko": "버건디의 성",
+      "en": "The Castles of Burgundy",
+      "de": "Die Burgen von Burgund",
+      "fr": "Les Châteaux de Bourgogne",
+      "ja": "ブルゴーニュの城",
+      "es": "Los castillos de Borgoña"
+    }
+  },
+  {
+    "id": "clocktower",
+    "title": "Blood on the Clocktower",
+    "titles": {
+      "ko": "시계탑에 흐른 피",
+      "en": "Blood on the Clocktower",
+      "de": "Blood on the Clocktower",
+      "fr": "Blood on the Clocktower",
+      "ja": "ブラッド・オン・ザ・クロックタワー",
+      "es": "Blood on the Clocktower"
+    },
+    "href": "./clocktower/",
+    "reference": "clocktower/reference.json",
+    "languages": [
+      "ko",
+      "en",
+      "de",
+      "fr",
+      "ja",
+      "es"
+    ],
+    "tag": {
+      "ko": "사회적 추리",
+      "en": "Social deduction",
+      "de": "Soziale Deduktion",
+      "fr": "Déduction sociale",
+      "ja": "正体隠匿",
+      "es": "Deducción social"
+    },
+    "description": {
+      "ko": "기본판 3개 시나리오 + 캐러셀 72종 · 역할·밤 순서·셋업",
+      "en": "Three base scripts + The Carousel: 72 characters · roles, night order and setup",
+      "de": "Drei Grundskripte + The Carousel: 72 Charaktere · Rollen, Nachtreihenfolge und Aufbau",
+      "fr": "Trois scénarios de base + The Carousel : 72 personnages · rôles, ordre nocturne et préparation",
+      "ja": "基本3台本 + The Carousel 72種 · 役職・夜の順番・セットアップ",
+      "es": "Tres guiones básicos + The Carousel: 72 personajes · roles, orden nocturno y preparación"
+    },
+    "actionKey": "enterAction",
+    "statusLabel": "OPEN",
+    "bg": "linear-gradient(135deg, #170d25, #6b1837, #150e21)",
+    "cover": "assets/covers/blood-on-the-clocktower.jpg"
   },
   {
     "title": "Civolution",
