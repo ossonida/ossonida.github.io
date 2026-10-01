@@ -39,3 +39,47 @@ The `.nojekyll` file keeps the site static. After this unified site is deployed,
 an administrator should disable the old game repositories' separate Pages
 publishing and verify that both game URLs serve the unified repository.
 Keep the old repositories for their history; do not delete them.
+
+## Adding a reference game
+
+The hub catalog lives in `data/games.json`. Hub styles and behavior are in
+`assets/hub.css` and `assets/hub.js`. Existing GAH and Marrakesh pages keep their
+specialized layouts; new games use `assets/reference.css` and `assets/reference.js`.
+
+1. Create `<game-id>/reference.json`, following `burgundy/reference.json` (schemaVersion 1).
+2. Add stable item IDs, categories, translated names/text, source page numbers, and
+   optional images under `<game-id>/images/`. Do not duplicate repeated PDF copies.
+3. Add a catalog entry with `id`, `title`, `href`, `languages`, `reference`, `cover`,
+   `bg`, `tagKey`, `descKey`, `actionKey` and `statusLabel`. Add the hub tag/description
+   translations to `assets/hub.js`.
+4. Run `node scripts/build-site.mjs`, then `node scripts/validate-site.mjs` and
+   `node scripts/validate-reference.mjs`.
+
+The build generates the catalog script, reference data script, game HTML, hub
+noscript links, and sitemap. Commit generated files too: GitHub Pages serves this
+repository as static files. No package install or server-side runtime is required.
+Use a local HTTP server for preview.
+
+### Burgundy source decisions
+
+`Small_Castles_of_Burgundy_Anniversary_Aid.pdf` has two pages, each with left/right
+copies of the same aid. The left copies provide 49 unique reference entries.
+Monastery tiles 16–23 and 29 stay grouped because the source presents one shared
+effect. Tiles 27/28, Crane and Geese have no image in this aid and remain text-only.
+Korean, English, German, French, Japanese and Spanish descriptions are available. English descriptions
+are lightly condensed except the individually extracted monastery text.
+`burgundy/source-crops.json` records page/rectangle coordinates for 37 image crops.
+The PDF is not copied into the published site. This is the supplied anniversary aid,
+not a claim to cover every later edition or expansion.
+
+### Shared layout and Burgundy languages
+
+All three game references load `assets/reference-layout.css` for the header,
+category tabs, search field and table appearance. Existing game-specific tables
+and functionality are retained. Burgundy uses the same section/table layout,
+flag language menu and image dialog, driven by `assets/reference.js`.
+
+Burgundy supports Korean, English, German, French, Japanese and Spanish for all
+51 entries, category labels and controls. Marrakesh additionally retains Chinese.
+Update every supported language in `burgundy/reference.json` when changing rules.
+Run the build and both validation scripts after changes.

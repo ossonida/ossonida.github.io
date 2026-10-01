@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://ossonida.github.io/</loc>
+  <url><loc>https://ossonida.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -9,10 +8,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/?lang=ko</loc>
+  <url><loc>https://ossonida.github.io/?lang=ko</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -20,10 +17,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/?lang=en</loc>
+  <url><loc>https://ossonida.github.io/?lang=en</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -31,10 +26,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/?lang=de</loc>
+  <url><loc>https://ossonida.github.io/?lang=de</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -42,10 +35,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/?lang=fr</loc>
+  <url><loc>https://ossonida.github.io/?lang=fr</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -53,10 +44,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/?lang=ja</loc>
+  <url><loc>https://ossonida.github.io/?lang=ja</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -64,10 +53,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/?lang=es</loc>
+  <url><loc>https://ossonida.github.io/?lang=es</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/?lang=de" />
@@ -75,10 +62,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/</loc>
+  <url><loc>https://ossonida.github.io/gah/</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -86,10 +71,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/?lang=ko</loc>
+  <url><loc>https://ossonida.github.io/gah/?lang=ko</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -97,10 +80,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/?lang=en</loc>
+  <url><loc>https://ossonida.github.io/gah/?lang=en</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -108,10 +89,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/?lang=de</loc>
+  <url><loc>https://ossonida.github.io/gah/?lang=de</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -119,10 +98,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/?lang=fr</loc>
+  <url><loc>https://ossonida.github.io/gah/?lang=fr</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -130,10 +107,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/?lang=ja</loc>
+  <url><loc>https://ossonida.github.io/gah/?lang=ja</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -141,10 +116,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/gah/?lang=es</loc>
+  <url><loc>https://ossonida.github.io/gah/?lang=es</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/gah/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gah/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/gah/?lang=de" />
@@ -152,10 +125,8 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/gah/?lang=ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/gah/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gah/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -164,10 +135,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=ko</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=ko</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -176,10 +145,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=en</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=en</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -188,10 +155,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=de</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=de</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -200,10 +165,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=fr</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=fr</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -212,10 +175,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=ja</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=ja</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -224,10 +185,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=es</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=es</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -236,10 +195,8 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://ossonida.github.io/marrakesh/?lang=zh</loc>
+  <url><loc>https://ossonida.github.io/marrakesh/?lang=zh</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/marrakesh/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/marrakesh/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/marrakesh/?lang=de" />
@@ -248,6 +205,68 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/marrakesh/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ossonida.github.io/marrakesh/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/marrakesh/" />
-    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/?lang=de</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/?lang=fr</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/?lang=ja</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
+  </url>
+  <url><loc>https://ossonida.github.io/burgundy/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/burgundy/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/burgundy/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ossonida.github.io/burgundy/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ossonida.github.io/burgundy/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ossonida.github.io/burgundy/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/burgundy/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/burgundy/" />
   </url>
 </urlset>

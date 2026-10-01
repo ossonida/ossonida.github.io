@@ -4,6 +4,9 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 const root=process.cwd(), origin='https://ossonida.github.io';
 const read=p=>fs.readFileSync(p,'utf8');
+const catalog=JSON.parse(read('data/games.json'));
+const referenceGames=catalog.filter(g=>g.reference);
+const pages=['index.html',...catalog.filter(g=>g.href).map(g=>g.id+'/index.html')];
 let count=0;
 function check(value,base){
  if(!value||value.includes('${'))return;
@@ -17,7 +20,7 @@ function check(value,base){
  }
  count++;
 }
-for(const file of ['index.html','gah/index.html','marrakesh/index.html']){
+for(const file of pages){
  const html=read(file), base=new URL(file,origin+'/');
  for(const [tag] of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/gi)){
   for(const [,value] of tag.matchAll(/(?:href|src)="([^"]+)"/g))check(value,base);
@@ -26,13 +29,18 @@ for(const file of ['index.html','gah/index.html','marrakesh/index.html']){
   if(attrs.includes('application/ld+json'))JSON.parse(code);else new vm.Script(code,{filename:file});
  }
  for(const [,value] of html.matchAll(/["']((?:\.\.?\/|img\/)[^"'<>\s]+)["']/g))check(value,base);
- assert.ok(html.indexOf('assets/site.js')<html.indexOf('BGW.getLanguage('));
+ assert.ok(html.includes('assets/site.js'));
+ for(const [,src] of html.matchAll(/<script[^>]+src="([^"]+)"/g)){if(!src.startsWith('http'))new vm.Script(read(path.join(path.dirname(file),src)),{filename:src});}
 }
 const data=vm.createContext({window:{}});
 for(const file of ['marrakesh/reference-data.js','marrakesh/reference-translations.js'])vm.runInContext(read(file),data);
 for(const rows of Object.values(data.window.referenceData))for(const item of rows)if(item.image)check(item.image,origin+'/marrakesh/');
 const urls=[...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-assert.equal(new Set(urls).size,22);urls.forEach(u=>check(u,origin));
+const expectedUrls=7+catalog.filter(g=>g.href).reduce((n,g)=>n+1+g.languages.length,0);
+assert.equal(urls.length,expectedUrls);assert.equal(new Set(urls).size,expectedUrls);urls.forEach(u=>check(u,origin));
+for(const game of referenceGames){const d=JSON.parse(read(game.reference));assert.equal(new Set(d.items.map(i=>i.id)).size,d.items.length);for(const item of d.items){if(item.image)check(item.image,origin+'/'+game.id+'/');}}
+const hubContext=vm.createContext({window:{}});vm.runInContext(read('assets/games.js'),hubContext);assert.equal(JSON.stringify(hubContext.window.BGW_GAMES),JSON.stringify(catalog));
+for(const game of catalog.filter(g=>g.href)){check(game.href,origin+'/');if(game.cover)check(game.cover,origin+'/');}
 const langs=['ko','en','de','fr','ja','es'];
 function env(href,links=[],prefs={},blocked=false){
  const location=new URL(href),store=new Map(Object.entries(prefs));
@@ -55,4 +63,4 @@ for(const prefix of ['/','/preview/'])for(const lang of langs)for(const game of 
 }
 const home=link('../'),zh=env(origin+'/marrakesh/?lang=zh',[home]);
 assert.equal(zh.api.getLanguage([...langs,'zh']),'zh');zh.api.setLanguage('zh');assert.equal(home.href,origin+'/?lang=en');
-console.log(`PASS: 3 pages, JavaScript/JSON syntax, ${count} local references (including dynamic images), 22 sitemap URLs, language round trips and blocked storage.`);
+console.log(`PASS: ${pages.length} pages, JavaScript/JSON syntax, ${count} local references (including dynamic images), ${urls.length} sitemap URLs, language round trips and blocked storage.`);

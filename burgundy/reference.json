@@ -1,0 +1,1393 @@
+{
+  "schemaVersion": 1,
+  "id": "burgundy",
+  "title": "The Castles of Burgundy",
+  "languages": [
+    "ko",
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "es"
+  ],
+  "description": {
+    "ko": "기념판 플레이 보조 자료 · 행동, 건물, 수도원과 점수",
+    "en": "Anniversary player aid · actions, buildings, monastery tiles and scoring",
+    "de": "Jubiläumsausgabe · Aktionen, Gebäude, Klöster und Wertung",
+    "fr": "Édition anniversaire · actions, bâtiments, monastères et décompte",
+    "ja": "記念版 · アクション、建物、修道院、得点",
+    "es": "Edición aniversario · acciones, edificios, monasterios y puntuación"
+  },
+  "source": {
+    "name": "Small_Castles_of_Burgundy_Anniversary_Aid.pdf",
+    "pages": 2,
+    "note": {
+      "ko": "제공된 2페이지 요약 자료 기준입니다. 좌우 반복 내용은 한 번만 수록하고, 수도원 16–23·29는 원문처럼 묶었습니다.",
+      "en": "Based on the supplied two-page aid. Left/right duplicates appear once; monastery tiles 16–23 and 29 remain grouped."
+    }
+  },
+  "categories": [
+    {
+      "id": "flow",
+      "name": {
+        "ko": "진행 순서",
+        "en": "Game flow",
+        "de": "Spielablauf",
+        "fr": "Déroulement",
+        "ja": "ゲームの流れ",
+        "es": "Desarrollo"
+      }
+    },
+    {
+      "id": "actions",
+      "name": {
+        "ko": "행동",
+        "en": "Actions",
+        "de": "Aktionen",
+        "fr": "Actions",
+        "ja": "アクション",
+        "es": "Acciones"
+      }
+    },
+    {
+      "id": "tiles",
+      "name": {
+        "ko": "기본 타일",
+        "en": "Basic tiles",
+        "de": "Grundplättchen",
+        "fr": "Tuiles de base",
+        "ja": "基本タイル",
+        "es": "Losetas básicas"
+      }
+    },
+    {
+      "id": "buildings",
+      "name": {
+        "ko": "건물 · 고유 번호 없음",
+        "en": "Buildings · unnumbered",
+        "de": "Gebäude · ohne Nummer",
+        "fr": "Bâtiments · sans numéro",
+        "ja": "建物・番号なし",
+        "es": "Edificios · sin número"
+      }
+    },
+    {
+      "id": "monastery",
+      "name": {
+        "ko": "수도원",
+        "en": "Monastery",
+        "de": "Klöster",
+        "fr": "Monastères",
+        "ja": "修道院",
+        "es": "Monasterios"
+      }
+    },
+    {
+      "id": "special",
+      "name": {
+        "ko": "추가 타일",
+        "en": "Extra tiles",
+        "de": "Zusatzplättchen",
+        "fr": "Tuiles supplémentaires",
+        "ja": "追加タイル",
+        "es": "Losetas adicionales"
+      }
+    },
+    {
+      "id": "scoring",
+      "name": {
+        "ko": "점수",
+        "en": "Scoring",
+        "de": "Wertung",
+        "fr": "Décompte",
+        "ja": "得点",
+        "es": "Puntuación"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "game-length",
+      "category": "flow",
+      "name": {
+        "ko": "게임 길이",
+        "en": "Game length",
+        "de": "Spieldauer",
+        "fr": "Durée",
+        "ja": "ゲームの長さ",
+        "es": "Duración"
+      },
+      "text": {
+        "ko": "A~E의 5개 단계로 진행하며 각 단계는 5라운드입니다.",
+        "en": "The game lasts 5 phases (A–E), each consisting of 5 rounds.",
+        "de": "5 Phasen (A–E), jeweils 5 Durchgänge.",
+        "fr": "5 phases (A–E), chacune composée de 5 manches.",
+        "ja": "A～Eの5フェイズ。各フェイズは5ラウンドです。",
+        "es": "5 fases (A–E), cada una con 5 rondas."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "phase-start",
+      "category": "flow",
+      "name": {
+        "ko": "단계 시작",
+        "en": "Start of phase",
+        "de": "Phasenbeginn",
+        "fr": "Début de phase",
+        "ja": "フェイズ開始",
+        "es": "Inicio de fase"
+      },
+      "text": {
+        "ko": "게임판에 남은 육각 타일을 제거하고 무작위로 새 타일을 채웁니다. 현재 단계의 상품 타일 5개를 준비합니다.",
+        "en": "Remove all remaining hex tiles and randomly draw new ones. Place 5 goods tiles for the current phase.",
+        "de": "Übrige Sechseckplättchen entfernen, zufällig neue auslegen und die 5 Waren der aktuellen Phase bereitstellen.",
+        "fr": "Retirez les tuiles hexagonales restantes et remplacez-les aléatoirement. Préparez les 5 marchandises de la phase.",
+        "ja": "残った六角タイルを取り除き、無作為に新しいタイルを補充します。そのフェイズの商品タイル5枚を用意します。",
+        "es": "Retira las losetas hexagonales restantes y repónlas al azar. Prepara las 5 mercancías de la fase actual."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "phase-end",
+      "category": "flow",
+      "name": {
+        "ko": "단계 종료",
+        "en": "End of phase",
+        "de": "Phasenende",
+        "fr": "Fin de phase",
+        "ja": "フェイズ終了",
+        "es": "Fin de fase"
+      },
+      "text": {
+        "ko": "영지의 광산마다 은화 1개를 받습니다. 수도원 2번이 있으면 광산마다 일꾼 1개도 받습니다.",
+        "en": "Receive 1 silver coin per mine. With monastery #2, also receive 1 worker per mine.",
+        "de": "1 Silberling pro Mine im Fürstentum; mit Kloster 2 zusätzlich 1 Arbeiter pro Mine.",
+        "fr": "Recevez 1 pièce d’argent par mine du domaine, et avec le monastère 2, aussi 1 ouvrier par mine.",
+        "ja": "領地の鉱山1枚につき銀貨1枚を得ます。修道院2番があれば鉱山ごとに労働者1個も得ます。",
+        "es": "Recibe 1 moneda de plata por mina del ducado; con el monasterio 2, también 1 trabajador por mina."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "round",
+      "category": "flow",
+      "name": {
+        "ko": "라운드 순서",
+        "en": "Round sequence",
+        "de": "Durchgang",
+        "fr": "Manche",
+        "ja": "ラウンドの流れ",
+        "es": "Ronda"
+      },
+      "text": {
+        "ko": "선 플레이어가 흰 주사위를 굴려 해당 숫자의 저장소에 상품 타일을 놓습니다. 모두 주사위 2개를 동시에 굴린 뒤 순서대로 차례를 진행합니다. 다리의 순서는 오른쪽부터 왼쪽, 같은 칸에서는 위부터 아래입니다.",
+        "en": "Starting player rolls the white die and places a goods tile in the matching depot. All players roll their 2 dice simultaneously, then take complete turns in order: right to left and top to bottom on the bridge.",
+        "de": "Startspieler würfelt weiß und legt eine Ware ins passende Depot. Alle würfeln gleichzeitig ihre 2 Würfel. Vollständige Züge in Brückenreihenfolge: rechts nach links, bei Stapeln oben nach unten.",
+        "fr": "Le premier joueur lance le dé blanc et place une marchandise dans le dépôt indiqué. Tous lancent leurs 2 dés ensemble, puis jouent leur tour complet dans l’ordre du pont : de droite à gauche, et de haut en bas dans une pile.",
+        "ja": "先手が白いダイスを振り、対応する集積所に商品を置きます。全員が自分のダイス2個を同時に振り、橋の右から左、同じマスでは上から下の順に手番をすべて行います。",
+        "es": "El primer jugador lanza el dado blanco y coloca una mercancía en el depósito indicado. Todos lanzan sus 2 dados simultáneamente y realizan turnos completos según el puente: de derecha a izquierda y de arriba abajo en las pilas."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "turn",
+      "category": "flow",
+      "name": {
+        "ko": "내 차례",
+        "en": "Player turn",
+        "de": "Spielzug",
+        "fr": "Tour",
+        "ja": "自分の手番",
+        "es": "Turno"
+      },
+      "text": {
+        "ko": "주사위마다 행동 1번씩 총 2번 행동합니다. 추가로 검은 저장소에서 선택적으로 1번 구매할 수 있습니다.",
+        "en": "Two actions, one per die, plus one optional black depot purchase.",
+        "de": "Zwei Aktionen, eine pro Würfel, und optional ein Kauf im schwarzen Depot.",
+        "fr": "Deux actions, une par dé, plus un achat facultatif au dépôt noir.",
+        "ja": "ダイス1個につき1アクション、合計2アクション。追加で黒い集積所から任意で1回購入できます。",
+        "es": "Dos acciones, una por dado, más una compra opcional en el depósito negro."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "adjust-die",
+      "category": "flow",
+      "name": {
+        "ko": "주사위 조정",
+        "en": "Adjust a die",
+        "de": "Würfel ändern",
+        "fr": "Modifier un dé",
+        "ja": "ダイスの調整",
+        "es": "Modificar un dado"
+      },
+      "text": {
+        "ko": "일꾼 1개당 주사위 결과를 +1 또는 −1 조정합니다. 1과 6 사이에서도 양방향으로 바꿀 수 있습니다.",
+        "en": "Each worker adjusts a die by +1 or −1, including wrapping between 1 and 6.",
+        "de": "Pro Arbeiter +1 oder −1; Wechsel zwischen 1 und 6 möglich.",
+        "fr": "Chaque ouvrier modifie un dé de +1 ou −1, y compris entre 1 et 6.",
+        "ja": "労働者1個につき出目を＋1か−1します。1と6の間も変更できます。",
+        "es": "Cada trabajador cambia un dado en +1 o −1, incluido el paso entre 1 y 6."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "take-tile",
+      "category": "actions",
+      "name": {
+        "ko": "타일 가져오기",
+        "en": "Take a hex tile",
+        "de": "Plättchen nehmen",
+        "fr": "Prendre une tuile",
+        "ja": "タイルを取る",
+        "es": "Tomar una loseta"
+      },
+      "text": {
+        "ko": "주사위 숫자의 저장소에서 육각 타일 1개를 가져와 개인판의 빈 보관 칸에 놓습니다.",
+        "en": "Take one hex tile from the depot matching the die and place it in an empty storage space.",
+        "de": "Ein Plättchen aus dem Depot der Würfelzahl auf einen freien Lagerplatz nehmen.",
+        "fr": "Prenez une tuile du dépôt correspondant au dé et placez-la sur un emplacement libre de votre réserve.",
+        "ja": "出目に対応する集積所から六角タイル1枚を取り、個人ボードの空いている保管マスに置きます。",
+        "es": "Toma una loseta del depósito correspondiente al dado y colócala en un espacio libre de tu reserva."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/take-tile.png"
+    },
+    {
+      "id": "place-tile",
+      "category": "actions",
+      "name": {
+        "ko": "타일 배치하기",
+        "en": "Place a hex tile",
+        "de": "Plättchen einsetzen",
+        "fr": "Placer une tuile",
+        "ja": "タイルを配置する",
+        "es": "Colocar una loseta"
+      },
+      "text": {
+        "ko": "보관 칸의 타일을 영지에 놓습니다. 칸의 숫자는 주사위와, 색은 타일과 일치해야 하며 이미 놓인 타일에 인접해야 합니다.",
+        "en": "Place a stored tile in an empty duchy space matching the die and tile color, adjacent to existing tiles.",
+        "de": "Ein gelagertes Plättchen auf ein freies Feld setzen: Zahl passend zum Würfel, Farbe passend zum Plättchen, angrenzend an ein belegtes Feld.",
+        "fr": "Placez une tuile de réserve sur une case vide : numéro correspondant au dé, couleur identique et adjacence à une tuile déjà posée.",
+        "ja": "保管中のタイルを領地の空きマスに置きます。数字は出目、色はタイルと一致し、配置済みタイルに隣接していなければなりません。",
+        "es": "Coloca una loseta de reserva en un espacio vacío del ducado: número igual al dado, color correspondiente y adyacente a una loseta colocada."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/place-tile.png"
+    },
+    {
+      "id": "sell-goods",
+      "category": "actions",
+      "name": {
+        "ko": "상품 판매",
+        "en": "Sell goods",
+        "de": "Waren verkaufen",
+        "fr": "Vendre des marchandises",
+        "ja": "商品の売却",
+        "es": "Vender mercancías"
+      },
+      "text": {
+        "ko": "주사위 숫자에 해당하는 종류의 상품을 전부 팝니다. 은화는 판매 전체에 대해 1개, 점수는 상품 타일마다 플레이어 수만큼 2~4점을 받습니다.",
+        "en": "Sell all goods of the type matching the die. Receive 1 silver coin total, plus 2–4 VP per goods tile with 2–4 players.",
+        "de": "Alle Waren der passenden Würfelzahl verkaufen: insgesamt 1 Silberling und je Ware 2/3/4 Punkte bei 2/3/4 Spielern.",
+        "fr": "Vendez toutes les marchandises du type indiqué par le dé : 1 pièce au total et 2/3/4 PV par tuile à 2/3/4 joueurs.",
+        "ja": "出目に対応する種類の商品をすべて売ります。銀貨は合計1枚、商品1枚ごとに2／3／4人なら2／3／4点を得ます。",
+        "es": "Vende todas las mercancías del tipo indicado por el dado: 1 moneda en total y 2/3/4 PV por loseta con 2/3/4 jugadores."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/sell-goods.png"
+    },
+    {
+      "id": "take-workers",
+      "category": "actions",
+      "name": {
+        "ko": "일꾼 받기",
+        "en": "Take workers",
+        "de": "Arbeiter nehmen",
+        "fr": "Prendre des ouvriers",
+        "ja": "労働者を得る",
+        "es": "Tomar trabajadores"
+      },
+      "text": {
+        "ko": "주사위 숫자와 관계없이 일꾼 2개를 받습니다.",
+        "en": "Take 2 workers regardless of the die result.",
+        "de": "Mit beliebiger Würfelzahl 2 Arbeiter nehmen.",
+        "fr": "Prenez 2 ouvriers avec n’importe quelle valeur de dé.",
+        "ja": "出目に関係なく労働者2個を得ます。",
+        "es": "Toma 2 trabajadores con cualquier resultado del dado."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/take-workers.png"
+    },
+    {
+      "id": "black-depot",
+      "category": "actions",
+      "name": {
+        "ko": "검은 저장소 구매",
+        "en": "Black depot purchase",
+        "de": "Schwarzes Depot",
+        "fr": "Dépôt noir",
+        "ja": "黒い集積所で購入",
+        "es": "Depósito negro"
+      },
+      "text": {
+        "ko": "차례마다 한 번 은화 2개를 내고 검은 저장소의 타일 1개를 살 수 있습니다.",
+        "en": "Once per turn, pay 2 silver coins to buy one tile from the black depot.",
+        "de": "Einmal pro Zug für 2 Silberlinge ein Plättchen aus dem schwarzen Depot kaufen.",
+        "fr": "Une fois par tour, achetez une tuile au dépôt noir pour 2 pièces d’argent.",
+        "ja": "手番ごとに1回、銀貨2枚で黒い集積所のタイル1枚を買えます。",
+        "es": "Una vez por turno, paga 2 monedas para comprar una loseta del depósito negro."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/black-depot.png"
+    },
+    {
+      "id": "mine",
+      "category": "tiles",
+      "name": {
+        "ko": "광산 · 회색",
+        "en": "Mine · gray",
+        "de": "Mine · grau",
+        "fr": "Mine · gris",
+        "ja": "鉱山・灰色",
+        "es": "Mina · gris"
+      },
+      "text": {
+        "ko": "각 단계 종료 시 영지의 광산마다 은화 1개를 받습니다.\n\n배치 즉시 받는 은화는 없습니다. 단계 종료 시에만 받습니다.",
+        "en": "Gain 1 silver coin per mine at the end of each phase.\n\nPlacing a mine grants no immediate coins; income is received at phase end.",
+        "de": "Pro Mine am Phasenende 1 Silberling. Beim Einsetzen keine sofortige Einnahme.",
+        "fr": "1 pièce par mine à chaque fin de phase. Aucun revenu immédiat lors de la pose.",
+        "ja": "各フェイズ終了時に鉱山1枚につき銀貨1枚。配置直後の収入はありません。",
+        "es": "Recibe 1 moneda por mina al final de cada fase. No produce ingresos inmediatos al colocarla."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/mine.png"
+    },
+    {
+      "id": "ship",
+      "category": "tiles",
+      "name": {
+        "ko": "배 · 파란색",
+        "en": "Ship · blue",
+        "de": "Schiff · blau",
+        "fr": "Bateau · bleu",
+        "ja": "船・青色",
+        "es": "Barco · azul"
+      },
+      "text": {
+        "ko": "원하는 저장소 한 곳의 상품 타일을 모두 가져와 상품 보관 칸에 놓고, 다리의 순서 말을 1칸 전진합니다.\n\n상품을 가져올 저장소는 배를 놓는 데 사용한 주사위 숫자와 무관하게 고릅니다. 상품은 최대 3종류만 보관하며 같은 종류는 쌓습니다. 보관할 수 없는 상품은 저장소에 남깁니다. 이동한 다리 칸에 말이 있으면 그 위에 놓습니다.",
+        "en": "Take all goods from one depot into goods storage, then advance one space on the bridge.\n\nChoose the goods depot independently of the placement die. Store at most three goods types, stacking matching goods; goods you cannot store remain in the depot. Place your turn marker on top of any markers at its new space.",
+        "de": "Alle lagerbaren Waren eines beliebigen Depots nehmen, unabhängig vom Würfel. Höchstens drei Warensorten lagern; gleiche Sorten stapeln, nicht lagerbare Waren bleiben liegen. Auf der Brücke ein Feld vorziehen und auf vorhandene Marker setzen.",
+        "fr": "Prenez les marchandises stockables d’un dépôt au choix, indépendamment du dé. Stockez au maximum trois types, en empilant les types identiques ; les autres restent au dépôt. Avancez d’une case sur le pont et placez votre marqueur au-dessus des marqueurs présents.",
+        "ja": "出目とは無関係に集積所1か所を選び、保管可能な商品をすべて取ります。商品は最大3種類で、同種は重ねます。保管できない商品は集積所に残します。橋のコマを1マス進め、他のコマがあればその上に置きます。",
+        "es": "Toma las mercancías que puedas almacenar de un depósito a tu elección, independientemente del dado. Almacena hasta tres tipos; apila los iguales y deja las mercancías que no quepan. Avanza una casilla en el puente y coloca tu marcador encima de los presentes."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/ship.png"
+    },
+    {
+      "id": "castle",
+      "category": "tiles",
+      "name": {
+        "ko": "성 · 진한 초록색",
+        "en": "Castle · dark green",
+        "de": "Burg · dunkelgrün",
+        "fr": "Château · vert foncé",
+        "ja": "城・濃緑色",
+        "es": "Castillo · verde oscuro"
+      },
+      "text": {
+        "ko": "즉시 추가 행동 1번을 합니다.\n\n원하는 주사위 숫자 하나가 있는 것처럼 행동을 선택합니다. 추가 주사위를 소비하지 않습니다.",
+        "en": "Immediately take an additional action.\n\nChoose any die result for the extra action; do not spend another die.",
+        "de": "Sofort eine zusätzliche Aktion mit frei gewählter Würfelzahl, ohne einen weiteren Würfel auszugeben.",
+        "fr": "Effectuez immédiatement une action supplémentaire avec une valeur de dé au choix, sans utiliser un autre dé.",
+        "ja": "任意の出目があるものとして、追加アクション1回を直ちに行います。追加のダイスは消費しません。",
+        "es": "Realiza inmediatamente una acción adicional con un resultado de dado a tu elección, sin gastar otro dado."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/castle.png"
+    },
+    {
+      "id": "livestock",
+      "category": "tiles",
+      "name": {
+        "ko": "가축 · 연한 초록색",
+        "en": "Livestock · light green",
+        "de": "Tiere · hellgrün",
+        "fr": "Animaux · vert clair",
+        "ja": "家畜・薄緑色",
+        "es": "Ganado · verde claro"
+      },
+      "text": {
+        "ko": "놓은 타일의 가축 수만큼 즉시 점수를 받습니다. 같은 목초지에 있는 같은 종류의 기존 가축도 다시 계산합니다. 서로 직접 인접할 필요는 없지만 다른 목초지의 가축은 제외합니다.\n\n거위 2마리: 배치 시 2점에 더해 같은 목초지의 가축 한 종류를 골라 추가로 계산합니다. 이후 같은 목초지에 다른 가축 타일을 놓을 때마다 거위도 2점으로 다시 계산합니다. 종료 시 수도원 24번에서는 별도의 종류입니다.",
+        "en": "Immediately score the animals on the new tile plus existing animals of the same type in the same pasture. Direct adjacency is not required; animals in other pastures do not count.\n\nTwo geese: on placement, score 2 VP plus animals of one chosen type in the same pasture. Later livestock placements in that pasture score the geese again for 2 VP. They are a separate type for monastery #24 at game end.",
+        "de": "Neue Tiere und vorhandene Tiere gleicher Art derselben Weide werten. Direkte Nachbarschaft ist unnötig; andere Weiden zählen nicht. Gänse: beim Einsetzen 2 Punkte plus Tiere einer gewählten Art dieser Weide. Bei späteren Tierplättchen dort erneut 2 Punkte für die Gänse. Für Kloster 24 sind sie eine eigene Tierart.",
+        "fr": "Marquez les nouveaux animaux et ceux de même espèce déjà dans le même pâturage. Aucune adjacence directe requise ; les autres pâturages ne comptent pas. Deux oies : à la pose, 2 PV plus les animaux d’une espèce choisie du pâturage. Toute pose ultérieure d’animaux dans ce pâturage recompte les oies pour 2 PV. Espèce distincte pour le monastère 24 à la fin.",
+        "ja": "新しいタイルの家畜と、同じ牧草地にある同種の家畜を得点します。直接隣接していなくても構いませんが、別の牧草地は数えません。ガチョウ2羽は配置時に2点と、同じ牧草地の1種類を選んだ家畜の点数を得ます。以後その牧草地に家畜を置くたび、ガチョウも再び2点。終了時の修道院24番では独立した種類です。",
+        "es": "Puntúa los animales nuevos y los del mismo tipo ya presentes en el mismo pasto. No necesitan ser adyacentes; otros pastos no cuentan. Dos gansos: al colocarlos, 2 PV más los animales de un tipo elegido de ese pasto. Al colocar después ganado en ese pasto, los gansos vuelven a dar 2 PV. Son un tipo distinto para el monasterio 24 al final."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/livestock.png"
+    },
+    {
+      "id": "market",
+      "category": "buildings",
+      "name": {
+        "ko": "시장",
+        "en": "Market",
+        "de": "Markt",
+        "fr": "Marché",
+        "ja": "市場",
+        "es": "Mercado"
+      },
+      "text": {
+        "ko": "게임판에서 가축 또는 배 타일 1개를 가져옵니다.\n\n6개 일반 저장소에서만 고릅니다. 중앙 검은 저장소는 제외하며, 가져온 타일은 영지에 바로 놓지 않고 개인판의 빈 보관 칸에 놓습니다.",
+        "en": "Take a livestock or ship tile from the game board.\n\nChoose only from the six regular depots, not the central black depot. Put the tile into an empty storage space, not directly into the duchy.",
+        "de": "Ein Tier- oder Schiffsplättchen aus einem der sechs normalen Depots auf einen freien Lagerplatz nehmen. Schwarzes Depot ausgeschlossen; nicht direkt ins Fürstentum setzen.",
+        "fr": "Prenez un animal ou bateau dans l’un des six dépôts ordinaires, hors dépôt noir, et mettez-le dans une réserve libre, jamais directement dans le domaine.",
+        "ja": "黒い集積所を除く通常の6か所から家畜か船を1枚取り、空き保管マスに置きます。領地へ直接は置けません。",
+        "es": "Toma ganado o un barco de uno de los seis depósitos normales, nunca del negro, y colócalo en una reserva libre, no directamente en el ducado."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/market.png"
+    },
+    {
+      "id": "workshop",
+      "category": "buildings",
+      "name": {
+        "ko": "목공소",
+        "en": "Carpenter’s Workshop",
+        "de": "Schreinerei",
+        "fr": "Atelier de charpentier",
+        "ja": "大工の作業場",
+        "es": "Carpintería"
+      },
+      "text": {
+        "ko": "게임판에서 원하는 건물 타일 1개를 가져옵니다.\n\n6개 일반 저장소에서만 고릅니다. 중앙 검은 저장소는 제외하며, 가져온 타일은 영지에 바로 놓지 않고 개인판의 빈 보관 칸에 놓습니다.",
+        "en": "Take a building of your choice from the game board.\n\nChoose only from the six regular depots, not the central black depot. Put the tile into an empty storage space, not directly into the duchy.",
+        "de": "Ein Gebäude aus einem der sechs normalen Depots auf einen freien Lagerplatz nehmen. Schwarzes Depot ausgeschlossen; nicht direkt einsetzen.",
+        "fr": "Prenez un bâtiment dans l’un des six dépôts ordinaires, hors dépôt noir, et mettez-le dans une réserve libre, jamais directement dans le domaine.",
+        "ja": "黒い集積所を除く通常の6か所から建物1枚を取り、空き保管マスに置きます。領地へ直接は置けません。",
+        "es": "Toma un edificio de uno de los seis depósitos normales, nunca del negro, y colócalo en una reserva libre, no directamente en el ducado."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/workshop.png"
+    },
+    {
+      "id": "church",
+      "category": "buildings",
+      "name": {
+        "ko": "교회",
+        "en": "Church",
+        "de": "Kirche",
+        "fr": "Église",
+        "ja": "教会",
+        "es": "Iglesia"
+      },
+      "text": {
+        "ko": "게임판에서 광산, 수도원 또는 성 타일 1개를 가져옵니다.\n\n6개 일반 저장소에서만 고릅니다. 중앙 검은 저장소는 제외하며, 가져온 타일은 영지에 바로 놓지 않고 개인판의 빈 보관 칸에 놓습니다.",
+        "en": "Take a mine, monastery or castle tile from the game board.\n\nChoose only from the six regular depots, not the central black depot. Put the tile into an empty storage space, not directly into the duchy.",
+        "de": "Eine Mine, ein Kloster oder eine Burg aus einem der sechs normalen Depots auf einen freien Lagerplatz nehmen. Schwarzes Depot ausgeschlossen.",
+        "fr": "Prenez une mine, un monastère ou un château dans l’un des six dépôts ordinaires, hors dépôt noir, et mettez-le dans une réserve libre.",
+        "ja": "黒い集積所を除く通常の6か所から鉱山・修道院・城のいずれか1枚を取り、空き保管マスに置きます。",
+        "es": "Toma una mina, monasterio o castillo de uno de los seis depósitos normales, nunca del negro, y colócalo en una reserva libre."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/church.png"
+    },
+    {
+      "id": "warehouse",
+      "category": "buildings",
+      "name": {
+        "ko": "창고",
+        "en": "Warehouse",
+        "de": "Warenhaus",
+        "fr": "Entrepôt",
+        "ja": "倉庫",
+        "es": "Almacén"
+      },
+      "text": {
+        "ko": "원하는 종류의 상품을 판매합니다.\n\n추가 주사위 없이 선택한 종류의 상품을 전부 판매합니다. 은화는 총 1개, 점수는 상품 타일마다 플레이어 수만큼 2~4점을 받으며 관련 수도원 효과도 적용합니다.",
+        "en": "Sell a goods type of your choice.\n\nSell the entire chosen stack without another die. Gain 1 coin total and 2–4 VP per tile according to player count; applicable monastery effects still apply.",
+        "de": "Ohne weiteren Würfel den ganzen Stapel einer eigenen Warensorte verkaufen: 1 Silberling insgesamt, je Ware 2/3/4 Punkte bei 2/3/4 Spielern. Passende Klostereffekte gelten.",
+        "fr": "Sans autre dé, vendez toute la pile d’un type de marchandise possédé : 1 pièce au total, 2/3/4 PV par tuile à 2/3/4 joueurs. Appliquez les effets de monastère correspondants.",
+        "ja": "追加のダイスなしで、所持する1種類の商品をすべて売ります。銀貨は合計1枚、商品1枚につき2／3／4人なら2／3／4点。対応する修道院効果も適用します。",
+        "es": "Sin otro dado, vende la pila completa de un tipo de mercancía que poseas: 1 moneda en total y 2/3/4 PV por loseta con 2/3/4 jugadores. Aplica los efectos pertinentes de monasterio."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/warehouse.png"
+    },
+    {
+      "id": "boarding-house",
+      "category": "buildings",
+      "name": {
+        "ko": "하숙집",
+        "en": "Boarding House",
+        "de": "Gasthof",
+        "fr": "Pension",
+        "ja": "下宿屋",
+        "es": "Pensión"
+      },
+      "text": {
+        "ko": "일꾼 4개를 받습니다.\n\n수도원 13·14번의 일꾼 받기 행동 보너스는 하숙집에 적용하지 않습니다.",
+        "en": "Take 4 workers.\n\nMonastery #13 and #14 worker-action bonuses do not apply to the boarding house.",
+        "de": "4 Arbeiter nehmen. Kloster 13 und 14 gelten hier nicht.",
+        "fr": "Prenez 4 ouvriers. Les monastères 13 et 14 ne s’appliquent pas.",
+        "ja": "労働者4個を得ます。修道院13・14番は適用しません。",
+        "es": "Toma 4 trabajadores. Los monasterios 13 y 14 no se aplican."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/boarding-house.png"
+    },
+    {
+      "id": "bank",
+      "category": "buildings",
+      "name": {
+        "ko": "은행",
+        "en": "Bank",
+        "de": "Bank",
+        "fr": "Banque",
+        "ja": "銀行",
+        "es": "Banco"
+      },
+      "text": {
+        "ko": "은화 2개를 받습니다.",
+        "en": "Take 2 silver coins.",
+        "de": "2 Silberlinge nehmen.",
+        "fr": "Prenez 2 pièces d’argent.",
+        "ja": "銀貨2枚を得ます。",
+        "es": "Toma 2 monedas de plata."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/bank.png"
+    },
+    {
+      "id": "town-hall",
+      "category": "buildings",
+      "name": {
+        "ko": "시청",
+        "en": "Town Hall",
+        "de": "Rathaus",
+        "fr": "Hôtel de ville",
+        "ja": "市庁舎",
+        "es": "Ayuntamiento"
+      },
+      "text": {
+        "ko": "육각 타일 1개를 추가로 배치합니다.\n\n개인 보관 칸의 타일을 선택하며 색은 자유입니다. 추가 주사위 없이 배치하되 색상·인접 조건은 지킵니다. 새로 놓은 타일의 효과도 정상 발동합니다.",
+        "en": "Place an additional hex tile.\n\nChoose a tile of any color from your storage. No additional die is needed; obey color and adjacency rules. Resolve the newly placed tile’s effect normally.",
+        "de": "Ein weiteres gelagertes Plättchen beliebiger Farbe ohne weiteren Würfel einsetzen. Farb- und Nachbarschaftsregeln beachten; den neuen Plättcheneffekt normal ausführen.",
+        "fr": "Placez une autre tuile de toute couleur depuis votre réserve sans autre dé. Respectez couleur et adjacence ; appliquez normalement l’effet de la nouvelle tuile.",
+        "ja": "保管中の任意の色のタイル1枚を、追加ダイスなしで配置します。色と隣接の条件は守り、新しいタイルの効果も通常どおり処理します。",
+        "es": "Coloca otra loseta de cualquier color desde tu reserva sin otro dado. Respeta color y adyacencia; activa normalmente el efecto de la nueva loseta."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/town-hall.png"
+    },
+    {
+      "id": "watchtower",
+      "category": "buildings",
+      "name": {
+        "ko": "감시탑",
+        "en": "Watchtower",
+        "de": "Wachturm",
+        "fr": "Tour de guet",
+        "ja": "見張り塔",
+        "es": "Torre de vigilancia"
+      },
+      "text": {
+        "ko": "승점 4점을 받습니다.",
+        "en": "Score 4 victory points.",
+        "de": "Sofort 4 Punkte erhalten.",
+        "fr": "Marquez immédiatement 4 PV.",
+        "ja": "直ちに4点を得ます。",
+        "es": "Gana inmediatamente 4 PV."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      },
+      "image": "images/watchtower.png"
+    },
+    {
+      "id": "monastery-1",
+      "category": "monastery",
+      "name": {
+        "ko": "중복 건물 허용",
+        "en": "Duplicate buildings",
+        "de": "Gleiche Gebäude",
+        "fr": "Bâtiments identiques",
+        "ja": "同種の建物",
+        "es": "Edificios repetidos"
+      },
+      "text": {
+        "ko": "같은 도시 안에 같은 종류의 건물을 여러 개 지을 수 있습니다.",
+        "en": "You may build more than one building of the same type within a single town.",
+        "de": "Mehrere Gebäude derselben Art in derselben Stadt erlaubt.",
+        "fr": "Plusieurs bâtiments du même type sont autorisés dans une même ville.",
+        "ja": "同じ都市に同種の建物を複数配置できます。",
+        "es": "Puedes colocar varios edificios del mismo tipo en una ciudad."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-01.png",
+      "number": "1"
+    },
+    {
+      "id": "monastery-2",
+      "category": "monastery",
+      "name": {
+        "ko": "광산의 일꾼",
+        "en": "Mine workers",
+        "de": "Minenarbeiter",
+        "fr": "Ouvriers des mines",
+        "ja": "鉱山の労働者",
+        "es": "Trabajadores de las minas"
+      },
+      "text": {
+        "ko": "각 단계 종료 시 배치한 광산마다 은화에 더해 일꾼 1개를 받습니다.",
+        "en": "For each mine you have placed, you get a worker in addition to the silver coin at the end of each phase.",
+        "de": "Am Phasenende je eigener Mine zusätzlich zum Silberling 1 Arbeiter erhalten.",
+        "fr": "À chaque fin de phase, recevez 1 ouvrier par mine en plus de sa pièce.",
+        "ja": "各フェイズ終了時、領地の鉱山ごとに銀貨に加えて労働者1個を得ます。",
+        "es": "Al final de cada fase, recibe 1 trabajador por mina además de su moneda."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-02.png",
+      "number": "2"
+    },
+    {
+      "id": "monastery-3",
+      "category": "monastery",
+      "name": {
+        "ko": "판매 은화 증가",
+        "en": "Extra sale income",
+        "de": "Verkaufserlös",
+        "fr": "Revenu des ventes",
+        "ja": "売却収入の増加",
+        "es": "Ingresos de ventas"
+      },
+      "text": {
+        "ko": "주사위 행동 또는 창고 배치로 상품을 팔 때 은화를 1개 대신 2개 받습니다.",
+        "en": "You get 2 silver coins instead of 1 whenever you sell goods (either when taking the die action or when placing a warehouse).",
+        "de": "Beim Warenverkauf durch Würfel oder Warenhaus 2 statt 1 Silberling erhalten.",
+        "fr": "Une vente par dé ou entrepôt rapporte 2 pièces au lieu de 1.",
+        "ja": "ダイスまたは倉庫による商品売却で、銀貨を1枚ではなく2枚得ます。",
+        "es": "Al vender mediante dado o almacén, recibe 2 monedas en vez de 1."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-03.png",
+      "number": "3"
+    },
+    {
+      "id": "monastery-4",
+      "category": "monastery",
+      "name": {
+        "ko": "판매 시 일꾼",
+        "en": "Worker from sales",
+        "de": "Arbeiter beim Verkauf",
+        "fr": "Ouvrier lors d’une vente",
+        "ja": "売却時の労働者",
+        "es": "Trabajador por venta"
+      },
+      "text": {
+        "ko": "주사위 행동 또는 창고 배치로 한 종류의 상품을 팔 때 평소 받는 은화에 더해 일꾼 1개를 받습니다.",
+        "en": "Whenever you sell a type of goods (either when taking the dice action or when placing a warehouse), you gain a worker in addition to the silver coin you normally receive.",
+        "de": "Beim Verkauf einer Warensorte durch Würfel oder Warenhaus zusätzlich zum üblichen Silberling 1 Arbeiter erhalten.",
+        "fr": "Vendre un type de marchandise par dé ou entrepôt rapporte 1 ouvrier en plus de la pièce habituelle.",
+        "ja": "ダイスまたは倉庫で1種類の商品を売ると、通常の銀貨に加えて労働者1個を得ます。",
+        "es": "Al vender un tipo de mercancía mediante dado o almacén, recibe 1 trabajador además de la moneda habitual."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-04.png",
+      "number": "4"
+    },
+    {
+      "id": "monastery-5",
+      "category": "monastery",
+      "name": {
+        "ko": "인접 저장소 상품",
+        "en": "Adjacent depot goods",
+        "de": "Benachbartes Depot",
+        "fr": "Dépôt adjacent",
+        "ja": "隣の集積所",
+        "es": "Depósito adyacente"
+      },
+      "text": {
+        "ko": "배를 놓을 때 선택한 저장소의 상품에 더해 인접한 저장소 한 곳의 상품도 전부 가져올 수 있습니다.",
+        "en": "Whenever you place a ship tile, in addition to taking all goods tiles from a depot of your choice, you may also grab all goods tiles from an adjacent depot.",
+        "de": "Beim Schiff zusätzlich die lagerbaren Waren eines zum gewählten Depot benachbarten Depots nehmen.",
+        "fr": "En posant un bateau, prenez aussi les marchandises stockables d’un dépôt adjacent à celui choisi.",
+        "ja": "船の配置時、選んだ集積所に加えて、隣接する集積所1か所からも保管可能な商品をすべて取れます。",
+        "es": "Al colocar un barco, toma también las mercancías almacenables de un depósito adyacente al elegido."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-05.png",
+      "number": "5"
+    },
+    {
+      "id": "monastery-6",
+      "category": "monastery",
+      "name": {
+        "ko": "일꾼으로 타일 구매",
+        "en": "Buy tiles with workers",
+        "de": "Kauf mit Arbeitern",
+        "fr": "Acheter avec des ouvriers",
+        "ja": "労働者で購入",
+        "es": "Comprar con trabajadores"
+      },
+      "text": {
+        "ko": "차례당 한 번, 은화와 일꾼을 원하는 조합으로 총 2개 지불하고 타일 1개를 구매할 수 있습니다(은화 2개 / 은화 1개+일꾼 1개 / 일꾼 2개). 중앙 검은 저장소뿐 아니라 6개 일반 저장소에서도 고를 수 있습니다. 별도의 추가 구매가 아니며 가져온 타일은 보관 칸에 놓습니다.",
+        "en": "Once per turn, buy one hex tile by paying two total coins/workers in any combination: two coins, one coin plus one worker, or two workers. Choose from any depot, including the central black depot. This is not an additional purchase; place the acquired tile in storage.",
+        "de": "Einmal pro Zug ein Plättchen für zwei Silberlinge/Arbeiter in beliebiger Kombination kaufen: 2 Silberlinge, 1 Silberling plus 1 Arbeiter oder 2 Arbeiter. Alle Depots einschließlich Schwarz sind erlaubt. Kein zusätzlicher Kauf; Plättchen ins Lager legen.",
+        "fr": "Une fois par tour, achetez une tuile avec deux ressources au total : 2 pièces, 1 pièce et 1 ouvrier, ou 2 ouvriers. Tous les dépôts, noir compris, sont accessibles. Ce n’est pas un achat supplémentaire ; mettez la tuile en réserve.",
+        "ja": "手番に1回、銀貨と労働者を任意に組み合わせ合計2個でタイル1枚を購入できます。銀貨2枚、銀貨1枚＋労働者1個、労働者2個のいずれか。黒を含む全集積所から選べます。追加の購入回数ではなく、取ったタイルは保管します。",
+        "es": "Una vez por turno, compra una loseta pagando dos recursos en cualquier combinación: 2 monedas, 1 moneda y 1 trabajador, o 2 trabajadores. Puedes elegir cualquier depósito, incluido el negro. No es una compra adicional; guarda la loseta en reserva."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-06.png",
+      "number": "6"
+    },
+    {
+      "id": "monastery-7",
+      "category": "monastery",
+      "name": {
+        "ko": "가축 타일 추가 점수",
+        "en": "Extra livestock points",
+        "de": "Zusätzliche Tierpunkte",
+        "fr": "Points d’animaux supplémentaires",
+        "ja": "家畜の追加点",
+        "es": "Puntos adicionales de ganado"
+      },
+      "text": {
+        "ko": "가축 타일 배치 시 같은 목초지의 같은 종류 가축에 대한 점수에 더해 이번에 점수를 계산하는 가축 타일마다 1점을 추가로 받습니다.",
+        "en": "Whenever you place a livestock tile, in addition to the usual bonus for existing livestock of the same type in the same pasture, you also gain 1 victory point for each livestock tile that scores at that time.",
+        "de": "Beim Einsetzen von Tieren zusätzlich 1 Punkt pro dabei gewertetem Tierplättchen, einschließlich des neuen Plättchens.",
+        "fr": "Lors de la pose d’animaux, marquez 1 PV supplémentaire par tuile d’animaux comptée, nouvelle tuile comprise.",
+        "ja": "家畜配置時、今回得点する家畜タイル1枚につき通常点に加えて1点。新しく置いたタイルも含みます。",
+        "es": "Al colocar ganado, gana 1 PV adicional por cada loseta de ganado puntuada en ese momento, incluida la nueva."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-07.png",
+      "number": "7"
+    },
+    {
+      "id": "monastery-8",
+      "category": "monastery",
+      "name": {
+        "ko": "일꾼 조정 강화",
+        "en": "Stronger die adjustment",
+        "de": "Würfeländerung",
+        "fr": "Modifier davantage le dé",
+        "ja": "ダイス調整の強化",
+        "es": "Mayor ajuste del dado"
+      },
+      "text": {
+        "ko": "일꾼으로 주사위를 조정할 때 1 대신 2를 더하거나 뺄 수 있습니다.",
+        "en": "Whenever you use a worker to change the result of a die, you may add or subtract 2 instead of 1.",
+        "de": "Ein Arbeiter darf den Würfel um bis zu 2 statt nur 1 verändern.",
+        "fr": "Un ouvrier peut modifier le dé de jusqu’à 2 au lieu de 1.",
+        "ja": "労働者1個で出目を1だけでなく最大2増減できます。",
+        "es": "Un trabajador puede cambiar el dado hasta en 2 en vez de solo 1."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-08.png",
+      "number": "8"
+    },
+    {
+      "id": "monastery-9",
+      "category": "monastery",
+      "name": {
+        "ko": "건물 배치 조정",
+        "en": "Building placement adjustment",
+        "de": "Gebäude einsetzen",
+        "fr": "Placement de bâtiment",
+        "ja": "建物の配置補助",
+        "es": "Colocación de edificios"
+      },
+      "text": {
+        "ko": "건물 타일을 영지에 배치할 때 일꾼을 쓴 것처럼 주사위 결과를 1 조정할 수 있습니다.",
+        "en": "Whenever you want to place a building (= beige tile) in your duchy, you may change the die result by 1 (just as if you were using a worker).",
+        "de": "Beim Einsetzen eines Gebäudes die Würfelzahl um 1 ändern, als würde ein Arbeiter benutzt.",
+        "fr": "Pour poser un bâtiment beige, modifiez le dé de 1 comme avec un ouvrier.",
+        "ja": "建物を配置するとき、労働者を使うように出目を1調整できます。",
+        "es": "Para colocar un edificio, modifica el dado en 1 como si usaras un trabajador."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-09.png",
+      "number": "9"
+    },
+    {
+      "id": "monastery-10",
+      "category": "monastery",
+      "name": {
+        "ko": "배·가축 배치 조정",
+        "en": "Ship and livestock adjustment",
+        "de": "Schiffe und Tiere einsetzen",
+        "fr": "Placement de bateau ou d’animaux",
+        "ja": "船・家畜の配置補助",
+        "es": "Colocación de barcos y ganado"
+      },
+      "text": {
+        "ko": "배 또는 가축 타일을 영지에 배치할 때 일꾼을 쓴 것처럼 주사위 결과를 1 조정할 수 있습니다.",
+        "en": "Whenever you want to place a ship or a livestock tile (blue and light green tiles) in your duchy, you may change the die result by 1 (just as if you were using a worker).",
+        "de": "Beim Einsetzen von Schiffen oder Tieren die Würfelzahl um 1 ändern, als würde ein Arbeiter benutzt.",
+        "fr": "Pour poser un bateau ou des animaux, modifiez le dé de 1 comme avec un ouvrier.",
+        "ja": "船か家畜を配置するとき、労働者を使うように出目を1調整できます。",
+        "es": "Para colocar barco o ganado, modifica el dado en 1 como si usaras un trabajador."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-10.png",
+      "number": "10"
+    },
+    {
+      "id": "monastery-11",
+      "category": "monastery",
+      "name": {
+        "ko": "성·광산·수도원 배치 조정",
+        "en": "Castle, mine and monastery adjustment",
+        "de": "Burg, Mine, Kloster einsetzen",
+        "fr": "Placement de château, mine ou monastère",
+        "ja": "城・鉱山・修道院の配置補助",
+        "es": "Colocación de castillo, mina o monasterio"
+      },
+      "text": {
+        "ko": "성, 광산 또는 수도원 타일을 영지에 배치할 때 일꾼을 쓴 것처럼 주사위 결과를 1 조정할 수 있습니다.",
+        "en": "Whenever you want to place a castle, mine, or monastery tile (dark green, gray, and yellow tiles) in your duchy, you may change the die result by 1 (just as if you were using a worker).",
+        "de": "Beim Einsetzen von Burg, Mine oder Kloster die Würfelzahl um 1 ändern, als würde ein Arbeiter benutzt.",
+        "fr": "Pour poser un château, une mine ou un monastère, modifiez le dé de 1 comme avec un ouvrier.",
+        "ja": "城・鉱山・修道院を配置するとき、労働者を使うように出目を1調整できます。",
+        "es": "Para colocar castillo, mina o monasterio, modifica el dado en 1 como si usaras un trabajador."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-11.png",
+      "number": "11"
+    },
+    {
+      "id": "monastery-12",
+      "category": "monastery",
+      "name": {
+        "ko": "타일 획득 조정",
+        "en": "Tile acquisition adjustment",
+        "de": "Plättchen nehmen",
+        "fr": "Prendre une tuile",
+        "ja": "タイル獲得の補助",
+        "es": "Tomar losetas"
+      },
+      "text": {
+        "ko": "게임판에서 육각 타일을 가져올 때 일꾼을 쓴 것처럼 주사위 결과를 1 조정할 수 있습니다.",
+        "en": "Whenever you want to take a hex tile from the game board, you may change the die result by 1 (just as if you were using a worker).",
+        "de": "Beim Nehmen eines Plättchens vom Spielplan die Würfelzahl um 1 ändern, als würde ein Arbeiter benutzt.",
+        "fr": "Pour prendre une tuile du plateau, modifiez le dé de 1 comme avec un ouvrier.",
+        "ja": "ゲームボードから六角タイルを取るとき、労働者を使うように出目を1調整できます。",
+        "es": "Para tomar una loseta del tablero, modifica el dado en 1 como si usaras un trabajador."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-12.png",
+      "number": "12"
+    },
+    {
+      "id": "monastery-13",
+      "category": "monastery",
+      "name": {
+        "ko": "일꾼 행동의 은화",
+        "en": "Income from worker action",
+        "de": "Arbeiteraktion mit Silberling",
+        "fr": "Pièce avec l’action ouvriers",
+        "ja": "労働者アクションの銀貨",
+        "es": "Moneda con trabajadores"
+      },
+      "text": {
+        "ko": "일꾼 받기 행동을 할 때 일꾼 2개에 더해 은화 1개를 받습니다.\n\n하숙집 배치로 받는 일꾼에는 적용하지 않습니다.",
+        "en": "Whenever you use the \"Take worker chips\" action, you get 1 silver coin in addition to the 2 worker chips from the supply.\n\nThis does not apply to workers gained from placing a boarding house.",
+        "de": "Bei „Arbeiter nehmen“ zusätzlich zu den 2 Arbeitern 1 Silberling erhalten. Nicht beim Gasthof.",
+        "fr": "L’action « Prendre des ouvriers » donne 1 pièce en plus des 2 ouvriers. Pas avec la pension.",
+        "ja": "労働者を得るアクションで、労働者2個に加えて銀貨1枚。下宿屋には適用しません。",
+        "es": "La acción «Tomar trabajadores» da 1 moneda además de los 2 trabajadores. No se aplica a la pensión."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-13.png",
+      "number": "13"
+    },
+    {
+      "id": "monastery-14",
+      "category": "monastery",
+      "name": {
+        "ko": "일꾼 4개 받기",
+        "en": "Four workers",
+        "de": "Vier Arbeiter",
+        "fr": "Quatre ouvriers",
+        "ja": "労働者4個",
+        "es": "Cuatro trabajadores"
+      },
+      "text": {
+        "ko": "일꾼 받기 행동을 할 때 평소의 2개 대신 4개를 받습니다.\n\n하숙집 배치로 받는 일꾼에는 적용하지 않습니다.",
+        "en": "Whenever you use the \"Take worker chips\" action, you get 4 workers instead of the usual 2.\n\nThis does not apply to workers gained from placing a boarding house.",
+        "de": "Bei „Arbeiter nehmen“ 4 statt 2 Arbeiter erhalten. Nicht beim Gasthof.",
+        "fr": "L’action « Prendre des ouvriers » donne 4 ouvriers au lieu de 2. Pas avec la pension.",
+        "ja": "労働者を得るアクションで2個の代わりに4個。下宿屋には適用しません。",
+        "es": "La acción «Tomar trabajadores» da 4 en vez de 2. No se aplica a la pensión."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-14.png",
+      "number": "14"
+    },
+    {
+      "id": "monastery-15",
+      "category": "monastery",
+      "name": {
+        "ko": "판매 상품 종류 점수",
+        "en": "Sold goods types",
+        "de": "Verkaufte Warensorten",
+        "fr": "Types vendus",
+        "ja": "売却した商品の種類",
+        "es": "Tipos vendidos"
+      },
+      "text": {
+        "ko": "게임 종료 시 한 번 이상 판매한 상품 종류마다 2점을 받습니다. 미판매 상품은 제외합니다. 판매한 상품 더미는 언제든 확인할 수 있습니다.",
+        "en": "At the end of the game, you gain 2 victory points for each different type of goods you sold at least once during the game. Unsold goods are ignored. Note: You may look at your sold goods pile at any time during the game.",
+        "de": "Am Spielende 2 Punkte pro mindestens einmal verkaufter Warensorte. Unverkaufte zählen nicht. Den Verkaufsstapel darf man jederzeit ansehen.",
+        "fr": "À la fin, 2 PV par type de marchandise vendu au moins une fois. Ignorez les invendus. Consultez librement votre pile de ventes.",
+        "ja": "終了時、1回以上売った商品種類ごとに2点。未売却は除きます。売却済みの山はいつでも確認できます。",
+        "es": "Al final, 2 PV por tipo de mercancía vendido al menos una vez. Ignora las no vendidas. Puedes consultar tu pila de ventas en cualquier momento."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-15.png",
+      "number": "15"
+    },
+    {
+      "id": "monastery-buildings",
+      "category": "monastery",
+      "name": {
+        "ko": "건물 종류별 종료 점수",
+        "en": "Building end-game scoring",
+        "de": "Gebäudewertung",
+        "fr": "Décompte des bâtiments",
+        "ja": "建物の終了時得点",
+        "es": "Puntuación de edificios"
+      },
+      "text": {
+        "ko": "게임 종료 시 해당 수도원 타일에 표시된 종류의 건물을 영지에 배치한 수만큼 건물마다 4점을 받습니다.\n\n16~23번과 29번은 건물 자체의 번호가 아니라, 건물별 종료 점수를 주는 노란 수도원 타일 번호입니다. 예: 17번은 감시탑, 22번은 은행에 점수를 줍니다. 건물 타일 자체에는 고유 번호가 없습니다.",
+        "en": "At game end, gain 4 VP per building of the type shown on the monastery tile placed in your duchy.\n\n16–23 and 29 identify the yellow monastery scoring tiles, not the buildings themselves. For example, #17 scores watchtowers and #22 scores banks. Building tiles have no individual numbers.",
+        "de": "Am Spielende 4 Punkte pro Gebäude der abgebildeten Art im Fürstentum. 16–23 und 29 sind Nummern gelber Klosterplättchen, nicht von Gebäuden: 17 wertet Wachtürme, 22 Banken. Gebäude haben keine eigenen Nummern.",
+        "fr": "À la fin, 4 PV par bâtiment du type illustré dans votre domaine. 16–23 et 29 sont les numéros des monastères jaunes, pas des bâtiments : 17 compte les tours de guet, 22 les banques. Les bâtiments n’ont pas de numéro propre.",
+        "ja": "終了時、対応する種類の建物が領地に1枚あるごとに4点。16～23・29は黄色の修道院タイルの番号で、建物自体の番号ではありません。例：17番は見張り塔、22番は銀行。建物には固有番号がありません。",
+        "es": "Al final, 4 PV por edificio del tipo ilustrado en tu ducado. 16–23 y 29 son números de monasterios amarillos, no de edificios: 17 puntúa torres y 22 bancos. Los edificios no tienen número propio."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-buildings.png",
+      "number": "16–23 · 29"
+    },
+    {
+      "id": "monastery-24",
+      "category": "monastery",
+      "name": {
+        "ko": "가축 종류 점수",
+        "en": "Livestock types",
+        "de": "Tierarten",
+        "fr": "Espèces d’animaux",
+        "ja": "家畜の種類",
+        "es": "Tipos de ganado"
+      },
+      "text": {
+        "ko": "게임 종료 시 영지에 배치한 가축 종류마다 4점을 받습니다.",
+        "en": "Score 4 VP per different livestock type in your duchy at game end.",
+        "de": "Am Spielende 4 Punkte pro verschiedener Tierart im Fürstentum.",
+        "fr": "À la fin, 4 PV par espèce différente dans votre domaine.",
+        "ja": "終了時、領地の異なる家畜の種類ごとに4点。",
+        "es": "Al final, 4 PV por tipo distinto de ganado en tu ducado."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-24.png",
+      "number": "24"
+    },
+    {
+      "id": "monastery-25",
+      "category": "monastery",
+      "name": {
+        "ko": "판매 상품 개수 점수",
+        "en": "Sold goods count",
+        "de": "Verkaufte Waren",
+        "fr": "Marchandises vendues",
+        "ja": "売却した商品枚数",
+        "es": "Mercancías vendidas"
+      },
+      "text": {
+        "ko": "게임 종료 시 판매한 상품 타일마다 1점을 받습니다. 미판매 상품은 제외합니다.",
+        "en": "Score 1 VP per sold goods tile at game end; ignore unsold goods.",
+        "de": "Am Spielende 1 Punkt pro verkauftem Warenplättchen. Unverkaufte zählen nicht.",
+        "fr": "À la fin, 1 PV par tuile vendue ; ignorez les invendus.",
+        "ja": "終了時、売却した商品タイル1枚につき1点。未売却は除きます。",
+        "es": "Al final, 1 PV por loseta vendida; ignora las no vendidas."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-25.png",
+      "number": "25"
+    },
+    {
+      "id": "monastery-26",
+      "category": "monastery",
+      "name": {
+        "ko": "보너스 타일 점수",
+        "en": "Bonus tiles",
+        "de": "Bonusplättchen",
+        "fr": "Tuiles bonus",
+        "ja": "ボーナスタイル",
+        "es": "Losetas de bonificación"
+      },
+      "text": {
+        "ko": "게임 종료 시 보유한 큰 보너스 타일과 작은 보너스 타일마다 3점을 받습니다.",
+        "en": "Score 3 VP per large or small bonus tile you own at game end.",
+        "de": "Am Spielende 3 Punkte pro eigenem großen oder kleinen Bonusplättchen.",
+        "fr": "À la fin, 3 PV par grande ou petite tuile bonus possédée.",
+        "ja": "終了時、所持する大・小のボーナスタイル1枚につき3点。",
+        "es": "Al final, 3 PV por cada loseta de bonificación grande o pequeña que poseas."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "image": "images/monastery-26.png",
+      "number": "26"
+    },
+    {
+      "id": "monastery-27",
+      "category": "monastery",
+      "name": {
+        "ko": "다리",
+        "en": "Bridge",
+        "de": "Brücke",
+        "fr": "Pont",
+        "ja": "橋",
+        "es": "Puente"
+      },
+      "text": {
+        "ko": "순서 말이 다른 말과 같은 칸에 쌓이면 항상 맨 위에 놓습니다. 내가 그 칸으로 이동할 때도, 다른 말이 내 칸으로 이동해 올 때도 적용합니다.",
+        "en": "Your turn order piece always goes on top of a stack, whether you move there or another piece moves onto your space.",
+        "de": "Der eigene Marker liegt immer oben auf einem Stapel: beim eigenen Vorrücken und wenn andere Marker auf sein Feld ziehen.",
+        "fr": "Votre marqueur est toujours au sommet d’une pile, que vous arriviez sur la case ou qu’un autre marqueur rejoigne la vôtre.",
+        "ja": "自分の順番コマは重なったとき常に一番上です。自分が移動したときも、他のコマが同じマスに来たときも適用します。",
+        "es": "Tu marcador siempre queda encima de la pila, tanto si llegas tú como si otro marcador llega a tu casilla."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "number": "27"
+    },
+    {
+      "id": "monastery-28",
+      "category": "monastery",
+      "name": {
+        "ko": "일꾼 구매",
+        "en": "Workers",
+        "de": "Arbeiter kaufen",
+        "fr": "Acheter des ouvriers",
+        "ja": "労働者の購入",
+        "es": "Comprar trabajadores"
+      },
+      "text": {
+        "ko": "공급처에서 일꾼을 살 수 있습니다. 은화 1개로 일꾼 2개를 받습니다.",
+        "en": "Buy workers from the supply: 2 workers cost 1 silver coin.",
+        "de": "2 Arbeiter aus dem Vorrat kosten 1 Silberling.",
+        "fr": "Achetez 2 ouvriers de la réserve pour 1 pièce d’argent.",
+        "ja": "銀貨1枚で供給の労働者2個を購入できます。",
+        "es": "Compra 2 trabajadores de la reserva por 1 moneda de plata."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      },
+      "number": "28"
+    },
+    {
+      "id": "crane",
+      "category": "special",
+      "name": {
+        "ko": "기중기 · 검은 저장소 건물",
+        "en": "Crane · building / black depot",
+        "de": "Kran · schwarzes Depot",
+        "fr": "Grue · dépôt noir",
+        "ja": "クレーン・黒い集積所",
+        "es": "Grúa · depósito negro"
+      },
+      "text": {
+        "ko": "원하는 건물의 효과를 즉시 발동할 수 있습니다. 그 건물이 내 영지에 없어도 됩니다.\n\n게임 종료 시: 수도원 16~23번 및 29번의 점수를 계산할 때 원하는 건물 종류 하나로 간주합니다. 배치 시 효과를 사용한 건물과 다른 종류를 선택해도 됩니다.",
+        "en": "Immediately trigger the effect of any beige building, even if it is not in your duchy.\n\nAt final scoring, treat the crane as one building type of your choice for monastery tiles 16–23 and 29. This need not be the building whose effect you used when placing it.",
+        "de": "Beim Einsetzen den Effekt eines beliebigen beigen Gebäudes ausführen, auch wenn es nicht im eigenen Fürstentum liegt. Bei der Schlusswertung für Kloster 16–23 und 29 eine Gebäudeart wählen; diese darf von der beim Einsetzen gewählten Art abweichen.",
+        "fr": "À la pose, déclenchez l’effet d’un bâtiment beige au choix, même absent de votre domaine. Au décompte final des monastères 16–23 et 29, choisissez un type de bâtiment pour la grue ; il peut différer du type utilisé lors de la pose.",
+        "ja": "配置時、任意の建物の効果を直ちに使えます。その建物が領地になくても構いません。終了時の修道院16～23・29の得点では、任意の建物1種類とみなします。配置時に選んだ種類と異なっても構いません。",
+        "es": "Al colocarla, activa el efecto de cualquier edificio beige, aunque no esté en tu ducado. En la puntuación final de los monasterios 16–23 y 29, cuenta como un tipo de edificio elegido; puede ser distinto al usado al colocarla."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "geese",
+      "category": "special",
+      "name": {
+        "ko": "거위 2마리 · 검은 저장소 가축",
+        "en": "2 Geese · livestock / black depot",
+        "de": "Zwei Gänse · schwarzes Depot",
+        "fr": "Deux oies · dépôt noir",
+        "ja": "ガチョウ2羽・黒い集積所",
+        "es": "Dos gansos · depósito negro"
+      },
+      "text": {
+        "ko": "거위 2마리를 배치하면 기본 2점에 더해 같은 목초지의 가축 한 종류를 골라 그 종류의 가축 수만큼 추가 점수를 받습니다. 모든 종류를 동시에 계산하지 않습니다.\n이후 같은 목초지에 다른 가축 타일을 놓을 때마다 거위 타일도 2점으로 다시 계산합니다.\n게임 종료 시 수도원 24번에서는 거위를 별도의 가축 종류로 셉니다.",
+        "en": "When placing two geese, score 2 VP plus all animals of one chosen type in the same pasture—not all types at once.\nWhenever another livestock tile is later placed in that pasture, score the geese tile again for 2 VP.\nFor monastery #24 at game end, geese count as a separate livestock type.",
+        "de": "Beim Einsetzen 2 Punkte plus alle Tiere einer gewählten Art derselben Weide werten, nicht alle Arten. Bei späteren Tierplättchen derselben Weide die Gänse erneut mit 2 Punkten werten. Für Kloster 24 am Spielende eine eigene Art.",
+        "fr": "À la pose, 2 PV plus les animaux d’une seule espèce choisie dans le même pâturage, pas toutes les espèces. Chaque pose ultérieure d’animaux dans ce pâturage recompte les oies pour 2 PV. Espèce distincte pour le monastère 24 à la fin.",
+        "ja": "配置時、2点と同じ牧草地の家畜1種類を選んだ点数を得ます。全種類を同時には数えません。以後同じ牧草地に家畜タイルを置くたびにガチョウも2点。終了時の修道院24番では独立した種類です。",
+        "es": "Al colocarlos, gana 2 PV más los animales de un solo tipo elegido del mismo pasto, no de todos los tipos. Cada colocación posterior de ganado en ese pasto vuelve a puntuar los gansos por 2 PV. Son un tipo distinto para el monasterio 24 al final."
+      },
+      "source": {
+        "page": 2,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "placement-rules",
+      "category": "scoring",
+      "name": {
+        "ko": "배치 효과와 도시 제한",
+        "en": "Placement effects and towns",
+        "de": "Einsetzregeln",
+        "fr": "Règles de placement",
+        "ja": "配置の共通ルール",
+        "es": "Reglas de colocación"
+      },
+      "text": {
+        "ko": "광산을 제외한 타일의 추가 효과는 영지에 배치할 때만 발동합니다. 같은 도시에는 같은 건물을 중복 배치할 수 없습니다(수도원 1번 예외).\n\n건물 효과는 배치 즉시 한 번만 사용하며 추가 주사위나 행동이 필요 없습니다. 효과를 사용할 수 없어도 건물을 놓을 수 있지만 효과를 나중으로 미룰 수는 없습니다. 획득한 타일은 반드시 보관 칸을 거치며, 영지에 놓은 타일은 이동·제거·교체할 수 없습니다. 수도원은 영지에 배치해야 효과가 적용됩니다.",
+        "en": "Tile benefits, except mines, trigger only when placed in the duchy. No identical buildings in the same town (monastery #1 is an exception).\n\nBuilding effects are immediate, one-time benefits requiring no extra die or action. You may place a building even if its effect cannot be used, but cannot save the effect for later. Acquired tiles must enter storage first. Placed tiles cannot be moved, removed or replaced. Monastery effects require the tile to be in your duchy.",
+        "de": "Effekte außer Minen gelten beim Einsetzen ins Fürstentum. Keine gleichen Gebäude in einer Stadt außer mit Kloster 1. Gebäudeeffekte sind sofortig, einmalig und ohne weiteren Würfel. Einsetzen ohne nutzbaren Effekt ist erlaubt, Aufsparen des Effekts nicht. Neue Plättchen zuerst lagern. Eingesetzte Plättchen nicht bewegen, entfernen oder ersetzen. Klöster wirken nur im Fürstentum.",
+        "fr": "Les effets, sauf les mines, se déclenchent à la pose dans le domaine. Pas de bâtiments identiques dans une ville sauf avec le monastère 1. Effets de bâtiments immédiats, uniques et sans autre dé. On peut poser sans effet utilisable, mais pas reporter l’effet. Les tuiles acquises passent par la réserve ; une fois posées, elles ne peuvent être déplacées, retirées ou remplacées. Les monastères n’agissent que dans le domaine.",
+        "ja": "鉱山以外の効果は領地への配置時に発動します。同じ都市に同じ建物は置けませんが修道院1番は例外。建物効果は即時1回で追加ダイス不要。効果を使えなくても配置できますが後に持ち越せません。獲得タイルは必ず保管を経由します。配置済みタイルは移動・除去・交換不可。修道院も領地に置いて初めて有効です。",
+        "es": "Los efectos, excepto minas, se activan al colocar en el ducado. No se repiten edificios en una ciudad salvo con monasterio 1. Los efectos de edificios son inmediatos, únicos y sin otro dado. Puedes colocar sin poder usar el efecto, pero no aplazarlo. Las losetas adquiridas pasan por la reserva; las colocadas no se mueven, retiran ni sustituyen. Los monasterios solo funcionan en el ducado."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "region-scoring",
+      "category": "scoring",
+      "name": {
+        "ko": "영역 완성과 색상 보너스",
+        "en": "Regions and color bonuses",
+        "de": "Gebiete und Farbboni",
+        "fr": "Régions et bonus",
+        "ja": "領域完成と色ボーナス",
+        "es": "Regiones y bonificaciones"
+      },
+      "text": {
+        "ko": "영역 완성 시 크기 점수와 단계 점수를 모두 받습니다. 크기 1/2/3/4/5/6/7/8칸 → 1/3/6/10/15/21/28/36점. 단계 A/B/C/D/E → 10/8/6/4/2점. 영지 전체에서 한 색의 모든 칸을 먼저 채우면 큰 보너스 타일(2/3/4인: 5/6/7점), 두 번째면 작은 보너스 타일(2/3/4인: 2/3/4점)을 받습니다.",
+        "en": "Complete a region to score both size and phase. Size 1/2/3/4/5/6/7/8: 1/3/6/10/15/21/28/36 VP. Phase A/B/C/D/E: 10/8/6/4/2 VP. First to fill every space of a color in the duchy gets the large bonus (5/6/7 VP for 2/3/4 players); second gets the small bonus (2/3/4 VP).",
+        "de": "Fertige Gebiete bringen Größen- und Phasenpunkte. Größe 1/2/3/4/5/6/7/8: 1/3/6/10/15/21/28/36 Punkte. Phase A/B/C/D/E: 10/8/6/4/2. Erster mit allen Feldern einer Farbe: großer Bonus 5/6/7 bei 2/3/4 Spielern; Zweiter: kleiner Bonus 2/3/4.",
+        "fr": "Une région achevée rapporte taille et phase. Taille 1/2/3/4/5/6/7/8 : 1/3/6/10/15/21/28/36 PV. Phase A/B/C/D/E : 10/8/6/4/2. Premier à remplir une couleur : grand bonus de 5/6/7 PV à 2/3/4 joueurs ; deuxième : petit bonus de 2/3/4 PV.",
+        "ja": "完成した領域は大きさとフェイズの両方を得点。大きさ1/2/3/4/5/6/7/8：1/3/6/10/15/21/28/36点。A/B/C/D/E：10/8/6/4/2点。同色全マスを最初に埋めると大ボーナス（2/3/4人：5/6/7点）、2番目は小（2/3/4点）。",
+        "es": "Una región completa puntúa tamaño y fase. Tamaño 1/2/3/4/5/6/7/8: 1/3/6/10/15/21/28/36 PV. Fase A/B/C/D/E: 10/8/6/4/2. Primero en cubrir un color: bonificación grande de 5/6/7 PV con 2/3/4 jugadores; segundo: pequeña de 2/3/4 PV."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "end-scoring",
+      "category": "scoring",
+      "name": {
+        "ko": "게임 종료 점수",
+        "en": "Game end scoring",
+        "de": "Schlusswertung",
+        "fr": "Décompte final",
+        "ja": "終了時得点",
+        "es": "Puntuación final"
+      },
+      "text": {
+        "ko": "미판매 상품 1개당 1점, 남은 은화 1개당 1점, 일꾼 2개당 1점을 받습니다. 영지에 놓은 종료 점수 수도원도 계산합니다. 보관 칸에 남은 타일은 점수를 받지 않습니다.",
+        "en": "Score 1 VP per unsold goods tile, per remaining silver coin, and per two workers. Score VP-bearing monastery tiles in your duchy. Stored tiles do not score.",
+        "de": "Je 1 Punkt pro unverkaufter Ware, übrigem Silberling und je zwei Arbeitern. Punkteklöster im Fürstentum werten; gelagerte Plättchen zählen nicht.",
+        "fr": "1 PV par invendu, par pièce restante et par paire d’ouvriers. Comptez les monastères à PV dans le domaine ; les tuiles en réserve ne comptent pas.",
+        "ja": "未売却の商品1枚、残り銀貨1枚、労働者2個につき各1点。領地の得点修道院も計算し、保管中のタイルは数えません。",
+        "es": "1 PV por mercancía no vendida, moneda restante y pareja de trabajadores. Puntúa los monasterios de PV en el ducado; las losetas en reserva no cuentan."
+      },
+      "source": {
+        "page": 1,
+        "copy": "left"
+      }
+    },
+    {
+      "id": "white-castle",
+      "category": "special",
+      "name": {
+        "ko": "흰 성",
+        "en": "White Castle",
+        "de": "Weiße Burg",
+        "fr": "Château blanc",
+        "ja": "白い城",
+        "es": "Castillo blanco"
+      },
+      "text": {
+        "ko": "배치 즉시 현재 흰 주사위 숫자를 사용해 행동 1번을 합니다. 일꾼으로 숫자를 조정할 수 있지만 실제 흰 주사위는 돌리지 않습니다.",
+        "en": "On placement, immediately take an action using the current white die result. Workers may adjust the result for your action; do not change the actual white die.",
+        "de": "Sofort eine Aktion mit aktueller weißer Würfelzahl. Arbeiter dürfen sie für die Aktion ändern; den echten weißen Würfel nicht drehen.",
+        "fr": "Effectuez immédiatement une action avec la valeur actuelle du dé blanc. Les ouvriers peuvent la modifier pour cette action ; ne tournez pas le vrai dé blanc.",
+        "ja": "現在の白いダイスの出目で直ちに1アクション。労働者でそのアクションの出目を調整できますが、実際の白いダイスは回しません。",
+        "es": "Realiza inmediatamente una acción con el resultado actual del dado blanco. Puedes modificarlo con trabajadores para esa acción; no gires el dado blanco real."
+      },
+      "source": {
+        "page": 12,
+        "edition": "2019 anniversary",
+        "copy": "left"
+      }
+    },
+    {
+      "id": "inn",
+      "category": "special",
+      "name": {
+        "ko": "여관",
+        "en": "Inn",
+        "de": "Wirtshaus",
+        "fr": "Auberge",
+        "ja": "宿屋",
+        "es": "Posada"
+      },
+      "text": {
+        "ko": "각 단계에 검은 저장소 옆에 1개를 추가하며 남은 여관은 제거하지 않고 쌓습니다. 은화 2개로 사서 개인 보관 칸에 놓습니다. 일반 배치 규칙을 지키며 영지의 어떤 색 칸에도 놓을 수 있으나 같은 색 영역당 최대 1개입니다. 자체 효과는 없으며, 영역 완성 점수 계산 시 영역 크기를 1 늘립니다. 기념판에서는 최대 크기 8까지입니다.",
+        "en": "Add one inn beside the black depot each phase; retain and stack unsold inns. Buy for 2 coins into storage. Place on any color following normal placement rules, at most one inn per color region. It has no immediate effect; increase that region’s scoring size by one, up to eight in the anniversary edition.",
+        "de": "Jede Phase eines neben Schwarz auslegen; übrige bleiben gestapelt. Für 2 Silberlinge ins Lager kaufen. Nach normalen Einsetzregeln auf jede Farbe setzen, maximal eines pro Farbgebiet. Kein Soforteffekt. Gebietswertungsgröße um 1 erhöhen, in der Jubiläumsausgabe maximal auf 8.",
+        "fr": "Ajoutez-en une près du dépôt noir à chaque phase ; conservez et empilez les invendues. Achetez pour 2 pièces en réserve. Posez sur toute couleur selon les règles normales, une seule par région. Aucun effet immédiat ; augmentez de 1 la taille de décompte de la région, jusqu’à 8 dans l’édition anniversaire.",
+        "ja": "各フェイズに黒い集積所の横へ1枚追加し、売れ残りは取り除かず重ねます。銀貨2枚で購入して保管。通常の配置ルールでどの色にも置けますが、同じ色の領域につき1枚まで。即時効果はなく領域得点の大きさを1増やし、記念版では最大8です。",
+        "es": "Añade una junto al depósito negro cada fase; conserva y apila las no compradas. Compra por 2 monedas y guarda en reserva. Colócala en cualquier color según las reglas normales, máximo una por región. Sin efecto inmediato; aumenta en 1 el tamaño de puntuación de la región, hasta 8 en la edición aniversario."
+      },
+      "source": {
+        "page": 12,
+        "edition": "2019 anniversary",
+        "copy": "left"
+      }
+    }
+  ]
+}
