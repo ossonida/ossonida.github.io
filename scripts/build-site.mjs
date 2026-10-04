@@ -61,6 +61,18 @@ ${alternates}
 <script src="../assets/setup-data.js"></script><script src="../assets/setup.js"></script>
 </body></html>\n`);
 }
+
+ // Publish legacy game sources under routes owned by the unified site.
+ for(const id of ['gah','marrakesh']){
+  const target='games/'+id;
+  fs.cpSync(id,target,{recursive:true});
+  const page=fs.readFileSync(target+'/index.html','utf8')
+   .replaceAll('https://ossonida.github.io/'+id+'/', 'https://ossonida.github.io/games/'+id+'/')
+   .replaceAll('../assets/', '../../assets/')
+   .replace('data-site-link href="../"', 'data-site-link href="../../"');
+  fs.writeFileSync(target+'/index.html',page);
+ }
+
 let hub=fs.readFileSync('index.html','utf8');
 const list=catalog.map(game=>`          <li>${game.href?`<a href="${esc(game.href)}">BGW : ${esc(game.title)}</a>`:`BGW : ${esc(game.title)} - 준비중`}</li>`).join('\n');
 hub=hub.replace(/(<noscript>[\s\S]*?<ul>)[\s\S]*?(<\/ul>)/,`$1\n${list}\n        $2`);

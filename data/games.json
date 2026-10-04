@@ -1,7 +1,7 @@
 [
   {
     "title": "Grand Austria Hotel",
-    "href": "./gah/",
+    "href": "./games/gah/",
     "tagKey": "gahTag",
     "descKey": "gahDesc",
     "actionKey": "enterAction",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Marrakesh",
-    "href": "./marrakesh/",
+    "href": "./games/marrakesh/",
     "tagKey": "marrakechTag",
     "descKey": "marrakechDesc",
     "actionKey": "enterAction",

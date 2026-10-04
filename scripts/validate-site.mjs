@@ -6,7 +6,7 @@ const root=process.cwd(), origin='https://ossonida.github.io';
 const read=p=>fs.readFileSync(p,'utf8');
 const catalog=JSON.parse(read('data/games.json'));
 const referenceGames=catalog.filter(g=>g.reference);
-const pages=['index.html',...catalog.filter(g=>g.href).map(g=>g.id+'/index.html')];
+const pages=['index.html',...catalog.filter(g=>g.href).map(g=>new URL(g.href,origin+'/').pathname.slice(1)+'index.html')];
 const externalProjectPaths=new Set(['/score','/score/']);
 let count=0;
 function check(value,base){
@@ -42,7 +42,7 @@ for(const file of pages){
 }
 const data=vm.createContext({window:{}});
 for(const file of ['marrakesh/reference-data.js','marrakesh/reference-translations.js'])vm.runInContext(read(file),data);
-for(const rows of Object.values(data.window.referenceData))for(const item of rows)if(item.image)check(item.image,origin+'/marrakesh/');
+for(const rows of Object.values(data.window.referenceData))for(const item of rows)if(item.image)check(item.image,new URL(catalog.find(g=>g.id==='marrakesh').href,origin+'/').href);
 const urls=[...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 const expectedUrls=7+catalog.filter(g=>g.href).reduce((n,g)=>n+1+g.languages.length,0);
 assert.equal(urls.length,expectedUrls);assert.equal(new Set(urls).size,expectedUrls);urls.forEach(u=>check(u,origin));
@@ -61,11 +61,11 @@ assert.equal(env(origin+'/?lang=ja',[],{referenceLanguage:'de'}).api.getLanguage
 assert.equal(env(origin+'/',[],{'gah-lang':'de'}).api.getLanguage(langs,'gah-lang'),'de');
 assert.equal(env(origin+'/',[],{referenceLanguage:'fr','gah-lang':'de'}).api.getLanguage(langs,'gah-lang'),'fr');
 for(const prefix of ['/','/preview/'])for(const lang of langs)for(const game of ['gah','marrakesh']){
- const entry=link('./'+game+'/'),hub=env(origin+prefix+'?keep=1#top',[entry],{},true);
+ const entry=link('./games/'+game+'/'),hub=env(origin+prefix+'?keep=1#top',[entry],{},true);
  hub.api.setLanguage(lang,{updateUrl:true});
  assert.equal(hub.location.searchParams.get('keep'),'1');assert.equal(hub.location.hash,'#top');
- assert.equal(entry.href,origin+prefix+game+'/?lang='+lang);
- const home=link('../'),page=env(entry.href,[home],{},true);
+ assert.equal(entry.href,origin+prefix+'games/'+game+'/?lang='+lang);
+ const home=link('../../'),page=env(entry.href,[home],{},true);
  assert.equal(page.api.getLanguage(langs),lang);page.api.setLanguage(lang);
  assert.equal(home.href,origin+prefix+'?lang='+lang);
 }

@@ -16,8 +16,8 @@
 ## Unified game sites
 
 - Hub: `/` (`index.html`)
-- Grand Austria Hotel: `/gah/` (`gah/index.html`)
-- Marrakesh: `/marrakesh/` (`marrakesh/index.html`)
+- Grand Austria Hotel: `/games/gah/` (source: `gah/index.html`)
+- Marrakesh: `/games/marrakesh/` (source: `marrakesh/index.html`)
 
 Both game repositories were imported as ordinary files from their main branches.
 `integration-sources.json` records the exact source commits. Original Git histories
@@ -98,3 +98,7 @@ For a deliberate upstream refresh, download the files documented in
 The importer replaces this game's data and catalog entry; review the diff before publishing.
 Official resource URLs and the community content policy are recorded in the source metadata.
 Role icons are local snapshots; the page displays TPI's community-created-content badge.
+
+## Active publishing scope
+
+Only edit and publish `ossonida/ossonida.github.io`. Do not modify the separate `ossonida/gah` or `ossonida/marrakesh` repositories. Their old project Pages routes are no longer used by the hub. `scripts/build-site.mjs` copies the game source folders to `/games/gah/` and `/games/marrakesh/`, adjusts shared assets and HOME links, and publishes these unified-site routes. Commit the generated folders after rebuilding.
