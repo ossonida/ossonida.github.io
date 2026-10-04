@@ -7,11 +7,12 @@ const read=p=>fs.readFileSync(p,'utf8');
 const catalog=JSON.parse(read('data/games.json'));
 const referenceGames=catalog.filter(g=>g.reference);
 const pages=['index.html',...catalog.filter(g=>g.href).map(g=>g.id+'/index.html')];
+const externalProjectPaths=new Set(['/score','/score/']);
 let count=0;
 function check(value,base){
  if(!value||value.includes('${'))return;
  const u=new URL(value.replaceAll('&amp;','&'),base);
- if(u.origin!==origin)return;
+ if(u.origin!==origin||externalProjectPaths.has(u.pathname))return;
  let target=path.join(root,decodeURIComponent(u.pathname));
  if(fs.statSync(target).isDirectory())target=path.join(target,'index.html');
  let dir=root;
@@ -29,6 +30,9 @@ for(const file of pages){
   if(attrs.includes('application/ld+json'))JSON.parse(code);else new vm.Script(code,{filename:file});
  }
  for(const [,value] of html.matchAll(/["']((?:\.\.?\/|img\/)[^"'<>\s]+)["']/g))check(value,base);
+ assert.ok(html.includes('class="score-counter-link"'),`Missing Score Counter link: ${file}`);
+ assert.ok(html.includes('href="https://ossonida.github.io/score/"'),`Wrong Score Counter URL: ${file}`);
+ assert.ok(html.includes('class="score-counter-icon"'),`Missing Score Counter icon: ${file}`);
  assert.ok(html.includes('assets/site.js'));
  for(const [,src] of html.matchAll(/<script[^>]+src="([^"]+)"/g)){if(!src.startsWith('http'))new vm.Script(read(path.join(path.dirname(file),src)),{filename:src});}
 }

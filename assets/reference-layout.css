@@ -43,6 +43,25 @@
     .page-top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: nowrap; }
     .page-title { margin: 0 0 10px; font-size: 26px; font-weight: 600; letter-spacing: -0.3px; flex: 1 1 auto; min-width: 0; }
     .top-actions { display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+    .score-counter-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 33px;
+      padding: 8px 12px;
+      border: 1px solid rgba(34, 211, 238, 0.48);
+      border-radius: 10px;
+      background: rgba(34, 211, 238, 0.1);
+      color: #a5f3fc;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .score-counter-link:hover { border-color: rgba(34, 211, 238, 0.82); background: rgba(34, 211, 238, 0.17); color: #cffafe; }
+    .score-counter-icon { width: 17px; height: 17px; flex: 0 0 auto; }
     .coffee-banner {
       display: inline-flex;
       align-items: center;
