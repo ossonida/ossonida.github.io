@@ -271,7 +271,7 @@ table { width: 100%; border-collapse: collapse; }
 .empty { color: var(--muted); font-size: 13px; }
 .setup-panel[hidden] { display: none !important; }
 .setup-mode [data-section],.setup-mode #results,.setup-mode #global-empty,.setup-mode #empty,.setup-mode #count { display: none !important; }
-.setup-table { min-width: 620px; table-layout: fixed; line-height: 1.6; }
+.setup-table { width: 100%; min-width: 0; table-layout: fixed; line-height: 1.6; }
 .setup-table th:first-child { width: 22%; }
 .setup-common { margin-top: 16px; line-height: 1.7; }
 .setup-common h3 { font-size: 15px; margin: 0 0 8px; }
@@ -315,3 +315,14 @@ table { width: 100%; border-collapse: collapse; }
 .setup-module-table td { white-space:pre-line; overflow-wrap:anywhere; }
 .setup-source { margin:12px 0 0; color:var(--muted); font-size:11px; line-height:1.5; }
 @media(max-width:480px) { .setup-module-table { font-size:13px; } .setup-module-table th:first-child { width:27%; } }
+
+/* Keep setup tables within the viewport, including long translated text. */
+.layout > .setup-panel, .setup-panel .setup-expansion { min-width:0; max-width:100%; }
+.setup-panel .table-wrap { min-width:0; max-width:100%; overflow:visible; }
+.setup-panel .setup-table th, .setup-panel .setup-table td { white-space:normal; overflow-wrap:anywhere; }
+.setup-panel .setup-source, .setup-panel .setup-common, .setup-panel .setup-expansion-intro { overflow-wrap:anywhere; }
+@media(max-width:480px) {
+  .setup-panel .setup-table { font-size:12px; line-height:1.5; }
+  .setup-panel .setup-table th, .setup-panel .setup-table td { padding:8px 5px; }
+  .setup-panel .setup-table th:first-child { width:28%; }
+}
