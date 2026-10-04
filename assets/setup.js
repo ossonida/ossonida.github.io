@@ -21,7 +21,10 @@
   top.after(panel);
   function filter() {
     const query = search.value.trim().normalize('NFKC').toLowerCase();
-    for (const row of panel.querySelectorAll('tbody tr')) row.hidden = !!query && !row.textContent.normalize('NFKC').toLowerCase().includes(query);
+    for (const row of panel.querySelectorAll('tbody tr')) row.hidden = !!query && !(row.textContent+' '+(row.dataset.setupGroup || '')).normalize('NFKC').toLowerCase().includes(query);
+    for (const group of panel.querySelectorAll('.setup-expansion')) {
+      group.hidden = !!query && ![...group.querySelectorAll('tbody tr')].some(row => !row.hidden);
+    }
     const common = panel.querySelector('.setup-common');
     common.hidden = !!query && !common.textContent.normalize('NFKC').toLowerCase().includes(query);
     const any = [...panel.querySelectorAll('tbody tr')].some(row => !row.hidden) || !common.hidden;
@@ -30,7 +33,7 @@
   function render() {
     const config = data.games[game];
     const heading = make('div', undefined, 'card-header');
-    heading.append(make('h2', text('setup')), make('span', text('scope'), 'count-tag'));
+    heading.append(make('h2', text('setup')), make('span', text(config.scope || 'scope'), 'count-tag'));
     const wrap = make('div', undefined, 'table-wrap');
     const table = make('table', undefined, 'setup-table');
     const head = make('thead'), headRow = make('tr');
@@ -46,8 +49,31 @@
     table.append(head,body); wrap.append(table);
     const common = make('div',undefined,'setup-common');
     common.append(make('h3',text('common')),make('p',text(config.common)));
+    const expansionGroups = (config.expansions || []).map(expansion => {
+      const group = make('section', undefined, 'setup-expansion');
+      group.dataset.expansion = expansion.id;
+      group.append(make('h3', text(expansion.title)), make('p', text(expansion.intro), 'setup-expansion-intro'));
+      const moduleTable = make('table', undefined, 'setup-module-table');
+      const moduleHead = make('thead'), moduleHeadRow = make('tr');
+      for (const key of ['module','quickSetup']) {
+        const cell = make('th', text(key)); cell.setAttribute('scope','col'); moduleHeadRow.append(cell);
+      }
+      moduleHead.append(moduleHeadRow);
+      const moduleBody = make('tbody');
+      for (const module of expansion.modules) {
+        const row = make('tr');
+        row.dataset.module = module.id;
+        row.dataset.setupGroup = text(expansion.title)+' '+text(expansion.intro);
+        const name = make('th', text(module.name)); name.setAttribute('scope','row');
+        row.append(name, make('td', text(module.setup)));
+        moduleBody.append(row);
+      }
+      moduleTable.append(moduleHead, moduleBody);
+      group.append(moduleTable, make('p', text(expansion.sourceText), 'setup-source'));
+      return group;
+    });
     const empty = make('p',text('noResults'),'setup-no-results');empty.setAttribute('role','status');
-    panel.replaceChildren(heading,wrap,common,empty);filter();
+    panel.replaceChildren(heading,wrap,common,...expansionGroups,empty);filter();
   }
   function sync(lang) {
     language = lang === 'zh-CN' ? 'zh' : lang;

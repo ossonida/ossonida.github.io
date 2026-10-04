@@ -251,6 +251,168 @@
       "ja": "該当する項目はありません。",
       "es": "Sin resultados.",
       "zh": "无匹配结果。"
+    },
+    "module": {
+      "ko": "모듈",
+      "en": "Module",
+      "de": "Modul",
+      "fr": "Module",
+      "ja": "モジュール",
+      "es": "Módulo",
+      "zh": "模块"
+    },
+    "quickSetup": {
+      "ko": "간단 셋업",
+      "en": "Quick setup",
+      "de": "Kurzaufbau",
+      "fr": "Préparation rapide",
+      "ja": "簡単な準備",
+      "es": "Preparación rápida",
+      "zh": "简要设置"
+    },
+    "mscope": {
+      "ko": "본판 2–4인 · 확장 1 모듈 준비 포함 · 솔로 제외",
+      "en": "Base game, 2–4 players · expansion 1 module setup · excludes solo",
+      "de": "Grundspiel, 2–4 Spieler · Aufbau der Module aus Erweiterung 1 · ohne Solo",
+      "fr": "Base, 2–4 joueurs · préparation des modules de l’extension 1 · hors solo",
+      "ja": "基本ゲーム2～4人・拡張1の準備を含む・ソロ除外",
+      "es": "Base, 2–4 jugadores · preparación de módulos de expansión 1 · sin solitario",
+      "zh": "基础游戏2–4人；含扩展1模块准备；不含单人"
+    },
+    "mexp1": {
+      "ko": "확장 1 · 낙타와 유목민",
+      "en": "Expansion 1 · Camels & Nomads",
+      "de": "Erweiterung 1 · Camels & Nomads",
+      "fr": "Extension 1 · Camels & Nomads",
+      "ja": "拡張1 · Camels & Nomads",
+      "es": "Expansión 1 · Camels & Nomads",
+      "zh": "扩展1 · Camels & Nomads"
+    },
+    "mexp1Intro": {
+      "ko": "6개 모듈은 자유롭게 조합합니다. 처음에는 유목민 또는 낙타 중 하나부터 시작하는 것을 권장합니다. 선택하지 않은 모듈이 필요한 타일은 준비에서 제외하세요.",
+      "en": "Combine the six modules freely. For a first game, start with either Nomads or Camels. Remove tiles requiring a module you are not using.",
+      "de": "Die sechs Module sind frei kombinierbar. Zum Einstieg Nomads oder Camels wählen. Plättchen ausschließen, die ein nicht verwendetes Modul benötigen.",
+      "fr": "Les six modules se combinent librement. Pour débuter, choisissez Nomads ou Camels. Retirez les tuiles nécessitant un module non utilisé.",
+      "ja": "6モジュールは自由に組み合わせられます。初回は遊牧民かラクダの一方から始めるのを推奨。使用しないモジュールが必要なタイルは除きます。",
+      "es": "Combina libremente los seis módulos. Para empezar, usa Nómadas o Camellos. Retira las losetas que requieran módulos no utilizados.",
+      "zh": "6个模块可自由组合。初次建议从游牧民或骆驼之一开始。移除需要未使用模块的板块。"
+    },
+    "mnomads": {
+      "ko": "유목민",
+      "en": "Nomads",
+      "de": "Nomaden",
+      "fr": "Nomades",
+      "ja": "遊牧民",
+      "es": "Nómadas",
+      "zh": "游牧民"
+    },
+    "mnomadsSetup": {
+      "ko": "유목민 보드를 큐브 타워 옆에 놓고 나무 유목민 케시 20개를 공용 공급처로 올립니다. 에센셜 에디션은 종이 유목민 케시도 함께 준비합니다.",
+      "en": "Place the nomad board beside the cube tower and put all 20 wooden nomad keshis on it as the supply. In Essential Edition, also place the cardboard nomad keshis there.",
+      "de": "Nomadenbrett neben den Würfelturm legen; alle 20 Holz-Nomadenkeshis darauf als Vorrat bereitstellen. In der Essential Edition auch die Papp-Nomadenkeshis dort bereitlegen.",
+      "fr": "Placez le plateau des nomades près de la tour et les 20 keshis nomades en bois dessus comme réserve. En Essential Edition, ajoutez les keshis nomades en carton.",
+      "ja": "遊牧民ボードをタワーの横に置き、木製の遊牧民ケシ20個を共通のストックにします。Essential Editionでは紙製の遊牧民ケシも用意します。",
+      "es": "Coloca el tablero de nómadas junto a la torre y los 20 keshis nómadas de madera encima como reserva. En Essential Edition, añade también los de cartón.",
+      "zh": "将游牧民板放在塔旁，20个木制游牧民凯希放于其上作为公共储备。Essential Edition另备纸板游牧民凯希。"
+    },
+    "mcamels": {
+      "ko": "낙타",
+      "en": "Camels",
+      "de": "Kamele",
+      "fr": "Chameaux",
+      "ja": "ラクダ",
+      "es": "Camellos",
+      "zh": "骆驼"
+    },
+    "mcamelsSetup": {
+      "ko": "경주로 3조각을 조립해 게임 보드 옆에 놓습니다. 각자 자기 색 낙타를 관중 열 위의 출발 칸에 놓습니다. 양면 시상 타일 6개 중 3개를 무작위 면으로 골라 쌓고, 나머지는 상자에 넣습니다. 배설물 타일은 지정 칸에 둡니다.\n에센셜: 두루마리는 종류별 같은 높이의 3더미, 사치품은 같은 높이의 5더미로 나누고 맨 위를 공개합니다.",
+      "en": "Assemble the three-part racecourse beside the game board. Put each camel on the start space above its matching spectator column. Randomly select 3 of the 6 double-sided award tiles, with random sides up, and stack them; return the rest to the box. Put dung tiles on their marked space.\nEssential: use 3 equal stacks per scroll type and 5 equal luxury stacks, revealing the top tiles.",
+      "de": "Die dreiteilige Rennbahn neben das Spielbrett legen. Kamele auf das Startfeld über der eigenen Zuschauer-Spalte stellen. Von 6 doppelseitigen Auszeichnungsplättchen 3 mit zufälliger Seite stapeln; übrige zurücklegen. Dungplättchen auf das vorgesehene Feld legen.\nEssential: je Schriftrollentyp 3 gleich hohe Stapel und 5 gleich hohe Luxuswarenstapel; oberste Plättchen offen.",
+      "fr": "Assemblez les 3 parties de la piste près du plateau. Chaque chameau démarre au-dessus de sa colonne de spectateurs. Choisissez 3 des 6 tuiles récompense, faces aléatoires, et empilez-les ; rangez les autres. Placez les crottes sur l’emplacement prévu.\nEssential : 3 piles égales par type de parchemin et 5 piles égales de luxe, tuiles du dessus visibles.",
+      "ja": "3パーツの競走路をボードの横に組み立て、自分の観客列の上の開始マスにラクダを置きます。両面の表彰タイル6枚から3枚を面も無作為に選び重ね、残りは箱へ。糞タイルは指定場所に置きます。\nEssential：巻物は種類ごと同じ高さの3山、高級品は5山に分け、各山の一番上を公開します。",
+      "es": "Monta la pista de 3 piezas junto al tablero. Cada camello comienza sobre su columna de espectadores. Elige 3 de las 6 losetas de premio con caras aleatorias y apílalas; guarda las demás. Coloca el estiércol en su espacio.\nEssential: 3 pilas iguales por tipo de pergamino y 5 pilas iguales de lujo, con las losetas superiores visibles.",
+      "zh": "在主板旁组装3片赛道，各玩家将骆驼放在自己观众列上方的起点。6块双面奖励板随机选3块，随机面朝上叠放，余下收回盒内；粪便板放在指定处。\nEssential：卷轴每类分3个等高堆，奢侈品分5个等高堆，各堆顶板公开。"
+    },
+    "mbuildings": {
+      "ko": "특수 건물",
+      "en": "Special Buildings",
+      "de": "Sondergebäude",
+      "fr": "Bâtiments spéciaux",
+      "ja": "特殊建物",
+      "es": "Edificios especiales",
+      "zh": "特殊建筑"
+    },
+    "mbuildingsSetup": {
+      "ko": "전원이 같은 면을 사용하도록 합의합니다. 건물 8개를 섞어 각자 2개를 뽑고 1개만 선택합니다. 본판의 기본 시작 자원 대신 건물에 표시된 시작 케시·자원을 받으며 배치 보너스도 적용합니다. 노란 두루마리를 섞어 각자 3개 중 1개를 선택하고, 즉시 효과는 바로 처리합니다. 남은 건물은 상자에, 남은 두루마리는 본판처럼 준비합니다.",
+      "en": "Agree on one building side for everyone. Shuffle all 8 buildings; each player draws 2 and keeps 1. Take the depicted starting keshi and resources instead of the usual starting resources, applying placement bonuses. Each player draws 3 yellow scrolls and keeps 1; resolve instant effects now. Box unused buildings and set up remaining scrolls normally.",
+      "de": "Alle verwenden dieselbe Gebäudeseite. 8 Gebäude mischen; je 2 ziehen und 1 behalten. Angegebene Startkeshis und Ressourcen statt der üblichen Startressourcen nehmen; Platzierungsboni anwenden. Je 3 gelbe Schriftrollen ziehen und 1 behalten, Soforteffekte ausführen. Übrige Gebäude zurücklegen, übrige Schriftrollen normal vorbereiten.",
+      "fr": "Convenez d’une même face pour tous. Mélangez les 8 bâtiments ; chacun en pioche 2 et en garde 1. Prenez les keshis et ressources indiqués au lieu des ressources initiales habituelles, avec les bonus de placement. Chacun pioche 3 parchemins jaunes et en garde 1 ; résolvez les effets immédiats. Rangez les bâtiments inutilisés et préparez les parchemins restants normalement.",
+      "ja": "全員が使う建物の面を決めます。8枚を混ぜて各自2枚から1枚を選びます。通常の初期資源の代わりに建物に示す初期ケシ・資源を受け取り、配置ボーナスも適用。黄色い巻物を各自3枚引いて1枚を選び、即時効果を処理します。残りの建物は箱へ、巻物は通常どおり準備します。",
+      "es": "Acordad usar todos la misma cara. Mezcla los 8 edificios; cada jugador roba 2 y conserva 1. Recibe los keshis y recursos indicados en lugar de los recursos iniciales habituales, aplicando bonos de colocación. Roba 3 pergaminos amarillos y conserva 1; resuelve efectos inmediatos. Guarda edificios sobrantes y prepara los demás pergaminos normalmente.",
+      "zh": "全员约定使用同一面。洗混8块建筑，每人抽2选1。以建筑标示的初始凯希与资源代替通常的初始资源，并获得放置奖励。每人抽3块黄色卷轴选1，即时效果立即执行；剩余建筑回盒，卷轴照常准备。"
+    },
+    "mprovisions": {
+      "ko": "새 식량공급 타일",
+      "en": "New Provision Tiles",
+      "de": "Neue Versorgungsplättchen",
+      "fr": "Nouvelles tuiles provision",
+      "ja": "新しい食料供給タイル",
+      "es": "Nuevas losetas de provisión",
+      "zh": "新供给板块"
+    },
+    "mprovisionsSetup": {
+      "ko": "본판·보통(-6점)·어려움(-8점) 타일을 따로 섞습니다. 각자 본판 3개, 보통 1개, 어려움 1개를 받은 뒤 사용할 3개를 선택하고 나머지는 상자에 넣습니다. 선택한 타일은 뒷면으로 놓고 첫 계절용 1개를 공개합니다. 유목민 효과 타일은 유목민 모듈을 사용할 때만 포함합니다.",
+      "en": "Shuffle base, moderate (-6) and hard (-8) tiles separately. Each player takes 3 base, 1 moderate and 1 hard tile, selects 3 to use and boxes the rest. Place chosen tiles face down and reveal one for the first season. Include the nomad-effect tile only with the Nomads module.",
+      "de": "Grundspiel-, mittlere (-6) und schwere (-8) Plättchen getrennt mischen. Je 3 Grundspiel-, 1 mittleres und 1 schweres Plättchen nehmen, 3 auswählen und übrige zurücklegen. Gewählte verdeckt auslegen, eines für Saison 1 aufdecken. Nomadeneffekt nur mit Nomadenmodul verwenden.",
+      "fr": "Mélangez séparément les tuiles de base, modérées (-6) et difficiles (-8). Chacun reçoit 3 de base, 1 modérée et 1 difficile, en choisit 3 et range les autres. Placez-les face cachée et révélez-en une pour la première saison. La tuile liée aux nomades nécessite ce module.",
+      "ja": "基本・中級(-6点)・上級(-8点)を別々に混ぜます。各自、基本3枚・中級1枚・上級1枚から使う3枚を選び、残りは箱へ。選んだタイルは裏向きで置き、第1季節用1枚を公開。遊牧民効果のタイルは遊牧民モジュール使用時のみ入れます。",
+      "es": "Baraja por separado las losetas base, moderadas (-6) y difíciles (-8). Cada jugador recibe 3 base, 1 moderada y 1 difícil, elige 3 y guarda el resto. Colócalas boca abajo y revela una para la primera estación. Usa la loseta de nómadas solo con ese módulo.",
+      "zh": "基础、中等(-6分)、困难(-8分)板块分别洗混。每人取基础3、中等1、困难1，选3块使用，其余回盒。所选面朝下放置，公开首季用1块。游牧民效果板块仅在使用游牧民模块时加入。"
+    },
+    "mluxury": {
+      "ko": "새 사치품",
+      "en": "New Luxury Goods",
+      "de": "Neue Luxuswaren",
+      "fr": "Nouveaux biens de luxe",
+      "ja": "新しい高級品",
+      "es": "Nuevos bienes de lujo",
+      "zh": "新奢侈品"
+    },
+    "mluxurySetup": {
+      "ko": "새 사치품(팔콘·레이스 안장)을 본판 사치품과 섞어 같은 높이의 5더미로 나누고 맨 위를 공개합니다. 유목민 케시를 주는 팔콘은 유목민 모듈이 없으면 제외합니다. 낙타 모듈 없이도 레이스 안장은 사용하며, 그 경우 낙타 전진 대신 자원 최대 2개 할인으로 오아시스 1개를 차지합니다.",
+      "en": "Mix Falcons and Race Saddles with the base luxury tiles, form 5 equal stacks and reveal their top tiles. Remove the nomad-granting Falcon if not using Nomads. Race Saddles work without Camels: replace camel movement with claiming one oasis at a discount of up to 2 resources.",
+      "de": "Falken und Rennsättel mit den Grundspiel-Luxuswaren mischen; 5 gleich hohe Stapel bilden und oberste Plättchen aufdecken. Ohne Nomaden den Falken mit Nomadenbonus entfernen. Rennsättel ohne Kamele erlauben statt Bewegung eine Oase mit bis zu 2 Ressourcen Rabatt.",
+      "fr": "Mélangez faucons et selles de course avec le luxe de base ; formez 5 piles égales, dessus visibles. Sans Nomads, retirez le faucon donnant un nomade. Sans Camels, la selle permet de revendiquer une oasis avec une réduction maximale de 2 ressources au lieu d’avancer.",
+      "ja": "ファルコンと競走用の鞍を基本高級品と混ぜ、同じ高さの5山にして上を公開します。遊牧民を獲得するファルコンは遊牧民未使用なら除外。ラクダなしでも鞍は使用でき、移動の代わりに最大2資源割引でオアシス1枚を獲得します。",
+      "es": "Mezcla halcones y sillas de carrera con los bienes de lujo base; forma 5 pilas iguales y revela las superiores. Sin Nómadas, retira el halcón que concede un nómada. Sin Camellos, la silla permite reclamar un oasis con hasta 2 recursos de descuento en vez de avanzar.",
+      "zh": "猎鹰与赛鞍混入基础奢侈品，分5个等高堆并公开顶板。不使用游牧民时移除给予游牧民的猎鹰。无骆驼模块仍可使用赛鞍，改为以最多减免2资源的费用领取1块绿洲。"
+    },
+    "moases": {
+      "ko": "새 오아시스",
+      "en": "New Oasis Tiles",
+      "de": "Neue Oasen",
+      "fr": "Nouvelles tuiles oasis",
+      "ja": "新しいオアシス",
+      "es": "Nuevos oasis",
+      "zh": "新绿洲"
+    },
+    "moasesSetup": {
+      "ko": "사용 모듈에 맞는 새 타일만 본판 오아시스와 섞습니다. 31–34번은 새 사치품, 35번은 낙타, 36번은 유목민 모듈을 사용할 때 포함합니다. 이후 인원별 오아시스 준비는 본판 규칙을 따릅니다.",
+      "en": "Mix only eligible new tiles with the base oases: 31–34 require New Luxury Goods, 35 requires Camels, and 36 requires Nomads. Then follow the base game's player-count setup.",
+      "de": "Nur passende neue Oasen ins Grundspiel mischen: 31–34 benötigen neue Luxuswaren, 35 Kamele, 36 Nomaden. Danach den Aufbau nach Spielerzahl des Grundspiels verwenden.",
+      "fr": "Mélangez seulement les nouvelles oasis compatibles : 31–34 nécessitent les nouveaux biens de luxe, 35 Camels, 36 Nomads. Suivez ensuite la préparation de base selon le nombre de joueurs.",
+      "ja": "使用モジュールに合うタイルだけ基本オアシスと混ぜます。31～34は新高級品、35はラクダ、36は遊牧民使用時に入れます。その後は人数別の基本準備に従います。",
+      "es": "Mezcla solo los oasis compatibles con los básicos: 31–34 requieren Nuevos bienes de lujo, 35 Camellos y 36 Nómadas. Después sigue la preparación base según los jugadores.",
+      "zh": "仅将适用的新板块混入基础绿洲：31–34需新奢侈品，35需骆驼，36需游牧民模块。随后按基础规则的人数设置准备。"
+    },
+    "mexp1Source": {
+      "ko": "출처: Camels & Nomads 영문 룰북 1–2, 5, 7–8쪽.",
+      "en": "Source: Camels & Nomads English rulebook, pp. 1–2, 5, 7–8.",
+      "de": "Quelle: englische Anleitung Camels & Nomads, S. 1–2, 5, 7–8.",
+      "fr": "Source : règles anglaises Camels & Nomads, p. 1–2, 5, 7–8.",
+      "ja": "出典：Camels & Nomads英語ルールブック1～2、5、7～8ページ。",
+      "es": "Fuente: reglamento inglés Camels & Nomads, pp. 1–2, 5, 7–8.",
+      "zh": "来源：Camels & Nomads英文规则，第1–2、5、7–8页。"
     }
   },
   "games": {
@@ -365,7 +527,66 @@
           5
         ],
         "edition": "Queen Games base rules"
-      }
+      },
+      "scope": "mscope",
+      "expansions": [
+        {
+          "id": "camels-nomads",
+          "title": "mexp1",
+          "intro": "mexp1Intro",
+          "sourceText": "mexp1Source",
+          "source": {
+            "type": "user-provided-rulebook",
+            "title": "Marrakesh: Camels & Nomads",
+            "filename": "marrakesh_exp1_camels+nomads_en.pdf",
+            "pages": [
+              1,
+              2,
+              5,
+              7,
+              8
+            ]
+          },
+          "modules": [
+            {
+              "id": "nomads",
+              "name": "mnomads",
+              "setup": "mnomadsSetup",
+              "page": 1
+            },
+            {
+              "id": "camels",
+              "name": "mcamels",
+              "setup": "mcamelsSetup",
+              "page": 2
+            },
+            {
+              "id": "buildings",
+              "name": "mbuildings",
+              "setup": "mbuildingsSetup",
+              "page": 5
+            },
+            {
+              "id": "provisions",
+              "name": "mprovisions",
+              "setup": "mprovisionsSetup",
+              "page": 7
+            },
+            {
+              "id": "luxury",
+              "name": "mluxury",
+              "setup": "mluxurySetup",
+              "page": 8
+            },
+            {
+              "id": "oases",
+              "name": "moases",
+              "setup": "moasesSetup",
+              "page": 8
+            }
+          ]
+        }
+      ]
     }
   }
 }

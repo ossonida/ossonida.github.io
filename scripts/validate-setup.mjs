@@ -23,10 +23,21 @@ for(const [game,config] of Object.entries(data.games)){
  const document={body,documentElement:{lang:'ko'},getElementById:id=>id==='section-tabs'?tabs:id==='global-search'?search:null,querySelector:()=>layout,createElement:t=>new Element(t)};
  const window={BGW_SETUP:data};vm.runInNewContext(fs.readFileSync('assets/setup.js','utf8'),{document,window});
  const panel=layout.querySelector('.setup-panel');assert.equal(panel.hidden,true);
- tabs.querySelector('[data-setup-tab]').click();assert.equal(panel.hidden,false);assert.equal(panel.querySelectorAll('tbody tr').length,config.rows.length);
+ tabs.querySelector('[data-setup-tab]').click();assert.equal(panel.hidden,false);assert.equal(panel.querySelectorAll('tbody tr').length,config.rows.length+(config.expansions || []).reduce((sum,group)=>sum+group.modules.length,0));
  for(const lang of ['ko','en','de','fr','ja','es',...(game==='marrakesh'?['zh']:[])]){
   for(const values of Object.values(data.text))assert.ok(values[lang]?.trim());
   window.BGWSetup.sync(lang);assert.equal(tabs.querySelector('[data-setup-tab]').textContent,data.text.setup[lang]);assert.ok(!panel.textContent.includes('undefined'));
+ }
+ if(config.expansions?.length){
+  window.BGWSetup.sync('en');
+  const group=panel.querySelector('.setup-expansion');
+  assert.ok(group);assert.equal(group.querySelectorAll('tbody tr').length,6);
+  assert.ok(panel.textContent.includes(data.text[config.scope].en));
+  search.value='Assemble the three-part racecourse';search.events.input();
+  assert.equal(group.hidden,false);
+  assert.equal(panel.querySelectorAll('tbody tr').filter(row=>!row.hidden).length,1);
+  assert.equal(panel.querySelectorAll('tbody tr').find(row=>!row.hidden).dataset.module,'camels');
+  search.value='';search.events.input();
  }
  search.value='zz_no_matching_setup_zz';search.events.input();assert.equal(panel.querySelector('.setup-no-results').hidden,false);
  search.value='';search.events.input();assert.equal(panel.querySelector('.setup-no-results').hidden,true);

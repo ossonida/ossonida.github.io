@@ -304,3 +304,14 @@ table { width: 100%; border-collapse: collapse; }
 @media(prefers-reduced-motion:reduce) {
   .page-top button,.page-top a,.page-top input { transition: none; }
 }
+
+/* Optional module setup notes use the same panel and search as the base setup. */
+.setup-panel > .card-header .count-tag { flex:0 1 auto; max-width:100%; }
+.setup-expansion { margin-top:var(--section-gap); padding-top:var(--section-gap); border-top:1px solid var(--border); }
+.setup-expansion h3 { margin:0; font-size:16px; font-weight:600; line-height:1.4; }
+.setup-expansion-intro { margin:8px 0 12px; color:var(--muted); font-size:13px; line-height:1.6; }
+.setup-module-table { min-width:0; width:100%; table-layout:fixed; font-size:14px; line-height:1.6; }
+.setup-module-table th:first-child { width:24%; overflow-wrap:anywhere; }
+.setup-module-table td { white-space:pre-line; overflow-wrap:anywhere; }
+.setup-source { margin:12px 0 0; color:var(--muted); font-size:11px; line-height:1.5; }
+@media(max-width:480px) { .setup-module-table { font-size:13px; } .setup-module-table th:first-child { width:27%; } }
