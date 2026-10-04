@@ -30,9 +30,13 @@ for(const file of pages){
   if(attrs.includes('application/ld+json'))JSON.parse(code);else new vm.Script(code,{filename:file});
  }
  for(const [,value] of html.matchAll(/["']((?:\.\.?\/|img\/)[^"'<>\s]+)["']/g))check(value,base);
+ if(file==='clocktower/index.html'){
+  assert.ok(!html.includes('score-counter-link'),`Unexpected Score Counter link: ${file}`);
+ }else{
  assert.ok(html.includes('class="score-counter-link"'),`Missing Score Counter link: ${file}`);
  assert.ok(html.includes('href="https://ossonida.github.io/score/"'),`Wrong Score Counter URL: ${file}`);
  assert.ok(html.includes('class="score-counter-icon"'),`Missing Score Counter icon: ${file}`);
+ }
  assert.ok(html.includes('assets/site.js'));
  for(const [,src] of html.matchAll(/<script[^>]+src="([^"]+)"/g)){if(!src.startsWith('http'))new vm.Script(read(path.join(path.dirname(file),src)),{filename:src});}
 }
