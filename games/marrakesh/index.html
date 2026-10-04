@@ -439,16 +439,12 @@
         <button type="button" data-show="scroll">두루마리</button>
         <button type="button" data-show="oasis">오아시스</button>
         <button type="button" data-show="river">강타일</button>
-        <button type="button" data-show="building">확장1.특수건물</button>
-        <button type="button" data-show="newOasis">확장1.오아시스</button>
-        <button type="button" data-show="luxury">확장1.사치품</button>
-        <button type="button" data-show="provision">확장1.식량공급타일</button>
-        <button type="button" data-show="award">확장1.시상타일</button>
-        <button type="button" data-show="ex2Luxury">확장2.사치품(선물/조각상)</button>
-        <button type="button" data-show="ex2Exchange">확장2.교환소타일</button>
-        <button type="button" data-show="ex2Scroll">확장2.두루마리</button>
-        <button type="button" data-show="ex2Oasis">확장2.오아시스</button>
-        <button type="button" data-show="ex2Expert">확장2.전문가</button>
+        <button type="button" data-show="building">특수건물</button>
+        <button type="button" data-show="luxury">사치품</button>
+        <button type="button" data-show="provision">식량공급타일</button>
+        <button type="button" data-show="award">시상타일</button>
+        <button type="button" data-show="ex2Exchange">교환소타일</button>
+        <button type="button" data-show="ex2Expert">전문가</button>
       </div>
       <div class="search-bar">
         <input id="global-search" type="search" placeholder="타일번호·이름·내용을 입력하세요" autofocus>
@@ -622,7 +618,7 @@
     const baseSectionLabels = {
       ko: {
         pageTitle: "마라케시",
-        tabs: ['전체', '두루마리', '오아시스', '강타일', '확장1.특수건물', '확장1.오아시스', '확장1.사치품', '확장1.식량공급타일', '확장1.시상타일', '확장2.사치품(선물/조각상)', '확장2.교환소타일', '확장2.두루마리', '확장2.오아시스', '확장2.전문가'],
+        tabs: ["전체","두루마리","오아시스","강타일","특수건물","사치품","식량공급타일","시상타일","교환소타일","전문가"],
         search: '타일번호·이름·내용을 입력하세요',
         empty: '검색 결과가 없습니다.',
         globalEmpty: '검색 결과가 없습니다.',
@@ -636,7 +632,7 @@
       },
       en: {
         pageTitle: "Marrakesh",
-        tabs: ['All', 'Scrolls', 'Oases', 'River Tiles', 'Ex1. Special Buildings', 'Ex1. Oases', 'Ex1. Luxury Goods', 'Ex1. Provision Tiles', 'Ex1. Award Tiles', 'Ex2. Luxury Goods (Gifts/Statuettes)', 'Ex2. Exchange Tiles', 'Ex2. Scrolls', 'Ex2. Oases', 'Ex2. Experts'],
+        tabs: ["All","Scrolls","Oases","River Tiles","Special Buildings","Luxury Goods","Provision Tiles","Award Tiles","Exchange Tiles","Experts"],
         search: 'Search tile number, name, or text',
         empty: 'No results found.',
         globalEmpty: 'No results found.',
@@ -650,7 +646,7 @@
       },
       de: {
         pageTitle: "Marrakesh",
-        tabs: ['Alle', 'Schriftrollen', 'Oasen', 'Flussplättchen', 'Erw 1. Sondergebäude', 'Erw 1. Oasen', 'Erw 1. Luxusgüter', 'Erw 1. Versorgungstättchen', 'Erw 1. Auszeichnungsplättchen', 'Erw 2. Luxusgüter (Geschenke/Statuetten)', 'Erw 2. Tauschplättchen', 'Erw 2. Schriftrollen', 'Erw 2. Oasen', 'Erw 2. Experten'],
+        tabs: ["Alle","Schriftrollen","Oasen","Flussplättchen","Sondergebäude","Luxusgüter","Versorgungstättchen","Auszeichnungsplättchen","Tauschplättchen","Experten"],
         search: 'Nummer, Name oder Text suchen',
         empty: 'Keine Ergebnisse gefunden.',
         globalEmpty: 'Keine Ergebnisse gefunden.',
@@ -664,7 +660,7 @@
       },
       fr: {
         pageTitle: "Marrakesh",
-        tabs: ['Tout', 'Parchemins', 'Oasis', 'Tuiles Rivière', 'Ext. 1 Bâtiments spéciaux', 'Ext. 1 Oasis', 'Ext. 1 Biens de luxe', 'Ext. 1 Tuiles de ravitaillement', 'Ext. 1 Tuiles de récompense', 'Ext. 2 Biens de luxe (cadeaux/statuettes)', 'Ext. 2 Tuiles d’échange', 'Ext. 2 Parchemins', 'Ext. 2 Oasis', 'Ext. 2 Experts'],
+        tabs: ["Tout","Parchemins","Oasis","Tuiles Rivière","Bâtiments spéciaux","Biens de luxe","Tuiles de ravitaillement","Tuiles de récompense","Tuiles d’échange","Experts"],
         search: 'Rechercher numéro, nom ou texte',
         empty: 'Aucun résultat.',
         globalEmpty: 'Aucun résultat.',
@@ -678,7 +674,7 @@
       },
       ja: {
         pageTitle: "マラケシュ",
-        tabs: ['すべて', '巻物', 'オアシス', '川タイル', '拡張1 特殊建物', '拡張1 オアシス', '拡張1 高級品', '拡張1 食料供給タイル', '拡張1 表彰タイル', '拡張2 高級品（贈り物/小像）', '拡張2 交換所タイル', '拡張2 巻物', '拡張2 オアシス', '拡張2 専門家'],
+        tabs: ["すべて","巻物","オアシス","川タイル","特殊建物","高級品","食料供給タイル","表彰タイル","交換所タイル","専門家"],
         search: '番号・名前・テキストを検索',
         empty: '検索結果がありません。',
         globalEmpty: '検索結果がありません。',
@@ -692,7 +688,7 @@
       },
       zh: {
         pageTitle: "马拉喀什",
-        tabs: ['全部', '卷轴', '绿洲', '河流板块', '扩展1 特殊建筑', '扩展1 绿洲', '扩展1 奢侈品', '扩展1 供给板块', '扩展1 奖励板块', '扩展2 奢侈品（礼物/小雕像）', '扩展2 交换板块', '扩展2 卷轴', '扩展2 绿洲', '扩展2 专家'],
+        tabs: ["全部","卷轴","绿洲","河流板块","特殊建筑","奢侈品","供给板块","奖励板块","交换板块","专家"],
         search: '搜索编号、名称或文本',
         empty: '没有找到结果。',
         globalEmpty: '没有找到结果。',
@@ -706,7 +702,7 @@
       },
       es: {
         pageTitle: "Marrakesh",
-        tabs: ['Todo', 'Pergaminos', 'Oasis', 'Losetas de río', 'Exp. 1 Edificios especiales', 'Exp. 1 Oasis', 'Exp. 1 Bienes de lujo', 'Exp. 1 Losetas de provisión', 'Exp. 1 Losetas de premio', 'Exp. 2 Bienes de lujo (regalos/estatuillas)', 'Exp. 2 Losetas de intercambio', 'Exp. 2 Pergaminos', 'Exp. 2 Oasis', 'Exp. 2 Expertos'],
+        tabs: ["Todo","Pergaminos","Oasis","Losetas de río","Edificios especiales","Bienes de lujo","Losetas de provisión","Losetas de premio","Losetas de intercambio","Expertos"],
         search: 'Buscar número, nombre o texto',
         empty: 'No se encontraron resultados.',
         globalEmpty: 'No se encontraron resultados.',
@@ -726,6 +722,11 @@
     const input = document.getElementById('global-search');
     const tabs = document.querySelectorAll('#section-tabs button');
     const sections = document.querySelectorAll('[data-section]');
+    const categorySections = {
+      scroll: ['scroll', 'ex2Scroll'],
+      oasis: ['oasis', 'newOasis', 'ex2Oasis'],
+      luxury: ['luxury', 'ex2Luxury']
+    };
     const noNumberSections = new Set(['award', 'ex2Expert']);
     const textOnlySections = new Set(['award', 'provision', 'ex2Luxury']);
     const noNameSections = new Set(['scroll', 'oasis', 'river', 'building', 'newOasis', 'luxury', 'ex2Exchange', 'ex2Scroll', 'ex2Oasis']);
@@ -910,7 +911,7 @@
       const q = input.value.trim().toLowerCase();
       let visibleCount = 0;
       sections.forEach(section => {
-        const sectionMatch = activeSection === 'all' || activeSection === section.dataset.section;
+        const sectionMatch = activeSection === 'all' || (categorySections[activeSection] || [activeSection]).includes(section.dataset.section);
         let rowCount = 0;
         section.querySelectorAll('tbody tr').forEach(row => {
           const searchMatch = !q || row.textContent.toLowerCase().includes(q);
