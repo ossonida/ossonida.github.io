@@ -326,3 +326,13 @@ table { width: 100%; border-collapse: collapse; }
   .setup-panel .setup-table th, .setup-panel .setup-table td { padding:8px 5px; }
   .setup-panel .setup-table th:first-child { width:28%; }
 }
+
+/* Grid tracks must shrink to the viewport instead of the widest table. */
+.layout { width:100%; min-width:0; grid-template-columns:minmax(0,1fr); }
+.layout > * { min-width:0; }
+.page-top { min-width:0; grid-template-columns:minmax(0,1fr); }
+.layout .reference-results { min-width:0; grid-template-columns:minmax(0,1fr); }
+.setup-panel { width:100%; min-width:0; overflow-wrap:anywhere; }
+.setup-panel .setup-table, .setup-panel .setup-module-table { width:100%; min-width:0; max-width:100%; table-layout:fixed; }
+.setup-panel th, .setup-panel td { overflow-wrap:anywhere; }
+.setup-panel [hidden] { display:none !important; }

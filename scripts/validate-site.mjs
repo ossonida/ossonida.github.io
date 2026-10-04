@@ -38,7 +38,7 @@ for(const file of pages){
  assert.ok(html.includes('class="score-counter-icon"'),`Missing Score Counter icon: ${file}`);
  }
  assert.ok(html.includes('assets/site.js'));
- for(const [,src] of html.matchAll(/<script[^>]+src="([^"]+)"/g)){if(!src.startsWith('http'))new vm.Script(read(path.join(path.dirname(file),src)),{filename:src});}
+ for(const [,src] of html.matchAll(/<script[^>]+src="([^"]+)"/g)){if(!src.startsWith('http'))new vm.Script(read(path.join(root,decodeURIComponent(new URL(src,base).pathname))),{filename:src});}
 }
 const data=vm.createContext({window:{}});
 for(const file of ['marrakesh/reference-data.js','marrakesh/reference-translations.js'])vm.runInContext(read(file),data);

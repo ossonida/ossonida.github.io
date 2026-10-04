@@ -124,7 +124,7 @@
     search.placeholder = copy[0]; search.setAttribute("aria-label", copy[0]);
     const entries = [{id:"all", name:copy[1]}, ...data.categories];
     filters.replaceChildren(...entries.map(entry => {
-      const button = el("button", pick(entry.name)); button.type = "button";
+      const button = el("button", pick(entry.name)); button.type = "button"; button.dataset.category = entry.id;
       button.setAttribute("aria-pressed", String(category === entry.id));
       button.addEventListener("click", () => {
         category = entry.id;

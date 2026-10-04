@@ -6,7 +6,7 @@
   const tabs = document.getElementById('section-tabs') || document.getElementById('filters');
   const search = document.getElementById('global-search') || document.getElementById('search');
   const container = document.querySelector('.layout');
-  let active = false;
+  let selectedTab = 'all';
   let language = document.documentElement.lang;
   const text = key => typeof key === 'object' ? key.value : (data.text[key][language] || data.text[key].en);
   const make = (tag, value, className) => {
@@ -75,27 +75,34 @@
     const empty = make('p',text('noResults'),'setup-no-results');empty.setAttribute('role','status');
     panel.replaceChildren(heading,wrap,common,...expansionGroups,empty);filter();
   }
+  function updateSelection() {
+    const setupOnly = selectedTab === 'setup';
+    document.body.classList.toggle('setup-mode', setupOnly);
+    panel.hidden = selectedTab !== 'all' && !setupOnly;
+    for (const button of tabs.querySelectorAll('button')) {
+      const key = button.dataset.setupTab ? 'setup' : (button.dataset.show || button.dataset.category);
+      const chosen = key === selectedTab;
+      button.classList.toggle('is-active', chosen);
+      button.setAttribute('aria-pressed', String(chosen));
+    }
+  }
   function sync(lang) {
     language = lang === 'zh-CN' ? 'zh' : lang;
     let button = tabs.querySelector('[data-setup-tab]');
     if (!button) {
       button = make('button');button.type='button';button.dataset.setupTab='true';
       button.setAttribute('aria-controls','setup-panel');
-      button.addEventListener('click',() => {
-        active=true;document.body.classList.add('setup-mode');panel.hidden=false;
-        sync(language);
-      });
       tabs.append(button);
     }
-    button.textContent=text('setup');button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));
-    if(active) for(const other of tabs.querySelectorAll('button')) if(other!==button){other.classList.remove('is-active');other.setAttribute('aria-pressed','false');}
+    button.textContent=text('setup');
     render();
+    updateSelection();
   }
   tabs.addEventListener('click',event => {
     const button=event.target.closest('button');
-    if(!button || button.dataset.setupTab) return;
-    active=false;document.body.classList.remove('setup-mode');panel.hidden=true;
-    const setup=tabs.querySelector('[data-setup-tab]');setup.classList.remove('is-active');setup.setAttribute('aria-pressed','false');
+    if(!button) return;
+    selectedTab = button.dataset.setupTab ? 'setup' : (button.dataset.show || button.dataset.category || 'all');
+    updateSelection();
   });
   search.addEventListener('input',filter);
   window.BGWSetup={sync};

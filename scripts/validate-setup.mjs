@@ -19,11 +19,11 @@ class Element {
 for(const [game,config] of Object.entries(data.games)){
  for(const row of config.rows){assert.equal(row.length,4);for(const cell of row)if(typeof cell==='string')assert.ok(data.text[cell]);}
  const body=new Element('body');body.dataset.setupGame=game;
- const layout=new Element(),top=new Element(),tabs=new Element(),search=new Element('input'),native=new Element('button');top.className='page-top';layout.append(top);tabs.append(native);
+ const layout=new Element(),top=new Element(),tabs=new Element(),search=new Element('input'),native=new Element('button');top.className='page-top';layout.append(top);native.dataset.show='all';const category=new Element('button');category.dataset.show='category';tabs.append(native,category);
  const document={body,documentElement:{lang:'ko'},getElementById:id=>id==='section-tabs'?tabs:id==='global-search'?search:null,querySelector:()=>layout,createElement:t=>new Element(t)};
  const window={BGW_SETUP:data};vm.runInNewContext(fs.readFileSync('assets/setup.js','utf8'),{document,window});
- const panel=layout.querySelector('.setup-panel');assert.equal(panel.hidden,true);
- tabs.querySelector('[data-setup-tab]').click();assert.equal(panel.hidden,false);assert.equal(panel.querySelectorAll('tbody tr').length,config.rows.length+(config.expansions || []).reduce((sum,group)=>sum+group.modules.length,0));
+ const panel=layout.querySelector('.setup-panel');assert.equal(panel.hidden,false);assert.equal(native.attrs['aria-pressed'],'true');
+ tabs.querySelector('[data-setup-tab]').click();assert.equal(panel.hidden,false);assert.equal(native.attrs['aria-pressed'],'false');assert.equal(tabs.querySelector('[data-setup-tab]').attrs['aria-pressed'],'true');assert.equal(panel.querySelectorAll('tbody tr').length,config.rows.length+(config.expansions || []).reduce((sum,group)=>sum+group.modules.length,0));
  for(const lang of ['ko','en','de','fr','ja','es',...(game==='marrakesh'?['zh']:[])]){
   for(const values of Object.values(data.text))assert.ok(values[lang]?.trim());
   window.BGWSetup.sync(lang);assert.equal(tabs.querySelector('[data-setup-tab]').textContent,data.text.setup[lang]);assert.ok(!panel.textContent.includes('undefined'));
@@ -54,8 +54,22 @@ for(const [game,config] of Object.entries(data.games)){
  }
  search.value='zz_no_matching_setup_zz';search.events.input();assert.equal(panel.querySelector('.setup-no-results').hidden,false);
  search.value='';search.events.input();assert.equal(panel.querySelector('.setup-no-results').hidden,true);
+ category.click();assert.equal(panel.hidden,true);assert.ok(!body.className.includes('setup-mode'));assert.equal(category.attrs['aria-pressed'],'true');
+ assert.equal(tabs.querySelector('[data-setup-tab]').attrs['aria-pressed'],'false');
+ native.click();assert.equal(panel.hidden,false);assert.equal(native.attrs['aria-pressed'],'true');assert.equal(category.attrs['aria-pressed'],'false');
+ assert.equal(tabs.querySelectorAll('button').filter(button=>button.attrs['aria-pressed']==='true').length,1);
+ tabs.querySelector('[data-setup-tab]').click();
  tabs.replaceChildren(native);window.BGWSetup.sync('en');window.BGWSetup.sync('en');assert.equal(tabs.querySelectorAll('[data-setup-tab]').length,1);assert.equal(tabs.querySelector('[data-setup-tab]').attrs['aria-pressed'],'true');
- native.click();assert.equal(panel.hidden,true);assert.ok(!body.className.includes('setup-mode'));
+ native.click();assert.equal(panel.hidden,false);assert.ok(!body.className.includes('setup-mode'));
+ const genericAll=new Element('button');genericAll.dataset.category='all';
+ const genericCategory=new Element('button');genericCategory.dataset.category='tiles';
+ tabs.replaceChildren(genericAll,genericCategory);window.BGWSetup.sync('en');
+ genericCategory.click();assert.equal(panel.hidden,true);assert.equal(genericCategory.attrs['aria-pressed'],'true');
+ window.BGWSetup.sync('de');assert.equal(genericCategory.attrs['aria-pressed'],'true');
+ tabs.querySelector('[data-setup-tab]').click();window.BGWSetup.sync('fr');
+ assert.equal(genericCategory.attrs['aria-pressed'],'false');
+ assert.equal(tabs.querySelectorAll('button').filter(button=>button.attrs['aria-pressed']==='true').length,1);
+ genericAll.click();assert.equal(panel.hidden,false);assert.ok(!body.className.includes('setup-mode'));
  const html=fs.readFileSync(`${game}/index.html`,'utf8');assert.ok(html.includes(`data-setup-game="${game}"`));assert.ok(html.includes('../assets/setup.js'));
 }
 console.log('PASS: setup tables for three games, translations, tab switching, search, and tab regeneration.');
