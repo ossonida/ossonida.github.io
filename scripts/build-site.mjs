@@ -45,8 +45,8 @@ ${alternates}
 <a class="skip" id="skip" href="#results">레퍼런스로 이동</a>
 <main class="layout">
 <div class="page-top">
-<a class="home-link" id="home" data-site-link href="../"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.7H15v-6H9v6H3Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>HOME</span></a>
-<div class="page-top-row"><h1 class="page-title" id="page-title">${esc(data.title)}</h1>
+
+<div class="page-top-row game-header-row"><a class="home-link" aria-label="홈으로 이동" id="home" data-site-link href="../"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.7H15v-6H9v6H3Z" fill="none" stroke="currentColor" stroke-width="2"/></svg></a><span class="header-separator" aria-hidden="true">·</span><h1 class="page-title" id="page-title">${esc(data.title)}</h1>
 <div class="top-actions">${game.id==='clocktower'?'':"<a class=\"score-counter-link\" href=\"https://ossonida.github.io/score/\"><svg class=\"score-counter-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h3v4H7zM14 8h3v4h-3zM8.5 15v3M7 16.5h3M14 16.5h3\"/></svg><span>Score Counter</span></a>"}<a class="coffee-banner" href="https://github.com/sponsors/ossonida" target="_blank" rel="noopener noreferrer">☕ Coffee</a>
 <div class="lang-switch" id="lang-switch"><button type="button" id="lang-button" aria-label="Language" aria-haspopup="listbox" aria-controls="lang-menu" aria-expanded="false"><span class="lang-label"><img class="lang-icon" id="lang-icon" src="../img/flag-kr.svg" alt=""><span id="lang-code">KR</span></span><span aria-hidden="true">▾</span></button><div class="lang-menu" id="lang-menu" role="listbox" aria-label="Language" hidden></div></div></div></div>
 <div class="filter-tabs" id="filters" role="group" aria-label="Categories"></div>
