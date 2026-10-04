@@ -271,13 +271,13 @@
       "zh": "简要设置"
     },
     "mscope": {
-      "ko": "본판 2–4인 · 확장 1 모듈 준비 포함 · 솔로 제외",
-      "en": "Base game, 2–4 players · expansion 1 module setup · excludes solo",
-      "de": "Grundspiel, 2–4 Spieler · Aufbau der Module aus Erweiterung 1 · ohne Solo",
-      "fr": "Base, 2–4 joueurs · préparation des modules de l’extension 1 · hors solo",
-      "ja": "基本ゲーム2～4人・拡張1の準備を含む・ソロ除外",
-      "es": "Base, 2–4 jugadores · preparación de módulos de expansión 1 · sin solitario",
-      "zh": "基础游戏2–4人；含扩展1模块准备；不含单人"
+      "ko": "본판 2–4인 · 확장 1·2 모듈 준비 포함 · 솔로 제외",
+      "en": "Base game, 2–4 players · expansion 1 & 2 module setup · excludes solo",
+      "de": "Grundspiel, 2–4 Spieler · Module aus Erweiterung 1 und 2 · ohne Solo",
+      "fr": "Base, 2–4 joueurs · préparation des modules des extensions 1 et 2 · hors solo",
+      "ja": "基本ゲーム2～4人・拡張1と2の準備を含む・ソロ除外",
+      "es": "Base, 2–4 jugadores · módulos de expansiones 1 y 2 · sin solitario",
+      "zh": "基础游戏2–4人；含扩展1、2模块准备；不含单人"
     },
     "mexp1": {
       "ko": "확장 1 · 낙타와 유목민",
@@ -413,6 +413,105 @@
       "ja": "出典：Camels & Nomads英語ルールブック1～2、5、7～8ページ。",
       "es": "Fuente: reglamento inglés Camels & Nomads, pp. 1–2, 5, 7–8.",
       "zh": "来源：Camels & Nomads英文规则，第1–2、5、7–8页。"
+    },
+    "mexp2": {
+      "ko": "확장 2 · 모듈별 준비",
+      "en": "Expansion 2 · Module setup",
+      "de": "Erweiterung 2 · Modulaufbau",
+      "fr": "Extension 2 · Préparation des modules",
+      "ja": "拡張2 · モジュール別の準備",
+      "es": "Expansión 2 · Preparación de módulos",
+      "zh": "扩展2 · 模块准备"
+    },
+    "mexp2Intro": {
+      "ko": "사용하는 모듈의 준비만 본판 셋업에 적용하세요. 아래는 제공된 룰북 이미지에서 확인한 4개 모듈의 요약입니다.",
+      "en": "Apply the setup changes for the modules you use. These four summaries are based on the supplied rulebook images.",
+      "de": "Nur den Aufbau der verwendeten Module anwenden. Diese vier Zusammenfassungen basieren auf den bereitgestellten Regelbildern.",
+      "fr": "Appliquez les modifications des modules utilisés. Ces quatre résumés sont tirés des images du livret fournies.",
+      "ja": "使用するモジュールの準備だけ基本準備に適用してください。以下は提供されたルール画像で確認した4モジュールの要約です。",
+      "es": "Aplica los cambios de los módulos utilizados. Estos cuatro resúmenes proceden de las imágenes del reglamento facilitadas.",
+      "zh": "仅应用所用模块的准备变更。以下4个模块根据提供的规则图片整理。"
+    },
+    "mclosedMadrasa": {
+      "ko": "폐쇄된 마드라사",
+      "en": "The Closed Madrasa",
+      "de": "Die geschlossene Madrasa",
+      "fr": "La madrasa fermée",
+      "ja": "閉ざされたマドラサ",
+      "es": "La madrasa cerrada",
+      "zh": "封闭的宗教学校"
+    },
+    "mclosedMadrasaSetup": {
+      "ko": "마드라사 보드 4조각을 모두 A면으로 조립해 본판 마드라사 위에 놓습니다. B면 또는 A/B 혼합도 가능합니다. 에센셜은 게임 보드 옆에 놓습니다.\n4구역의 표시 칸에 마커 1개씩 둡니다. 그림에 표시된 케시 타일을 회색 두루마리 01/04, 같은 상품색의 더블 케시를 노란 두루마리 07/10, 초록/분홍·청록/빨강 더블 케시를 분홍 두루마리 16에 놓습니다. 본판 두루마리는 상자에 둡니다.",
+      "en": "Assemble the four Madrasa pieces with A sides up and cover the base Madrasa. B sides or mixed A/B sides are alternatives. In Essential Edition, place it beside the game board.\nPut one marker on each of the four marked area spaces. Place the pictured keshi tiles on gray scroll 01/04, matching goods-color double-keshi tiles on yellow scroll 07/10, and green/pink and turquoise/red double-keshi tiles on pink scroll 16. Leave base-game scrolls in the box.",
+      "de": "Vier Madrasa-Teile mit A nach oben auf die Madrasa des Grundspiels legen; B oder A/B gemischt sind Alternativen. In der Essential Edition daneben legen.\nJe einen Marker auf die vier markierten Felder stellen. Abgebildete Keshiplättchen auf graue Rolle 01/04, Doppel-Warenkeshis auf gelbe Rolle 07/10 und grün/rosa sowie türkis/rot auf rosa Rolle 16 legen. Grundspiel-Schriftrollen bleiben in der Schachtel.",
+      "fr": "Assemblez les quatre pièces côté A sur la madrasa de base ; B ou A/B mélangés sont possibles. En Essential Edition, placez-la à côté du plateau.\nUn marqueur sur chacun des quatre emplacements. Placez les keshis illustrés sur le parchemin gris 01/04, les doubles keshis de marchandises sur le jaune 07/10, et vert/rose et turquoise/rouge sur le rose 16. Rangez les parchemins de base.",
+      "ja": "4片をA面で組み立て、基本マドラサの上に置きます。B面やA/B混合も可。Essential Editionではボードの横に置きます。\n4区域の指定マスにマーカー各1個。図示のケシタイルは灰色の巻物01/04、同じ商品色のダブルケシは黄色07/10、緑/ピンクと青緑/赤はピンク16に配置。基本巻物は箱に置きます。",
+      "es": "Monta las cuatro piezas por el lado A sobre la madrasa base; también admite B o A/B mezclados. En Essential Edition, colócala junto al tablero.\nUn marcador en cada uno de los cuatro espacios. Keshis ilustrados en pergamino gris 01/04, dobles de mercancías en amarillo 07/10, y verde/rosa y turquesa/rojo en rosa 16. Guarda los pergaminos base.",
+      "zh": "4片学校板A面朝上盖在基础学校上，也可用B面或混合A/B。Essential Edition放于主板旁。\n4个区域标记位各放1个标记。图示凯希板放于灰卷轴01/04；同色商品双凯希放于黄卷轴07/10；绿/粉、青绿/红双凯希放于粉卷轴16。基础卷轴留在盒内。"
+    },
+    "mgems": {
+      "ko": "보석",
+      "en": "Gems",
+      "de": "Edelsteine",
+      "fr": "Gemmes",
+      "ja": "宝石",
+      "es": "Gemas",
+      "zh": "宝石"
+    },
+    "mgemsSetup": {
+      "ko": "보석상 보드를 본판 옆에 놓고 보석 56개를 섞어 발견면이 위로 보이게 공급처에 둡니다. 서로 다른 색 보석 3개가 나올 때까지 뽑아 판매 칸에 공개하고 나머지는 다시 섞습니다. 새 두루마리 4개·오아시스 2개를 기존 타일과 섞어 평소처럼 준비합니다. 각자 목걸이 보드 1개를 받습니다.\n공개 보석: 각자 관중 1명 보너스 칸에 2개를 쌓습니다. 강 9번째 칸에 1개(매 계절 시작 시 다시 준비), 궁전 계단 12번째·모스크 계단 9번째 칸에 각각 플레이어 수만큼 둡니다.\n비공개 보석: 궁전·모스크의 세 번째 구간을 잇는 주황 연결선에 플레이어 수만큼 둡니다. 개인 보드에는 각각 1개씩 총 6개: 활성화 오아시스 보너스 트랙 4번째 칸(케시를 위에 놓음), 사하라 왼쪽 마지막·오른쪽 두 번째 오아시스, 수크 앞 상품색 성문 칸, 대추야자 밭 4번째·7번째 케시 칸.",
+      "en": "Place the gem dealer beside the main board. Mix all 56 gems, discovery side up. Draw until 3 different colors can be displayed for sale; remix the others. Mix 4 new scrolls and 2 oases into their respective tiles and set up normally. Each player takes one necklace board.\nFace up: stack 2 gems on each player's one-spectator bonus space; place 1 on river space 9 (renew each season), and one per player on palace step 12 and mosque step 9, separately.\nFace down: place one per player on the orange link between the third palace/mosque sections. Each player board gets 6: activated-oasis bonus space 4 (keshi on top), last left and second right Sahara oasis, goods-color gate space in front of the Souk, and date-orchard keshi spaces 4 and 7.",
+      "de": "Edelsteinhändler neben das Brett legen. 56 Edelsteine mit Entdeckungsseite oben mischen; 3 verschiedene Farben für das Angebot ziehen, übrige zurückmischen. 4 neue Rollen und 2 Oasen untermischen und normal vorbereiten. Je ein Halskettenbrett nehmen.\nOffen: je 2 auf das 1-Zuschauer-Bonusfeld; 1 auf Flussfeld 9 (jede Saison erneuern); je Spieler 1 auf Palaststufe 12 und Moscheestufe 9.\nVerdeckt: je Spieler 1 auf die orange Verbindung der dritten Treppenabschnitte. Je Spielerbrett 6: Oasenbonusfeld 4 (Keshi darauf), letzte linke und zweite rechte Sahara-Oase, Warenfarb-Torfeld vor dem Souk, Dattelfeld-Keshifelder 4 und 7.",
+      "fr": "Placez le marchand à côté du plateau. Mélangez les 56 gemmes, côté découverte visible. Piochez 3 couleurs différentes pour la vente ; remélangez les autres. Ajoutez 4 parchemins et 2 oasis aux tuiles correspondantes, préparation habituelle. Une planche collier chacun.\nVisibles : 2 empilées sur le bonus à 1 spectateur de chacun ; 1 sur rivière 9 (renouvelée chaque saison) ; une par joueur sur palais 12 et mosquée 9, séparément.\nCachées : une par joueur sur la liaison orange des troisièmes sections. 6 par plateau personnel : bonus oasis 4 (keshi dessus), dernière oasis gauche et deuxième droite du Sahara, porte des couleurs marchandises devant le souk, cases dattes 4 et 7.",
+      "ja": "宝石商をボードの横に置き、宝石56個を発見面を上にして混ぜます。異なる3色が売場に並ぶまで引き、残りは混ぜ直します。新巻物4枚・オアシス2枚を対応するタイルに混ぜ、通常準備。各自ネックレスボード1枚。\n公開：各自の観客1人ボーナスに2個を重ね、川9マス目に1個（毎季節再準備）。宮殿12段目・モスク9段目にそれぞれ人数分。\n非公開：両階段の第3区域を結ぶオレンジ線に人数分。各個人ボードには6個：活性化オアシスのボーナス4マス目（上にケシ）、サハラ左最後・右2番目、スーク前の商品色の門、ナツメヤシ畑のケシ4・7番目。",
+      "es": "Coloca el mercader junto al tablero. Mezcla las 56 gemas, lado de descubrimiento visible. Saca 3 colores distintos para la venta y remezcla las demás. Añade 4 pergaminos y 2 oasis a sus respectivos grupos; prepara normalmente. Un tablero de collar por jugador.\nVisibles: 2 apiladas en el bono de 1 espectador de cada jugador; 1 en río 9 (renovar cada estación); una por jugador en palacio 12 y mezquita 9, por separado.\nOcultas: una por jugador en la conexión naranja de las terceras secciones. 6 en cada tablero personal: bono oasis 4 (keshi encima), último oasis izquierdo y segundo derecho del Sahara, puerta de colores de mercancías frente al zoco y casillas de dátiles 4 y 7.",
+      "zh": "宝石商板放在主板旁，56颗宝石发现面朝上混合。抽到3种不同颜色用于销售，其余混回储备。新卷轴4、新绿洲2混入对应板块照常准备。每人领1块项链板。\n公开：每人1观众奖励位叠2颗；河道第9格放1颗（每季开始重置）；宫殿第12阶、清真寺第9阶各放玩家人数的宝石。\n隐藏：连接两座阶梯第3区的橙线上放玩家人数的宝石。每人板上共6颗：激活绿洲奖励轨第4格（凯希叠于上）、撒哈拉左路最后及右路第2绿洲、市场前商品色城门格、椰枣园第4及第7凯希格。"
+    },
+    "mexperts": {
+      "ko": "전문가",
+      "en": "The Experts",
+      "de": "Die Experten",
+      "fr": "Les experts",
+      "ja": "専門家",
+      "es": "Los expertos",
+      "zh": "专家"
+    },
+    "mexpertsSetup": {
+      "ko": "전문가 타일 12개를 섞어 큐브 타워 옆에 뒷면으로 쌓습니다. 전문가 보드를 타워 옆에 놓고 표시된 칸에 전문가 케시 5개를 배치합니다. 새 두루마리 2개·오아시스 2개를 기존 해당 타일에 섞어 평소처럼 준비합니다.",
+      "en": "Shuffle the 12 expert tiles into a face-down stack beside the cube tower. Place the expert board there and put the 5 expert keshis on its marked spaces. Mix 2 new scrolls and 2 oases into their respective tiles and set up normally.",
+      "de": "12 Expertenplättchen mischen und verdeckt neben den Würfelturm stapeln. Expertenbrett daneben legen, 5 Expertenkeshis auf markierte Felder stellen. 2 neue Rollen und 2 Oasen untermischen und normal vorbereiten.",
+      "fr": "Mélangez les 12 experts et empilez-les face cachée près de la tour. Placez le plateau expert à côté et ses 5 keshis sur les emplacements marqués. Ajoutez 2 parchemins et 2 oasis aux tuiles correspondantes, préparation habituelle.",
+      "ja": "専門家タイル12枚を混ぜ、タワーの横に裏向きの山にします。専門家ボードを横に置き、指定マスに専門家ケシ5個。新巻物2枚・オアシス2枚を対応タイルに混ぜて通常どおり準備します。",
+      "es": "Baraja los 12 expertos y apílalos boca abajo junto a la torre. Coloca allí su tablero con 5 keshis expertos en los espacios marcados. Mezcla 2 pergaminos y 2 oasis nuevos con sus respectivos grupos y prepara normalmente.",
+      "zh": "12块专家板洗混后背面朝上叠于塔旁。专家板放在旁边，标记位置放5个专家凯希。新卷轴2、新绿洲2混入对应板块照常准备。"
+    },
+    "malms": {
+      "ko": "자선 타일(교환소)",
+      "en": "Alms Tiles (Exchange Office)",
+      "de": "Almosenplättchen (Wechselstube)",
+      "fr": "Tuiles aumône (bureau de change)",
+      "ja": "施しタイル（両替所）",
+      "es": "Losetas de limosna (casa de cambio)",
+      "zh": "施舍板块（兑换所）"
+    },
+    "malmsSetup": {
+      "ko": "자선 타일 12개를 번호로 나눕니다. 7–12번 6개를 섞어 본판 교환소 칸에 뒷면으로 놓습니다. 1–6번 6개를 따로 섞어 그 위에 뒷면으로 쌓고 맨 위 1개만 공개합니다.",
+      "en": "Separate the 12 alms tiles by number. Shuffle tiles 7–12 and stack them face down on the exchange-office space. Separately shuffle 1–6 and stack them face down on top; reveal only the top tile.",
+      "de": "12 Almosenplättchen nach Nummer trennen. 7–12 mischen, verdeckt auf das Wechselstubenfeld stapeln. 1–6 separat mischen und verdeckt darauf stapeln; nur das oberste aufdecken.",
+      "fr": "Séparez les 12 tuiles par numéro. Mélangez 7–12 et empilez-les face cachée sur le bureau de change. Mélangez 1–6 séparément, empilez-les au-dessus et révélez seulement la première.",
+      "ja": "12枚を番号で分け、7～12の6枚を混ぜて両替所に裏向きで重ねます。1～6の6枚も別に混ぜてその上に重ね、一番上の1枚だけ公開します。",
+      "es": "Divide las 12 losetas por número. Baraja 7–12 y apílalas boca abajo en la casa de cambio. Baraja 1–6 aparte y apílalas encima; revela solo la superior.",
+      "zh": "12块按编号分组。7–12号6块洗混，背面朝上放在兑换所。1–6号另行洗混并叠在上方，只公开最顶1块。"
+    },
+    "mexp2Source": {
+      "ko": "출처: 확장 2 영문 룰북의 제공 이미지 5장(마드라사·보석·전문가·자선 타일 셋업).",
+      "en": "Source: five supplied images of the expansion 2 English rules (Madrasa, Gems, Experts and Alms setup).",
+      "de": "Quelle: fünf bereitgestellte Bilder der englischen Erweiterungsregeln 2 (Madrasa, Edelsteine, Experten, Almosen).",
+      "fr": "Source : cinq images fournies des règles anglaises de l’extension 2 (madrasa, gemmes, experts, aumône).",
+      "ja": "出典：拡張2英語ルールの提供画像5枚（マドラサ・宝石・専門家・施しの準備）。",
+      "es": "Fuente: cinco imágenes de las reglas inglesas de expansión 2 (madrasa, gemas, expertos y limosnas).",
+      "zh": "来源：提供的扩展2英文规则图片5张（学校、宝石、专家、施舍准备）。"
     }
   },
   "games": {
@@ -583,6 +682,45 @@
               "name": "moases",
               "setup": "moasesSetup",
               "page": 8
+            }
+          ]
+        },
+        {
+          "id": "expansion-2",
+          "title": "mexp2",
+          "intro": "mexp2Intro",
+          "sourceText": "mexp2Source",
+          "source": {
+            "type": "user-provided-rulebook-images",
+            "url": "https://rules.queen-games.com/marrakesh_exp2_en.pdf",
+            "images": [
+              "3345.jpg",
+              "3346.jpg",
+              "3347.jpg",
+              "3348.jpg",
+              "3349.jpg"
+            ]
+          },
+          "modules": [
+            {
+              "id": "closed-madrasa",
+              "name": "mclosedMadrasa",
+              "setup": "mclosedMadrasaSetup"
+            },
+            {
+              "id": "gems",
+              "name": "mgems",
+              "setup": "mgemsSetup"
+            },
+            {
+              "id": "experts",
+              "name": "mexperts",
+              "setup": "mexpertsSetup"
+            },
+            {
+              "id": "alms",
+              "name": "malms",
+              "setup": "malmsSetup"
             }
           ]
         }
