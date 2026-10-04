@@ -424,13 +424,13 @@
       "zh": "扩展2 · 模块准备"
     },
     "mexp2Intro": {
-      "ko": "사용하는 모듈의 준비만 본판 셋업에 적용하세요. 아래는 제공된 룰북 이미지에서 확인한 4개 모듈의 요약입니다.",
-      "en": "Apply the setup changes for the modules you use. These four summaries are based on the supplied rulebook images.",
-      "de": "Nur den Aufbau der verwendeten Module anwenden. Diese vier Zusammenfassungen basieren auf den bereitgestellten Regelbildern.",
-      "fr": "Appliquez les modifications des modules utilisés. Ces quatre résumés sont tirés des images du livret fournies.",
-      "ja": "使用するモジュールの準備だけ基本準備に適用してください。以下は提供されたルール画像で確認した4モジュールの要約です。",
-      "es": "Aplica los cambios de los módulos utilizados. Estos cuatro resúmenes proceden de las imágenes del reglamento facilitadas.",
-      "zh": "仅应用所用模块的准备变更。以下4个模块根据提供的规则图片整理。"
+      "ko": "사용하는 모듈의 준비만본판 셋업에 적용하세요. 아래는 제공된 룰북 이미지에서 확인한 6개 모듈의 요약입니다.",
+      "en": "Apply the setup changes for the modules you use. These six summaries are based on the supplied rulebook images.",
+      "de": "Nur den Aufbau der verwendeten Module anwenden. Diese sechs Zusammenfassungen basieren auf den bereitgestellten Regelbildern.",
+      "fr": "Appliquez les modifications des modules utilisés. Ces six résumés sont tirés des images du livret fournies.",
+      "ja": "使用するモジュールの準備だけ基本準備に適用してください。以下は提供されたルール画像で確認した6モジュールの要約です。",
+      "es": "Aplica los cambios de los módulos utilizados. Estos seis resúmenes proceden de las imágenes del reglamento facilitadas.",
+      "zh": "仅应用所用模块的准备变更。以下6个模块根据提供的规则图片整理。"
     },
     "mclosedMadrasa": {
       "ko": "폐쇄된 마드라사",
@@ -505,13 +505,49 @@
       "zh": "12块按编号分组。7–12号6块洗混，背面朝上放在兑换所。1–6号另行洗混并叠在上方，只公开最顶1块。"
     },
     "mexp2Source": {
-      "ko": "출처: 확장 2 영문 룰북의 제공 이미지 5장(마드라사·보석·전문가·자선 타일 셋업).",
-      "en": "Source: five supplied images of the expansion 2 English rules (Madrasa, Gems, Experts and Alms setup).",
-      "de": "Quelle: fünf bereitgestellte Bilder der englischen Erweiterungsregeln 2 (Madrasa, Edelsteine, Experten, Almosen).",
-      "fr": "Source : cinq images fournies des règles anglaises de l’extension 2 (madrasa, gemmes, experts, aumône).",
-      "ja": "出典：拡張2英語ルールの提供画像5枚（マドラサ・宝石・専門家・施しの準備）。",
-      "es": "Fuente: cinco imágenes de las reglas inglesas de expansión 2 (madrasa, gemas, expertos y limosnas).",
-      "zh": "来源：提供的扩展2英文规则图片5张（学校、宝石、专家、施舍准备）。"
+      "ko": "출처: 제공된 확장 2 영문 룰북 이미지 7장.",
+      "en": "Source: seven supplied images of the expansion 2 English rulebook.",
+      "de": "Quelle: sieben bereitgestellte Bilder der englischen Anleitung zu Erweiterung 2.",
+      "fr": "Source : sept images fournies des règles anglaises de l’extension 2.",
+      "ja": "出典：提供された拡張2英語ルール画像7枚。",
+      "es": "Fuente: siete imágenes del reglamento inglés de expansión 2.",
+      "zh": "来源：提供的扩展2英文规则图片7张。"
+    },
+    "msecondhand": {
+      "ko": "중고 상점",
+      "en": "Second-Hand Shop",
+      "de": "Gebrauchtwarenladen",
+      "fr": "Boutique d’occasion",
+      "ja": "中古品店",
+      "es": "Tienda de segunda mano",
+      "zh": "二手商店"
+    },
+    "msecondhandSetup": {
+      "ko": "중고 상점 보드를 게임 보드 옆에 놓고 중고 표시 타일 20개를 지정 칸에 둡니다. 나머지 상점 칸은 비워 둡니다. 각자 자기 색 제안 타일 5개(두루마리용 4개·오아시스용 1개)를 받습니다. 새 오아시스 2개를 본판 오아시스에 섞습니다.",
+      "en": "Place the second-hand shop beside the game board and put the 20 used tiles on their designated space. Leave all other shop spaces empty. Each player takes the 5 offer tiles in their color: 4 for scrolls and 1 for oases. Mix the 2 new oases with the base-game oases.",
+      "de": "Gebrauchtwarenladen neben das Spielbrett legen, 20 Gebrauchtplättchen auf das vorgesehene Feld legen. Andere Ladenfelder bleiben leer. Je Spieler 5 Angebotsplättchen seiner Farbe: 4 für Schriftrollen, 1 für Oasen. 2 neue Oasen ins Grundspiel mischen.",
+      "fr": "Placez la boutique près du plateau et les 20 tuiles d’occasion sur l’emplacement prévu. Les autres cases restent vides. Chacun reçoit 5 tuiles offre de sa couleur : 4 pour les parchemins, 1 pour les oasis. Mélangez les 2 nouvelles oasis aux oasis de base.",
+      "ja": "中古品店をゲームボードの横に置き、使用済みタイル20枚を指定場所に置きます。他の店のマスは空けます。各自、自分の色の提示タイル5枚（巻物用4枚・オアシス用1枚）を受け取ります。新オアシス2枚を基本オアシスに混ぜます。",
+      "es": "Coloca la tienda junto al tablero y las 20 losetas de usado en su espacio. Deja vacíos los demás espacios. Cada jugador recibe 5 losetas de oferta de su color: 4 para pergaminos y 1 para oasis. Mezcla los 2 nuevos oasis con los básicos.",
+      "zh": "二手商店放在主板旁，20块使用标记放于指定位置，其余商店格保持空置。每人领取自己颜色的5块报价板：卷轴用4块、绿洲用1块。2块新绿洲混入基础绿洲。"
+    },
+    "mgifts": {
+      "ko": "사치품 · 선물",
+      "en": "Luxury Goods: Gifts",
+      "de": "Luxuswaren: Geschenke",
+      "fr": "Biens de luxe : cadeaux",
+      "ja": "高級品：贈り物",
+      "es": "Bienes de lujo: regalos",
+      "zh": "奢侈品：礼物"
+    },
+    "mgiftsSetup": {
+      "ko": "선물 타일 10개를 섞어 별도의 1더미로 만들고, 기존 사치품 5더미 아래쪽에 놓습니다. 맨 위 타일 1개만 공개합니다. 기존 사치품 더미에는 섞지 않습니다.",
+      "en": "Shuffle all 10 gift tiles into one separate stack below the existing five luxury-goods stacks. Reveal only the top gift. Do not mix gifts into the luxury-goods stacks.",
+      "de": "Alle 10 Geschenkplättchen mischen und als eigenen Stapel unterhalb der fünf Luxuswarenstapel ablegen. Nur das oberste Geschenk aufdecken. Nicht in die Luxuswarenstapel mischen.",
+      "fr": "Mélangez les 10 cadeaux en une pile séparée sous les cinq piles de luxe existantes. Révélez seulement le premier cadeau. Ne les mélangez pas aux piles de luxe.",
+      "ja": "贈り物タイル10枚を混ぜ、既存の高級品5山の下側に別の1山として置きます。一番上の1枚だけ公開。高級品の山には混ぜません。",
+      "es": "Baraja los 10 regalos en una pila aparte debajo de las cinco pilas de lujo existentes. Revela solo el regalo superior. No los mezcles con las pilas de lujo.",
+      "zh": "10块礼物洗混成独立一堆，放在现有5堆奢侈品的下方。仅公开顶端1块，不混入奢侈品堆。"
     }
   },
   "games": {
@@ -698,7 +734,9 @@
               "3346.jpg",
               "3347.jpg",
               "3348.jpg",
-              "3349.jpg"
+              "3349.jpg",
+              "3350.jpg",
+              "3351.jpg"
             ]
           },
           "modules": [
@@ -721,6 +759,16 @@
               "id": "alms",
               "name": "malms",
               "setup": "malmsSetup"
+            },
+            {
+              "id": "second-hand-shop",
+              "name": "msecondhand",
+              "setup": "msecondhandSetup"
+            },
+            {
+              "id": "gifts",
+              "name": "mgifts",
+              "setup": "mgiftsSetup"
             }
           ]
         }

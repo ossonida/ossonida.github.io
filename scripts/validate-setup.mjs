@@ -42,11 +42,14 @@ for(const [game,config] of Object.entries(data.games)){
  const expansionTwo=panel.querySelectorAll('.setup-expansion').find(group=>group.dataset.expansion==='expansion-2');
  if(expansionTwo){
   window.BGWSetup.sync('en');
-  assert.equal(expansionTwo.querySelectorAll('tbody tr').length,4);
+  assert.equal(expansionTwo.querySelectorAll('tbody tr').length,6);
   search.value='Shuffle tiles 7';search.events.input();
   assert.equal(expansionTwo.hidden,false);
   const visible=panel.querySelectorAll('tbody tr').filter(row=>!row.hidden);
   assert.equal(visible.length,1);assert.equal(visible[0].dataset.module,'alms');
+  search.value='Reveal only the top gift';search.events.input();
+  const gifts=panel.querySelectorAll('tbody tr').filter(row=>!row.hidden);
+  assert.equal(gifts.length,1);assert.equal(gifts[0].dataset.module,'gifts');
   search.value='';search.events.input();
  }
  search.value='zz_no_matching_setup_zz';search.events.input();assert.equal(panel.querySelector('.setup-no-results').hidden,false);
