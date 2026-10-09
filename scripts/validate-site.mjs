@@ -23,9 +23,8 @@ function check(value,base){
 }
 for(const file of pages){
  const html=read(file), base=new URL(file,origin+'/');
- assert.equal((html.match(/googletagmanager\.com\/gtag\/js\?id=G-NFEYJ27K5H/g)||[]).length,1,`Missing or duplicate unified analytics tag: ${file}`);
- assert.equal((html.match(/gtag\('config', 'G-NFEYJ27K5H'\)/g)||[]).length,1,`Missing unified analytics config: ${file}`);
- assert.ok(!/G-Q2SXMSZW15/.test(html),`Legacy analytics ID: ${file}`);
+ assert.equal(html.split('assets/analytics.js?v=events-1').length-1,1,`Missing shared analytics: ${file}`);
+ assert.ok(!html.includes('googletagmanager.com/gtag/js'),`Duplicate inline analytics: ${file}`);
  for(const [tag] of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/gi)){
   for(const [,value] of tag.matchAll(/(?:href|src)="([^"]+)"/g))check(value,base);
  }
