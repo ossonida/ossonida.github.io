@@ -23,7 +23,7 @@ function check(value,base){
 }
 for(const file of pages){
  const html=read(file), base=new URL(file,origin+'/');
- assert.equal(html.split('assets/analytics.js?v=events-1').length-1,1,`Missing shared analytics: ${file}`);
+ assert.equal(html.split('assets/analytics.js?v=events-2').length-1,1,`Missing shared analytics: ${file}`);
  assert.ok(!html.includes('googletagmanager.com/gtag/js'),`Duplicate inline analytics: ${file}`);
  for(const [tag] of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/gi)){
   for(const [,value] of tag.matchAll(/(?:href|src)="([^"]+)"/g))check(value,base);

@@ -4,6 +4,7 @@ let x=env('https://ossonida.github.io/games/marrakesh/');assert.equal(x.calls.fi
 x.events.click({target:{closest:s=>s.includes('button')?{dataset:{show:'oasis'}}:null}});assert.equal(x.calls.at(-1)[1],'reference_tab_click');assert.equal(x.calls.at(-1)[2].tab_id,'oasis');
 x.events.click({target:{closest:s=>s.startsWith('a.')?{href:'https://ossonida.github.io/score/'}:null}});assert.equal(x.calls.at(-1)[1],'score_counter_click');
 x.events.input({target:{id:'global-search',value:'private search'}});x.flush();assert.equal(x.calls.at(-1)[1],'search_no_results');assert.ok(!JSON.stringify(x.calls).includes('private search'));
+assert.ok(!x.children.some(n=>n.type==='button'),'No public tracking toggle');
 const n=x.calls.length;x.rows([{hidden:false,getClientRects:()=>[1]}]);x.events.input({target:{id:'global-search',value:'found'}});x.flush();assert.equal(x.calls.length,n);
 x=env('https://ossonida.github.io/?analytics=off');assert.equal(x.store.get('bgwAnalyticsExcluded'),'1');assert.equal(x.calls.length,0);assert.equal(x.window['ga-disable-G-NFEYJ27K5H'],true);
 x.events.click({target:{closest:()=>({dataset:{show:'all'}})}});assert.equal(x.calls.length,0);

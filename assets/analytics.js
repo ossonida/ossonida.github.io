@@ -3,12 +3,12 @@
   'use strict';
   const id = 'G-NFEYJ27K5H', key = 'bgwAnalyticsExcluded';
   const params = new URLSearchParams(window.location.search);
-  let excluded = false, stored = true;
+  let excluded = false;
   try {
     if (params.get('analytics') === 'off') localStorage.setItem(key, '1');
     if (params.get('analytics') === 'on') localStorage.removeItem(key);
     excluded = localStorage.getItem(key) === '1';
-  } catch { stored = false; excluded = params.get('analytics') === 'off'; }
+  } catch { excluded = params.get('analytics') === 'off'; }
   window['ga-disable-' + id] = excluded;
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
@@ -26,31 +26,6 @@
   };
   const tabKey = button => button.dataset.setupTab ? 'setup' : button.dataset.show || button.dataset.category || 'all';
   function ready() {
-    const footer = document.querySelector('footer') || document.body;
-    const settings = document.createElement('div');
-    settings.className = 'analytics-settings';
-    const button = document.createElement('button');
-    button.type = 'button';
-    const status = document.createElement('span');
-    status.setAttribute('role', 'status');
-    function label() {
-      const ko = document.documentElement.lang.startsWith('ko');
-      button.textContent = ko ? (excluded ? '내 방문 집계 켜기' : '내 방문 집계 제외') : (excluded ? 'Count my visits' : 'Exclude my visits');
-      button.setAttribute('aria-pressed', String(excluded));
-      status.textContent = ko ? (excluded ? '이 브라우저의 방문 집계 제외 중' : '이 브라우저의 방문 집계 중') : (excluded ? 'Visits excluded in this browser' : 'Visits counted in this browser');
-      if (!stored) status.textContent += ko ? ' · 저장 불가: 현재 페이지에만 적용' : ' · Cannot save: this page only';
-    }
-    button.addEventListener('click', () => {
-      const next = !excluded;
-      try {
-        if (next) localStorage.setItem(key, '1'); else localStorage.removeItem(key);
-        const url = new URL(window.location.href);
-        url.searchParams.set('analytics', next ? 'off' : 'on');
-        window.location.replace(url.href);
-      } catch { stored = false; excluded = next; window['ga-disable-' + id] = next; label(); }
-    });
-    settings.append(button, status); footer.append(settings); label();
-    new MutationObserver(label).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
     document.addEventListener('click', event => {
       const button = event.target.closest('#section-tabs button, #filters button');
       if (button) track('reference_tab_click', { tab_id: tabKey(button) });
