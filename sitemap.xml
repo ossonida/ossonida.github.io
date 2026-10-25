@@ -332,4 +332,19 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ossonida.github.io/clocktower/?lang=es" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/clocktower/" />
   </url>
+  <url><loc>https://ossonida.github.io/rebirth/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/rebirth/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/rebirth/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/rebirth/" />
+  </url>
+  <url><loc>https://ossonida.github.io/rebirth/?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/rebirth/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/rebirth/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/rebirth/" />
+  </url>
+  <url><loc>https://ossonida.github.io/rebirth/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/rebirth/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/rebirth/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/rebirth/" />
+  </url>
 </urlset>

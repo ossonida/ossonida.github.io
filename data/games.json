@@ -126,6 +126,32 @@
     "cover": "assets/covers/blood-on-the-clocktower.jpg"
   },
   {
+    "id": "rebirth",
+    "title": "Rebirth",
+    "titles": {
+      "ko": "리버스",
+      "en": "Rebirth"
+    },
+    "href": "./rebirth/",
+    "reference": "rebirth/reference.json",
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "tag": {
+      "ko": "타일 놓기 · 영향력",
+      "en": "Tile placement · Area control"
+    },
+    "description": {
+      "ko": "공개 임무 37종 · 동점 판정 · 탑 타일 효과",
+      "en": "37 public missions · tie resolution · tower tile effects"
+    },
+    "actionKey": "enterAction",
+    "statusLabel": "OPEN",
+    "bg": "linear-gradient(135deg, #173c32 0%, #68a86b 48%, #253e57 100%)",
+    "cover": "https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/original/products/245567/348324/MBRB002EN__91771.1738890356.png"
+  },
+  {
     "title": "Civolution",
     "tagKey": "civolutionTag",
     "descKey": "civolutionDesc",
