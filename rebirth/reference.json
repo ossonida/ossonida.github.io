@@ -19,6 +19,10 @@
   },
   "categories": [
     {
+      "id": "player-aid",
+      "name": { "ko": "플레이어 보조 이미지", "en": "Player aid image" }
+    },
+    {
       "id": "settlements",
       "name": { "ko": "정착지 임무", "en": "Settlement missions" }
     },
@@ -56,6 +60,13 @@
     }
   ],
   "items": [
+    {
+      "id": "player-aid-ko",
+      "category": "player-aid",
+      "name": { "ko": "동점 처리 · 탑 타일 · 구성물", "en": "Ties · Tower tiles · Components" },
+      "text": { "ko": "공유 대화에서 생성한 한글 플레이어 보조 이미지입니다. 이미지를 누르면 크게 볼 수 있습니다.", "en": "Korean player aid generated in the shared conversation. Select the image to enlarge it." },
+      "image": "img/reference/player-aid-ko.webp"
+    },
     {
       "id": "occupy-3-small-settlements",
       "category": "settlements",
