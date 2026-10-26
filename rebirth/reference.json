@@ -19,40 +19,28 @@
   },
   "categories": [
     {
-      "id": "settlements",
-      "name": { "ko": "정착지 임무", "en": "Settlement missions" }
-    },
-    {
-      "id": "energy",
-      "name": { "ko": "에너지 농장 임무", "en": "Energy farm missions" }
-    },
-    {
-      "id": "food",
-      "name": { "ko": "식량 농장 임무", "en": "Food farm missions" }
-    },
-    {
-      "id": "towers",
-      "name": { "ko": "탑 임무", "en": "Tower missions" }
-    },
-    {
-      "id": "cathedrals",
-      "name": { "ko": "대성당 임무", "en": "Cathedral missions" }
-    },
-    {
-      "id": "coast",
-      "name": { "ko": "항구·해안 임무", "en": "Port and coast missions" }
+      "id": "towers-cathedrals",
+      "name": { "ko": "탑/대성당", "en": "Towers/Cathedrals" }
     },
     {
       "id": "castles",
-      "name": { "ko": "성 임무", "en": "Castle missions" }
+      "name": { "ko": "성", "en": "Castles" }
     },
     {
-      "id": "ties",
-      "name": { "ko": "동점 판정", "en": "Resolving ties" }
+      "id": "coast",
+      "name": { "ko": "해안/항구", "en": "Coast/Ports" }
     },
     {
-      "id": "tower-effects",
-      "name": { "ko": "탑 타일 효과", "en": "Tower tile effects" }
+      "id": "food",
+      "name": { "ko": "식량 농장", "en": "Food farms" }
+    },
+    {
+      "id": "energy",
+      "name": { "ko": "에너지 농장", "en": "Energy farms" }
+    },
+    {
+      "id": "settlements",
+      "name": { "ko": "정착지", "en": "Settlements" }
     }
   ],
   "items": [
@@ -156,63 +144,63 @@
     },
     {
       "id": "tower-adjacent-4-spaces",
-      "category": "towers",
+      "category": "towers-cathedrals",
       "image": "img/cards/tower-adjacent-4-spaces.webp",
       "name": { "ko": "탑 주변 4칸", "en": "Occupy 4 Spaces Adjacent to 1 Tower" },
       "text": { "ko": "탑 1개에 인접한 칸 4개를 점유하세요.", "en": "Occupy 4 spaces adjacent to 1 tower." }
     },
     {
       "id": "link-4-towers",
-      "category": "towers",
+      "category": "towers-cathedrals",
       "image": "img/cards/link-4-towers.webp",
       "name": { "ko": "탑 4개 연결", "en": "Occupy Contiguous Spaces That Link 4 Towers" },
       "text": { "ko": "탑 4개를 연결하는 연속된 칸들을 점유하세요.", "en": "Occupy contiguous spaces that link 4 towers." }
     },
     {
       "id": "perth-cathedral",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/perth-cathedral.webp",
       "name": { "ko": "퍼스 대성당", "en": "Perth Cathedral" },
       "text": { "ko": "퍼스 대성당에 인접한 칸을 가장 많이 점유하세요.", "en": "Occupy the most spaces adjacent to Perth Cathedral." }
     },
     {
       "id": "edinburgh-cathedral",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/edinburgh-cathedral.webp",
       "name": { "ko": "에든버러 대성당", "en": "Edinburgh Cathedral" },
       "text": { "ko": "에든버러 대성당에 인접한 칸을 가장 많이 점유하세요.", "en": "Occupy the most spaces adjacent to Edinburgh Cathedral." }
     },
     {
       "id": "dumfries-cathedral",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/dumfries-cathedral.webp",
       "name": { "ko": "덤프리스 대성당", "en": "Dumfries Cathedral" },
       "text": { "ko": "덤프리스 대성당에 인접한 칸을 가장 많이 점유하세요.", "en": "Occupy the most spaces adjacent to Dumfries Cathedral." }
     },
     {
       "id": "most-cathedrals",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/most-cathedrals.webp",
       "name": { "ko": "최다 대성당", "en": "Most Cathedrals" },
       "text": { "ko": "보드에 있는 대성당을 가장 많이 보유하세요.", "en": "Have the most cathedrals on the board." }
     },
     {
       "id": "glasgow-cathedral",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/glasgow-cathedral.webp",
       "name": { "ko": "글래스고 대성당", "en": "Glasgow Cathedral" },
       "text": { "ko": "글래스고 대성당에 인접한 칸을 가장 많이 점유하세요.", "en": "Occupy the most spaces adjacent to Glasgow Cathedral." }
     },
     {
       "id": "oban-cathedral",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/oban-cathedral.webp",
       "name": { "ko": "오번 대성당", "en": "Oban Cathedral" },
       "text": { "ko": "오번 대성당에 인접한 칸을 가장 많이 점유하세요.", "en": "Occupy the most spaces adjacent to Oban Cathedral." }
     },
     {
       "id": "inverness-cathedral",
-      "category": "cathedrals",
+      "category": "towers-cathedrals",
       "image": "img/cards/inverness-cathedral.webp",
       "name": { "ko": "인버네스 대성당", "en": "Inverness Cathedral" },
       "text": { "ko": "인버네스 대성당에 인접한 칸을 가장 많이 점유하세요.", "en": "Occupy the most spaces adjacent to Inverness Cathedral." }
@@ -317,61 +305,61 @@
     },
     {
       "id": "ties-castles",
-      "category": "ties",
+      "category": "castles",
       "name": { "ko": "성 동점", "en": "Castle ties" },
       "text": { "ko": "에너지 농장과 식량 농장으로 동점을 판정합니다. 그래도 동점이면 현재 차례인 플레이어가 동점 판정에서 패배합니다.", "en": "Break the tie using energy farms and food farms. If still tied, the active player loses the tie." }
     },
     {
       "id": "ties-settlements",
-      "category": "ties",
+      "category": "settlements",
       "name": { "ko": "정착지 동점", "en": "Settlement ties" },
       "text": { "ko": "현재 차례인 플레이어가 동점 판정에서 패배합니다. 이후에도 동점이면 시계 방향 순서에서 앞서는 플레이어가 승리합니다.", "en": "The active player loses the tie. For any remaining tie, the first tied player in clockwise order wins." }
     },
     {
       "id": "end-game-ties-scotland",
-      "category": "ties",
+      "category": "castles",
       "name": { "ko": "게임 종료 동점 · 스코틀랜드", "en": "End-game ties · Scotland" },
       "text": { "ko": "에든버러 성을 지배하는 플레이어가 승리합니다. 그래도 동점이면 스털링 성을 지배하는 플레이어가 승리하며, 이 플레이어는 기존 공동 1위가 아니어도 됩니다.", "en": "The player controlling Edinburgh Castle wins. If still tied, the player controlling Stirling Castle wins, even if that player was not originally tied for first." }
     },
     {
       "id": "end-game-ties-ireland",
-      "category": "ties",
+      "category": "castles",
       "name": { "ko": "게임 종료 동점 · 아일랜드", "en": "End-game ties · Ireland" },
       "text": { "ko": "블라니 성을 지배하는 플레이어가 승리합니다. 그래도 동점이면 타라 언덕에 인접한 칸을 가장 많이 점유한 플레이어가 승리하며, 이 플레이어는 기존 공동 1위가 아니어도 됩니다.", "en": "The player controlling Blarney Castle wins. If still tied, the player occupying the most spaces adjacent to the Hill of Tara wins, even if that player was not originally tied for first." }
     },
     {
       "id": "tower-three-points",
-      "category": "tower-effects",
+      "category": "towers-cathedrals",
       "name": { "ko": "3점 아이콘", "en": "3-point icon" },
       "text": { "ko": "3점을 획득합니다.", "en": "Score 3 points." }
     },
     {
       "id": "tower-draw-three-tiles",
-      "category": "tower-effects",
+      "category": "towers-cathedrals",
       "name": { "ko": "타일 3개 아이콘", "en": "3-tile icon" },
       "text": { "ko": "다음 차례에 타일 3개를 뽑고, 그중 1개를 선택합니다.", "en": "On your next turn, draw 3 tiles and choose 1 of them." }
     },
     {
       "id": "tower-mission-card",
-      "category": "tower-effects",
+      "category": "towers-cathedrals",
       "name": { "ko": "뒷면 카드 아이콘", "en": "Face-down card icon" },
       "text": { "ko": "뒷면으로 놓인 공개 임무 카드 1장을 뽑습니다.", "en": "Draw 1 face-down public mission card." }
     },
     {
       "id": "tower-place-second-tile",
-      "category": "tower-effects",
+      "category": "towers-cathedrals",
       "name": { "ko": "+ 아이콘", "en": "+ icon" },
       "text": { "ko": "자신의 클랜 보드에 있는 타일 4개 중 두 번째 타일을 배치합니다.", "en": "Place the second of the 4 tiles on your clan board." }
     },
     {
       "id": "tower-adjacent-two",
-      "category": "tower-effects",
+      "category": "towers-cathedrals",
       "name": { "ko": "탑 2개에 인접", "en": "Adjacent to 2 towers" },
       "text": { "ko": "두 탑 모두에 인접한 칸을 점유하면 공개 임무 카드 1장을 선택하고 그 위에 자신의 두 배 점수 마커를 놓습니다. 해당 임무를 완료하면 점수를 두 배로 획득합니다.", "en": "When you occupy a space adjacent to both towers, choose a public mission and place your doubling marker on it. Double its points if you complete it." }
     },
     {
       "id": "tower-adjacent-three",
-      "category": "tower-effects",
+      "category": "towers-cathedrals",
       "name": { "ko": "탑 3개에 인접", "en": "Adjacent to 3 towers" },
       "text": { "ko": "세 탑 모두에 인접한 칸을 점유하면 13점을 획득합니다.", "en": "When you occupy a space adjacent to all 3 towers, score 13 points." }
     }
