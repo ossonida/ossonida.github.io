@@ -178,26 +178,33 @@ button:focus-visible,a:focus-visible,input:focus-visible {
   flex-wrap: nowrap;
   gap: 6px;
   margin: 0;
-  padding: 0;
+  padding: 8px 0 18px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
+  scrollbar-gutter: stable;
   scrollbar-width: thin;
   scrollbar-color: rgba(148,163,184,.25) transparent;
+}
+.page-top .filter-tabs::-webkit-scrollbar { height: 6px; }
+.page-top .filter-tabs::-webkit-scrollbar-track { background: transparent; }
+.page-top .filter-tabs::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(148,163,184,.25);
 }
 .page-top .filter-tabs button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  height: var(--control-height);
-  min-height: var(--control-height);
-  padding: 0 12px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 14px;
   margin: 0;
   border: 1px solid var(--border);
   border-radius: var(--control-radius);
   background: rgba(255,255,255,.025);
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;

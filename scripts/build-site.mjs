@@ -40,7 +40,7 @@ ${alternates}
   <link rel="alternate" hreflang="x-default" href="${canonical}">
   <meta property="og:title" content="BGW : ${esc(data.title)}">
   <meta property="og:url" content="${canonical}">
-  <link rel="stylesheet" href="../assets/reference-layout.css?v=setup-tabs-3">
+  <link rel="stylesheet" href="../assets/reference-layout.css?v=tabs-spacing-2">
   <link rel="stylesheet" href="../assets/reference.css">
 </head><body data-setup-game="${esc(data.id)}">
 <a class="skip" id="skip" href="#results">레퍼런스로 이동</a>
