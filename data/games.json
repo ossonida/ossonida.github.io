@@ -152,6 +152,29 @@
     "cover": "https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/original/products/245567/348324/MBRB002EN__91771.1738890356.png"
   },
   {
+    "id": "energy-empire",
+    "title": "The Manhattan Project: Energy Empire",
+    "titles": {
+      "ko": "맨해튼 프로젝트: 에너지 엠파이어",
+      "en": "The Manhattan Project: Energy Empire"
+    },
+    "href": "./energy-empire/",
+    "reference": "energy-empire/reference.json",
+    "languages": ["ko", "en"],
+    "tag": {
+      "ko": "일꾼 배치 · 엔진 빌딩",
+      "en": "Worker placement · Engine building"
+    },
+    "description": {
+      "ko": "본판 핵심 규칙 + 콜드 워 모듈 · 종말 시계 · Clash of Nations",
+      "en": "Base rules + Cold War modules · Doomsday Clock · Clash of Nations"
+    },
+    "actionKey": "enterAction",
+    "statusLabel": "OPEN",
+    "bg": "linear-gradient(135deg, #261c17 0%, #7a4429 48%, #161c25 100%)",
+    "cover": "assets/covers/energy-empire.webp"
+  },
+  {
     "title": "Civolution",
     "tagKey": "civolutionTag",
     "descKey": "civolutionDesc",
