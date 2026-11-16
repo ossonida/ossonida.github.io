@@ -5,3 +5,4 @@
 .community-badge img { width: 160px; max-width: 100%; height: auto; }
 
 .section-note { margin: -2px 0 12px; color: var(--muted); font-size: 13px; }
+.section-reference-sheet{margin:0 0 14px;max-width:240px;border:1px solid var(--border);border-radius:10px;overflow:hidden}.section-reference-image{display:block;width:100%;max-height:180px;object-fit:cover;object-position:top}

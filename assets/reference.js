@@ -104,6 +104,25 @@
       }
       table.append(colgroup, thead, tbody); wrap.append(table); card.append(heading);
       if (section.description) card.append(el("p", pick(section.description), "section-note"));
+      if (section.referenceImage) {
+        const sheet = el("button", undefined, "section-reference-sheet image-zoom");
+        sheet.type = "button";
+        sheet.setAttribute("aria-label", `${pick(section.name)} · ${copy[4]}`);
+        const image = el("img", undefined, "section-reference-image");
+        image.src = section.referenceImage;
+        image.alt = pick(section.name);
+        image.loading = "lazy";
+        image.decoding = "async";
+        sheet.append(image);
+        sheet.addEventListener("click", () => {
+          get("modal-title").textContent = pick(section.name);
+          get("modal-image").src = section.referenceImage;
+          get("modal-image").alt = pick(section.name);
+          get("modal-text").textContent = pick(section.description) || "";
+          modal.showModal();
+        });
+        card.append(sheet);
+      }
       card.append(wrap); fragment.append(card);
     }
     results.replaceChildren(fragment);
