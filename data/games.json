@@ -212,7 +212,24 @@
     "descKey": "teotihuacanDesc",
     "bg": "linear-gradient(135deg, #243b36 0%, #b68a5a 48%, #392820 100%)",
     "cover": "https://static.lelekan.ua/image/cache/catalog/igri/teotihuacan_city_of_gods/00_teotihuacan_city_of_gods-800x800.png.webp",
-    "id": "teotihuacan"
+    "id": "teotihuacan",
+    "href": "./teotihuacan/",
+    "reference": "teotihuacan/reference.json",
+    "languages": ["ko", "en"],
+    "titles": {
+      "ko": "테오티우아칸: 신들의 도시",
+      "en": "Teotihuacan: City of Gods"
+    },
+    "tag": {
+      "ko": "사제·여사제 · 디럭스 타일",
+      "en": "Priests & Deluxe tiles"
+    },
+    "description": {
+      "ko": "사제·여사제 13종과 주요 타일·모듈을 이미지로 빠르게 확인",
+      "en": "Illustrated reference for 13 priests, key tiles, and modules"
+    },
+    "actionKey": "enterAction",
+    "statusLabel": "OPEN"
   },
   {
     "title": "Gaia Project",
