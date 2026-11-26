@@ -94,5 +94,12 @@
     window.addEventListener?.("hashchange", openTabFromHash);
   }
 
+  // Offline support (sw.js at the site root). Skipped where unsupported or not served over HTTP(S).
+  if (typeof window.addEventListener === "function" && /^https?:$/.test(window.location.protocol)) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker?.register("/sw.js").catch(() => {});
+    });
+  }
+
   window.BGW = Object.freeze({ getLanguage, setLanguage, syncLinks });
 })();

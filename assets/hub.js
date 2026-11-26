@@ -2,7 +2,8 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
     const GAME_SITE_TITLE_PREFIX = "BGW : ";
     // Individual game sites should use titles like `${GAME_SITE_TITLE_PREFIX}Marrakech`.
 
-    const games = window.BGW_GAMES;
+    // Open games first, coming-soon games after; catalog order is kept within each group.
+    const games = [...window.BGW_GAMES].sort((a, b) => Number(Boolean(b.href)) - Number(Boolean(a.href)));
 
     const translations = {
       ko: {
