@@ -73,4 +73,22 @@ for(const prefix of ['/','/preview/'])for(const lang of langs)for(const game of 
 }
 const home=link('../'),zh=env(origin+'/marrakesh/?lang=zh',[home]);
 assert.equal(zh.api.getLanguage([...langs,'zh']),'zh');zh.api.setLanguage('zh');assert.equal(home.href,origin+'/?lang=en');
-console.log(`PASS: ${pages.length} pages, JavaScript/JSON syntax, ${count} local references (including dynamic images), ${urls.length} sitemap URLs, language round trips and blocked storage.`);
+// Tab deep links: hash opens a tab, clicking a tab rewrites the hash, "all" clears it.
+function tabEnv(href,buttons){
+ const location=new URL(href),events={},clicks=[];
+ const window={location,history:{state:null,replaceState(s,t,u){location.href=String(u);}},addEventListener(n,fn){events['w:'+n]=fn;}};
+ for(const b of buttons){b.click=()=>{clicks.push(b);events.click({target:b});};b.closest=()=>b;}
+ const document={querySelectorAll:s=>s.includes('#filters')?buttons:[],addEventListener(n,fn){events[n]=fn;}};
+ vm.runInContext(read('assets/site.js'),vm.createContext({window,document,URL,URLSearchParams,navigator:{language:'ko'},localStorage:{getItem(){return null;},setItem(){}}}));
+ return {location,events,clicks};
+}
+const tab=(data)=>({dataset:data});
+{const all=tab({category:'all'}),ownSetup=tab({category:'setup'}),castles=tab({category:'castles'}),shared=tab({setupTab:'true'});
+ const t1=tabEnv(origin+'/burgundy/?lang=ko#setup',[all,ownSetup,castles,shared]);t1.events.DOMContentLoaded();
+ assert.equal(t1.clicks[0],shared);assert.equal(t1.location.hash,'#setup');assert.equal(t1.location.searchParams.get('lang'),'ko');
+ castles.click();assert.equal(t1.location.hash,'#castles');all.click();assert.equal(t1.location.hash,'');assert.equal(t1.location.href,origin+'/burgundy/?lang=ko');
+ const t2=tabEnv(origin+'/clocktower/#setup',[tab({category:'all'}),ownSetup]);t2.events.DOMContentLoaded();assert.equal(t2.clicks[0],ownSetup);
+ const t3=tabEnv(origin+'/games/gah/#nope',[tab({show:'all'}),tab({show:'guest'})]);t3.events.DOMContentLoaded();assert.equal(t3.clicks.length,0);
+ const guest=tab({show:'guest'}),t4=tabEnv(origin+'/games/gah/#guest',[tab({show:'all'}),guest]);t4.events.DOMContentLoaded();assert.equal(t4.clicks[0],guest);
+ const t5=tabEnv(origin+'/games/gah/#%E0%A4%A',[guest]);t5.events.DOMContentLoaded();assert.equal(t5.clicks.length,0);}
+console.log(`PASS: ${pages.length} pages, JavaScript/JSON syntax, ${count} local references (including dynamic images), ${urls.length} sitemap URLs, language round trips, tab deep links and blocked storage.`);

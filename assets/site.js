@@ -50,19 +50,48 @@
     window.BGWSetup?.sync(language);
   }
 
-  // Opening a game page with #setup (e.g. from the hub's setup shortcut) selects its setup tab.
-  function openSetupFromHash() {
-    if (window.location.hash !== "#setup") return;
-    // Prefer the shared setup tab; fall back to a page's own "setup" category (Clocktower).
-    const button = document.querySelector("[data-setup-tab]")
-      || document.querySelector("#filters [data-category='setup'], #section-tabs [data-show='setup']");
+  // Tab deep links: the selected game-page tab is kept in the URL hash (#setup, #castles, ...)
+  // so a refresh or a shared link reopens it. "All" has no hash. Search text is never put in the URL.
+  const tabSelector = "#filters button, #section-tabs button";
+  const tabKey = (button) => button.dataset.setupTab ? "setup" : button.dataset.show || button.dataset.category || "all";
+
+  function findTab(key) {
+    const tabs = Array.from(document.querySelectorAll(tabSelector));
+    // The shared setup tab wins over a page's own "setup" category (Clocktower has only the latter).
+    return tabs.find((button) => button.dataset.setupTab && key === "setup") || tabs.find((button) => tabKey(button) === key);
+  }
+
+  function openTabFromHash() {
+    let key = "";
+    try {
+      key = decodeURIComponent(window.location.hash.slice(1));
+    } catch {
+      return;
+    }
+    const button = key && findTab(key);
     if (!button) return;
     button.click();
-    button.scrollIntoView?.({ block: "nearest" });
+    button.scrollIntoView?.({ block: "nearest", inline: "nearest" });
   }
+
+  function rememberTab(event) {
+    const button = event.target.closest?.(tabSelector);
+    if (!button) return;
+    const key = tabKey(button);
+    const url = new URL(window.location.href);
+    url.hash = key === "all" ? "" : encodeURIComponent(key);
+    if (url.href === window.location.href) return;
+    try {
+      window.history.replaceState(window.history.state, "", url);
+    } catch {
+      // Embedded or local-file contexts can disallow history updates.
+    }
+  }
+
   if (typeof document.addEventListener === "function") {
-    document.addEventListener("DOMContentLoaded", openSetupFromHash);
-    window.addEventListener?.("hashchange", openSetupFromHash);
+    document.addEventListener("DOMContentLoaded", openTabFromHash);
+    document.addEventListener("click", rememberTab);
+    window.addEventListener?.("hashchange", openTabFromHash);
   }
 
   window.BGW = Object.freeze({ getLanguage, setLanguage, syncLinks });

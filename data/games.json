@@ -173,8 +173,8 @@
       "en": "Worker placement · Engine building"
     },
     "description": {
-      "ko": "본판 핵심 규칙 + 콜드 워 모듈 · 종말 시계 · Clash of Nations",
-      "en": "Base rules + Cold War modules · Doomsday Clock · Clash of Nations"
+      "ko": "업적 타일 · 국가 카드 · 글로벌 임팩트 · 행동칸 · 셋업",
+      "en": "Achievements · Nations · Global Impacts · Locations · Setup"
     },
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
