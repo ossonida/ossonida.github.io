@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 const data=JSON.parse(fs.readFileSync('data/setup.json','utf8'));
 const catalog=JSON.parse(fs.readFileSync('data/games.json','utf8'));
 // Text keys a game uses: shared UI keys plus every key referenced from its config.
-const usedKeys=config=>{const keys=new Set(['setup','item','common','noResults','scope','module','quickSetup']);for(const n of config.players||[2,3,4])keys.add(data.text['p'+n]?'p'+n:'players');(function walk(v){if(typeof v==='string'&&data.text[v])keys.add(v);else if(v&&typeof v==='object')Object.values(v).forEach(walk);})(config);return [...keys];};
+const usedKeys=config=>{const keys=new Set(['setup','item','common','noResults','scope','module','quickSetup','playerCount']);for(const n of config.players||[2,3,4])keys.add(data.text['p'+n]?'p'+n:'players');(function walk(v){if(typeof v==='string'&&data.text[v])keys.add(v);else if(v&&typeof v==='object')Object.values(v).forEach(walk);})(config);return [...keys];};
 class Element {
  constructor(tag='div'){this.tag=tag;this.children=[];this.dataset={};this.events={};this.attrs={};this.value='';this.hidden=false;this.className='';this.content='';this.classList={toggle:(c,on)=>{const s=new Set(this.className.split(' '));on?s.add(c):s.delete(c);this.className=[...s].join(' ');},add:c=>this.classList.toggle(c,true),remove:c=>this.classList.toggle(c,false)};}
  set textContent(v){this.content=v;this.children=[];}
@@ -32,7 +32,20 @@ for(const [game,config] of Object.entries(data.games)){
  for(const lang of gameLanguages){
   for(const key of usedKeys(config))assert.ok(data.text[key][lang]?.trim(),`${game}: ${key}.${lang}`);
   window.BGWSetup.sync(lang);assert.equal(tabs.querySelector('[data-setup-tab]').textContent,data.text.setup[lang]);assert.ok(!panel.textContent.includes('undefined'));
-  assert.equal(panel.querySelector('.setup-table').querySelectorAll('th').filter(th=>th.attrs.scope==='col').length,columns);
+  assert.equal(panel.querySelector('.setup-table').querySelectorAll('th').filter(th=>th.attrs.scope==='col').length,2);
+  // Player picker: one button per count; each shows that count's column as a two-column table.
+  const counts=config.players||[2,3,4];
+  assert.equal(panel.querySelector('.setup-players').querySelectorAll('button').length,counts.length);
+  counts.forEach((count,index)=>{
+   panel.querySelector('.setup-players').querySelectorAll('button')[index].click();
+   const pressed=panel.querySelector('.setup-players').querySelectorAll('button').filter(b=>b.attrs['aria-pressed']==='true');
+   assert.equal(pressed.length,1);assert.equal(pressed[0].dataset.players,String(count));
+   const cell=config.rows[0][index+1],expected=typeof cell==='string'?(data.text[cell][lang]||data.text[cell].en):(cell[lang]||cell.en||cell.value);
+   assert.equal(panel.querySelector('tbody').querySelectorAll('td')[0].textContent,expected);
+  });
+  panel.querySelector('.setup-players').querySelectorAll('button')[0].click();
+  // Common setup renders as a checklist of several short steps.
+  const steps=panel.querySelectorAll('li');assert.ok(steps.length>=3,game+' '+lang+' steps');assert.ok(steps.every(step=>step.textContent.trim()));
  }
  if(config.expansions?.length){
   window.BGWSetup.sync('en');

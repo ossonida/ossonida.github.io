@@ -136,13 +136,13 @@
       "zh": "起始工人：从首位顺时针"
     },
     "bcommon": {
-      "ko": "기념판 기준. 각자 성 1개, 무작위 상품 3개, 은화 1개, 자기 색 주사위 2개. 상품은 A–E에 5개씩 5더미를 준비합니다. 다리 첫 칸에 선 플레이어부터 위→아래로 말을 쌓고 선이 흰 주사위를 받습니다.",
-      "en": "Anniversary edition. Each player: 1 castle, 3 random goods, 1 coin, 2 dice. Prepare five stacks of five goods for A–E. Stack turn markers on bridge space 1, first player on top; first player takes the white die.",
-      "de": "Jubiläumsausgabe. Pro Spieler: 1 Burg, 3 zufällige Waren, 1 Silberling, 2 Würfel. Für A–E je 5 Waren stapeln. Marker auf Brückenfeld 1 stapeln, Startspieler oben; er erhält den weißen Würfel.",
-      "fr": "Édition anniversaire. Par joueur : 1 château, 3 marchandises aléatoires, 1 pièce, 2 dés. Cinq piles de cinq marchandises pour A–E. Marqueurs sur la première case du pont, premier joueur au sommet ; il prend le dé blanc.",
-      "ja": "記念版。各自、城1枚・無作為の商品3枚・銀貨1枚・自分のダイス2個。A～Eに商品5枚ずつの山を準備。橋の1マス目に先手を一番上として重ね、先手が白ダイスを受け取ります。",
-      "es": "Edición aniversario. Cada jugador: 1 castillo, 3 mercancías aleatorias, 1 moneda y 2 dados. Cinco pilas de cinco mercancías para A–E. Marcadores en la primera casilla del puente, primero encima; este recibe el dado blanco.",
-      "zh": "周年版。每人1城堡、3随机货物、1银币、2枚个人骰。A–E各放5货物。顺序标记叠于桥第1格，首位在顶端并拿白骰。"
+      "ko": "각자 성 1개, 무작위 상품 3개, 은화 1개, 자기 색 주사위 2개를 받습니다.\n상품은 A–E 단계용으로 5개씩 5더미를 만듭니다.\n다리 첫 칸에 순서 말을 쌓습니다. 선 플레이어가 맨 위입니다.\n선 플레이어가 흰 주사위를 받습니다.",
+      "en": "Each player: 1 castle, 3 random goods, 1 coin, 2 dice. Prepare five stacks of five goods for A–E. Stack turn markers on bridge space 1, first player on top; first player takes the white die.",
+      "de": "Pro Spieler: 1 Burg, 3 zufällige Waren, 1 Silberling, 2 Würfel. Für A–E je 5 Waren stapeln. Marker auf Brückenfeld 1 stapeln, Startspieler oben; er erhält den weißen Würfel.",
+      "fr": "Par joueur : 1 château, 3 marchandises aléatoires, 1 pièce, 2 dés. Cinq piles de cinq marchandises pour A–E. Marqueurs sur la première case du pont, premier joueur au sommet ; il prend le dé blanc.",
+      "ja": "各自、城1枚・無作為の商品3枚・銀貨1枚・自分のダイス2個。A～Eに商品5枚ずつの山を準備。橋の1マス目に先手を一番上として重ね、先手が白ダイスを受け取ります。",
+      "es": "Cada jugador: 1 castillo, 3 mercancías aleatorias, 1 moneda y 2 dados. Cinco pilas de cinco mercancías para A–E. Marcadores en la primera casilla del puente, primero encima; este recibe el dado blanco.",
+      "zh": "每人1城堡、3随机货物、1银币、2枚个人骰。A–E各放5货物。顺序标记叠于桥第1格，首位在顶端并拿白骰。"
     },
     "dice": {
       "ko": "사용 주사위 수",
@@ -199,7 +199,7 @@
       "zh": "首位免费客人选择顺序"
     },
     "gcommon": {
-      "ko": "선 플레이어를 무작위로 정하고 시계방향으로 순서 타일을 나눕니다. 각자 10크로네, 커피·와인·케이크·슈트루델 1개씩, 직원 카드 6장을 받아 드래프트합니다. 손님 5장을 공개하고 목표·황제 타일은 A/B/C 각 1개씩 사용합니다. 마지막 플레이어부터 반시계방향으로 무료 손님 1명씩 선택하고 매번 보충합니다. 각자 객실을 최대 3개 준비하며 왼쪽 아래부터 인접하게, 색을 맞추고 비용을 지불합니다.",
+      "ko": "선 플레이어를 무작위로 정하고 시계 방향으로 순서 타일을 나눕니다.\n각자 10크로네와 커피·와인·케이크·슈트루델 1개씩을 받습니다.\n각자 직원 카드 6장을 받아 드래프트합니다.\n손님 카드 5장을 공개합니다.\n목표 타일과 황제 타일은 A·B·C에서 1개씩 사용합니다.\n마지막 플레이어부터 반시계 방향으로 무료 손님을 1명씩 고르고, 고를 때마다 보충합니다.\n각자 객실을 최대 3개 준비합니다. 왼쪽 아래부터 인접하게, 색을 맞추고 비용을 냅니다.",
       "en": "Choose a random first player; assign order tiles clockwise. Each player: 10 krones, one coffee/wine/cake/strudel, and 6 staff cards to draft. Reveal 5 guests; use one A/B/C objective and emperor tile each. Choose one free guest each in reverse order, refilling after each choice. Prepare up to 3 rooms, starting bottom-left, adjacent and color-matched; pay their costs.",
       "de": "Startspieler zufällig bestimmen, Reihenfolgeplättchen im Uhrzeigersinn verteilen. Je 10 Kronen, je 1 Kaffee/Wein/Torte/Strudel und 6 Personalkarten zum Draften. 5 Gäste auslegen; je ein A/B/C-Ziel und Kaiserplättchen. In umgekehrter Reihenfolge je einen kostenlosen Gast wählen und nachfüllen. Bis zu 3 Zimmer ab unten links benachbart und farbgleich vorbereiten; Kosten bezahlen.",
       "fr": "Premier joueur aléatoire ; distribuer les tuiles dans le sens horaire. Chacun : 10 couronnes, un café/vin/gâteau/strudel et 6 cartes Personnel à drafter. Révéler 5 clients ; un objectif et une tuile empereur de chaque A/B/C. Choisir un client gratuit en ordre inverse, en remplaçant après chaque choix. Préparer jusqu’à 3 chambres depuis le bas gauche, adjacentes, de même couleur, en payant leur coût.",
@@ -235,13 +235,13 @@
       "zh": "除黄、紫、橙、棕外8色各1入袋。抽取后任意顺序放在绿洲轨凯希格。"
     },
     "mcommon": {
-      "ko": "나머지 본판 준비는 동일합니다. 각자 10점, 물·대추·디나르 1개씩, 12색 케시 각 1개, 오아시스 6개, 식량공급 타일 3개(첫 계절용 1개 공개). 두루마리는 종류별로 3더미, 사치품은 5더미, 교환소 3개, 강 타일은 계절별 1개를 준비합니다. 공방마다 성문 8개를 놓고 선 플레이어를 무작위로 정합니다.",
-      "en": "Other base setup is unchanged. Each player: 10 VP, one water/date/dinar, one keshi of each of 12 colors, 6 oases, 3 provision tiles (reveal one for season 1). Prepare 3 scroll stacks per type, 5 luxury stacks, 3 exchange offices, one river tile per season and 8 gates per workshop. Random first player.",
-      "de": "Übriger Grundaufbau unverändert. Je Spieler: 10 Punkte, je 1 Wasser/Dattel/Dinar, je ein Keshi aller 12 Farben, 6 Oasen, 3 Versorgungskärtchen (eines für Saison 1 offen). Je Schriftrollentyp 3 Stapel, 5 Luxuswarenstapel, 3 Wechselstuben, je Saison 1 Flussplättchen und je Werkstatt 8 Tore. Zufälliger Startspieler.",
-      "fr": "Autre préparation identique. Chacun : 10 PV, une eau/datte/dinar, un keshi de chacune des 12 couleurs, 6 oasis, 3 provisions (une révélée pour saison 1). Trois piles par type de parchemin, 5 piles de luxe, 3 bureaux de change, une rivière par saison et 8 portes par atelier. Premier joueur aléatoire.",
-      "ja": "その他の基本準備は同じです。各自10点、水・ナツメヤシ・ディナール各1、12色のケシ各1、オアシス6枚、供給タイル3枚（第1季節用1枚公開）。巻物は種類別3山、高級品5山、両替所3枚、川は季節ごと1枚、工房ごと門8枚。先手は無作為。",
-      "es": "El resto no cambia. Cada uno: 10 PV, un agua/dátil/dinar, un keshi de cada uno de los 12 colores, 6 oasis y 3 provisiones (una visible para estación 1). Tres pilas por tipo de pergamino, 5 de lujo, 3 casas de cambio, una loseta de río por estación y 8 puertas por taller. Primer jugador al azar.",
-      "zh": "其他基础准备相同。每人10分、水/椰枣/第纳尔各1、12色凯希各1、6绿洲、3供给板块（首季公开1）。卷轴每类3堆，奢侈品5堆，兑换所3枚，每季1河流板块，每工坊8门。随机首位。"
+      "ko": "각자 10점, 물·대추·디나르 1개씩을 받습니다.\n각자 12색 케시 각 1개, 오아시스 6개, 식량공급 타일 3개를 받습니다. 첫 계절용 1개는 공개합니다.\n두루마리는 종류별 3더미, 사치품은 5더미를 만듭니다.\n교환소 3개와 계절별 강 타일 1개씩을 준비합니다.\n공방마다 성문 8개를 놓습니다.\n선 플레이어를 무작위로 정합니다.",
+      "en": "Each player: 10 VP, one water/date/dinar, one keshi of each of 12 colors, 6 oases, 3 provision tiles (reveal one for season 1). Prepare 3 scroll stacks per type, 5 luxury stacks, 3 exchange offices, one river tile per season and 8 gates per workshop. Random first player.",
+      "de": "Je Spieler: 10 Punkte, je 1 Wasser/Dattel/Dinar, je ein Keshi aller 12 Farben, 6 Oasen, 3 Versorgungskärtchen (eines für Saison 1 offen). Je Schriftrollentyp 3 Stapel, 5 Luxuswarenstapel, 3 Wechselstuben, je Saison 1 Flussplättchen und je Werkstatt 8 Tore. Zufälliger Startspieler.",
+      "fr": "Chacun : 10 PV, une eau/datte/dinar, un keshi de chacune des 12 couleurs, 6 oasis, 3 provisions (une révélée pour saison 1). Trois piles par type de parchemin, 5 piles de luxe, 3 bureaux de change, une rivière par saison et 8 portes par atelier. Premier joueur aléatoire.",
+      "ja": "各自10点、水・ナツメヤシ・ディナール各1、12色のケシ各1、オアシス6枚、供給タイル3枚（第1季節用1枚公開）。巻物は種類別3山、高級品5山、両替所3枚、川は季節ごと1枚、工房ごと門8枚。先手は無作為。",
+      "es": "Cada uno: 10 PV, un agua/dátil/dinar, un keshi de cada uno de los 12 colores, 6 oasis y 3 provisiones (una visible para estación 1). Tres pilas por tipo de pergamino, 5 de lujo, 3 casas de cambio, una loseta de río por estación y 8 puertas por taller. Primer jugador al azar.",
+      "zh": "每人10分、水/椰枣/第纳尔各1、12色凯希各1、6绿洲、3供给板块（首季公开1）。卷轴每类3堆，奢侈品5堆，兑换所3枚，每季1河流板块，每工坊8门。随机首位。"
     },
     "noResults": {
       "ko": "검색 결과가 없습니다.",
@@ -592,8 +592,26 @@
       "en": "Starting money by turn order"
     },
     "ecommon": {
-      "ko": "보드 옆에 자원·주사위·오염·유정 토큰 더미를 만듭니다. 카드 덱 6종과 업적 타일을 각각 섞습니다. 글로벌 임팩트 초기 3장·후기 3장을 뒷면으로 보드 아래에 초기→후기 순으로 놓고 나머지는 상자에 넣습니다. 구조물 시장 3곳을 오른쪽부터 해당 덱 3장으로 채우고 업적 3개를 앞면으로 놓습니다. 각자 점수 트랙 0칸과 UN 트랙 맨 왼쪽 칸에 마커를 놓습니다. 각자 개인 보드를 받고 환경 맨 왼쪽 위 칸에 오염 1개를 놓은 뒤 일꾼 3개·에너지 2개를 받습니다(나머지 일꾼·에너지는 따로 치워 둡니다). 국가 카드 2장과 업적 2개 중 하나씩 고르고(업적은 비공개, 남은 국가 카드는 뒷면 요약표로 사용) 국가 카드의 시작 보너스를 받습니다. 시작 플레이어부터 시계 방향으로 위 표의 시작 자금을 받습니다.",
-      "en": "Make supplies of resources, dice, Pollution and Oil Well tokens. Shuffle the six card decks and the Achievement tiles separately. Place 3 Early then 3 Late Global Impacts face down below the board; return the rest to the box. Fill each Structure market right to left with 3 cards from its deck and place 3 Achievements face up. Each player puts markers on 0 of the Score track and on the leftmost United Nations space, takes their mat, places 1 Pollution in the top-left Environment space, and takes 3 Workers and 2 Energy (keep the rest clearly apart). Choose 1 of 2 Nation cards and 1 of 2 Achievements (keep the Achievement secret; the other Nation card is a reference), then gain the Nation's starting bonus. Starting with the start player and going clockwise, take the starting money shown above."
+      "ko": "보드 옆에 자원·주사위·오염·유정 토큰 더미를 만듭니다.\n카드 덱 6종과 업적 타일을 각각 섞습니다.\n글로벌 임팩트 초기 3장 → 후기 3장 순으로 보드 아래에 뒷면으로 놓습니다. 나머지는 상자에 넣습니다.\n구조물 시장 3곳을 오른쪽부터 해당 덱 3장으로 채웁니다.\n업적 3개를 앞면으로 놓습니다.\n각자 점수 트랙 0칸과 UN 트랙 맨 왼쪽 칸에 마커를 놓습니다.\n각자 개인 보드의 환경 맨 왼쪽 위 칸에 오염 1개를 놓습니다.\n각자 일꾼 3개·에너지 2개를 받습니다. 나머지 일꾼·에너지는 따로 치워 둡니다.\n국가 카드 2장 중 1장, 업적 2개 중 1개를 고릅니다. 업적은 비공개, 남은 국가 카드는 요약표로 씁니다.\n고른 국가 카드의 시작 보너스를 받습니다.\n시작 플레이어부터 시계 방향으로 위 표의 시작 자금을 받습니다.",
+      "en": "Make supplies of resources, dice, Pollution and Oil Well tokens.\nShuffle the six card decks and the Achievement tiles separately.\nPlace 3 Early then 3 Late Global Impacts face down below the board. Return the rest to the box.\nFill each Structure market right to left with 3 cards from its deck.\nPlace 3 Achievements face up.\nEach player puts markers on 0 of the Score track and on the leftmost United Nations space.\nEach player places 1 Pollution in the top-left Environment space of their mat.\nEach player takes 3 Workers and 2 Energy. Keep the rest clearly apart.\nChoose 1 of 2 Nation cards and 1 of 2 Achievements. Keep the Achievement secret; the other Nation card is a reference.\nGain your Nation's starting bonus.\nStarting with the start player and going clockwise, take the starting money shown above."
+    },
+    "bscope": {
+      "ko": "기념판 · 2–4인 기준 · 확장·솔로 제외",
+      "en": "Anniversary edition · 2–4 players · excludes expansions and solo",
+      "de": "Jubiläumsausgabe · 2–4 Spieler · ohne Erweiterungen/Solo",
+      "fr": "Édition anniversaire · 2–4 joueurs · hors extensions/solo",
+      "ja": "記念版・2～4人用・拡張とソロは対象外",
+      "es": "Edición aniversario · 2–4 jugadores · sin expansiones ni solitario",
+      "zh": "周年版 · 2–4人 · 不含扩展及单人模式"
+    },
+    "playerCount": {
+      "ko": "인원",
+      "en": "Players",
+      "de": "Spieler",
+      "fr": "Joueurs",
+      "ja": "人数",
+      "es": "Jugadores",
+      "zh": "人数"
     }
   },
   "games": {
@@ -633,7 +651,8 @@
           11
         ],
         "edition": "2019 anniversary"
-      }
+      },
+      "scope": "bscope"
     },
     "gah": {
       "rows": [

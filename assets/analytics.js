@@ -42,7 +42,7 @@
         if (!query) { lastQuery = ''; return; }
         if (query === lastQuery) return;
         lastQuery = query;
-        const nodes = document.querySelectorAll('[data-section] tbody tr, .setup-panel tbody tr, .setup-common p');
+        const nodes = document.querySelectorAll('[data-section] tbody tr, .setup-panel tbody tr, .setup-common li');
         const any = [...nodes].some(node => !node.hidden && node.getClientRects().length > 0);
         if (!any) {
           const selected = document.querySelector('#section-tabs button.is-active, #filters button.is-active');
