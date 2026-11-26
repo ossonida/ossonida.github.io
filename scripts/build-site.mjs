@@ -73,7 +73,9 @@ ${alternates}
  // Publish legacy game sources under routes owned by the unified site.
  for(const id of ['gah','marrakesh']){
   const target='games/'+id;
-  fs.writeFileSync(id+'/index.html',stamp(fs.readFileSync(id+'/index.html','utf8')));
+  // Legacy pages also load their own data scripts (e.g. reference-data.js); version those too.
+  const localScripts = html => html.replace(/src="(reference-[a-z-]+\.js)(\?v=[^"]*)?"/g, (m,file) => `src="${file}?v=${hashOf(id+'/'+file)}"`);
+  fs.writeFileSync(id+'/index.html',localScripts(stamp(fs.readFileSync(id+'/index.html','utf8'))));
   fs.cpSync(id,target,{recursive:true});
   const page=fs.readFileSync(target+'/index.html','utf8')
    .replaceAll('https://ossonida.github.io/'+id+'/', 'https://ossonida.github.io/games/'+id+'/')
