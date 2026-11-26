@@ -13,6 +13,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         gahTag: "카드 / 타일",
         gahDesc: "그랜드 오스트리아 호텔 카드와 설명을 빠르게 확인합니다.",
         enterAction: "입장",
+        setupAction: "셋업",
         marrakechTag: "타일",
         marrakechDesc: "마라케시 타일 설명을 빠르게 확인합니다.",
         burgundyTag: "타일 / 주사위",
@@ -41,6 +42,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         gahTag: "Cards / Tiles",
         gahDesc: "Quickly check Grand Austria Hotel cards and descriptions.",
         enterAction: "Enter",
+        setupAction: "Setup",
         marrakechTag: "Tiles",
         marrakechDesc: "Quickly check Marrakech tile descriptions.",
         burgundyTag: "Tiles / Dice",
@@ -69,6 +71,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         gahTag: "Karten / Plättchen",
         gahDesc: "Karten und Beschreibungen zu Grand Austria Hotel schnell nachschlagen.",
         enterAction: "Öffnen",
+        setupAction: "Aufbau",
         marrakechTag: "Plättchen",
         marrakechDesc: "Marrakech-Plättchenbeschreibungen schnell nachschlagen.",
         burgundyTag: "Plättchen / Würfel",
@@ -97,6 +100,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         gahTag: "Cartes / Tuiles",
         gahDesc: "Consultez rapidement les cartes et descriptions de Grand Austria Hotel.",
         enterAction: "Entrer",
+        setupAction: "Mise en place",
         marrakechTag: "Tuiles",
         marrakechDesc: "Consultez rapidement les descriptions des tuiles de Marrakech.",
         burgundyTag: "Tuiles / Dés",
@@ -125,6 +129,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         gahTag: "カード / タイル",
         gahDesc: "グランドオーストリアホテルのカードと説明をすばやく確認します。",
         enterAction: "入場",
+        setupAction: "セットアップ",
         marrakechTag: "タイル",
         marrakechDesc: "マラケシュのタイル説明をすばやく確認できます。",
         burgundyTag: "タイル / ダイス",
@@ -153,6 +158,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         gahTag: "Cartas / Losetas",
         gahDesc: "Consulta rápidamente las cartas y descripciones de Grand Austria Hotel.",
         enterAction: "Entrar",
+        setupAction: "Preparación",
         marrakechTag: "Losetas",
         marrakechDesc: "Consulta rápidamente las descripciones de las losetas de Marrakech.",
         burgundyTag: "Losetas / Dados",
@@ -266,7 +272,21 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         action.append(actionLabel);
 
         banner.append(cover, info, action);
-        fragment.append(banner);
+
+        // Setup shortcut: a sibling link (anchors cannot nest) that opens the game's setup tab.
+        if (game.href && game.setup) {
+          const card = document.createElement("div");
+          card.className = "game-card has-setup";
+          const setupLink = appendTranslatedText(document.createElement("a"), "setupAction");
+          setupLink.className = "setup-shortcut";
+          setupLink.href = `${game.href}#setup`;
+          setupLink.dataset.siteLink = "";
+          setupLink.dataset.siteLanguages = game.languages.join(" ");
+          card.append(banner, setupLink);
+          fragment.append(card);
+        } else {
+          fragment.append(banner);
+        }
       });
 
       gameGrid.replaceChildren(fragment);

@@ -24,7 +24,8 @@
       "fr": "Grand Austria Hotel",
       "ja": "グランドオーストリアホテル",
       "es": "Grand Austria Hotel"
-    }
+    },
+    "setup": true
   },
   {
     "title": "Marrakesh",
@@ -53,7 +54,8 @@
       "ja": "マラケシュ",
       "es": "Marrakesh",
       "zh": "马拉喀什"
-    }
+    },
+    "setup": true
   },
   {
     "title": "The Castles of Burgundy",
@@ -81,7 +83,8 @@
       "fr": "Les Châteaux de Bourgogne",
       "ja": "ブルゴーニュの城",
       "es": "Los castillos de Borgoña"
-    }
+    },
+    "setup": true
   },
   {
     "id": "clocktower",
@@ -123,7 +126,8 @@
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #170d25, #6b1837, #150e21)",
-    "cover": "assets/covers/blood-on-the-clocktower.jpg"
+    "cover": "assets/covers/blood-on-the-clocktower.jpg",
+    "setup": true
   },
   {
     "id": "rebirth",
@@ -160,7 +164,10 @@
     },
     "href": "./energy-empire/",
     "reference": "energy-empire/reference.json",
-    "languages": ["ko", "en"],
+    "languages": [
+      "ko",
+      "en"
+    ],
     "tag": {
       "ko": "일꾼 배치 · 엔진 빌딩",
       "en": "Worker placement · Engine building"
@@ -172,7 +179,8 @@
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #261c17 0%, #7a4429 48%, #161c25 100%)",
-    "cover": "assets/covers/energy-empire.webp"
+    "cover": "assets/covers/energy-empire.webp",
+    "setup": true
   },
   {
     "title": "Civolution",
@@ -215,7 +223,10 @@
     "id": "teotihuacan",
     "href": "./teotihuacan/",
     "reference": "teotihuacan/reference.json",
-    "languages": ["ko", "en"],
+    "languages": [
+      "ko",
+      "en"
+    ],
     "titles": {
       "ko": "테오티우아칸: 신들의 도시",
       "en": "Teotihuacan: City of Gods"

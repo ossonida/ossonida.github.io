@@ -50,5 +50,20 @@
     window.BGWSetup?.sync(language);
   }
 
+  // Opening a game page with #setup (e.g. from the hub's setup shortcut) selects its setup tab.
+  function openSetupFromHash() {
+    if (window.location.hash !== "#setup") return;
+    // Prefer the shared setup tab; fall back to a page's own "setup" category (Clocktower).
+    const button = document.querySelector("[data-setup-tab]")
+      || document.querySelector("#filters [data-category='setup'], #section-tabs [data-show='setup']");
+    if (!button) return;
+    button.click();
+    button.scrollIntoView?.({ block: "nearest" });
+  }
+  if (typeof document.addEventListener === "function") {
+    document.addEventListener("DOMContentLoaded", openSetupFromHash);
+    window.addEventListener?.("hashchange", openSetupFromHash);
+  }
+
   window.BGW = Object.freeze({ getLanguage, setLanguage, syncLinks });
 })();

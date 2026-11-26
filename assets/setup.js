@@ -8,7 +8,9 @@
   const container = document.querySelector('.layout');
   let selectedTab = 'all';
   let language = document.documentElement.lang;
-  const text = key => typeof key === 'object' ? key.value : (data.text[key][language] || data.text[key].en);
+  const text = key => typeof key === 'object' ? (key[language] || key.en || key.value) : (data.text[key][language] || data.text[key].en);
+  // Player-count columns are configurable per game (default 2–4).
+  const playerLabel = count => data.text[`p${count}`] ? text(`p${count}`) : text('players').replace('{n}', count);
   const make = (tag, value, className) => {
     const node = document.createElement(tag);
     if (value !== undefined) node.textContent = value;
@@ -37,8 +39,9 @@
     const wrap = make('div', undefined, 'table-wrap');
     const table = make('table', undefined, 'setup-table');
     const head = make('thead'), headRow = make('tr');
-    for (const key of ['item','p2','p3','p4']) {
-      const cell = make('th', text(key)); cell.setAttribute('scope','col'); headRow.append(cell);
+    const itemHead = make('th', text('item')); itemHead.setAttribute('scope','col'); headRow.append(itemHead);
+    for (const count of config.players || [2,3,4]) {
+      const cell = make('th', playerLabel(count)); cell.setAttribute('scope','col'); headRow.append(cell);
     }
     head.append(headRow); const body = make('tbody');
     for (const values of config.rows) {

@@ -548,6 +548,52 @@
       "ja": "贈り物タイル10枚を混ぜ、既存の高級品5山の下側に別の1山として置きます。一番上の1枚だけ公開。高級品の山には混ぜません。",
       "es": "Baraja los 10 regalos en una pila aparte debajo de las cinco pilas de lujo existentes. Revela solo el regalo superior. No los mezcles con las pilas de lujo.",
       "zh": "10块礼物洗混成独立一堆，放在现有5堆奢侈品的下方。仅公开顶端1块，不混入奢侈品堆。"
+    },
+    "p5": {
+      "ko": "5인",
+      "en": "5 players",
+      "de": "5 Spieler",
+      "fr": "5 joueurs",
+      "ja": "5人",
+      "es": "5 jugadores",
+      "zh": "5人"
+    },
+    "players": {
+      "ko": "{n}인",
+      "en": "{n} players",
+      "de": "{n} Spieler",
+      "fr": "{n} joueurs",
+      "ja": "{n}人",
+      "es": "{n} jugadores",
+      "zh": "{n}人"
+    },
+    "escope": {
+      "ko": "본판 2–5인 기준 · 콜드 워 모듈 제외",
+      "en": "Base game, 2–5 players · excludes the Cold War module"
+    },
+    "epollution": {
+      "ko": "임팩트 트랙 칸마다 오염 토큰",
+      "en": "Pollution tokens on each Global Impact space"
+    },
+    "eneutral": {
+      "ko": "중립 일꾼 (구조물 시장)",
+      "en": "Neutral Workers (Structure markets)"
+    },
+    "eneutral2": {
+      "ko": "안 쓰는 색 3개 · 정부·산업·상업 시장에 1개씩, 게임 내내 고정",
+      "en": "3 of an unused color · 1 on each Government, Industry and Commerce market for the whole game"
+    },
+    "enone": {
+      "ko": "없음",
+      "en": "None"
+    },
+    "emoney": {
+      "ko": "차례 순서별 시작 자금",
+      "en": "Starting money by turn order"
+    },
+    "ecommon": {
+      "ko": "보드 옆에 자원·주사위·오염·유정 토큰 더미를 만듭니다. 카드 덱 6종과 업적 타일을 각각 섞습니다. 글로벌 임팩트 초기 3장·후기 3장을 뒷면으로 보드 아래에 초기→후기 순으로 놓고 나머지는 상자에 넣습니다. 구조물 시장 3곳을 오른쪽부터 해당 덱 3장으로 채우고 업적 3개를 앞면으로 놓습니다. 각자 점수 트랙 0칸과 UN 트랙 맨 왼쪽 칸에 마커를 놓습니다. 각자 개인 보드를 받고 환경 맨 왼쪽 위 칸에 오염 1개를 놓은 뒤 일꾼 3개·에너지 2개를 받습니다(나머지 일꾼·에너지는 따로 치워 둡니다). 국가 카드 2장과 업적 2개 중 하나씩 고르고(업적은 비공개, 남은 국가 카드는 뒷면 요약표로 사용) 국가 카드의 시작 보너스를 받습니다. 시작 플레이어부터 시계 방향으로 위 표의 시작 자금을 받습니다.",
+      "en": "Make supplies of resources, dice, Pollution and Oil Well tokens. Shuffle the six card decks and the Achievement tiles separately. Place 3 Early then 3 Late Global Impacts face down below the board; return the rest to the box. Fill each Structure market right to left with 3 cards from its deck and place 3 Achievements face up. Each player puts markers on 0 of the Score track and on the leftmost United Nations space, takes their mat, places 1 Pollution in the top-left Environment space, and takes 3 Workers and 2 Energy (keep the rest clearly apart). Choose 1 of 2 Nation cards and 1 of 2 Achievements (keep the Achievement secret; the other Nation card is a reference), then gain the Nation's starting bonus. Starting with the start player and going clockwise, take the starting money shown above."
     }
   },
   "games": {
@@ -773,6 +819,63 @@
           ]
         }
       ]
+    },
+    "energy-empire": {
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rows": [
+        [
+          "epollution",
+          {
+            "value": "4"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "7"
+          }
+        ],
+        [
+          "eneutral",
+          "eneutral2",
+          "enone",
+          "enone",
+          "enone"
+        ],
+        [
+          "emoney",
+          {
+            "value": "0 / $1"
+          },
+          {
+            "value": "0 / $1 / $2"
+          },
+          {
+            "value": "0 / $1 / $2 / $3"
+          },
+          {
+            "value": "0 / $1 / $2 / $3 / $4"
+          }
+        ]
+      ],
+      "common": "ecommon",
+      "scope": "escope",
+      "source": {
+        "file": "EnergyEmpireRules.pdf",
+        "pages": [
+          4,
+          5
+        ],
+        "edition": "base rules"
+      }
     }
   }
 }
