@@ -223,6 +223,7 @@
     "id": "teotihuacan",
     "href": "./teotihuacan/",
     "reference": "teotihuacan/reference.json",
+    "setup": true,
     "languages": [
       "ko",
       "en"
@@ -232,8 +233,8 @@
       "en": "Teotihuacan: City of Gods"
     },
     "tag": {
-      "ko": "사제·여사제 · 디럭스 타일",
-      "en": "Priests & Deluxe tiles"
+      "ko": "사제·여사제 · 디럭스 타일 · 셋업",
+      "en": "Priests, Deluxe tiles & setup"
     },
     "description": {
       "ko": "사제·여사제 13종과 주요 타일·모듈을 이미지로 빠르게 확인",

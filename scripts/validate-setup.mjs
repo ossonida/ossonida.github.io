@@ -51,7 +51,19 @@ for(const [game,config] of Object.entries(data.games)){
   // Common setup renders as a checklist of several short steps.
   const steps=panel.querySelectorAll('li');assert.ok(steps.length>=3,game+' '+lang+' steps');assert.ok(steps.every(step=>step.textContent.trim()));
  }
- if(config.expansions?.length){
+ if(game==='teotihuacan'){
+  // Modules and 5-player/variant setups render as two grouped tables; search narrows to one module.
+  window.BGWSetup.sync('en');
+  const groups=panel.querySelectorAll('.setup-expansion');
+  assert.deepEqual(groups.map(group=>group.querySelectorAll('tbody tr').length),[7,4]);
+  const five=panel.querySelector('.setup-players').querySelectorAll('button')[3];five.click();
+  assert.equal(panel.querySelector('tbody').querySelectorAll('td')[0].textContent,data.text.tcal5.en);
+  search.value='Altar on each';search.events.input();
+  const visible=panel.querySelectorAll('tbody tr').filter(row=>!row.hidden);
+  assert.equal(visible.length,1);assert.equal(visible[0].dataset.module,'m8');
+  search.value='';search.events.input();panel.querySelector('.setup-players').querySelectorAll('button')[0].click();
+ }
+ if(game==='marrakesh'){
   window.BGWSetup.sync('en');
   const group=panel.querySelector('.setup-expansion');
   assert.ok(group);assert.equal(group.querySelectorAll('tbody tr').length,6);
