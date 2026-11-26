@@ -89,23 +89,6 @@
     .page-top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: nowrap; }
     .page-title { margin: 0 0 10px; font-size: 26px; font-weight: 600; letter-spacing: -0.3px; flex: 1 1 auto; min-width: 0; }
     .top-actions { display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto; }
-    .coffee-banner {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 33px;
-      padding: 8px 12px;
-      border: 1px solid rgba(251, 191, 36, 0.48);
-      border-radius: 10px;
-      background: rgba(251, 191, 36, 0.12);
-      color: #fde68a;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1;
-      white-space: nowrap;
-    }
-    .coffee-banner:hover { border-color: rgba(251, 191, 36, 0.78); background: rgba(251, 191, 36, 0.18); color: #fef3c7; }
     .lang-switch { position: relative; z-index: 120; flex-shrink: 0; }
     .lang-switch button {
       border: 1px solid var(--border);
@@ -339,7 +322,6 @@
       .filter-tabs button { padding: 7px 9px; font-size: 12px; border-radius: 8px; white-space: normal; overflow-wrap: anywhere; }
       .page-top-row { gap: 8px; }
       .top-actions { gap: 6px; }
-      .coffee-banner { min-height: 33px; padding: 7px 9px; font-size: 13px; }
       .lang-switch button { padding: 7px 9px; }
       .search-bar input { padding: 10px 12px; font-size: 14px; }
       .card { padding: 10px 6px; border-radius: 12px; }
@@ -372,7 +354,6 @@
     @media (max-width: 390px) {
       body { padding-left: 5px; padding-right: 5px; }
       .card { padding-left: 4px; padding-right: 4px; }
-      .coffee-banner { font-size: 12px; padding-left: 7px; padding-right: 7px; }
       th, td { padding-left: 3px; padding-right: 3px; font-size: 14px; }
       .col-image { width: 50px; }
       .col-number { width: 38px; }
@@ -390,7 +371,7 @@
       [data-section="ex2Expert"] .ref-img { width: 46px; max-height: 68px; }
     }
   </style>
-  <link rel="stylesheet" href="../../assets/reference-layout.css?v=50b77a57f6">
+  <link rel="stylesheet" href="../../assets/reference-layout.css?v=9bed036870">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png">
@@ -413,7 +394,6 @@
             <svg class="score-counter-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h3v4H7zM14 8h3v4h-3zM8.5 15v3M7 16.5h3M14 16.5h3"/></svg>
             <span>Score Counter</span>
           </a>
-          <a class="coffee-banner" href="https://github.com/sponsors/ossonida" target="_blank" rel="noopener noreferrer">☕ Coffee</a>
           <div class="lang-switch" id="lang-switch">
             <button type="button" aria-haspopup="listbox" aria-expanded="false" id="lang-button">
               <span class="lang-label"><img class="lang-icon" data-lang="en" src="img/flag-us.svg" alt="US flag" aria-hidden="true"><span class="lang-code">EN</span></span>

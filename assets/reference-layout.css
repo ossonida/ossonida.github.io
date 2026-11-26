@@ -98,8 +98,6 @@ button:focus-visible,a:focus-visible,input:focus-visible {
   margin: 0;
 }
 .game-header-row .score-counter-link,
-.game-header-row .coffee-banner,
-.game-header-row .support-link,
 .game-header-row #lang-button {
   display: inline-flex;
   align-items: center;
@@ -126,13 +124,7 @@ button:focus-visible,a:focus-visible,input:focus-visible {
   border-color: rgba(34,211,238,.3);
   background: rgba(34,211,238,.06);
 }
-.game-header-row .coffee-banner,.game-header-row .support-link {
-  color: #fde68a;
-  border-color: rgba(251,191,36,.25);
-  background: rgba(251,191,36,.06);
-}
 .game-header-row .score-counter-link:hover { background: rgba(34,211,238,.12); border-color: rgba(34,211,238,.55); }
-.game-header-row .coffee-banner:hover,.game-header-row .support-link:hover { background: rgba(251,191,36,.12); border-color: rgba(251,191,36,.5); }
 .game-header-row #lang-button:hover { background: rgba(255,255,255,.075); }
 .game-header-row .score-counter-icon { width: 16px; height: 16px; flex: 0 0 auto; }
 .lang-switch { position: relative; z-index: 120; flex-shrink: 0; }
@@ -282,7 +274,7 @@ table { width: 100%; border-collapse: collapse; }
 @media(max-width:700px) {
   :root { --page-gutter: 10px; --card-padding: 12px; --header-gap: 10px; }
   .game-header-row > .page-title { font-size: 17px; }
-  .game-header-row .score-counter-link,.game-header-row .coffee-banner,.game-header-row .support-link,.game-header-row #lang-button { padding: 0 8px; }
+  .game-header-row .score-counter-link,.game-header-row #lang-button { padding: 0 8px; }
   .card .card-header h2 { font-size: 16px; }
   .card th,.card td { padding: 10px 8px; }
 }
@@ -291,14 +283,14 @@ table { width: 100%; border-collapse: collapse; }
   .page-top-row.game-header-row { gap: 5px; }
   .game-header-row > .page-title { font-size: 14px; letter-spacing: -.2px; }
   .game-header-row > .top-actions { gap: 4px; }
-  .game-header-row .score-counter-link,.game-header-row .coffee-banner,.game-header-row .support-link,.game-header-row #lang-button { padding: 0 6px; font-size: 11px; gap: 4px; }
+  .game-header-row .score-counter-link,.game-header-row #lang-button { padding: 0 6px; font-size: 11px; gap: 4px; }
   .game-header-row .score-counter-icon { width: 14px; height: 14px; }
   .game-header-row .lang-icon { width: 15px; height: 11px; }
   .game-header-row .lang-switch button .lang-label { gap: 4px; }
 }
 @media(max-width:360px) {
   :root { --control-height: 32px; }
-  .game-header-row .score-counter-link,.game-header-row .coffee-banner,.game-header-row .support-link,.game-header-row #lang-button { padding: 0 4px; font-size: 10px; }
+  .game-header-row .score-counter-link,.game-header-row #lang-button { padding: 0 4px; font-size: 10px; }
   .game-header-row > .page-title { font-size: 13px; }
   .game-header-row > .home-link svg { width: 16px; height: 16px; }
   .page-top .filter-tabs button { padding: 0 10px; }
