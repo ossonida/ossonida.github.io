@@ -745,6 +745,24 @@
       building: { ko: '특수건물', en: 'Special Building', de: 'Sondergebäude', fr: 'Bâtiment spécial', ja: '特殊建物', zh: '特殊建筑', es: 'Edificio especial' }
     };
 
+    // Some tile numbers carry a Korean word ("사막마을 01"). The raw value stays the data/translation
+    // key; only the displayed label is localized.
+    const numberLabelWords = {
+      '사막마을': { en: 'Desert Village', de: 'Wüstendorf', fr: 'Village du désert', ja: '砂漠の村', zh: '沙漠村庄', es: 'Aldea del desierto' },
+      '조각상': { en: 'Statuette', de: 'Statuette', fr: 'Statuette', ja: '小像', zh: '小雕像', es: 'Estatuilla' },
+      '선물': { en: 'Gift', de: 'Geschenk', fr: 'Cadeau', ja: '贈り物', zh: '礼物', es: 'Regalo' },
+      '보석': { en: 'Gem', de: 'Edelstein', fr: 'Gemme', ja: '宝石', zh: '宝石', es: 'Gema' },
+      '전문가': { en: 'Expert', de: 'Experte', fr: 'Expert', ja: '専門家', zh: '专家', es: 'Experto' },
+      '중고상점': { en: 'Second-Hand Shop', de: 'Gebrauchtwarenladen', fr: 'Boutique d’occasion', ja: '中古品店', zh: '二手商店', es: 'Tienda de segunda mano' }
+    };
+    const translateNumberLabel = (number, lang) => {
+      const match = String(number).match(/^([가-힣]+)\s*(.*)$/);
+      if (!match || lang === 'ko') return number;
+      const word = numberLabelWords[match[1]]?.[lang] || numberLabelWords[match[1]]?.en;
+      if (!word) return number;
+      return lang === 'ja' || lang === 'zh' ? `${word}${match[2]}` : `${word} ${match[2]}`;
+    };
+
     const displayNumberText = (section, item, lang = activeLang) => {
       if (!item?.number || noDisplayNumberSections.has(section)) return '';
       if (numberPrefixes[section]) {
@@ -752,7 +770,7 @@
         const prefix = numberPrefixes[section][lang] || numberPrefixes[section].en;
         return lang === 'ja' ? `${prefix}${number}` : `${prefix} ${number}`;
       }
-      return item.number;
+      return translateNumberLabel(item.number, lang);
     };
 
     const syncLanguageSwitcher = (lang) => {

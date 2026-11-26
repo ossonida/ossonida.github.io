@@ -204,92 +204,91 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
       return element;
     }
 
+    function gameCard(game) {
+      const isDisabled = !game.href;
+      const card = document.createElement("article");
+      card.className = `game-card${isDisabled ? " is-disabled" : ""}`;
+      card.style.setProperty("--game-bg", game.bg);
+
+      // Every cover sits in the same frame and is shown whole (contained), never cropped.
+      const cover = document.createElement("div");
+      cover.className = "cover";
+      cover.setAttribute("aria-hidden", "true");
+      const coverImage = document.createElement("img");
+      coverImage.alt = "";
+      coverImage.loading = "lazy";
+      coverImage.decoding = "async";
+      coverImage.addEventListener("error", () => {
+        coverImage.remove();
+        cover.classList.add("is-unavailable");
+      }, { once: true });
+      coverImage.src = game.cover;
+      cover.append(coverImage);
+
+      const info = document.createElement("div");
+      info.className = "game-info";
+
+      const meta = document.createElement("div");
+      meta.className = "game-meta";
+      const tag = game.tag ? document.createElement("span") : appendTranslatedText(document.createElement("span"), game.tagKey);
+      if (game.tag) tag.dataset.gameCopy = `${game.id}:tag`;
+      tag.className = "tag";
+      meta.append(tag);
+
+      // The title link stretches over the whole card; the setup button sits above it.
+      const title = document.createElement("h2");
+      title.className = "game-title";
+      const titleText = game.href ? document.createElement("a") : document.createElement("span");
+      titleText.textContent = game.title;
+      titleText.dataset.gameId = game.id;
+      if (game.href) {
+        titleText.className = "game-link";
+        titleText.href = game.href;
+        titleText.dataset.siteLink = "";
+        titleText.dataset.siteLanguages = game.languages.join(" ");
+      }
+      title.append(titleText);
+
+      const desc = game.description ? document.createElement("p") : appendTranslatedText(document.createElement("p"), game.descKey);
+      if (game.description) desc.dataset.gameCopy = `${game.id}:description`;
+      desc.className = "game-desc";
+      info.append(meta, title, desc);
+
+      const actions = document.createElement("div");
+      actions.className = "game-actions";
+      const enter = appendTranslatedText(document.createElement("span"), game.href ? (game.actionKey || "enterAction") : "comingSoonAction");
+      enter.className = "game-enter";
+      enter.setAttribute("aria-hidden", "true");
+      actions.append(enter);
+      if (game.href && game.setup) {
+        const setupLink = appendTranslatedText(document.createElement("a"), "setupAction");
+        setupLink.className = "setup-shortcut";
+        setupLink.href = `${game.href}#setup`;
+        setupLink.dataset.siteLink = "";
+        setupLink.dataset.siteLanguages = game.languages.join(" ");
+        actions.append(setupLink);
+      }
+
+      card.append(cover, info, actions);
+      return card;
+    }
+
     function renderGameBanners() {
       const fragment = document.createDocumentFragment();
-
-      games.forEach((game) => {
-        const isDisabled = !game.href;
-        const banner = document.createElement("a");
-        banner.className = `game-banner${isDisabled ? " is-disabled" : ""}`;
-        banner.style.setProperty("--game-bg", game.bg);
-
-        if (game.href) {
-          banner.href = game.href;
-          banner.dataset.siteLink = "";
-          banner.dataset.siteLanguages = game.languages.join(" ");
-        } else {
-          banner.setAttribute("aria-disabled", "true");
-          banner.tabIndex = -1;
-        }
-
-        const cover = document.createElement("div");
-        cover.className = "cover";
-        cover.setAttribute("aria-hidden", "true");
-        const coverImage = document.createElement("img");
-        coverImage.alt = "";
-        coverImage.loading = "lazy";
-        coverImage.decoding = "async";
-        coverImage.addEventListener("error", () => {
-          coverImage.remove();
-          cover.classList.add("is-unavailable");
-        }, { once: true });
-        coverImage.src = game.cover;
-        cover.append(coverImage);
-
-        const info = document.createElement("div");
-        info.className = "game-info";
-
-        const meta = document.createElement("div");
-        meta.className = "game-meta";
-
-        const status = document.createElement("span");
-        status.className = `tag${game.statusLabel ? " is-live" : ""}`;
-        if (game.statusLabel) {
-          status.textContent = game.statusLabel;
-        } else {
-          appendTranslatedText(status, "comingSoonAction");
-        }
-
-        const tag = game.tag ? document.createElement("span") : appendTranslatedText(document.createElement("span"), game.tagKey);
-        if (game.tag) tag.dataset.gameCopy = `${game.id}:tag`;
-        tag.className = "tag";
-        meta.append(status, tag);
-
-        const title = document.createElement("h2");
-        title.className = "game-title";
-        title.textContent = game.title;
-        title.dataset.gameId = game.id;
-
-        const desc = game.description ? document.createElement("p") : appendTranslatedText(document.createElement("p"), game.descKey);
-        if (game.description) desc.dataset.gameCopy = `${game.id}:description`;
-        desc.className = "game-desc";
-
-        info.append(meta, title, desc);
-
-        const action = document.createElement("div");
-        action.className = "game-action";
-        action.setAttribute("aria-hidden", "true");
-        const actionLabel = appendTranslatedText(document.createElement("span"), game.actionKey || "comingSoonAction");
-        action.append(actionLabel);
-
-        banner.append(cover, info, action);
-
-        // Setup shortcut: a sibling link (anchors cannot nest) that opens the game's setup tab.
-        if (game.href && game.setup) {
-          const card = document.createElement("div");
-          card.className = "game-card has-setup";
-          const setupLink = appendTranslatedText(document.createElement("a"), "setupAction");
-          setupLink.className = "setup-shortcut";
-          setupLink.href = `${game.href}#setup`;
-          setupLink.dataset.siteLink = "";
-          setupLink.dataset.siteLanguages = game.languages.join(" ");
-          card.append(banner, setupLink);
-          fragment.append(card);
-        } else {
-          fragment.append(banner);
-        }
-      });
-
+      const openGames = games.filter((game) => game.href);
+      const upcoming = games.filter((game) => !game.href);
+      const openList = document.createElement("div");
+      openList.className = "card-list";
+      openList.append(...openGames.map(gameCard));
+      fragment.append(openList);
+      if (upcoming.length) {
+        const heading = appendTranslatedText(document.createElement("h2"), "comingSoonAction");
+        heading.className = "section-title";
+        const upcomingList = document.createElement("div");
+        upcomingList.className = "card-list is-upcoming";
+        upcomingList.append(...upcoming.map(gameCard));
+        fragment.append(heading, upcomingList);
+      }
       gameGrid.replaceChildren(fragment);
     }
 
@@ -320,7 +319,7 @@ const SITE_TITLE = "BoardGame Wiki - BGW";
         const game = window.BGW_GAMES.find(game => game.id === id);
         element.textContent = game[field][language] || game[field].en;
       });
-      document.querySelectorAll('.game-title[data-game-id]').forEach(element => {
+      document.querySelectorAll('.game-title [data-game-id]').forEach(element => {
         const game = window.BGW_GAMES.find(game => game.id === element.dataset.gameId);
         element.textContent = game.titles?.[language] || game.title;
       });
