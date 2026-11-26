@@ -1,4 +1,4 @@
-/* Shared player-count setup tab. Data: data/setup.json. */
+/* Shared player-count setup tab. Data: assets/setup-data.js, built from <id>/game.json and data/setup-ui.json. */
 (() => {
   const game = document.body.dataset.setupGame;
   const data = window.BGW_SETUP;

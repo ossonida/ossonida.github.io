@@ -42,23 +42,34 @@ Keep the old repositories for their history; do not delete them.
 
 ## Adding a reference game
 
-The hub catalog lives in `data/games.json`. Hub styles and behavior are in
-`assets/hub.css` and `assets/hub.js`. Existing GAH and Marrakesh pages keep their
-specialized layouts; new games use `assets/reference.css` and `assets/reference.js`.
+One game = one folder. Each game's `<game-id>/game.json` holds its hub card (titles,
+tag, description, cover, colour), languages, display `order`, an optional `draft` flag
+and an optional `setup` table with that table's own text. `<game-id>/reference.json`
+holds the reference entries and `<game-id>/images/` their images.
+`scripts/lib/catalog.mjs` assembles the catalog and setup data from these folders.
+Coming-soon cards without a page are in `data/upcoming.json`; shared setup UI strings
+are in `data/setup-ui.json`. Hub styles and behavior are in `assets/hub.css` and
+`assets/hub.js`. Existing GAH and Marrakesh pages keep their specialized layouts;
+new games use `assets/reference.css` and `assets/reference.js`.
 
-1. Create `<game-id>/reference.json`, following `burgundy/reference.json` (schemaVersion 1).
-2. Add stable item IDs, categories, translated names/text, source page numbers, and
-   optional images under `<game-id>/images/`. Do not duplicate repeated PDF copies.
-3. Add a catalog entry with `id`, `title`, `href`, `languages`, `reference`, `cover`,
-   `bg`, `tagKey`, `descKey`, `actionKey` and `statusLabel`. Add the hub tag/description
-   translations to `assets/hub.js`.
-4. Run `node scripts/build-site.mjs`, then `node scripts/validate-site.mjs` and
-   `node scripts/validate-reference.mjs`.
+1. `node scripts/new-game.mjs <game-id> --en "Title" --ko "제목"` creates a draft folder.
+   Drafts are skipped by the build. A matching coming-soon card is reused and disappears
+   once the game is published.
+2. Fill `reference.json` (schemaVersion 1; see `burgundy/reference.json`): stable item IDs,
+   categories, translated names/text and source page numbers. Optionally add a `setup`
+   table to `game.json` (see `burgundy/game.json`).
+3. `node scripts/images.mjs <game-id> <source-folder> --cover <box image>` converts raw
+   images to WebP in a local browser page (no install needed). It also makes the cover's
+   flat light background transparent.
+4. Fill the hub `tag` and `description`, then remove `"draft": true`. The build refuses
+   to publish a game with a missing title, tag, description, cover or reference entries.
+5. Run `node scripts/build-site.mjs`, then every `scripts/validate-*` script.
 
-The build generates the catalog script, reference data script, game HTML, hub
-noscript links, and sitemap. Commit generated files too: GitHub Pages serves this
-repository as static files. No package install or server-side runtime is required.
-Use a local HTTP server for preview.
+The `add-game` project skill (`.claude/skills/add-game/`) walks through these steps.
+The build generates the catalog script, setup data, reference data script, game HTML,
+hub noscript links, sitemap and service worker. Commit generated files too: GitHub
+Pages serves this repository as static files. No package install or server-side runtime
+is required. Use a local HTTP server for preview.
 
 ### Burgundy source decisions
 

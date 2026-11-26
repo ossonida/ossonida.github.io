@@ -69,5 +69,6 @@ def replace_korean_term(value):
  return value
 data = replace_korean_term(data)
 (target/'reference.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-p=Path('data/games.json');catalog=json.loads(p.read_text(encoding='utf-8'));catalog=[g for g in catalog if g['id']!='clocktower'];catalog.insert(3,{'id':'clocktower','title':titles['en'],'titles':titles,'href':'./clocktower/','reference':'clocktower/reference.json','languages':langs,'tag':tr('사회적 추리','Social deduction','Soziale Deduktion','Déduction sociale','正体隠匿','Deducción social'),'description':description,'actionKey':'enterAction','statusLabel':'OPEN','bg':'linear-gradient(135deg, #170d25, #6b1837, #150e21)','cover':'clocktower/images/cover.svg'});p.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+# The catalog entry lives in clocktower/game.json; keep its order, cover and setup flag.
+p=Path('clocktower/game.json');game=json.loads(p.read_text(encoding='utf-8'));game.update({'title':titles['en'],'titles':titles,'href':'./clocktower/','reference':'clocktower/reference.json','languages':langs,'tag':tr('사회적 추리','Social deduction','Soziale Deduktion','Déduction sociale','正体隠匿','Deducción social'),'description':description});p.write_text(json.dumps(game,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Imported {len(roles)} roles; {len(data["items"])} total entries in {len(langs)} languages.')

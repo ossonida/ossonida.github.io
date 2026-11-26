@@ -1,8 +1,9 @@
 ﻿import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
-const data=JSON.parse(fs.readFileSync('data/setup.json','utf8'));
-const catalog=JSON.parse(fs.readFileSync('data/games.json','utf8'));
+import { loadCatalog, loadSetup } from './lib/catalog.mjs';
+const data=loadSetup();
+const catalog=loadCatalog();
 // Text keys a game uses: shared UI keys plus every key referenced from its config.
 const usedKeys=config=>{const keys=new Set(['setup','item','common','noResults','scope','module','quickSetup','playerCount']);for(const n of config.players||[2,3,4])keys.add(data.text['p'+n]?'p'+n:'players');(function walk(v){if(typeof v==='string'&&data.text[v])keys.add(v);else if(v&&typeof v==='object')Object.values(v).forEach(walk);})(config);return [...keys];};
 class Element {

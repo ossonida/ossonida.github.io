@@ -1,0 +1,137 @@
+{
+  "id": "gah",
+  "order": 10,
+  "title": "Grand Austria Hotel",
+  "titles": {
+    "ko": "그랜드 오스트리아 호텔",
+    "en": "Grand Austria Hotel",
+    "de": "Grand Austria Hotel",
+    "fr": "Grand Austria Hotel",
+    "ja": "グランドオーストリアホテル",
+    "es": "Grand Austria Hotel"
+  },
+  "href": "./games/gah/",
+  "languages": [
+    "ko",
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "es"
+  ],
+  "cover": "assets/covers/grand-austria-hotel.jpg",
+  "bg": "linear-gradient(135deg, #281a13 0%, #69472c 48%, #1c1310 100%)",
+  "tagKey": "gahTag",
+  "descKey": "gahDesc",
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": {
+    "rows": [
+      [
+        "dice",
+        {
+          "value": "10"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "14"
+        }
+      ],
+      [
+        "order",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      [
+        "guest",
+        {
+          "value": "2 → 1"
+        },
+        {
+          "value": "3 → 2 → 1"
+        },
+        {
+          "value": "4 → 3 → 2 → 1"
+        }
+      ]
+    ],
+    "common": "gcommon",
+    "source": {
+      "url": "https://cdn.1j1ju.com/medias/fa/5d/33-grand-austria-hotel-rulebook.pdf",
+      "pages": [
+        4,
+        5,
+        6
+      ],
+      "edition": "Lookout base rules"
+    },
+    "text": {
+      "dice": {
+        "ko": "사용 주사위 수",
+        "en": "Dice in play",
+        "de": "Würfelanzahl",
+        "fr": "Nombre de dés",
+        "ja": "使用ダイス数",
+        "es": "Dados en juego",
+        "zh": "使用骰子数"
+      },
+      "order": {
+        "ko": "순서 타일",
+        "en": "Turn-order tiles",
+        "de": "Reihenfolgeplättchen",
+        "fr": "Tuiles d’ordre",
+        "ja": "手番順タイル",
+        "es": "Losetas de orden",
+        "zh": "顺序板块"
+      },
+      "o2": {
+        "ko": "뒷면 2인 표시 세트 · 차례 1→2→2→1",
+        "en": "Use the 2-player set · order 1→2→2→1",
+        "de": "2-Spieler-Satz · Folge 1→2→2→1",
+        "fr": "Lot 2 joueurs · ordre 1→2→2→1",
+        "ja": "裏が2人用の組・順番1→2→2→1",
+        "es": "Juego para 2 · orden 1→2→2→1",
+        "zh": "使用2人套组；顺序1→2→2→1"
+      },
+      "o3": {
+        "ko": "뒷면 3인 표시 세트 · 차례 1→2→3→3→2→1",
+        "en": "Use the 3-player set · order 1→2→3→3→2→1",
+        "de": "3-Spieler-Satz · Folge 1→2→3→3→2→1",
+        "fr": "Lot 3 joueurs · ordre 1→2→3→3→2→1",
+        "ja": "裏が3人用の組・順番1→2→3→3→2→1",
+        "es": "Juego para 3 · orden 1→2→3→3→2→1",
+        "zh": "使用3人套组；顺序1→2→3→3→2→1"
+      },
+      "o4": {
+        "ko": "뒷면 4인 표시 세트 · 차례 1→2→3→4→4→3→2→1",
+        "en": "Use the 4-player set · order 1→2→3→4→4→3→2→1",
+        "de": "4-Spieler-Satz · Folge 1→2→3→4→4→3→2→1",
+        "fr": "Lot 4 joueurs · ordre 1→2→3→4→4→3→2→1",
+        "ja": "裏が4人用の組・順番1→2→3→4→4→3→2→1",
+        "es": "Juego para 4 · orden 1→2→3→4→4→3→2→1",
+        "zh": "使用4人套组；顺序1→2→3→4→4→3→2→1"
+      },
+      "guest": {
+        "ko": "최초 무료 손님 선택 순서",
+        "en": "Initial free guest selection",
+        "de": "Ersten kostenlosen Gast wählen",
+        "fr": "Choix du premier client gratuit",
+        "ja": "最初の無料客の選択順",
+        "es": "Elección del primer huésped gratis",
+        "zh": "首位免费客人选择顺序"
+      },
+      "gcommon": {
+        "ko": "선 플레이어를 무작위로 정하고 시계 방향으로 순서 타일을 나눕니다.\n각자 10크로네와 커피·와인·케이크·슈트루델 1개씩을 받습니다.\n각자 직원 카드 6장을 받아 드래프트합니다.\n손님 카드 5장을 공개합니다.\n목표 타일과 황제 타일은 A·B·C에서 1개씩 사용합니다.\n마지막 플레이어부터 반시계 방향으로 무료 손님을 1명씩 고르고, 고를 때마다 보충합니다.\n각자 객실을 최대 3개 준비합니다. 왼쪽 아래부터 인접하게, 색을 맞추고 비용을 냅니다.",
+        "en": "Choose a random first player and hand out order tiles clockwise.\nEach player takes 10 krones and one each of coffee, wine, cake and strudel.\nEach player takes 6 staff cards and drafts them.\nReveal 5 guest cards.\nUse one objective tile and one emperor tile from each of A, B and C.\nStarting with the last player and going counterclockwise, each player takes one free guest; refill after each pick.\nEach player prepares up to 3 rooms: start bottom-left, keep them adjacent and color-matched, and pay their costs.",
+        "de": "Startspieler zufällig bestimmen und Reihenfolgeplättchen im Uhrzeigersinn verteilen.\nJeder nimmt 10 Kronen und je 1 Kaffee, Wein, Torte und Strudel.\nJeder nimmt 6 Personalkarten und draftet sie.\n5 Gästekarten offen auslegen.\nJe ein Ziel- und Kaiserplättchen aus A, B und C verwenden.\nAb dem letzten Spieler gegen den Uhrzeigersinn je einen kostenlosen Gast wählen; nach jeder Wahl nachfüllen.\nJeder bereitet bis zu 3 Zimmer vor: ab unten links, benachbart und farbgleich; Kosten bezahlen.",
+        "fr": "Désigner un premier joueur au hasard et distribuer les tuiles d’ordre dans le sens horaire.\nChacun prend 10 couronnes et un café, un vin, un gâteau et un strudel.\nChacun prend 6 cartes Personnel et les drafte.\nRévéler 5 cartes Client.\nUtiliser un objectif et une tuile empereur de chacun des niveaux A, B et C.\nEn commençant par le dernier joueur, dans le sens antihoraire, chacun choisit un client gratuit ; remplacer après chaque choix.\nChacun prépare jusqu’à 3 chambres : depuis le bas à gauche, adjacentes et de la bonne couleur, en payant leur coût.",
+        "ja": "先手を無作為に決め、時計回りに順番タイルを配ります。\n各自10クローネと、コーヒー・ワイン・ケーキ・シュトゥルーデルを1個ずつ受け取ります。\n各自スタッフカード6枚を受け取り、ドラフトします。\n客カード5枚を公開します。\n目標タイルと皇帝タイルはA・B・Cから1枚ずつ使います。\n最後の手番から反時計回りに無料の客を1枚ずつ選び、選ぶたびに補充します。\n各自客室を最大3室準備します。左下から隣接させ、色を合わせ、費用を払います。",
+        "es": "Elige al azar al jugador inicial y reparte las losetas de orden en sentido horario.\nCada jugador recibe 10 coronas y un café, un vino, un pastel y un strudel.\nCada jugador recibe 6 cartas de personal y las draftea.\nRevela 5 cartas de huésped.\nUsa un objetivo y una loseta de emperador de cada nivel A, B y C.\nEmpezando por el último jugador, en sentido antihorario, cada uno elige un huésped gratis; repón tras cada elección.\nCada jugador prepara hasta 3 habitaciones: desde abajo a la izquierda, adyacentes y del color correcto, pagando su coste.",
+        "zh": "随机决定首位玩家，按顺时针分配顺序板块。\n每人拿10克朗，以及咖啡、酒、蛋糕、卷饼各1个。\n每人拿6张员工卡并进行轮抽。\n公开5张客人卡。\n目标板块和皇帝板块从A、B、C中各用1个。\n从最后一位玩家开始逆时针，每人选1位免费客人，每选一次就补充。\n每人最多准备3间客房：从左下开始，相邻、同色，并支付费用。"
+      }
+    }
+  }
+}

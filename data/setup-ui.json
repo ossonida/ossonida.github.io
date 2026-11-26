@@ -1,0 +1,119 @@
+{
+  "setup": {
+    "ko": "셋업",
+    "en": "Setup",
+    "de": "Spielaufbau",
+    "fr": "Mise en place",
+    "ja": "セットアップ",
+    "es": "Preparación",
+    "zh": "设置"
+  },
+  "scope": {
+    "ko": "본판 2–4인 기준 · 확장·솔로 제외",
+    "en": "Base game, 2–4 players · excludes expansions and solo",
+    "de": "Grundspiel, 2–4 Spieler · ohne Erweiterungen/Solo",
+    "fr": "Jeu de base, 2–4 joueurs · hors extensions/solo",
+    "ja": "基本ゲーム2～4人用・拡張とソロは対象外",
+    "es": "Juego base, 2–4 jugadores · sin expansiones ni solitario",
+    "zh": "基础游戏2–4人；不含扩展及单人模式"
+  },
+  "item": {
+    "ko": "준비 항목",
+    "en": "Setup item",
+    "de": "Vorbereitung",
+    "fr": "Élément",
+    "ja": "準備項目",
+    "es": "Elemento",
+    "zh": "准备项目"
+  },
+  "p2": {
+    "ko": "2인",
+    "en": "2 players",
+    "de": "2 Spieler",
+    "fr": "2 joueurs",
+    "ja": "2人",
+    "es": "2 jugadores",
+    "zh": "2人"
+  },
+  "p3": {
+    "ko": "3인",
+    "en": "3 players",
+    "de": "3 Spieler",
+    "fr": "3 joueurs",
+    "ja": "3人",
+    "es": "3 jugadores",
+    "zh": "3人"
+  },
+  "p4": {
+    "ko": "4인",
+    "en": "4 players",
+    "de": "4 Spieler",
+    "fr": "4 joueurs",
+    "ja": "4人",
+    "es": "4 jugadores",
+    "zh": "4人"
+  },
+  "common": {
+    "ko": "공통 준비",
+    "en": "Common setup",
+    "de": "Gemeinsamer Aufbau",
+    "fr": "Préparation commune",
+    "ja": "共通の準備",
+    "es": "Preparación común",
+    "zh": "共同准备"
+  },
+  "noResults": {
+    "ko": "검색 결과가 없습니다.",
+    "en": "No matching setup entries.",
+    "de": "Keine passenden Einträge.",
+    "fr": "Aucun résultat.",
+    "ja": "該当する項目はありません。",
+    "es": "Sin resultados.",
+    "zh": "无匹配结果。"
+  },
+  "module": {
+    "ko": "모듈",
+    "en": "Module",
+    "de": "Modul",
+    "fr": "Module",
+    "ja": "モジュール",
+    "es": "Módulo",
+    "zh": "模块"
+  },
+  "quickSetup": {
+    "ko": "간단 셋업",
+    "en": "Quick setup",
+    "de": "Kurzaufbau",
+    "fr": "Préparation rapide",
+    "ja": "簡単な準備",
+    "es": "Preparación rápida",
+    "zh": "简要设置"
+  },
+  "p5": {
+    "ko": "5인",
+    "en": "5 players",
+    "de": "5 Spieler",
+    "fr": "5 joueurs",
+    "ja": "5人",
+    "es": "5 jugadores",
+    "zh": "5人"
+  },
+  "players": {
+    "ko": "{n}인",
+    "en": "{n} players",
+    "de": "{n} Spieler",
+    "fr": "{n} joueurs",
+    "ja": "{n}人",
+    "es": "{n} jugadores",
+    "zh": "{n}人"
+  },
+  "playerCount": {
+    "ko": "인원",
+    "en": "Players",
+    "de": "Spieler",
+    "fr": "Joueurs",
+    "ja": "人数",
+    "es": "Jugadores",
+    "zh": "人数"
+  }
+}

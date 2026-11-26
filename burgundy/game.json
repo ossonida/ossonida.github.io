@@ -1,0 +1,160 @@
+{
+  "id": "burgundy",
+  "order": 30,
+  "title": "The Castles of Burgundy",
+  "titles": {
+    "ko": "버건디의 성",
+    "en": "The Castles of Burgundy",
+    "de": "Die Burgen von Burgund",
+    "fr": "Les Châteaux de Bourgogne",
+    "ja": "ブルゴーニュの城",
+    "es": "Los castillos de Borgoña"
+  },
+  "href": "./burgundy/",
+  "languages": [
+    "ko",
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "es"
+  ],
+  "reference": "burgundy/reference.json",
+  "cover": "assets/covers/castles-of-burgundy.webp",
+  "bg": "linear-gradient(135deg, #173540 0%, #6fa878 48%, #18251a 100%)",
+  "tagKey": "burgundyTag",
+  "descKey": "burgundyDesc",
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": {
+    "rows": [
+      [
+        "board",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      [
+        "depot6",
+        "normal",
+        "b3swap",
+        "normal"
+      ],
+      [
+        "workers",
+        {
+          "value": "1 / 2"
+        },
+        {
+          "value": "1 / 2 / 3"
+        },
+        {
+          "value": "1 / 2 / 3 / 4"
+        }
+      ]
+    ],
+    "common": "bcommon",
+    "source": {
+      "url": "https://images.amainhobbies.com/images/resources/RVB26925/Manuals/1-RVB26925_The_Castles_of_Burgundy_Board_Game_Manual.pdf",
+      "pages": [
+        2,
+        3,
+        11
+      ],
+      "edition": "2019 anniversary"
+    },
+    "scope": "bscope",
+    "text": {
+      "board": {
+        "ko": "게임판·타일 배치",
+        "en": "Board and tile spaces",
+        "de": "Spielplan und Plättchenfelder",
+        "fr": "Plateau et cases de tuiles",
+        "ja": "ボードとタイル配置",
+        "es": "Tablero y espacios",
+        "zh": "主板与板块位置"
+      },
+      "b2": {
+        "ko": "2·3인 면: 안쪽 일반 타일 12칸 + 검은 저장소 4칸",
+        "en": "2/3-player side: 12 inner regular spaces + 4 black-depot spaces",
+        "de": "2/3-Spieler-Seite: 12 innere Felder + 4 schwarze Depotfelder",
+        "fr": "Face 2/3 joueurs : 12 cases intérieures + 4 cases noires",
+        "ja": "2・3人面：内側の通常12マス＋黒い集積所4マス",
+        "es": "Cara 2/3 jugadores: 12 espacios interiores + 4 negros",
+        "zh": "2/3人面：内侧普通12格＋黑色仓库4格"
+      },
+      "b3": {
+        "ko": "2·3인 면: 2인용 칸에 더해 ‘3’ 표시 8칸도 사용",
+        "en": "2/3-player side: use the 2-player spaces plus all eight spaces marked 3",
+        "de": "2/3-Spieler-Seite: 2-Spieler-Felder plus acht mit 3 markierte Felder",
+        "fr": "Face 2/3 joueurs : cases à 2 joueurs plus les huit cases marquées 3",
+        "ja": "2・3人面：2人用に加え「3」の8マスも使用",
+        "es": "Cara 2/3 jugadores: espacios de 2 más los ocho marcados 3",
+        "zh": "2/3人面：在2人位置外加标有3的8格"
+      },
+      "b4": {
+        "ko": "4인 면: 일반 저장소 6곳×4칸 + 검은 저장소 8칸",
+        "en": "4-player side: 6 regular depots × 4 spaces + 8 black spaces",
+        "de": "4-Spieler-Seite: 6 Depots × 4 Felder + 8 schwarze Felder",
+        "fr": "Face 4 joueurs : 6 dépôts × 4 cases + 8 cases noires",
+        "ja": "4人面：通常6か所×4マス＋黒い集積所8マス",
+        "es": "Cara de 4: 6 depósitos × 4 espacios + 8 negros",
+        "zh": "4人面：6个普通仓库×4格＋黑色8格"
+      },
+      "depot6": {
+        "ko": "6번 저장소 예외",
+        "en": "Depot 6 exception",
+        "de": "Sonderfall Depot 6",
+        "fr": "Exception du dépôt 6",
+        "ja": "集積所6の例外",
+        "es": "Excepción del depósito 6",
+        "zh": "6号仓库例外"
+      },
+      "normal": {
+        "ko": "인쇄된 색상대로 보충",
+        "en": "Refill by printed colors",
+        "de": "Nach aufgedruckter Farbe auffüllen",
+        "fr": "Remplir selon les couleurs imprimées",
+        "ja": "印刷された色で補充",
+        "es": "Reponer según colores impresos",
+        "zh": "按印刷颜色补充"
+      },
+      "b3swap": {
+        "ko": "진초록 칸: A·C·E 단계는 성, B·D 단계는 광산",
+        "en": "Dark-green space: castle in A/C/E, mine in B/D",
+        "de": "Dunkelgrünes Feld: Burg in A/C/E, Mine in B/D",
+        "fr": "Case vert foncé : château en A/C/E, mine en B/D",
+        "ja": "濃緑マス：A・C・Eは城、B・Dは鉱山",
+        "es": "Espacio verde oscuro: castillo en A/C/E, mina en B/D",
+        "zh": "深绿格：A/C/E阶段为城堡，B/D为矿山"
+      },
+      "workers": {
+        "ko": "시작 일꾼 · 선부터 시계방향",
+        "en": "Starting workers · clockwise from first player",
+        "de": "Startarbeiter · im Uhrzeigersinn ab Startspieler",
+        "fr": "Ouvriers initiaux · depuis le premier, sens horaire",
+        "ja": "初期労働者・先手から時計回り",
+        "es": "Trabajadores iniciales · desde el primero, sentido horario",
+        "zh": "起始工人：从首位顺时针"
+      },
+      "bcommon": {
+        "ko": "각자 성 1개, 무작위 상품 3개, 은화 1개, 자기 색 주사위 2개를 받습니다.\n상품은 A–E 단계용으로 5개씩 5더미를 만듭니다.\n다리 첫 칸에 순서 말을 쌓습니다. 선 플레이어가 맨 위입니다.\n선 플레이어가 흰 주사위를 받습니다.",
+        "en": "Each player takes 1 castle, 3 random goods, 1 silverling and 2 dice in their color.\nMake five stacks of five goods, one for each phase A–E.\nStack the turn-order markers on the first bridge space, first player on top.\nThe first player takes the white die.",
+        "de": "Jeder Spieler nimmt 1 Burg, 3 zufällige Waren, 1 Silberling und 2 Würfel seiner Farbe.\nFür die Phasen A–E je einen Stapel aus 5 Waren bilden.\nReihenfolgemarker auf das erste Brückenfeld stapeln, Startspieler oben.\nDer Startspieler erhält den weißen Würfel.",
+        "fr": "Chaque joueur prend 1 château, 3 marchandises aléatoires, 1 pièce et 2 dés de sa couleur.\nFormer cinq piles de cinq marchandises, une par phase A–E.\nEmpiler les marqueurs d’ordre sur la première case du pont, premier joueur au sommet.\nLe premier joueur prend le dé blanc.",
+        "ja": "各自、城1枚・無作為の商品3枚・銀貨1枚・自分の色のダイス2個を受け取ります。\nA～Eの各フェイズ用に、商品5枚ずつの山を5つ作ります。\n橋の1マス目に手番マーカーを重ね、先手を一番上にします。\n先手が白ダイスを受け取ります。",
+        "es": "Cada jugador toma 1 castillo, 3 mercancías aleatorias, 1 moneda y 2 dados de su color.\nForma cinco pilas de cinco mercancías, una para cada fase A–E.\nApila los marcadores de turno en la primera casilla del puente, el primer jugador encima.\nEl primer jugador recibe el dado blanco.",
+        "zh": "每人拿1座城堡、3个随机货物、1枚银币和2枚自己颜色的骰子。\n为A–E每个阶段各准备一堆5个货物。\n在桥的第1格叠放顺序标记，首位玩家在最上面。\n首位玩家拿白骰。"
+      },
+      "bscope": {
+        "ko": "기념판 · 2–4인 기준 · 확장·솔로 제외",
+        "en": "Anniversary edition · 2–4 players · excludes expansions and solo",
+        "de": "Jubiläumsausgabe · 2–4 Spieler · ohne Erweiterungen/Solo",
+        "fr": "Édition anniversaire · 2–4 joueurs · hors extensions/solo",
+        "ja": "記念版・2～4人用・拡張とソロは対象外",
+        "es": "Edición aniversario · 2–4 jugadores · sin expansiones ni solitario",
+        "zh": "周年版 · 2–4人 · 不含扩展及单人模式"
+      }
+    }
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "id": "teotihuacan",
+  "order": 70,
+  "title": "Teotihuacan: City of Gods",
+  "titles": {
+    "ko": "테오티우아칸: 신들의 도시",
+    "en": "Teotihuacan: City of Gods"
+  },
+  "href": "./teotihuacan/",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "reference": "teotihuacan/reference.json",
+  "cover": "https://static.lelekan.ua/image/cache/catalog/igri/teotihuacan_city_of_gods/00_teotihuacan_city_of_gods-800x800.png.webp",
+  "bg": "linear-gradient(135deg, #243b36 0%, #b68a5a 48%, #392820 100%)",
+  "tag": {
+    "ko": "사제·여사제 · 디럭스 타일 · 셋업",
+    "en": "Priests, Deluxe tiles & setup"
+  },
+  "tagKey": "teotihuacanTag",
+  "description": {
+    "ko": "사제·여사제 13종과 주요 타일·모듈을 이미지로 빠르게 확인",
+    "en": "Illustrated reference for 13 priests, key tiles, and modules"
+  },
+  "descKey": "teotihuacanDesc",
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": {
+    "players": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "rows": [
+      [
+        "tcalendar",
+        "tcal2",
+        "tcal3",
+        "tcal4",
+        "tcal5"
+      ],
+      [
+        "tpyramid",
+        "tpyr24",
+        "tpyr24",
+        "tpyr24",
+        "tpyr5"
+      ],
+      [
+        "ttemple",
+        "ttemple24",
+        "ttemple24",
+        "ttemple24",
+        "ttemple5"
+      ],
+      [
+        "tneutral",
+        "tneutral2",
+        "tneutral3",
+        "tneutralNone",
+        "tneutralNone"
+      ],
+      [
+        "tcacao",
+        "tcacaoAll",
+        "tcacaoAll",
+        "tcacaoAll",
+        "tcacaoAll"
+      ],
+      [
+        "tdraft",
+        "tdraft2",
+        "tdraft3",
+        "tdraft4",
+        "tdraft5"
+      ]
+    ],
+    "common": "tcommon",
+    "scope": "tscope",
+    "source": {
+      "type": "user-provided-setup-sheet",
+      "rulebooks": [
+        "Teotihuacan Deluxe Master Set modules rulebook pp. 4, 13–14",
+        "teo_deluxe_5th_player_rulebook.pdf pp. 3–6"
+      ]
+    },
+    "expansions": [
+      {
+        "id": "modules",
+        "title": "tmodules",
+        "intro": "tmodulesIntro",
+        "sourceText": "tmodulesSource",
+        "modules": [
+          {
+            "id": "m1",
+            "name": "tm1",
+            "setup": "tm1Setup"
+          },
+          {
+            "id": "m2",
+            "name": "tm2",
+            "setup": "tm2Setup"
+          },
+          {
+            "id": "m3",
+            "name": "tm3",
+            "setup": "tm3Setup"
+          },
+          {
+            "id": "m7",
+            "name": "tm7",
+            "setup": "tm7Setup"
+          },
+          {
+            "id": "m8",
+            "name": "tm8",
+            "setup": "tm8Setup"
+          },
+          {
+            "id": "m9",
+            "name": "tm9",
+            "setup": "tm9Setup"
+          },
+          {
+            "id": "m10",
+            "name": "tm10",
+            "setup": "tm10Setup"
+          }
+        ]
+      },
+      {
+        "id": "variants",
+        "title": "tvariants",
+        "intro": "tvariantsIntro",
+        "sourceText": "tvariantsSource",
+        "modules": [
+          {
+            "id": "five-simple",
+            "name": "t5simple",
+            "setup": "t5simpleSetup"
+          },
+          {
+            "id": "five-m10",
+            "name": "t5m10",
+            "setup": "t5m10Setup"
+          },
+          {
+            "id": "draft",
+            "name": "tdraftRule",
+            "setup": "tdraftRuleSetup"
+          },
+          {
+            "id": "expert-pyramid",
+            "name": "texpertPyramid",
+            "setup": "texpertPyramidSetup"
+          }
+        ]
+      }
+    ],
+    "text": {
+      "tcalendar": {
+        "ko": "검은색 달력 마커 시작 칸",
+        "en": "Dark Calendar marker start"
+      },
+      "tcal2": {
+        "ko": "10번 칸",
+        "en": "Space 10"
+      },
+      "tcal3": {
+        "ko": "11번 칸",
+        "en": "Space 11"
+      },
+      "tcal4": {
+        "ko": "12번 칸",
+        "en": "Space 12"
+      },
+      "tcal5": {
+        "ko": "12번 칸 · 1차 일식 후 11, 2차 일식 후 10으로 재설정",
+        "en": "Space 12 · reset to 11 after the 1st Eclipse, 10 after the 2nd"
+      },
+      "tpyramid": {
+        "ko": "피라미드 구역 배치",
+        "en": "Pyramid grid layout"
+      },
+      "tpyr24": {
+        "ko": "기본 룰북의 인원별 배치 그림",
+        "en": "Per-player-count diagram in the base rulebook"
+      },
+      "tpyr5": {
+        "ko": "5인 전용 배치 (5인 확장 룰북 4·6쪽 그림)",
+        "en": "5-player pattern (5th Player rulebook pp. 4, 6)"
+      },
+      "ttemple": {
+        "ko": "신전 큰 칸 발견 타일",
+        "en": "Discovery tiles on temple major steps"
+      },
+      "ttemple24": {
+        "ko": "인원 수에 맞게 쌓기 (기본 룰북)",
+        "en": "Stack per player count (base rulebook)"
+      },
+      "ttemple5": {
+        "ko": "4인 수보다 칸마다 1개 더",
+        "en": "1 more per space than for 4 players"
+      },
+      "tneutral": {
+        "ko": "중립 일꾼 주사위",
+        "en": "Neutral worker dice"
+      },
+      "tneutral2": {
+        "ko": "사용하지 않는 색 2가지 · 주사위 준비 카드로 배치",
+        "en": "Two unused colours · placed by the Neutral Worker card"
+      },
+      "tneutral3": {
+        "ko": "사용하지 않는 색 1가지 · 주사위 준비 카드로 배치",
+        "en": "One unused colour · placed by the Neutral Worker card"
+      },
+      "tneutralNone": {
+        "ko": "없음 (주사위 준비 카드는 상자에)",
+        "en": "None (Neutral Worker cards go back in the box)"
+      },
+      "tcacao": {
+        "ko": "시작 카카오",
+        "en": "Starting cacao"
+      },
+      "tcacaoAll": {
+        "ko": "마지막 플레이어 3개 · 나머지 2개",
+        "en": "Last player 3 · everyone else 2"
+      },
+      "tdraft": {
+        "ko": "시작 카드 드래프트 (변형)",
+        "en": "Starting card draft (variant)"
+      },
+      "tdraft2": {
+        "ko": "6장 펼치기",
+        "en": "Reveal 6 cards"
+      },
+      "tdraft3": {
+        "ko": "8장 펼치기",
+        "en": "Reveal 8 cards"
+      },
+      "tdraft4": {
+        "ko": "10장 펼치기",
+        "en": "Reveal 10 cards"
+      },
+      "tdraft5": {
+        "ko": "12장 펼치기",
+        "en": "Reveal 12 cards"
+      },
+      "tcommon": {
+        "ko": "메인 게임 판을 가운데 두고 옆에 신전 판을 놓습니다. 사용할 모듈의 구성물을 정리합니다.\n신전 보너스 타일을 위에서 두 번째 칸에 놓습니다.\n(2)–(7) 행동 판을 섞어 배치합니다.\n숭배 타일을 A·B·C로 나눠 섞고 1개씩 뽑아 (1) 행동 판에 앞면으로 놓습니다.\n기술 타일 6개를 무작위로 뽑아 번호 순서대로 (5) 행동 판에 앞면으로 놓습니다.\n흰색 달력 마커를 달력 트랙 0칸에, 검은색 달력 마커를 인원별 칸(위 표)에 놓습니다.\n메인 게임 판의 건물 칸을 가장 아래 칸만 빼고 채웁니다.\n피라미드 타일 3개를 앞면으로 공개하고, 피라미드 구역에 인원별 배치(위 표)로 타일을 놓습니다.\n조각상 타일 4개를 지정된 자리에 앞면으로 놓습니다.\n발견 타일을 행동 판의 지정된 자리에 1개씩 앞면으로 놓습니다.\n죽은 자의 거리 지정된 자리에 발견 타일을 아래부터 3개·2개·1개 쌓습니다.\n신전 트랙의 큰 칸에 발견 타일을 인원 수에 맞게 쌓습니다.\n각자 고른 색 구성물을 모두 가져와 점수 0, 피라미드 0, 죽은 자의 거리 0, 각 신전 바닥에 마커를 놓습니다.\n기술 마커를 개인 판 기술 칸에 1개씩 놓고, (5) 행동 판의 기술과 같은 기술 참조 타일을 1세트씩 가져옵니다.\n일꾼 주사위 1개는 눈 3으로 개인 판 지정 자리에 놓고, 나머지는 눈 1로 갖고 있습니다.\n시작 플레이어 토큰을 주고, 시계 방향 마지막 플레이어에게 마지막 플레이어 토큰을 줍니다.\n카카오: 마지막 플레이어 3개, 나머지 플레이어 2개.\n각자 시작 카드 4장을 받습니다. (중요) 발견 타일이 그려진 카드에는 무작위로 뽑아 붙여 둡니다.\n동시에 시작 카드 2장을 골라 혜택을 받고 나머지는 버립니다.\n턴 순서대로 남은 주사위를 시작 카드에 표시된 서로 다른 행동 판 세 곳에 1개씩 놓습니다.\n2·3인은 주사위 준비 카드를 뽑아 중립 주사위를 배치합니다.\n효과가 겹치면 기본 규칙 → 모듈 규칙 → 제사장 능력/약점 → 기술 효과·주황색 신전 능력 → 발견 타일 순으로 적용합니다.",
+        "en": "Place the main board in the middle with the temple board beside it. Sort the components for the modules you use.\nPlace the Temple Bonus tiles on the second space from the top.\nShuffle Action Boards (2)–(7) and lay them out.\nSort the Worship tiles into A, B and C, shuffle, and place one of each face up on Action Board (1).\nDraw 6 random Technology tiles and place them face up on Action Board (5) in number order.\nPut the light Calendar marker on space 0 and the dark one on the space for your player count (table above).\nFill the building spaces on the main board except the bottom row.\nReveal 3 Pyramid tiles and lay out the pyramid grid for your player count (table above).\nPlace 4 Decoration tiles face up on their spaces.\nPlace one Discovery tile face up on each marked Action Board space.\nStack Discovery tiles on the Avenue of the Dead: 3, 2 and 1 from the bottom.\nStack Discovery tiles on the temple major steps for your player count.\nEach player takes all components of their colour and places markers on score 0, pyramid 0, Avenue 0 and the bottom of each temple.\nPut one Technology marker on each technology space of your player board and take the matching set of Technology reference tiles for Action Board (5).\nPut one worker die showing 3 on your player board; keep the others showing 1.\nGive out the first-player token, and the last-player token to the last player clockwise.\nCacao: last player 3, everyone else 2.\nDeal 4 Starting cards each. Draw a random (Major) Discovery tile for any card that shows one.\nSimultaneously keep 2 Starting cards, take their benefits and discard the rest.\nIn turn order, place your remaining dice on the three different Action Boards shown on your Starting cards.\nWith 2 or 3 players, draw the Neutral Worker card to place the neutral dice.\nWhen effects overlap, apply: base rules → module rules → priest ability/weakness → technology or orange temple ability → Discovery tiles."
+      },
+      "tscope": {
+        "ko": "디럭스 마스터 세트 기준 · 2–5인",
+        "en": "Deluxe Master Set · 2–5 players"
+      },
+      "tmodules": {
+        "ko": "모듈 준비",
+        "en": "Module setup"
+      },
+      "tmodulesIntro": {
+        "ko": "사용하는 모듈만 추가로 준비합니다.",
+        "en": "Add only the modules you play with."
+      },
+      "tmodulesSource": {
+        "ko": "출처: 디럭스 마스터 세트 모듈 룰북 · 한국어 셋업 요약",
+        "en": "Source: Deluxe Master Set module rulebook · Korean setup sheet"
+      },
+      "tm1": {
+        "ko": "M1 사제·여사제",
+        "en": "M1 Priests & Priestesses"
+      },
+      "tm1Setup": {
+        "ko": "각자 제사장 타일 2개를 받아 동시에 1개를 고르고 나머지는 버립니다 (시작 카드 선택 후).",
+        "en": "Deal 2 priest tiles each; keep 1 simultaneously and discard the other (after choosing Starting cards)."
+      },
+      "tm2": {
+        "ko": "M2 주황색 신전",
+        "en": "M2 Height of Development"
+      },
+      "tm2Setup": {
+        "ko": "주황색 신전을 포함해 신전 보너스 타일과 신전 큰 칸 발견 타일을 놓습니다.",
+        "en": "Include the orange temple when placing Temple Bonus tiles and the Discovery tiles on major steps."
+      },
+      "tm3": {
+        "ko": "M3 계절",
+        "en": "M3 Seasons of Progress"
+      },
+      "tm3Setup": {
+        "ko": "계절 카드를 섞어 3장을 뒷면으로 쌓고 맨 위 카드를 공개합니다. 남은 준비 과정에 그 계절 효과를 적용합니다.",
+        "en": "Shuffle the Season cards, stack 3 face down and reveal the top one. Its effect applies to the rest of setup."
+      },
+      "tm7": {
+        "ko": "M7 대저택",
+        "en": "M7 Mansion"
+      },
+      "tm7Setup": {
+        "ko": "숭배 타일 3개를 (1) 행동 판에 섞어 앞면으로 놓고, 중요 발견 타일을 지정 자리에 놓습니다. 소유권 타일은 청·녹·적 신전 첫 번째 큰 칸에 놓습니다. 변형: (1) 행동 판도 함께 섞어 배치.",
+        "en": "Shuffle the 3 Worship tiles face up onto Action Board (1) and place the Major Discovery tile on its space. Put the Mansion Ownership tiles on the first major step of the blue, green and red temples. Variant: shuffle Action Board (1) in with the others."
+      },
+      "tm8": {
+        "ko": "M8 제단·주술사",
+        "en": "M8 Altars & Shamans"
+      },
+      "tm8Setup": {
+        "ko": "흑요석(M6)과 중요 발견 타일이 필요합니다. 행동 판 사이 큰 칸 4곳에 제단 타일을 무작위로 놓습니다 (가운데 화살표가 판 중앙을 향하게). 각 칸에 적힌 2/3/4인 수만큼 중요 발견 타일을 앞면으로 쌓습니다. 시작 카드(와 제사장) 선택 후 마지막 플레이어부터 빈 제단 칸에 주술사를 세워 놓습니다.",
+        "en": "Needs Obsidian (M6) and Major Discovery tiles. Place a random Altar on each of the 4 large spaces between Action Boards (arrow toward the board centre). Stack Major Discovery tiles face up on each space as printed for 2/3/4 players. After choosing Starting cards (and priests), in reverse order each player stands their Shaman on an empty Altar space."
+      },
+      "tm9": {
+        "ko": "M9 제국 확장",
+        "en": "M9 Expanding the Empire"
+      },
+      "tm9Setup": {
+        "ko": "제국 판을 메인 게임 판 옆에, 특별 가면 타일을 그 근처에 놓습니다. 시작 플레이어부터 제국 판의 테오티우아칸 지역에 전사 1명을 놓습니다.",
+        "en": "Place the Empire board next to the main board with the special Mask tiles nearby. From the first player, each places 1 warrior in the Teotihuacan region of the Empire board."
+      },
+      "tm10": {
+        "ko": "M10 증원",
+        "en": "M10 Increased Workforce"
+      },
+      "tm10Setup": {
+        "ko": "시작 카드 2장을 고른 뒤 각자 일꾼 1개를 상자에 넣고 시작 일꾼 2개만 놓습니다. 2–4인: 사용하지 않는 색마다 주사위 2개를 남기고, 시작 카드를 공개해 표시된 행동 판에 2개를 나눠 놓습니다 (\"2×6\"·\"2×7\"이면 다시 뽑기). 인원과 관계없이 주사위 준비 카드의 3인 면을 보고 빈 주사위 3개를 놓은 뒤 카드는 상자에 넣습니다.",
+        "en": "After choosing 2 Starting cards, each player returns 1 worker and places only 2 starting workers. 2–4 players: keep 2 dice per unused colour and place them on the Action Boards shown by a revealed Starting card (redraw on “2×6” or “2×7”). At any player count, place 3 blank dice using the 3-player side of a Neutral Worker card, then box those cards."
+      },
+      "tvariants": {
+        "ko": "5인 · 변형 준비",
+        "en": "5 players & variants"
+      },
+      "tvariantsIntro": {
+        "ko": "5인 확장 룰북과 모듈 룰북의 변형 규칙입니다.",
+        "en": "From the 5th Player Expansion and module rulebooks."
+      },
+      "tvariantsSource": {
+        "ko": "출처: 5인 확장 룰북 3–6쪽 · 모듈 룰북 4쪽",
+        "en": "Source: 5th Player Expansion rulebook pp. 3–6 · module rulebook p. 4"
+      },
+      "t5simple": {
+        "ko": "5인 간이 규칙",
+        "en": "Simplified 5-player rules"
+      },
+      "t5simpleSetup": {
+        "ko": "4인 준비를 따르되 신전 큰 칸 발견 타일을 칸마다 1개 더 놓고, 피라미드는 5인 배치로 놓습니다. 주사위 준비 카드는 상자에 넣습니다. 일식 때 검은색 달력 마커를 1차 후 11, 2차 후 10에 놓습니다.",
+        "en": "Set up as for 4 players, but add 1 more Discovery tile to each temple major step and use the 5-player pyramid pattern. Return the Neutral Worker cards. At the Eclipse, reset the dark Calendar marker to 11 after the first and 10 after the second."
+      },
+      "t5m10": {
+        "ko": "5인 + M10 증원",
+        "en": "5 players with M10"
+      },
+      "t5m10Setup": {
+        "ko": "5인 간이 규칙의 판 준비에 M10 증원 준비를 더합니다. 공용(빈) 주사위로 카카오 경제 영향이 줄어듭니다.",
+        "en": "Use the 5-player board setup above plus the M10 setup. Common (blank) workers soften the impact on the cacao economy."
+      },
+      "tdraftRule": {
+        "ko": "시작 카드 드래프트",
+        "en": "Starting card draft"
+      },
+      "tdraftRuleSetup": {
+        "ko": "시작 카드 4장 분배와 선택을 대체합니다. 인원별 장수(위 표)를 펼치고, 발견 타일이 그려진 카드에는 바로 발견 타일을 뽑아 옆에 둡니다. 시작 플레이어부터 1장씩, 이어서 역순으로 1장씩 가져가고 (마지막 플레이어는 연속 2장) 혜택을 받습니다.",
+        "en": "Replaces dealing 4 Starting cards. Reveal the number of cards for your player count (table above) and draw a Discovery tile next to each card that shows one. Pick 1 each from the first player, then 1 each in reverse order (the last player takes 2 in a row), and take the benefits."
+      },
+      "texpertPyramid": {
+        "ko": "숙련자 피라미드",
+        "en": "Expert pyramid setup"
+      },
+      "texpertPyramidSetup": {
+        "ko": "피라미드 구역을 모듈 룰북 4쪽의 인원별 숙련자 배치로 놓습니다.",
+        "en": "Lay out the pyramid grid using the expert pattern for your player count (module rulebook p. 4)."
+      }
+    }
+  }
+}

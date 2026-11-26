@@ -1,0 +1,44 @@
+{
+  "id": "clocktower",
+  "order": 40,
+  "title": "Blood on the Clocktower",
+  "titles": {
+    "ko": "시계탑에 흐른 피",
+    "en": "Blood on the Clocktower",
+    "de": "Blood on the Clocktower",
+    "fr": "Blood on the Clocktower",
+    "ja": "ブラッド・オン・ザ・クロックタワー",
+    "es": "Blood on the Clocktower"
+  },
+  "href": "./clocktower/",
+  "languages": [
+    "ko",
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "es"
+  ],
+  "reference": "clocktower/reference.json",
+  "cover": "assets/covers/blood-on-the-clocktower-box.webp",
+  "bg": "linear-gradient(135deg, #170d25, #6b1837, #150e21)",
+  "tag": {
+    "ko": "사회적 추리",
+    "en": "Social deduction",
+    "de": "Soziale Deduktion",
+    "fr": "Déduction sociale",
+    "ja": "正体隠匿",
+    "es": "Deducción social"
+  },
+  "description": {
+    "ko": "기본판 3개 시나리오 + 캐러셀 72종 · 역할·밤 순서·셋업",
+    "en": "Three base scripts + The Carousel: 72 characters · roles, night order and setup",
+    "de": "Drei Grundskripte + The Carousel: 72 Charaktere · Rollen, Nachtreihenfolge und Aufbau",
+    "fr": "Trois scénarios de base + The Carousel : 72 personnages · rôles, ordre nocturne et préparation",
+    "ja": "基本3台本 + The Carousel 72種 · 役職・夜の順番・セットアップ",
+    "es": "Tres guiones básicos + The Carousel: 72 personajes · roles, orden nocturno y preparación"
+  },
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": true
+}

@@ -1,0 +1,114 @@
+{
+  "id": "energy-empire",
+  "order": 60,
+  "title": "The Manhattan Project: Energy Empire",
+  "titles": {
+    "ko": "맨해튼 프로젝트: 에너지 엠파이어",
+    "en": "The Manhattan Project: Energy Empire"
+  },
+  "href": "./energy-empire/",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "reference": "energy-empire/reference.json",
+  "cover": "assets/covers/energy-empire.webp",
+  "bg": "linear-gradient(135deg, #261c17 0%, #7a4429 48%, #161c25 100%)",
+  "tag": {
+    "ko": "일꾼 배치 · 엔진 빌딩",
+    "en": "Worker placement · Engine building"
+  },
+  "description": {
+    "ko": "업적 타일 · 국가 카드 · 글로벌 임팩트 · 행동칸 · 셋업",
+    "en": "Achievements · Nations · Global Impacts · Locations · Setup"
+  },
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": {
+    "players": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "rows": [
+      [
+        "epollution",
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "7"
+        }
+      ],
+      [
+        "eneutral",
+        "eneutral2",
+        "enone",
+        "enone",
+        "enone"
+      ],
+      [
+        "emoney",
+        {
+          "value": "0 / $1"
+        },
+        {
+          "value": "0 / $1 / $2"
+        },
+        {
+          "value": "0 / $1 / $2 / $3"
+        },
+        {
+          "value": "0 / $1 / $2 / $3 / $4"
+        }
+      ]
+    ],
+    "common": "ecommon",
+    "scope": "escope",
+    "source": {
+      "file": "EnergyEmpireRules.pdf",
+      "pages": [
+        4,
+        5
+      ],
+      "edition": "base rules"
+    },
+    "text": {
+      "epollution": {
+        "ko": "임팩트 트랙 칸마다 오염 토큰",
+        "en": "Pollution tokens on each Global Impact space"
+      },
+      "eneutral": {
+        "ko": "중립 일꾼 (구조물 시장)",
+        "en": "Neutral Workers (Structure markets)"
+      },
+      "eneutral2": {
+        "ko": "안 쓰는 색 3개 · 정부·산업·상업 시장에 1개씩, 게임 내내 고정",
+        "en": "3 of an unused color · 1 on each Government, Industry and Commerce market for the whole game"
+      },
+      "enone": {
+        "ko": "없음",
+        "en": "None"
+      },
+      "emoney": {
+        "ko": "차례 순서별 시작 자금",
+        "en": "Starting money by turn order"
+      },
+      "ecommon": {
+        "ko": "보드 옆에 자원·주사위·오염·유정 토큰 더미를 만듭니다.\n카드 덱 6종과 업적 타일을 각각 섞습니다.\n글로벌 임팩트 초기 3장 → 후기 3장 순으로 보드 아래에 뒷면으로 놓습니다. 나머지는 상자에 넣습니다.\n구조물 시장 3곳을 오른쪽부터 해당 덱 3장으로 채웁니다.\n업적 3개를 앞면으로 놓습니다.\n각자 점수 트랙 0칸과 UN 트랙 맨 왼쪽 칸에 마커를 놓습니다.\n각자 개인 보드의 환경 맨 왼쪽 위 칸에 오염 1개를 놓습니다.\n각자 일꾼 3개·에너지 2개를 받습니다. 나머지 일꾼·에너지는 따로 치워 둡니다.\n국가 카드 2장 중 1장, 업적 2개 중 1개를 고릅니다. 업적은 비공개, 남은 국가 카드는 요약표로 씁니다.\n고른 국가 카드의 시작 보너스를 받습니다.\n시작 플레이어부터 시계 방향으로 위 표의 시작 자금을 받습니다.",
+        "en": "Make supplies of resources, dice, Pollution and Oil Well tokens.\nShuffle the six card decks and the Achievement tiles separately.\nPlace 3 Early then 3 Late Global Impacts face down below the board. Return the rest to the box.\nFill each Structure market right to left with 3 cards from its deck.\nPlace 3 Achievements face up.\nEach player puts markers on 0 of the Score track and on the leftmost United Nations space.\nEach player places 1 Pollution in the top-left Environment space of their mat.\nEach player takes 3 Workers and 2 Energy. Keep the rest clearly apart.\nChoose 1 of 2 Nation cards and 1 of 2 Achievements. Keep the Achievement secret; the other Nation card is a reference.\nGain your Nation's starting bonus.\nStarting with the start player and going clockwise, take the starting money shown above."
+      },
+      "escope": {
+        "ko": "본판 2–5인 기준 · 콜드 워 모듈 제외",
+        "en": "Base game, 2–5 players · excludes the Cold War module"
+      }
+    }
+  }
+}
