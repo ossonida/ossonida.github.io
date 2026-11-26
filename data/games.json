@@ -35,7 +35,7 @@
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #3b1f16 0%, #a45d34 50%, #21110d 100%)",
-    "cover": "assets/covers/marrakesh.jpg",
+    "cover": "assets/covers/marrakesh.webp",
     "id": "marrakesh",
     "languages": [
       "ko",
@@ -126,7 +126,7 @@
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #170d25, #6b1837, #150e21)",
-    "cover": "assets/covers/blood-on-the-clocktower.webp",
+    "cover": "assets/covers/blood-on-the-clocktower-box.webp",
     "setup": true
   },
   {

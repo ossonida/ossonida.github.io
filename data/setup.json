@@ -137,12 +137,12 @@
     },
     "bcommon": {
       "ko": "각자 성 1개, 무작위 상품 3개, 은화 1개, 자기 색 주사위 2개를 받습니다.\n상품은 A–E 단계용으로 5개씩 5더미를 만듭니다.\n다리 첫 칸에 순서 말을 쌓습니다. 선 플레이어가 맨 위입니다.\n선 플레이어가 흰 주사위를 받습니다.",
-      "en": "Each player: 1 castle, 3 random goods, 1 coin, 2 dice. Prepare five stacks of five goods for A–E. Stack turn markers on bridge space 1, first player on top; first player takes the white die.",
-      "de": "Pro Spieler: 1 Burg, 3 zufällige Waren, 1 Silberling, 2 Würfel. Für A–E je 5 Waren stapeln. Marker auf Brückenfeld 1 stapeln, Startspieler oben; er erhält den weißen Würfel.",
-      "fr": "Par joueur : 1 château, 3 marchandises aléatoires, 1 pièce, 2 dés. Cinq piles de cinq marchandises pour A–E. Marqueurs sur la première case du pont, premier joueur au sommet ; il prend le dé blanc.",
-      "ja": "各自、城1枚・無作為の商品3枚・銀貨1枚・自分のダイス2個。A～Eに商品5枚ずつの山を準備。橋の1マス目に先手を一番上として重ね、先手が白ダイスを受け取ります。",
-      "es": "Cada jugador: 1 castillo, 3 mercancías aleatorias, 1 moneda y 2 dados. Cinco pilas de cinco mercancías para A–E. Marcadores en la primera casilla del puente, primero encima; este recibe el dado blanco.",
-      "zh": "每人1城堡、3随机货物、1银币、2枚个人骰。A–E各放5货物。顺序标记叠于桥第1格，首位在顶端并拿白骰。"
+      "en": "Each player takes 1 castle, 3 random goods, 1 silverling and 2 dice in their color.\nMake five stacks of five goods, one for each phase A–E.\nStack the turn-order markers on the first bridge space, first player on top.\nThe first player takes the white die.",
+      "de": "Jeder Spieler nimmt 1 Burg, 3 zufällige Waren, 1 Silberling und 2 Würfel seiner Farbe.\nFür die Phasen A–E je einen Stapel aus 5 Waren bilden.\nReihenfolgemarker auf das erste Brückenfeld stapeln, Startspieler oben.\nDer Startspieler erhält den weißen Würfel.",
+      "fr": "Chaque joueur prend 1 château, 3 marchandises aléatoires, 1 pièce et 2 dés de sa couleur.\nFormer cinq piles de cinq marchandises, une par phase A–E.\nEmpiler les marqueurs d’ordre sur la première case du pont, premier joueur au sommet.\nLe premier joueur prend le dé blanc.",
+      "ja": "各自、城1枚・無作為の商品3枚・銀貨1枚・自分の色のダイス2個を受け取ります。\nA～Eの各フェイズ用に、商品5枚ずつの山を5つ作ります。\n橋の1マス目に手番マーカーを重ね、先手を一番上にします。\n先手が白ダイスを受け取ります。",
+      "es": "Cada jugador toma 1 castillo, 3 mercancías aleatorias, 1 moneda y 2 dados de su color.\nForma cinco pilas de cinco mercancías, una para cada fase A–E.\nApila los marcadores de turno en la primera casilla del puente, el primer jugador encima.\nEl primer jugador recibe el dado blanco.",
+      "zh": "每人拿1座城堡、3个随机货物、1枚银币和2枚自己颜色的骰子。\n为A–E每个阶段各准备一堆5个货物。\n在桥的第1格叠放顺序标记，首位玩家在最上面。\n首位玩家拿白骰。"
     },
     "dice": {
       "ko": "사용 주사위 수",
@@ -200,12 +200,12 @@
     },
     "gcommon": {
       "ko": "선 플레이어를 무작위로 정하고 시계 방향으로 순서 타일을 나눕니다.\n각자 10크로네와 커피·와인·케이크·슈트루델 1개씩을 받습니다.\n각자 직원 카드 6장을 받아 드래프트합니다.\n손님 카드 5장을 공개합니다.\n목표 타일과 황제 타일은 A·B·C에서 1개씩 사용합니다.\n마지막 플레이어부터 반시계 방향으로 무료 손님을 1명씩 고르고, 고를 때마다 보충합니다.\n각자 객실을 최대 3개 준비합니다. 왼쪽 아래부터 인접하게, 색을 맞추고 비용을 냅니다.",
-      "en": "Choose a random first player; assign order tiles clockwise. Each player: 10 krones, one coffee/wine/cake/strudel, and 6 staff cards to draft. Reveal 5 guests; use one A/B/C objective and emperor tile each. Choose one free guest each in reverse order, refilling after each choice. Prepare up to 3 rooms, starting bottom-left, adjacent and color-matched; pay their costs.",
-      "de": "Startspieler zufällig bestimmen, Reihenfolgeplättchen im Uhrzeigersinn verteilen. Je 10 Kronen, je 1 Kaffee/Wein/Torte/Strudel und 6 Personalkarten zum Draften. 5 Gäste auslegen; je ein A/B/C-Ziel und Kaiserplättchen. In umgekehrter Reihenfolge je einen kostenlosen Gast wählen und nachfüllen. Bis zu 3 Zimmer ab unten links benachbart und farbgleich vorbereiten; Kosten bezahlen.",
-      "fr": "Premier joueur aléatoire ; distribuer les tuiles dans le sens horaire. Chacun : 10 couronnes, un café/vin/gâteau/strudel et 6 cartes Personnel à drafter. Révéler 5 clients ; un objectif et une tuile empereur de chaque A/B/C. Choisir un client gratuit en ordre inverse, en remplaçant après chaque choix. Préparer jusqu’à 3 chambres depuis le bas gauche, adjacentes, de même couleur, en payant leur coût.",
-      "ja": "先手を無作為に決め、時計回りに順番タイルを配ります。各自10クローネ、コーヒー・ワイン・ケーキ・シュトゥルーデル各1個、スタッフカード6枚を受け取りドラフトします。客5枚を公開し、目標と皇帝はA/B/C各1枚。逆順で無料の客を1枚ずつ選び毎回補充。客室は左下から隣接・同色を守り、費用を払って最大3室準備。",
-      "es": "Primer jugador aleatorio; repartir orden en sentido horario. Cada uno: 10 coronas, un café/vino/pastel/strudel y 6 cartas de personal para draftear. Revelar 5 huéspedes; un objetivo y emperador de cada A/B/C. Elegir un huésped gratis en orden inverso, reponiendo cada vez. Preparar hasta 3 habitaciones desde abajo a la izquierda, adyacentes y del color correcto; pagar sus costes.",
-      "zh": "随机首位，顺时针分配顺序板块。每人10克朗，咖啡、酒、蛋糕、卷饼各1个，领取6张员工卡后进行轮抽。公开5客人；目标和皇帝各用A/B/C各1。逆序各选1免费客人，每次补充。客房从左下起相邻、同色、支付费用，最多准备3间。"
+      "en": "Choose a random first player and hand out order tiles clockwise.\nEach player takes 10 krones and one each of coffee, wine, cake and strudel.\nEach player takes 6 staff cards and drafts them.\nReveal 5 guest cards.\nUse one objective tile and one emperor tile from each of A, B and C.\nStarting with the last player and going counterclockwise, each player takes one free guest; refill after each pick.\nEach player prepares up to 3 rooms: start bottom-left, keep them adjacent and color-matched, and pay their costs.",
+      "de": "Startspieler zufällig bestimmen und Reihenfolgeplättchen im Uhrzeigersinn verteilen.\nJeder nimmt 10 Kronen und je 1 Kaffee, Wein, Torte und Strudel.\nJeder nimmt 6 Personalkarten und draftet sie.\n5 Gästekarten offen auslegen.\nJe ein Ziel- und Kaiserplättchen aus A, B und C verwenden.\nAb dem letzten Spieler gegen den Uhrzeigersinn je einen kostenlosen Gast wählen; nach jeder Wahl nachfüllen.\nJeder bereitet bis zu 3 Zimmer vor: ab unten links, benachbart und farbgleich; Kosten bezahlen.",
+      "fr": "Désigner un premier joueur au hasard et distribuer les tuiles d’ordre dans le sens horaire.\nChacun prend 10 couronnes et un café, un vin, un gâteau et un strudel.\nChacun prend 6 cartes Personnel et les drafte.\nRévéler 5 cartes Client.\nUtiliser un objectif et une tuile empereur de chacun des niveaux A, B et C.\nEn commençant par le dernier joueur, dans le sens antihoraire, chacun choisit un client gratuit ; remplacer après chaque choix.\nChacun prépare jusqu’à 3 chambres : depuis le bas à gauche, adjacentes et de la bonne couleur, en payant leur coût.",
+      "ja": "先手を無作為に決め、時計回りに順番タイルを配ります。\n各自10クローネと、コーヒー・ワイン・ケーキ・シュトゥルーデルを1個ずつ受け取ります。\n各自スタッフカード6枚を受け取り、ドラフトします。\n客カード5枚を公開します。\n目標タイルと皇帝タイルはA・B・Cから1枚ずつ使います。\n最後の手番から反時計回りに無料の客を1枚ずつ選び、選ぶたびに補充します。\n各自客室を最大3室準備します。左下から隣接させ、色を合わせ、費用を払います。",
+      "es": "Elige al azar al jugador inicial y reparte las losetas de orden en sentido horario.\nCada jugador recibe 10 coronas y un café, un vino, un pastel y un strudel.\nCada jugador recibe 6 cartas de personal y las draftea.\nRevela 5 cartas de huésped.\nUsa un objetivo y una loseta de emperador de cada nivel A, B y C.\nEmpezando por el último jugador, en sentido antihorario, cada uno elige un huésped gratis; repón tras cada elección.\nCada jugador prepara hasta 3 habitaciones: desde abajo a la izquierda, adyacentes y del color correcto, pagando su coste.",
+      "zh": "随机决定首位玩家，按顺时针分配顺序板块。\n每人拿10克朗，以及咖啡、酒、蛋糕、卷饼各1个。\n每人拿6张员工卡并进行轮抽。\n公开5张客人卡。\n目标板块和皇帝板块从A、B、C中各用1个。\n从最后一位玩家开始逆时针，每人选1位免费客人，每选一次就补充。\n每人最多准备3间客房：从左下开始，相邻、同色，并支付费用。"
     },
     "oasis": {
       "ko": "오아시스 트랙의 초기 케시 · 1인당",
@@ -236,12 +236,12 @@
     },
     "mcommon": {
       "ko": "각자 10점, 물·대추·디나르 1개씩을 받습니다.\n각자 12색 케시 각 1개, 오아시스 6개, 식량공급 타일 3개를 받습니다. 첫 계절용 1개는 공개합니다.\n두루마리는 종류별 3더미, 사치품은 5더미를 만듭니다.\n교환소 3개와 계절별 강 타일 1개씩을 준비합니다.\n공방마다 성문 8개를 놓습니다.\n선 플레이어를 무작위로 정합니다.",
-      "en": "Each player: 10 VP, one water/date/dinar, one keshi of each of 12 colors, 6 oases, 3 provision tiles (reveal one for season 1). Prepare 3 scroll stacks per type, 5 luxury stacks, 3 exchange offices, one river tile per season and 8 gates per workshop. Random first player.",
-      "de": "Je Spieler: 10 Punkte, je 1 Wasser/Dattel/Dinar, je ein Keshi aller 12 Farben, 6 Oasen, 3 Versorgungskärtchen (eines für Saison 1 offen). Je Schriftrollentyp 3 Stapel, 5 Luxuswarenstapel, 3 Wechselstuben, je Saison 1 Flussplättchen und je Werkstatt 8 Tore. Zufälliger Startspieler.",
-      "fr": "Chacun : 10 PV, une eau/datte/dinar, un keshi de chacune des 12 couleurs, 6 oasis, 3 provisions (une révélée pour saison 1). Trois piles par type de parchemin, 5 piles de luxe, 3 bureaux de change, une rivière par saison et 8 portes par atelier. Premier joueur aléatoire.",
-      "ja": "各自10点、水・ナツメヤシ・ディナール各1、12色のケシ各1、オアシス6枚、供給タイル3枚（第1季節用1枚公開）。巻物は種類別3山、高級品5山、両替所3枚、川は季節ごと1枚、工房ごと門8枚。先手は無作為。",
-      "es": "Cada uno: 10 PV, un agua/dátil/dinar, un keshi de cada uno de los 12 colores, 6 oasis y 3 provisiones (una visible para estación 1). Tres pilas por tipo de pergamino, 5 de lujo, 3 casas de cambio, una loseta de río por estación y 8 puertas por taller. Primer jugador al azar.",
-      "zh": "每人10分、水/椰枣/第纳尔各1、12色凯希各1、6绿洲、3供给板块（首季公开1）。卷轴每类3堆，奢侈品5堆，兑换所3枚，每季1河流板块，每工坊8门。随机首位。"
+      "en": "Each player takes 10 VP and one each of water, date and dinar.\nEach player takes one keshi of each of the 12 colors, 6 oases and 3 provision tiles; reveal one for season 1.\nMake 3 scroll stacks per type and 5 luxury stacks.\nPrepare 3 exchange offices and one river tile per season.\nPlace 8 gates at each workshop.\nChoose a random first player.",
+      "de": "Jeder Spieler nimmt 10 Punkte und je 1 Wasser, Dattel und Dinar.\nJeder nimmt je einen Keshi aller 12 Farben, 6 Oasen und 3 Versorgungskärtchen; eines für Saison 1 aufdecken.\nJe Schriftrollentyp 3 Stapel und 5 Luxuswarenstapel bilden.\n3 Wechselstuben und je Saison 1 Flussplättchen bereitlegen.\nAn jede Werkstatt 8 Tore legen.\nStartspieler zufällig bestimmen.",
+      "fr": "Chaque joueur prend 10 PV et une eau, une datte et un dinar.\nChacun prend un keshi de chacune des 12 couleurs, 6 oasis et 3 tuiles provision ; en révéler une pour la saison 1.\nFormer 3 piles par type de parchemin et 5 piles de luxe.\nPréparer 3 bureaux de change et une tuile rivière par saison.\nPlacer 8 portes à chaque atelier.\nDésigner un premier joueur au hasard.",
+      "ja": "各自10点と、水・ナツメヤシ・ディナールを1個ずつ受け取ります。\n各自12色のケシ各1個、オアシス6枚、供給タイル3枚を受け取り、第1季節用の1枚を公開します。\n巻物は種類別に3山、高級品は5山作ります。\n両替所3枚と、季節ごとの川タイル1枚を準備します。\n工房ごとに門を8枚置きます。\n先手を無作為に決めます。",
+      "es": "Cada jugador recibe 10 PV y un agua, un dátil y un dinar.\nCada jugador recibe un keshi de cada uno de los 12 colores, 6 oasis y 3 losetas de provisiones; revela una para la estación 1.\nForma 3 pilas por tipo de pergamino y 5 pilas de lujo.\nPrepara 3 casas de cambio y una loseta de río por estación.\nColoca 8 puertas en cada taller.\nElige al azar al jugador inicial.",
+      "zh": "每人拿10分，以及水、椰枣、第纳尔各1个。\n每人拿12色凯希各1个、6个绿洲和3个供给板块；公开其中1个用于第一季。\n卷轴每类做3堆，奢侈品做5堆。\n准备3个兑换所，以及每季1个河流板块。\n每个工坊放8个门。\n随机决定首位玩家。"
     },
     "noResults": {
       "ko": "검색 결과가 없습니다.",

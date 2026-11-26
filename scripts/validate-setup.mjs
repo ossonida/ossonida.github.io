@@ -49,7 +49,9 @@ for(const [game,config] of Object.entries(data.games)){
   });
   panel.querySelector('.setup-players').querySelectorAll('button')[0].click();
   // Common setup renders as a checklist of several short steps.
-  const steps=panel.querySelectorAll('li');assert.ok(steps.length>=3,game+' '+lang+' steps');assert.ok(steps.every(step=>step.textContent.trim()));
+  const steps=panel.querySelectorAll('li');assert.ok(steps.length>=3,game+' '+lang+' steps');
+  // Every language lists the same number of steps as Korean (one step per line).
+  assert.equal(steps.length,data.text[config.common].ko.split('\n').length,game+' '+lang+' step count');assert.ok(steps.every(step=>step.textContent.trim()));
  }
  if(game==='teotihuacan'){
   // Modules and 5-player/variant setups render as two grouped tables; search narrows to one module.
