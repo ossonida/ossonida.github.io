@@ -8,7 +8,11 @@
   const container = document.querySelector('.layout');
   let selectedTab = 'all';
   let language = document.documentElement.lang;
-  const text = key => typeof key === 'object' ? (key[language] || key.en || key.value) : (data.text[key][language] || data.text[key].en);
+  // A missing key (e.g. stale cached data) must not stop the whole panel from rendering.
+  const text = key => {
+    const value = typeof key === 'object' ? key : data.text[key];
+    return value ? (value[language] || value.en || value.ko || value.value || '') : '';
+  };
   // Player-count columns are configurable per game (default 2–4).
   const playerLabel = count => data.text[`p${count}`] ? text(`p${count}`) : text('players').replace('{n}', count);
   const make = (tag, value, className) => {
