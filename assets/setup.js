@@ -130,8 +130,11 @@
     if (!button) {
       button = make('button');button.type='button';button.dataset.setupTab='true';
       button.setAttribute('aria-controls','setup-panel');
-      tabs.append(button);
     }
+    // The setup tab sits right after "All" so it is reachable without scrolling the tab bar.
+    const allButton = tabs.querySelector('[data-show="all"], [data-category="all"]');
+    if (allButton && allButton.nextElementSibling !== button) allButton.after(button);
+    else if (!allButton && button.parentNode !== tabs) tabs.append(button);
     button.textContent=text('setup');
     render();
     updateSelection();

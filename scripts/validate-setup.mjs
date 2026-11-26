@@ -11,11 +11,13 @@ class Element {
  get textContent(){return this.content+this.children.map(n=>n.textContent).join(' ');}
  append(...nodes){for(const n of nodes){n.parent=this;this.children.push(n);}}
  replaceChildren(...nodes){this.children=[];this.content='';this.append(...nodes);}
- after(n){this.parent.append(n);}
+ after(n){if(n.parent)n.parent.children=n.parent.children.filter(c=>c!==n);n.parent=this.parent;this.parent.children.splice(this.parent.children.indexOf(this)+1,0,n);}
+ get parentNode(){return this.parent||null;}
+ get nextElementSibling(){const siblings=this.parent?.children||[];return siblings[siblings.indexOf(this)+1]||null;}
  setAttribute(k,v){this.attrs[k]=v;}
  addEventListener(k,v){this.events[k]=v;}
  closest(tag){return this.tag===tag?this:this.parent?.closest(tag);}
- querySelectorAll(s){const all=this.children.flatMap(n=>[n,...n.querySelectorAll('*')]);return all.filter(n=>s==='*'||(s==='tbody tr'?n.tag==='tr'&&n.parent.tag==='tbody':s==='[data-setup-tab]'?n.dataset.setupTab:s.startsWith('.')?n.className.split(' ').includes(s.slice(1)):n.tag===s));}
+ querySelectorAll(s){const all=this.children.flatMap(n=>[n,...n.querySelectorAll('*')]);return all.filter(n=>s==='*'||(s==='tbody tr'?n.tag==='tr'&&n.parent.tag==='tbody':s==='[data-setup-tab]'?n.dataset.setupTab:s.includes('[data-show="all"]')?(n.dataset.show==='all'||n.dataset.category==='all'):s.startsWith('.')?n.className.split(' ').includes(s.slice(1)):n.tag===s));}
  querySelector(s){return this.querySelectorAll(s)[0]||null;}
  click(){this.events.click?.({target:this});this.parent?.events.click?.({target:this});}
 }
@@ -27,6 +29,8 @@ for(const [game,config] of Object.entries(data.games)){
  const document={body,documentElement:{lang:'ko'},getElementById:id=>id==='section-tabs'?tabs:id==='global-search'?search:null,querySelector:()=>layout,createElement:t=>new Element(t)};
  const window={BGW_SETUP:data};vm.runInNewContext(fs.readFileSync('assets/setup.js','utf8'),{document,window});
  const panel=layout.querySelector('.setup-panel');assert.equal(panel.hidden,false);assert.equal(native.attrs['aria-pressed'],'true');
+ // The setup tab sits directly after "All", also after a language change re-syncs it.
+ assert.equal(tabs.children[1].dataset.setupTab,'true');window.BGWSetup.sync('en');assert.equal(tabs.children[1].dataset.setupTab,'true');assert.equal(tabs.children.length,3);
  tabs.querySelector('[data-setup-tab]').click();assert.equal(panel.hidden,false);assert.equal(native.attrs['aria-pressed'],'false');assert.equal(tabs.querySelector('[data-setup-tab]').attrs['aria-pressed'],'true');assert.equal(panel.querySelectorAll('tbody tr').length,config.rows.length+(config.expansions || []).reduce((sum,group)=>sum+group.modules.length,0));
  const gameLanguages=catalog.find(entry=>entry.id===game).languages;
  for(const lang of gameLanguages){

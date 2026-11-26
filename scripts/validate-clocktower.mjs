@@ -40,7 +40,7 @@ for(const lang of data.languages){
  get('search').value='Imp';get('search').events.input();assert.ok(rows().some(row=>row.id==='imp'));
  get('search').value='zz_missing_clocktower_zz';get('search').events.input();assert.equal(rows().length,0);assert.equal(get('empty').hidden,false);
  get('search').value='';get('search').events.input();assert.equal(rows().length,185);
- walk(rows()[0],'button')[0].events.click();assert.equal(get('image-dialog').open,true);
+ walk(rows().find(row=>walk(row,'button').length),'button')[0].events.click();assert.equal(get('image-dialog').open,true);
  get('modal-close').events.click();assert.equal(get('image-dialog').open,false);
  for(const item of data.items){assert.ok(item.name[lang]?.trim());assert.ok(item.text[lang]?.trim());}
 }

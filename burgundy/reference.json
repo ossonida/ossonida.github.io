@@ -273,7 +273,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/take-tile.png"
+      "image": "images/take-tile.webp"
     },
     {
       "id": "place-tile",
@@ -298,7 +298,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/place-tile.png"
+      "image": "images/place-tile.webp"
     },
     {
       "id": "sell-goods",
@@ -323,7 +323,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/sell-goods.png"
+      "image": "images/sell-goods.webp"
     },
     {
       "id": "take-workers",
@@ -348,7 +348,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/take-workers.png"
+      "image": "images/take-workers.webp"
     },
     {
       "id": "black-depot",
@@ -373,7 +373,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/black-depot.png"
+      "image": "images/black-depot.webp"
     },
     {
       "id": "mine",
@@ -398,7 +398,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/mine.png"
+      "image": "images/mine.webp"
     },
     {
       "id": "ship",
@@ -423,7 +423,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/ship.png"
+      "image": "images/ship.webp"
     },
     {
       "id": "castle",
@@ -448,7 +448,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/castle.png"
+      "image": "images/castle.webp"
     },
     {
       "id": "livestock",
@@ -473,7 +473,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/livestock.png"
+      "image": "images/livestock.webp"
     },
     {
       "id": "market",
@@ -498,7 +498,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/market.png"
+      "image": "images/market.webp"
     },
     {
       "id": "workshop",
@@ -523,7 +523,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/workshop.png"
+      "image": "images/workshop.webp"
     },
     {
       "id": "church",
@@ -548,7 +548,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/church.png"
+      "image": "images/church.webp"
     },
     {
       "id": "warehouse",
@@ -573,7 +573,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/warehouse.png"
+      "image": "images/warehouse.webp"
     },
     {
       "id": "boarding-house",
@@ -598,7 +598,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/boarding-house.png"
+      "image": "images/boarding-house.webp"
     },
     {
       "id": "bank",
@@ -623,7 +623,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/bank.png"
+      "image": "images/bank.webp"
     },
     {
       "id": "town-hall",
@@ -648,7 +648,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/town-hall.png"
+      "image": "images/town-hall.webp"
     },
     {
       "id": "watchtower",
@@ -673,7 +673,7 @@
         "page": 1,
         "copy": "left"
       },
-      "image": "images/watchtower.png"
+      "image": "images/watchtower.webp"
     },
     {
       "id": "monastery-1",
@@ -698,7 +698,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-01.png",
+      "image": "images/monastery-01.webp",
       "number": "1"
     },
     {
@@ -724,7 +724,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-02.png",
+      "image": "images/monastery-02.webp",
       "number": "2"
     },
     {
@@ -750,7 +750,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-03.png",
+      "image": "images/monastery-03.webp",
       "number": "3"
     },
     {
@@ -776,7 +776,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-04.png",
+      "image": "images/monastery-04.webp",
       "number": "4"
     },
     {
@@ -802,7 +802,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-05.png",
+      "image": "images/monastery-05.webp",
       "number": "5"
     },
     {
@@ -828,7 +828,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-06.png",
+      "image": "images/monastery-06.webp",
       "number": "6"
     },
     {
@@ -854,7 +854,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-07.png",
+      "image": "images/monastery-07.webp",
       "number": "7"
     },
     {
@@ -880,7 +880,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-08.png",
+      "image": "images/monastery-08.webp",
       "number": "8"
     },
     {
@@ -906,7 +906,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-09.png",
+      "image": "images/monastery-09.webp",
       "number": "9"
     },
     {
@@ -932,7 +932,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-10.png",
+      "image": "images/monastery-10.webp",
       "number": "10"
     },
     {
@@ -958,7 +958,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-11.png",
+      "image": "images/monastery-11.webp",
       "number": "11"
     },
     {
@@ -984,7 +984,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-12.png",
+      "image": "images/monastery-12.webp",
       "number": "12"
     },
     {
@@ -1010,7 +1010,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-13.png",
+      "image": "images/monastery-13.webp",
       "number": "13"
     },
     {
@@ -1036,7 +1036,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-14.png",
+      "image": "images/monastery-14.webp",
       "number": "14"
     },
     {
@@ -1062,7 +1062,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-15.png",
+      "image": "images/monastery-15.webp",
       "number": "15"
     },
     {
@@ -1088,7 +1088,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-buildings.png",
+      "image": "images/monastery-buildings.webp",
       "number": "16–23 · 29"
     },
     {
@@ -1114,7 +1114,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-24.png",
+      "image": "images/monastery-24.webp",
       "number": "24"
     },
     {
@@ -1140,7 +1140,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-25.png",
+      "image": "images/monastery-25.webp",
       "number": "25"
     },
     {
@@ -1166,7 +1166,7 @@
         "page": 2,
         "copy": "left"
       },
-      "image": "images/monastery-26.png",
+      "image": "images/monastery-26.webp",
       "number": "26"
     },
     {

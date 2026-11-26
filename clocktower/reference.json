@@ -26,8 +26,19 @@
     "ja": "基本3台本 + The Carousel 72種 · 役職・夜の順番・セットアップ",
     "es": "Tres guiones básicos + The Carousel: 72 personajes · roles, orden nocturno y preparación"
   },
-  "communityBadge": "images/community.png",
+  "communityBadge": "images/community.webp",
   "categories": [
+    {
+      "id": "setup",
+      "name": {
+        "ko": "셋업",
+        "en": "Setup",
+        "de": "Spielaufbau",
+        "fr": "Mise en place",
+        "ja": "セットアップ",
+        "es": "Preparación"
+      }
+    },
     {
       "id": "tb",
       "name": {
@@ -151,17 +162,6 @@
         "fr": "Ordre nocturne",
         "ja": "夜の順番",
         "es": "Orden nocturno"
-      }
-    },
-    {
-      "id": "setup",
-      "name": {
-        "ko": "셋업",
-        "en": "Setup",
-        "de": "Spielaufbau",
-        "fr": "Mise en place",
-        "ja": "セットアップ",
-        "es": "Preparación"
       }
     }
   ],

@@ -126,7 +126,7 @@
     "actionKey": "enterAction",
     "statusLabel": "OPEN",
     "bg": "linear-gradient(135deg, #170d25, #6b1837, #150e21)",
-    "cover": "assets/covers/blood-on-the-clocktower.jpg",
+    "cover": "assets/covers/blood-on-the-clocktower.webp",
     "setup": true
   },
   {
