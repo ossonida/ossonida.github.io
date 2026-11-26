@@ -87,6 +87,9 @@ ${alternates}
 let hub=fs.readFileSync('index.html','utf8');
 const list=catalog.map(game=>`          <li>${game.href?`<a href="${esc(game.href)}">BGW : ${esc(game.title)}</a>`:`BGW : ${esc(game.title)} - 준비중`}</li>`).join('\n');
 hub=hub.replace(/(<noscript>[\s\S]*?<ul>)[\s\S]*?(<\/ul>)/,`$1\n${list}\n        $2`);
+// Structured data lists the games that actually have a page, straight from the catalog.
+const about=catalog.filter(game=>game.href).map(game=>`            ${JSON.stringify(game.title)}`).join(',\n');
+hub=hub.replace(/("about": \[)[\s\S]*?(\n\s*\])/,`$1\n${about}$2`);
 fs.writeFileSync('index.html',stamp(hub));
 const entries=[{href:'./',languages:common},...catalog.filter(g=>g.href)];
 let sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
