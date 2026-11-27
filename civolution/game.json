@@ -23,5 +23,86 @@
     "en": "160 research cards · events · goal, income & attribute chips · sites · modules"
   },
   "actionKey": "enterAction",
-  "statusLabel": "OPEN"
+  "statusLabel": "OPEN",
+  "setup": {
+    "players": [
+      2,
+      3,
+      4
+    ],
+    "rows": [
+      [
+        "cvBlock",
+        "cvBlock2",
+        "cvBlock3",
+        "cvNone"
+      ],
+      [
+        "cvCamp",
+        "cvCamp2",
+        "cvCamp3",
+        "cvNone"
+      ],
+      [
+        "cvDice",
+        {
+          "value": "3 + 3"
+        },
+        {
+          "value": "4 + 4"
+        },
+        {
+          "value": "5 + 5"
+        }
+      ]
+    ],
+    "common": "cvCommon",
+    "scope": "cvScope",
+    "source": {
+      "type": "user-pasted-rulebook-text",
+      "rulebook": "Civolution rulebook pp. 6–9 (setup)"
+    },
+    "text": {
+      "cvBlock": {
+        "ko": "차단 토큰으로 덮는 칸",
+        "en": "Spaces covered with blocking tokens"
+      },
+      "cvBlock2": {
+        "ko": "목표 칩 진열대 2칸 · 단계 순서의 노란 칸 두 종류 각 2칸",
+        "en": "2 goal chip display spaces · both yellow spaces of two kinds in the phase sequence"
+      },
+      "cvBlock3": {
+        "ko": "목표 칩 진열대 1칸 · 단계 순서의 노란 칸 한 종류 2칸",
+        "en": "1 goal chip display space · both yellow spaces of one kind in the phase sequence"
+      },
+      "cvCamp": {
+        "ko": "지형 토큰(뒷면)으로 덮는 야영지",
+        "en": "Encampments covered with territory tokens (back side up)"
+      },
+      "cvCamp2": {
+        "ko": "두 종류 아이콘이 그려진 야영지 10곳",
+        "en": "The 10 encampments showing either of the two icons"
+      },
+      "cvCamp3": {
+        "ko": "한 종류 아이콘이 그려진 야영지 4곳",
+        "en": "Only the 4 encampments showing the one icon"
+      },
+      "cvNone": {
+        "ko": "없음",
+        "en": "None"
+      },
+      "cvDice": {
+        "ko": "주사위 진열 칸 (활성화 + 운명)",
+        "en": "Dice display (activation + fate)"
+      },
+      "cvCommon": {
+        "ko": "점수 트랙 틀 4조각을 맞춰 테이블 가운데에 놓습니다. 4인은 130×90cm 이상의 공간을 권장합니다.\n점수 트랙 왼쪽에 진행 보드(사냥 표·진행 트랙·최종 점수 영역·진열 영역)를 놓고, 100점 토큰을 100점 토큰 칸에 둡니다.\n점수 트랙 오른쪽에 순서 보드(단계 순서·날씨 게이지·이벤트 카드 칸·시대 점수 영역·아게라의 호의 트랙)를 놓습니다.\n단계 표시기를 단계 순서 왼쪽 위 육각형 칸에, 날씨 표시기를 날씨 게이지의 \"온화(Mild)\" 칸에 놓습니다.\n이벤트 카드 20장을 섞어 4장을 맨 오른쪽 이벤트 카드 칸에 뒷면으로 쌓습니다. 나머지는 보지 않고 상자에 넣습니다.\n점수 타일 9개를 섞어 4개를 아이콘 면(곡선이 왼쪽 아래)으로 시대 점수 영역 4칸에 무작위로 놓습니다.\n점수 타일 3개를 더 뽑아 아이콘이 맞는 최종 점수 영역 칸 아래에 놓은 뒤 점수 면으로 뒤집습니다. 남은 2개는 상자에 넣습니다.\n2–3인은 차단 토큰으로 목표 칩 진열대와 단계 순서의 칸을 덮습니다(위 표).\n목표 칩 65개(남색 주머니)를 섞어 목표 칩 진열대의 빈칸마다 1개씩 앞면으로 놓습니다.\n수입 칩 25개(흰 주머니)와 성향 칩 12개(노란 주머니)를 각각 섞어 각 진열대 3칸에 1개씩 놓습니다. 주머니는 게임 내내 씁니다.\n대륙 타일 8장을 무작위 순서·방향으로 점수 트랙 틀 안에 채웁니다. 첫 게임은 뒷면 A·B·C 타일을 그림대로 놓고 나머지를 무작위로 채웁니다.\n장소 24개를 뒷면으로 섞어 대륙의 팔각형 홈마다 1개씩 뒷면으로 놓습니다.\n자원 타일 18개: 나무를 숲의 \"Start\" 칸에, 파피루스를 초원의 \"Start\" 칸에 앞면으로 놓고, 나머지는 지형별로 섞어 같은 지형의 자원 타일 칸에 뒷면으로 놓습니다.\n익숙해지면 18개 모두 지형별로 섞어 뒷면으로 놓은 뒤 두 \"Start\" 칸의 타일만 앞면으로 뒤집습니다.\n2–3인은 지형 토큰을 뒷면으로 해 해당 지형의 야영지를 덮습니다(위 표). 남은 지형 토큰은 앞면으로 사냥 토큰 칸에 공용 공급처로 둡니다.\n주사위 진열 칸에 활성화·운명 주사위를 인원수에 맞게 놓습니다(위 표).\n각자 색을 고르고 콘솔을 펼쳐 앞에 놓습니다. 모듈 타일 15개를 오른쪽 홈에 레벨 I 면(파란 줄 1개)으로 놓습니다.\n각자 활성화 주사위 6개를 1–6이 하나씩 나오게 돌려 같은 값의 주사위 칸에 놓고, 운명 주사위 1개를 콘솔 옆에 둡니다.\n각자 4단계·5단계 타일을 비활성 면으로 콘솔 왼쪽 위 모서리 위에 놓습니다(3단계 위에 4단계, 그 위에 5단계).\n각자 정착지 4개, 농장 3개, 배 2척을 콘솔 왼쪽 홈에 놓습니다.\n각자 원반 7개를 점수 트랙 0칸, 아게라의 호의 트랙 왼쪽 칸, 진행 트랙 5개의 0칸에 하나씩 놓습니다.\n각자 부족 20개를 공급처로 두고, 초원·숲 시작 지역의 빈 야영지에 1개씩 놓습니다. 불이 그려진 야영지는 비워 둡니다.\n각자 마커 50개를 공급처로 두고, 초원·숲 시작 지역의 야영지 밖에 1개씩, 배 2척의 홈에 1개씩, 리셋 칸 4개 맨 위에 1개씩 놓습니다.\n시작 카드 A(입문): 번호 1–6 시작 마커 카드를 1장씩 무작위로 받고, 연구 카드 5종 덱에서 같은 번호 카드를 1장씩 손에 듭니다. 그다음 연구 진열대를 만듭니다.\n연구 진열대: 연구 카드 5종을 따로 섞어 뒷면 더미 5개로 놓고, 옆에 앞면 더미 자리를 비워 둡니다.\n시작 카드 B(숙련): 진열대를 먼저 만들고, 더미마다 2장씩과 시작 마커 카드 3장을 받아 종류별 1장씩(6장)을 몰래 고릅니다. 안 고른 연구 카드는 해당 더미 맨 아래로, 마커 카드는 상자로 돌려보냅니다.\n시작 마커 카드에 표시된 콘솔 칸에 마커를 놓은 뒤, 시작 마커 카드를 상자에 넣습니다.\n시작 문명을 정하고 시작 모노리스를 줍니다.\n시작 칩 카드 A(입문): 시작 카드와 같은 번호의 카드를 받고, 남색 주머니에서 목표 칩 1개를 뽑아 그 위에 놓습니다.\n시작 칩 카드 B(숙련): 인원+1장을 펼치고 각각 목표 칩 1개를 올립니다. 시작 문명의 오른쪽부터 반시계 방향으로 1장씩 고르고, 남은 카드는 상자에, 그 목표 칩은 주머니에 넣습니다.\n받은 목표 칩을 콘솔 왼쪽 목표 영역 3칸 중 하나에 앞면으로 놓습니다.\n시작 칩 카드 가운데에 그려진 모듈을 레벨 II 면으로 뒤집습니다(첫 업그레이드).\n시작 칩 카드를 콘솔 오른쪽 위 모서리 아래에 위쪽 1/3만 보이게 끼웁니다. 이것이 첫 수입 칩입니다.",
+        "en": "Assemble the 4 frame pieces into the score track in the center of the table. At least 130 × 90 cm is recommended for 4 players.\nLeft of the score track, place the progress board (hunting table, progress tracks, final scoring area, display area). Put the 100-point tokens on the 100-point token display.\nRight of the score track, place the sequence board (phase sequence, weather gauge, event card spaces, era scoring area, Favor of Agera track).\nPut the phase indicator on the hexagon at the top left of the phase sequence and the weather indicator on the \"Mild\" weather space.\nShuffle the 20 event cards and place 4 face down as the event stack on the right-hand event card space. Return the rest unseen.\nShuffle the 9 scoring tiles. Place 4 icon side up (curve at lower left) in random order on the 4 era scoring spaces.\nDraw 3 more, place each below its matching icon in the final scoring area, then flip them point side up. Return the last 2.\nWith 2–3 players, cover spaces in the goal chip display and the phase sequence with blocking tokens (table above).\nMix the 65 goal chips (dark blue bag) and place one face up on each empty goal chip display space.\nMix the 25 income chips (white bag) and the 12 attribute chips (yellow bag); place one on each of the 3 spaces of each display. Keep the bags for the game.\nFit the 8 continent tiles in random order and orientation into the score track frame. First play: place tiles A, B and C as shown, the rest at random.\nShuffle the 24 sites face down and place one face down in each octagonal recess of the continent.\nMaterial tiles (18): Wood face up on the Forest \"Start\" space, Papyrus face up on the Grassland \"Start\" space; shuffle the rest face down by territory type onto matching spaces.\nOnce familiar, shuffle all 18 by type face down, then flip only the two tiles on the \"Start\" spaces face up.\nWith 2–3 players, cover encampments with territory tokens back side up (table above). Put the remaining territory tokens front side up in the hunting token display as the supply.\nPut activation and fate dice on the dice display by player count (table above).\nEach player chooses a color and unfolds a console. Place the 15 module tiles in their recesses on the right, level-I side up (one blue stripe).\nEach player turns 6 activation dice to show 1–6 once each and puts each on the matching dice space; put 1 fate die next to the console.\nEach player places a stage-4 and a stage-5 tile inactive side up above the top left edge of the console (stage 4 above stage 3, stage 5 above stage 4).\nEach player puts 4 settlements, 3 farms and 2 boats in the recesses on the left of the console.\nEach player places their 7 discs: score track 0, the left space of the Favor of Agera track, and 0 on each of the 5 progress tracks.\nEach player keeps 20 tribes as a supply and places 1 on a free encampment in the Grassland and in the Forest starting territory. Leave the fire encampment free.\nEach player keeps 50 markers as a supply and places 1 in the Grassland and Forest starting territories outside the encampments, 1 in each boat notch and 1 on top of each of the 4 reset columns.\nStarting cards, option A (newcomers): each player gets a random starting marker card numbered 1–6 and takes the card with that number from each of the 5 research decks. Then set up the research display.\nResearch display: shuffle the 5 research decks separately into 5 face-down stacks, leaving room for a face-up stack beside each.\nStarting cards, option B (advanced): set up the display first; each draws 2 cards from each stack and 3 starting marker cards, then secretly keeps 1 of each of the 6 types. Unchosen research cards go to the bottom of their stacks, marker cards to the box.\nPlace markers on the console spaces shown on your starting marker card, then return the starting marker cards to the box.\nChoose a starting civilization and give it the starting monolith.\nStarting chip card, option A (newcomers): take the card with your starting number and put a random goal chip from the dark blue bag on it.\nStarting chip card, option B (advanced): display one card more than the number of players, each with a goal chip. Starting right of the starting civilization and going counter-clockwise, each takes one. Return the extra card to the box and its chip to the bag.\nPut your goal chip face up on one of the 3 spaces of the goal area on the left of your console.\nFlip the module shown in the middle of the starting chip card to its level-II side (your first upgrade).\nSlide the starting chip card under the top right edge of the console so only its top third shows. It is your first income chip."
+      },
+      "cvScope": {
+        "ko": "본판 2–4인 기준 · 솔로 모드(규칙서 39쪽) 제외 · 덮을 칸은 보드에 그려진 인원 아이콘으로 확인",
+        "en": "Base game, 2–4 players · solo mode (rulebook p. 39) not covered · check the player-count icons on the boards for the spaces to cover"
+      }
+    }
+  }
 }
