@@ -422,4 +422,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gaia-project/?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gaia-project/" />
   </url>
+  <url><loc>https://ossonida.github.io/nijar/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/nijar/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/nijar/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/nijar/" />
+  </url>
+  <url><loc>https://ossonida.github.io/nijar/?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/nijar/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/nijar/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/nijar/" />
+  </url>
+  <url><loc>https://ossonida.github.io/nijar/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/nijar/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/nijar/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/nijar/" />
+  </url>
 </urlset>

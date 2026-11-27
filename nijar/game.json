@@ -1,0 +1,128 @@
+{
+  "id": "nijar",
+  "order": 110,
+  "title": "Níjar",
+  "titles": {
+    "ko": "니하르",
+    "en": "Níjar"
+  },
+  "href": "./nijar/",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "reference": "nijar/reference.json",
+  "cover": "assets/covers/nijar.webp",
+  "bg": "linear-gradient(135deg, #1d3f6e 0%, #4f7fb8 50%, #18263d 100%)",
+  "tag": {
+    "ko": "셋업",
+    "en": "Setup"
+  },
+  "description": {
+    "ko": "2–4인 셋업과 기본 규칙 요약",
+    "en": "2–4 player setup and rules basics"
+  },
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": {
+    "players": [
+      2,
+      3,
+      4
+    ],
+    "rows": [
+      [
+        "njBlock",
+        "njBlock2",
+        "njBlock3",
+        "njNone"
+      ],
+      [
+        "njPottery",
+        {
+          "value": "8"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "16"
+        }
+      ],
+      [
+        "njBonus",
+        "njBonus2",
+        "njBonus3",
+        "njBonus4"
+      ],
+      [
+        "njStart",
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        }
+      ]
+    ],
+    "common": "njCommon",
+    "scope": "njScope",
+    "source": {
+      "type": "official-rulebook",
+      "rulebook": "Nijar-Reglamento-EN.pdf pp. 4–6"
+    },
+    "text": {
+      "njBlock": {
+        "ko": "막는 장인 칸",
+        "en": "Blocked Craftswomen spaces"
+      },
+      "njBlock2": {
+        "ko": "2인·3인 아이콘 칸 모두",
+        "en": "Spaces with either the 2- or 3-player icon"
+      },
+      "njBlock3": {
+        "ko": "3인 아이콘 칸",
+        "en": "Spaces with the 3-player icon"
+      },
+      "njNone": {
+        "ko": "없음",
+        "en": "None"
+      },
+      "njPottery": {
+        "ko": "접시·주전자·항아리 (종류별)",
+        "en": "Plates, Jugs and Pots (each type)"
+      },
+      "njBonus": {
+        "ko": "보너스 타일",
+        "en": "Bonus Tiles"
+      },
+      "njBonus2": {
+        "ko": "2인·3인 표시 타일 제외 · A·B 칸 비움",
+        "en": "Remove the 2- and 3-player-marked tiles · leave spaces A and B empty"
+      },
+      "njBonus3": {
+        "ko": "3인 표시 타일만 제외 · A 칸에 1개",
+        "en": "Remove only the 3-player-marked tile · 1 on space A"
+      },
+      "njBonus4": {
+        "ko": "전부 사용 · A·B 칸에 1개씩",
+        "en": "Use all · 1 on each of A and B"
+      },
+      "njStart": {
+        "ko": "시작 물레·자원 조합 (인원 + 1)",
+        "en": "Starting Potter's Wheel pairs (players + 1)"
+      },
+      "njCommon": {
+        "ko": "메인 보드를 다인용 면으로 가운데 놓고 행동 타일을 무작위로 놓습니다. 첫 게임은 그림대로 놓습니다. \"차례 순서\"와 \"카드 내기\" 타일은 같은 줄에 둘 수 없습니다.\n인원에 따라 장인 칸을 막습니다(위 표). 안 쓰는 색 장인을 뒷면으로 놓습니다.\n게임 카드를 뒷면 3종으로 나눠 각각 섞고, 더미마다 5장씩 펼쳐 3×5 드래프트 영역을 만듭니다.\n접시·주전자·항아리를 인원당 4개씩 종류별 더미로 만듭니다(위 표).\n페라 고르다 토큰, 유약, 균열, 나무 꽃병으로 공용 공급처를 만듭니다. 첫 플레이어 토큰은 보드 옆에 둡니다(1라운드에는 아무도 받지 않음).\n보너스 타일을 인원에 맞게 고르고(위 표), 특수 행동 칸에 2개를 무작위로 놓은 뒤 나머지를 보너스 칸에 놓습니다.\n수요 타일을 보드에 인쇄된 색에 맞춰 무작위로 놓고, 시장 마커는 인원수 표시가 있는 줄에 놓습니다. 시장 주사위를 옆에 둡니다.\n각자 작업장 보드에 확장판을 붙이고, 시작 카드 4장(청소·소성 가마·유약 가마·유약 작업장)을 정해진 자리에 놓습니다.\n각자 가게 카드를 열린 면으로 놓고, 플레이어 도움말과 +50 토큰을 옆에 둡니다.\n최종 점수 카드를 섞어 각자 3장, 게임 카드 더미마다 1장씩 받습니다. 이 6장이 비공개 시작 손패입니다.\n플레이어 마커 5개 중 하나는 점수 트랙 0, 하나는 기술 트랙 첫 칸, 하나는 점토 트랙 0에 놓고, 2개는 옆에 둡니다. 장인 7명과 당나귀도 옆에 둡니다.\n첫 플레이어를 정하고, 첫 플레이어부터 시계 방향으로 남겨 둔 마커 2개를 차례 순서 트랙에 왼쪽부터 쌓아 놓습니다.\n시작 물레 카드를 섞어 인원 + 1장을 펼치고, 각각 옆에 시작 자원 카드를 1장씩 놓아 조합을 만듭니다.\n차례 순서의 마지막 사람부터 거꾸로: 조합 1개를 골라 자원을 받고(자원 카드는 상자로), 물레 카드를 보드 가운데에 놓고 첫 칸에 나무 꽃병을 놓습니다.\n이어서 당나귀를 드래프트 영역의 앞면 카드 1장에 놓습니다(한 카드에 당나귀 1마리만).",
+        "en": "Put the main board in the middle, multiplayer side up, and place the action tiles at random (as pictured for the first game). \"Turn Order\" and \"Play a Card\" may not be in the same row.\nBlock Craftswomen spaces by player count (table above) with face-down Craftswomen of an unused colour.\nSort the game cards into 3 decks by back, shuffle each, and reveal 5 from each to form the 3 × 5 Draft Area.\nMake 3 piles of Plates, Jugs and Pots, 4 of each per player (table above).\nForm the general supply with Perra Gorda tokens, Glazes, Cracks and Wooden Vases. Leave the First Player token by the board (nobody gets it in round 1).\nChoose the Bonus Tiles for the player count (table above). Place 2 at random on the Special Action space and the rest on the bonus spaces.\nPlace the Demand Tiles at random on their matching colours and the market markers in the row for your player count. Put the market dice nearby.\nEach player assembles a Workshop Board with its extension and places the 4 starting cards (Cleanup, Firing Kiln, Glaze Kiln, Glazing Workshop) in position.\nEach player places their Shop Card open side up and keeps their player aid and +50 VP token nearby.\nShuffle the Endgame Scoring cards. Deal each player 3 of them and 1 game card from each deck: this 6-card hand is kept secret.\nPlace one player marker on 0 of the score track, one on the first Technology Track space and one on 0 of the Clay Track; keep 2 aside, plus 7 Craftswomen and the Donkey.\nChoose the first player. Clockwise from them, stack your 2 set-aside markers on the Turn Order Track from left to right.\nShuffle the starting Potter's Wheel cards, reveal one more than the number of players and pair each with a Starting Resource card.\nIn reverse turn order, each picks a pair: take the resources (return the resource card), place the Potter's Wheel card in the middle of your board with a Wooden Vase on its first space.\nThen place your Donkey on a face-up card in the Draft Area (only one Donkey per card)."
+      },
+      "njScope": {
+        "ko": "2–4인 기준 · 솔로 모드 제외 · 막는 칸은 보드의 인원 아이콘으로 확인",
+        "en": "2–4 players · solo mode not covered · check the player-count icons on the board"
+      }
+    }
+  }
+}
