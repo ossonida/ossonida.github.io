@@ -1,6 +1,6 @@
 {
   "id": "medico",
-  "order": 100,
+  "order": 5,
   "title": "Medico",
   "titles": {
     "ko": "메디코",
