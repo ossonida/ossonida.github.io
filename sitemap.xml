@@ -407,4 +407,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/gaia-project/?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/gaia-project/" />
   </url>
+  <url><loc>https://ossonida.github.io/medico/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/medico/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/medico/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/medico/" />
+  </url>
+  <url><loc>https://ossonida.github.io/medico/?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/medico/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/medico/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/medico/" />
+  </url>
+  <url><loc>https://ossonida.github.io/medico/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/medico/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/medico/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/medico/" />
+  </url>
 </urlset>
