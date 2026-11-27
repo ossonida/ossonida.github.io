@@ -6,3 +6,22 @@
 
 .section-note { margin: -2px 0 12px; color: var(--muted); font-size: 13px; }
 .section-reference-sheet{margin:0 0 14px;max-width:240px;border:1px solid var(--border);border-radius:10px;overflow:hidden}.section-reference-image{display:block;width:100%;max-height:180px;object-fit:cover;object-position:top}
+
+/* Phones: reference tables become stacked rows so nothing scrolls sideways.
+   Text-only: number + name, then the text at full width. With images: image on the left, the rest beside it. */
+@media(max-width:700px){
+  .reference-table,.reference-table.text-only{display:block;min-width:0}
+  .reference-table colgroup,.reference-table thead{display:none}
+  .reference-table tbody{display:block}
+  .reference-table tbody tr{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:10px;row-gap:4px;align-items:start;padding:11px 4px;border-bottom:1px solid var(--border)}
+  .reference-table tbody tr:last-child{border-bottom:0}
+  .card .reference-table td{padding:0;border:0}
+  .reference-table .number-cell{color:var(--muted);font-weight:700;white-space:nowrap}
+  .reference-table .name-cell{font-weight:700}
+  .reference-table.text-only .name-cell:first-child,.reference-table.text-only .text-cell{grid-column:1/-1}
+  .reference-table:not(.text-only) tbody tr{grid-template-columns:72px auto minmax(0,1fr)}
+  .reference-table:not(.text-only) td:first-child{grid-row:1/span 2}
+  .reference-table:not(.text-only) td:nth-child(2).name-cell{grid-column:2/-1}
+  .reference-table:not(.text-only) .text-cell{grid-column:2/-1}
+  .reference-table:not(.text-only) .ref-img{width:72px}
+}

@@ -98,8 +98,8 @@
           } else cell.textContent = "—";
           row.append(cell);
         }
-        if (withNumber) row.append(el("td", item.number || "—"));
-        row.append(el("td", pick(item.name)), el("td", pick(item.text)));
+        if (withNumber) row.append(el("td", item.number || "—", "number-cell"));
+        row.append(el("td", pick(item.name), "name-cell"), el("td", pick(item.text), "text-cell"));
         tbody.append(row);
       }
       table.append(colgroup, thead, tbody); wrap.append(table); card.append(heading);
