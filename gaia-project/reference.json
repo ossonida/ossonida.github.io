@@ -1,0 +1,1354 @@
+{
+  "schemaVersion": 1,
+  "id": "gaia-project",
+  "title": "Gaia Project",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "description": {
+    "ko": "가이아 프로젝트의 종족, 연구 트랙, 기술 타일, 부스터, 점수 타일, 연방 토큰, 파워·QIC 행동을 빠르게 찾는 레퍼런스",
+    "en": "Quick reference for Gaia Project factions, research tracks, tech tiles, boosters, scoring tiles, federation tokens and power/QIC actions"
+  },
+  "source": {
+    "type": "official-rulebook",
+    "files": [
+      "GAIA_PROJECT_EN_rules_Web.pdf"
+    ],
+    "urls": [
+      "https://www.ultraboardgames.com/gaia-project/game-rules.php",
+      "https://boardgamemate.com/games/gaia_project"
+    ],
+    "note": {
+      "ko": "Feuerland 공식 영어 규칙서(부록 포함)를 요약·번역하고 구성물 그림과 대조했습니다. 테라포밍 순환 순서는 종족 판 그림 기준입니다. 원본 규칙서가 항상 우선합니다.",
+      "en": "Condensed and translated from the official Feuerland English rulebook (including appendices) and checked against its component pictures. The terraforming cycle order follows the faction boards. The original rulebook always takes precedence."
+    }
+  },
+  "categories": [
+    {
+      "id": "basics",
+      "name": {
+        "ko": "기본 규칙",
+        "en": "Basics"
+      },
+      "description": {
+        "ko": "라운드, 행동, 비용, 연방 등 자주 찾는 규칙 요약.",
+        "en": "Rounds, actions, costs, federations and other rules you look up often."
+      }
+    },
+    {
+      "id": "factions",
+      "name": {
+        "ko": "종족",
+        "en": "Factions"
+      },
+      "description": {
+        "ko": "행성 의회 = Planetary Institute(PI).",
+        "en": "PI = planetary institute."
+      }
+    },
+    {
+      "id": "research",
+      "name": {
+        "ko": "연구 트랙",
+        "en": "Research tracks"
+      }
+    },
+    {
+      "id": "tech",
+      "name": {
+        "ko": "기본 기술 타일",
+        "en": "Standard tech tiles"
+      },
+      "description": {
+        "ko": "9종 × 4장. 같은 종류는 하나만 가질 수 있습니다.",
+        "en": "9 kinds × 4. You cannot take two of the same kind."
+      }
+    },
+    {
+      "id": "advanced",
+      "name": {
+        "ko": "고급 기술 타일",
+        "en": "Advanced tech tiles"
+      },
+      "description": {
+        "ko": "15장 중 6장 사용. 레벨 4 이상 + 회색으로 뒤집은 연방 토큰 + 덮을 기본 기술 타일이 필요합니다.",
+        "en": "6 of 15 used. Needs level 4+, a federation token flipped to grey and a standard tile to cover."
+      }
+    },
+    {
+      "id": "boosters",
+      "name": {
+        "ko": "라운드 부스터",
+        "en": "Round boosters"
+      },
+      "description": {
+        "ko": "인원 + 3장을 사용합니다.",
+        "en": "Use player count + 3."
+      }
+    },
+    {
+      "id": "round-scoring",
+      "name": {
+        "ko": "라운드 점수 타일",
+        "en": "Round scoring tiles"
+      },
+      "description": {
+        "ko": "10장 중 6장 사용. 해당 라운드에 그 행동을 할 때마다 점수.",
+        "en": "6 of 10 used. Score each time you do the action that round."
+      }
+    },
+    {
+      "id": "final-scoring",
+      "name": {
+        "ko": "최종 점수 타일",
+        "en": "Final scoring tiles"
+      },
+      "description": {
+        "ko": "6장 중 2장 사용. 1–3위 18/12/6점, 동점은 나눕니다.",
+        "en": "2 of 6 used. 18/12/6 VP for 1st–3rd; ties split."
+      }
+    },
+    {
+      "id": "federations",
+      "name": {
+        "ko": "연방 토큰",
+        "en": "Federation tokens"
+      }
+    },
+    {
+      "id": "actions",
+      "name": {
+        "ko": "파워·QIC 행동",
+        "en": "Power and QIC actions"
+      },
+      "description": {
+        "ko": "연구판 아래 공용 행동. 각 칸은 라운드당 한 번.",
+        "en": "Shared actions below the research board. Each space once per round."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "basics-round-structure",
+      "category": "basics",
+      "name": {
+        "ko": "라운드 진행",
+        "en": "Round structure"
+      },
+      "text": {
+        "ko": "6라운드. 매 라운드 1 수입 → 2 가이아 단계 → 3 행동(모두 패스할 때까지 차례마다 행동 1번) → 4 정리.",
+        "en": "6 rounds. Each round: 1 Income, 2 Gaia phase, 3 Actions (one action per turn until everyone passes), 4 Clean-up."
+      }
+    },
+    {
+      "id": "basics-main-actions",
+      "category": "basics",
+      "name": {
+        "ko": "주 행동",
+        "en": "Main actions"
+      },
+      "text": {
+        "ko": "1 광산 건설 · 2 가이아 프로젝트 시작 · 3 건물 업그레이드 · 4 연방 결성 · 5 연구 전진(지식 4) · 6 파워·QIC 행동 · 7 특수 행동(주황) · 8 패스(라운드 부스터 교체).",
+        "en": "1 Build a mine · 2 Start a Gaia project · 3 Upgrade a building · 4 Form a federation · 5 Advance research (4 knowledge) · 6 Power or QIC action · 7 Special action (orange) · 8 Pass (swap round booster)."
+      }
+    },
+    {
+      "id": "basics-free-actions",
+      "category": "basics",
+      "name": {
+        "ko": "자유 행동",
+        "en": "Free actions"
+      },
+      "text": {
+        "ko": "내 차례 아무 때나: 파워 4 → QIC 1 · 파워 4 → 지식 1 · 파워 3 → 광석 1 · 파워 1 → 크레딧 1 · QIC 1 → 광석 1 · 광석 1 → 크레딧 1 · 지식 1 → 크레딧 1 · 광석 1 → 파워 토큰 1개(I 영역). 소각: II 영역 토큰 1개를 버리고 다른 1개를 II → III로.",
+        "en": "Any time on your turn: 4 power → 1 QIC · 4 power → 1 knowledge · 3 power → 1 ore · 1 power → 1 credit · 1 QIC → 1 ore · 1 ore → 1 credit · 1 knowledge → 1 credit · 1 ore → 1 power token (bowl I). Burn: remove 1 token from bowl II to move another from II to III."
+      }
+    },
+    {
+      "id": "basics-range-and-qic",
+      "category": "basics",
+      "name": {
+        "ko": "거리와 QIC",
+        "en": "Range and QIC"
+      },
+      "text": {
+        "ko": "거리는 내 행성 아무 곳에서나 셉니다(기본 거리는 항법 레벨). 건설할 때 QIC 1개마다 거리 +2.",
+        "en": "Range counts from any of your planets (Navigation level sets the basic range). Each QIC spent while building adds +2 range."
+      }
+    },
+    {
+      "id": "basics-power-cycle",
+      "category": "basics",
+      "name": {
+        "ko": "파워 순환",
+        "en": "Power cycle"
+      },
+      "text": {
+        "ko": "파워 충전은 I → II를 먼저, 다 비면 II → III. 파워는 III 영역에서만 쓰고, 쓴 토큰은 I로 돌아갑니다.",
+        "en": "Charging moves tokens I → II, then II → III. You spend power only from bowl III; spent tokens return to I."
+      }
+    },
+    {
+      "id": "basics-buildings",
+      "category": "basics",
+      "name": {
+        "ko": "건물",
+        "en": "Buildings"
+      },
+      "text": {
+        "ko": "광산: 광석 1 + 크레딧 2 (파워 값 1). 교역소: 광석 2 + 크레딧 6, 거리 2 안에 상대 건물이 있으면 크레딧 3 (값 2). 연구소: 광석 3 + 크레딧 5, 기술 타일 획득 (값 2). 행성 의회: 광석 4 + 크레딧 6 (값 3). 아카데미: 광석 6 + 크레딧 6, 기술 타일 획득 (값 3).",
+        "en": "Mine 1 ore + 2 credits (power value 1). Trading station 2 ore + 6 credits, or 3 credits if an opponent is within distance 2 (value 2). Research lab 3 ore + 5 credits, gives a tech tile (value 2). Planetary institute 4 ore + 6 credits (value 3). Academy 6 ore + 6 credits, gives a tech tile (value 3)."
+      }
+    },
+    {
+      "id": "basics-terraforming-cycle",
+      "category": "basics",
+      "name": {
+        "ko": "테라포밍 순환",
+        "en": "Terraforming cycle"
+      },
+      "text": {
+        "ko": "테라(파랑) → 산화(빨강) → 화산(주황) → 사막(노랑) → 늪(갈색) → 티타늄(회색) → 얼음(흰색) → 다시 테라. 필요한 단계 수(1–3)는 종족 판에 있고, 단계마다 테라포밍 레벨에 따른 광석을 냅니다. 가이아 행성은 QIC 1개, 차원 변형 행성은 먼저 가이아 프로젝트가 필요합니다.",
+        "en": "Terra (blue) → Oxide (red) → Volcanic (orange) → Desert (yellow) → Swamp (brown) → Titanium (grey) → Ice (white) → back to Terra. Your faction board shows 1–3 steps per type. Each step costs ore per your Terraforming level. Gaia planets need 1 QIC instead; transdim planets need a Gaia project first."
+      }
+    },
+    {
+      "id": "basics-gaia-projects",
+      "category": "basics",
+      "name": {
+        "ko": "가이아 프로젝트",
+        "en": "Gaia projects"
+      },
+      "text": {
+        "ko": "Gaia Project 레벨에 따라 파워 토큰 6/6/4/3/3개를 가이아 영역에 넣고 차원 변형 행성에 가이아 포머를 놓습니다. 다음 가이아 단계에 가이아 행성이 되며, QIC 없이 광산을 지을 수 있습니다.",
+        "en": "Move power tokens (6/6/4/3/3 by Gaia Project level) into the Gaia area and put a Gaiaformer on a transdim planet. In the next Gaia phase it becomes a Gaia planet; build a mine there with no QIC."
+      }
+    },
+    {
+      "id": "basics-power-from-neighbours",
+      "category": "basics",
+      "name": {
+        "ko": "이웃 파워 충전",
+        "en": "Power from neighbours"
+      },
+      "text": {
+        "ko": "상대가 내 건물 거리 2 안에 건설하면, 그 범위의 내 건물 중 가장 높은 파워 값만큼 충전할 수 있습니다. 대가로 (값 − 1) 점을 잃습니다. 전부 받거나 안 받거나 둘 중 하나(파워가 꽉 차거나 점수가 모자랄 때만 예외). 패스한 사람도 받을 수 있습니다.",
+        "en": "When an opponent builds within distance 2 of your buildings, you may charge power equal to your highest such building value, paying that value − 1 in VP. All or nothing, unless your bowls fill up or you lack VP. Players who passed can still charge."
+      }
+    },
+    {
+      "id": "basics-federations",
+      "category": "basics",
+      "name": {
+        "ko": "연방",
+        "en": "Federations"
+      },
+      "text": {
+        "ko": "파워 값 합이 7 이상인 건물을 위성으로 연결합니다(위성 1개마다 파워 토큰 1개 버림). 원하는 연방 토큰 1개를 받습니다. 건물과 위성은 연방 하나에만 속하며, 새 연방은 기존 연방과 바로 붙어 있을 수 없습니다.",
+        "en": "Connect buildings with total power value 7 or more using satellites (each discards 1 power token). Take a federation token of your choice. Buildings and satellites belong to one federation only, and a new federation cannot be directly adjacent to an existing one."
+      }
+    },
+    {
+      "id": "basics-end-of-game",
+      "category": "basics",
+      "name": {
+        "ko": "게임 종료",
+        "en": "End of game"
+      },
+      "text": {
+        "ko": "6라운드 뒤: 최종 점수 타일 2개(1–3위 18/12/6점, 동점은 나눔), 각 트랙의 레벨 3·4·5마다 4점, 남은 크레딧·광석·지식 합쳐서 3개당 1점. 모두 10점에서 시작합니다.",
+        "en": "After round 6: 2 final scoring tiles (18/12/6 VP for 1st–3rd; ties split), 4 VP for each research level beyond 2 in each track, 1 VP per 3 credits, ore and knowledge left over (any mix). Everyone starts at 10 VP."
+      }
+    },
+    {
+      "id": "factions-terrans",
+      "category": "factions",
+      "name": {
+        "ko": "테란 (Terrans)",
+        "en": "Terrans"
+      },
+      "text": {
+        "ko": "고향: 테라(파랑). 가이아 단계에 가이아 영역 파워가 I이 아닌 II로 돌아갑니다. 행성 의회: 돌아오는 파워만큼 자유 행동 자원으로 바꿀 수 있습니다.",
+        "en": "Home: Terra (blue). Gaia phase: power in the Gaia area returns to bowl II, not I. PI: as it returns, gain free-action resources as if spending that much power."
+      }
+    },
+    {
+      "id": "factions-lantids",
+      "category": "factions",
+      "name": {
+        "ko": "란티드 (Lantids)",
+        "en": "Lantids"
+      },
+      "text": {
+        "ko": "고향: 테라(파랑). 상대가 차지한 행성(잃어버린 행성 포함)에도 광산을 지을 수 있습니다(광산 비용만, 업그레이드 불가, 행성 종류 집계 제외). 행성 의회: 그렇게 지을 때마다 지식 2.",
+        "en": "Home: Terra (blue). Build mines on planets opponents already occupy, including the lost planet (mine cost only; cannot be upgraded or count for planet types). PI: 2 knowledge each time you do."
+      }
+    },
+    {
+      "id": "factions-xenos",
+      "category": "factions",
+      "name": {
+        "ko": "제노스 (Xenos)",
+        "en": "Xenos"
+      },
+      "text": {
+        "ko": "고향: 사막(노랑). 시작 광산 3번째를 마지막에 놓습니다. 행성 의회: 연방 조건이 파워 6, 행성 의회 수입이 파워 대신 QIC 1.",
+        "en": "Home: Desert (yellow). Place a third starting mine last. PI: federations need total power 6, and its income is 1 QIC instead of power."
+      }
+    },
+    {
+      "id": "factions-gleens",
+      "category": "factions",
+      "name": {
+        "ko": "글린 (Gleens)",
+        "en": "Gleens"
+      },
+      "text": {
+        "ko": "고향: 사막(노랑). 아카데미 전에는 QIC 대신 광석을 받습니다. 가이아 행성은 QIC 대신 광석 1. 가이아 행성 광산마다 +2점. 행성 의회: 글린 전용 연방 토큰 획득.",
+        "en": "Home: Desert (yellow). Gain ore instead of QIC (until the academy). Gaia planets cost 1 ore instead of 1 QIC. +2 VP per mine on a Gaia planet. PI: gain the Gleens federation token."
+      }
+    },
+    {
+      "id": "factions-taklons",
+      "category": "factions",
+      "name": {
+        "ko": "타클론 (Taklons)",
+        "en": "Taklons"
+      },
+      "text": {
+        "ko": "고향: 늪(갈색). 브레인스톤: 쓸 때 파워 3으로 치는 토큰 1개. 행성 의회: 이웃 파워 충전 때마다 파워 토큰 1개(충전 전이나 후).",
+        "en": "Home: Swamp (brown). Brainstone: one power token that counts as 3 when spent. PI: gain 1 power token each time you charge from a neighbour (before or after charging)."
+      }
+    },
+    {
+      "id": "factions-ambas",
+      "category": "factions",
+      "name": {
+        "ko": "암바스 (Ambas)",
+        "en": "Ambas"
+      },
+      "text": {
+        "ko": "고향: 늪(갈색). 행성 의회 특수 행동(라운드당 1번): 내 행성 의회와 광산 하나의 위치를 바꿉니다.",
+        "en": "Home: Swamp (brown). PI special action (once per round): swap your PI with one of your mines."
+      }
+    },
+    {
+      "id": "factions-hadsch-hallas",
+      "category": "factions",
+      "name": {
+        "ko": "하쉬 할라 (Hadsch Hallas)",
+        "en": "Hadsch Hallas"
+      },
+      "text": {
+        "ko": "고향: 산화(빨강). 행성 의회: 자원을 얻는 자유 행동에 파워 대신 크레딧을 냅니다.",
+        "en": "Home: Oxide (red). PI: pay credits instead of power for free actions that gain resources."
+      }
+    },
+    {
+      "id": "factions-ivits",
+      "category": "factions",
+      "name": {
+        "ko": "이비츠 (Ivits)",
+        "en": "Ivits"
+      },
+      "text": {
+        "ko": "고향: 산화(빨강). 시작 광산 없이 행성 의회를 마지막에 빨간 행성에 놓습니다. 연방은 하나만 키워 나가며, 7 × (연방 토큰 수 + 1) 파워가 필요합니다. 위성은 QIC 1. 행성 의회 행동: 우주 정거장 배치.",
+        "en": "Home: Oxide (red). No starting mines; place the PI last on a red planet. Only one federation, which grows: needs 7 × (federation tokens + 1). Satellites cost 1 QIC. PI action: place a space station."
+      }
+    },
+    {
+      "id": "factions-geodens",
+      "category": "factions",
+      "name": {
+        "ko": "지오덴 (Geodens)",
+        "en": "Geodens"
+      },
+      "text": {
+        "ko": "고향: 화산(주황). 행성 의회: 행성 종류마다 처음 광산을 지을 때 지식 3.",
+        "en": "Home: Volcanic (orange). PI: 3 knowledge for the first mine on each planet type (also types you colonized before)."
+      }
+    },
+    {
+      "id": "factions-bal-t-aks",
+      "category": "factions",
+      "name": {
+        "ko": "발타크 (Bal T'aks)",
+        "en": "Bal T'aks"
+      },
+      "text": {
+        "ko": "고향: 화산(주황). 행성 의회 전에는 항법을 올릴 수 없습니다. 자유 행동: 가이아 포머를 가이아 영역에 넣고 QIC 1.",
+        "en": "Home: Volcanic (orange). Cannot advance Navigation until the PI. Free action: move a Gaiaformer to the Gaia area to gain 1 QIC."
+      }
+    },
+    {
+      "id": "factions-firaks",
+      "category": "factions",
+      "name": {
+        "ko": "피락 (Firaks)",
+        "en": "Firaks"
+      },
+      "text": {
+        "ko": "고향: 티타늄(회색). 행성 의회 행동: 연구소를 교역소로 내리고 연구 1단계 전진.",
+        "en": "Home: Titanium (grey). PI action: downgrade a research lab to a trading station and advance 1 research level."
+      }
+    },
+    {
+      "id": "factions-bescods",
+      "category": "factions",
+      "name": {
+        "ko": "베스코드 (Bescods)",
+        "en": "Bescods"
+      },
+      "text": {
+        "ko": "고향: 티타늄(회색). 종족 판에서 행성 의회와 아카데미 위치가 바뀝니다(교역소·연구소 수입도 서로 바뀜). 라운드당 1번 행동: 가장 낮은 연구 토큰을 지식 없이 1단계 전진(레벨 5는 연방 토큰 필요). 행성 의회: 회색 행성 위 내 건물의 파워 값 +1.",
+        "en": "Home: Titanium (grey). PI and academies swap places on the faction board (and so do trading station and research lab income). Once per round, as an action: advance your lowest research token 1 level for free (level 5 still needs a federation token). PI: your structures on grey planets get +1 power value."
+      }
+    },
+    {
+      "id": "factions-nevlas",
+      "category": "factions",
+      "name": {
+        "ko": "네블라 (Nevlas)",
+        "en": "Nevlas"
+      },
+      "text": {
+        "ko": "고향: 얼음(흰색). 자유 행동: III 영역 파워 1개를 가이아 영역으로 보내고 지식 1(파워 사용 아님). 행성 의회: III 영역 토큰 1개를 파워 2로 씁니다. 홀수 비용에서 남는 1은 버려집니다.",
+        "en": "Home: Ice (white). Free action: move 1 power from bowl III to the Gaia area for 1 knowledge (not spending). PI: each power token in bowl III spends as 2 power; leftover power from odd costs is lost."
+      }
+    },
+    {
+      "id": "factions-itars",
+      "category": "factions",
+      "name": {
+        "ko": "이타르 (Itars)",
+        "en": "Itars"
+      },
+      "text": {
+        "ko": "고향: 얼음(흰색). 소각한 파워가 가이아 영역으로 갑니다. 행성 의회: 가이아 단계에 가이아 영역 파워 4개를 버리고 기술 타일 1개(반복 가능).",
+        "en": "Home: Ice (white). Burned power goes to the Gaia area. PI: in the Gaia phase, discard 4 power from the Gaia area for a tech tile (repeatable)."
+      }
+    },
+    {
+      "id": "research-terraforming",
+      "category": "research",
+      "name": {
+        "ko": "테라포밍 (Terraforming)",
+        "en": "Terraforming"
+      },
+      "text": {
+        "ko": "단계당 광석: 3/3/2/1/1/1 (레벨 0–5). 레벨 1·4: 광석 2. 레벨 5: 그 칸의 연방 토큰 획득.",
+        "en": "Ore per step: 3 / 3 / 2 / 1 / 1 / 1 (levels 0–5). Level 1 and 4: gain 2 ore. Level 5: take the federation token placed there."
+      }
+    },
+    {
+      "id": "research-navigation",
+      "category": "research",
+      "name": {
+        "ko": "항법 (Navigation)",
+        "en": "Navigation"
+      },
+      "text": {
+        "ko": "거리: 1/1/2/2/3/4. 레벨 1·3: QIC 1. 레벨 5: 닿는 빈칸에 잃어버린 행성 배치(광산으로 침).",
+        "en": "Range: 1 / 1 / 2 / 2 / 3 / 4. Level 1 and 3: gain 1 QIC. Level 5: place the lost planet in reach (counts as a mine)."
+      }
+    },
+    {
+      "id": "research-artificial-intelligence",
+      "category": "research",
+      "name": {
+        "ko": "인공지능 (Artificial Intelligence)",
+        "en": "Artificial Intelligence"
+      },
+      "text": {
+        "ko": "레벨 도달 시 QIC: 1/1/2/2/4 (레벨 1–5).",
+        "en": "QIC on reaching each level: 1 / 1 / 2 / 2 / 4 (levels 1–5)."
+      }
+    },
+    {
+      "id": "research-gaia-project",
+      "category": "research",
+      "name": {
+        "ko": "가이아 프로젝트 (Gaia Project)",
+        "en": "Gaia Project"
+      },
+      "text": {
+        "ko": "시작 비용 파워: 6/6/4/3/3 (레벨 1–5). 레벨 1·3·4: 가이아 포머 획득. 레벨 2: 파워 토큰 3개. 레벨 5: 4점 + 가이아 행성당 1점.",
+        "en": "Power to start a Gaia project: 6 / 6 / 4 / 3 / 3 (levels 1–5). Level 1, 3, 4: gain a Gaiaformer. Level 2: 3 power tokens. Level 5: 4 VP + 1 VP per Gaia planet."
+      }
+    },
+    {
+      "id": "research-economy",
+      "category": "research",
+      "name": {
+        "ko": "경제 (Economy)",
+        "en": "Economy"
+      },
+      "text": {
+        "ko": "수입: L1 크레딧 2·충전 1 · L2 광석 1·크레딧 2·충전 2 · L3 광석 1·크레딧 3·충전 3 · L4 광석 2·크레딧 4·충전 4 · L5 즉시 광석 3·크레딧 6·충전 6(이후 수입 없음).",
+        "en": "Income: L1 2 credits + charge 1 · L2 1 ore, 2 credits, charge 2 · L3 1 ore, 3 credits, charge 3 · L4 2 ore, 4 credits, charge 4 · L5 once 3 ore, 6 credits, charge 6 (no more income)."
+      }
+    },
+    {
+      "id": "research-science",
+      "category": "research",
+      "name": {
+        "ko": "과학 (Science)",
+        "en": "Science"
+      },
+      "text": {
+        "ko": "지식 수입 1/2/3/4 (레벨 1–4). 레벨 5: 즉시 지식 9(이후 수입 없음).",
+        "en": "Knowledge income 1 / 2 / 3 / 4 (levels 1–4). Level 5: once 9 knowledge (no more income)."
+      }
+    },
+    {
+      "id": "research-research-rules",
+      "category": "research",
+      "name": {
+        "ko": "연구 규칙 (Research rules)",
+        "en": "Research rules"
+      },
+      "text": {
+        "ko": "1단계에 지식 4. 레벨 2 → 3에서 파워 3 충전. 레벨 5는 연방 토큰 1개를 회색으로 뒤집어야 하며, 트랙마다 한 명만 도달합니다.",
+        "en": "Each step costs 4 knowledge. Level 2 → 3 charges 3 power. Level 5 needs a federation token flipped to grey, and only one player may reach it per track."
+      }
+    },
+    {
+      "id": "tech-t1-ore-and-qic",
+      "category": "tech",
+      "number": "T1",
+      "name": {
+        "ko": "광석과 QIC (Ore and QIC)",
+        "en": "Ore and QIC"
+      },
+      "text": {
+        "ko": "즉시: 광석 1 + QIC 1.",
+        "en": "Immediately: 1 ore + 1 QIC."
+      }
+    },
+    {
+      "id": "tech-t2-knowledge-per-planet-type",
+      "category": "tech",
+      "number": "T2",
+      "name": {
+        "ko": "행성 종류당 지식 (Knowledge per planet type)",
+        "en": "Knowledge per planet type"
+      },
+      "text": {
+        "ko": "즉시: 내가 개척한 행성 종류마다 지식 1.",
+        "en": "Immediately: 1 knowledge per planet type you have colonized."
+      }
+    },
+    {
+      "id": "tech-t3-7-vp",
+      "category": "tech",
+      "number": "T3",
+      "name": {
+        "ko": "7점 (7 VP)",
+        "en": "7 VP"
+      },
+      "text": {
+        "ko": "즉시: 7점.",
+        "en": "Immediately: 7 VP."
+      }
+    },
+    {
+      "id": "tech-t4-ore-and-power-income",
+      "category": "tech",
+      "number": "T4",
+      "name": {
+        "ko": "광석·파워 수입 (Ore and power income)",
+        "en": "Ore and power income"
+      },
+      "text": {
+        "ko": "수입: 광석 1 + 파워 1 충전.",
+        "en": "Income: 1 ore + charge 1 power."
+      }
+    },
+    {
+      "id": "tech-t5-knowledge-and-credit-income",
+      "category": "tech",
+      "number": "T5",
+      "name": {
+        "ko": "지식·크레딧 수입 (Knowledge and credit income)",
+        "en": "Knowledge and credit income"
+      },
+      "text": {
+        "ko": "수입: 지식 1 + 크레딧 1.",
+        "en": "Income: 1 knowledge + 1 credit."
+      }
+    },
+    {
+      "id": "tech-t6-gaia-mine-vp",
+      "category": "tech",
+      "number": "T6",
+      "name": {
+        "ko": "가이아 광산 점수 (Gaia mine VP)",
+        "en": "Gaia mine VP"
+      },
+      "text": {
+        "ko": "지속: 가이아 행성에 광산을 지을 때마다 +3점.",
+        "en": "Passive: +3 VP whenever you build a mine on a Gaia planet."
+      }
+    },
+    {
+      "id": "tech-t7-credit-income",
+      "category": "tech",
+      "number": "T7",
+      "name": {
+        "ko": "크레딧 수입 (Credit income)",
+        "en": "Credit income"
+      },
+      "text": {
+        "ko": "수입: 크레딧 4.",
+        "en": "Income: 4 credits."
+      }
+    },
+    {
+      "id": "tech-t8-big-buildings-value-4",
+      "category": "tech",
+      "number": "T8",
+      "name": {
+        "ko": "큰 건물 파워 값 4 (Big buildings value 4)",
+        "en": "Big buildings value 4"
+      },
+      "text": {
+        "ko": "지속: 내 행성 의회와 아카데미의 파워 값이 4. 고급 기술 타일로 덮으면 다시 3(이미 만든 연방은 유지).",
+        "en": "Passive: your PI and academies have power value 4. Covering this tile with an advanced tile returns them to 3 (existing federations stay)."
+      }
+    },
+    {
+      "id": "tech-t9-power-action",
+      "category": "tech",
+      "number": "T9",
+      "name": {
+        "ko": "파워 행동 (Power action)",
+        "en": "Power action"
+      },
+      "text": {
+        "ko": "행동(라운드당 1번): 파워 4 충전.",
+        "en": "Action (once per round): charge 4 power."
+      }
+    },
+    {
+      "id": "advanced-pass-federations",
+      "category": "advanced",
+      "name": {
+        "ko": "패스: 연방 (Pass: federations)",
+        "en": "Pass: federations"
+      },
+      "text": {
+        "ko": "패스할 때: 내 연방 토큰마다 3점.",
+        "en": "When passing: 3 VP per federation token you have."
+      }
+    },
+    {
+      "id": "advanced-pass-research-labs",
+      "category": "advanced",
+      "name": {
+        "ko": "패스: 연구소 (Pass: research labs)",
+        "en": "Pass: research labs"
+      },
+      "text": {
+        "ko": "패스할 때: 연구소마다 3점.",
+        "en": "When passing: 3 VP per research lab."
+      }
+    },
+    {
+      "id": "advanced-pass-planet-types",
+      "category": "advanced",
+      "name": {
+        "ko": "패스: 행성 종류 (Pass: planet types)",
+        "en": "Pass: planet types"
+      },
+      "text": {
+        "ko": "패스할 때: 개척한 행성 종류마다 1점.",
+        "en": "When passing: 1 VP per planet type colonized."
+      }
+    },
+    {
+      "id": "advanced-mines-now",
+      "category": "advanced",
+      "name": {
+        "ko": "즉시: 광산 (Mines now)",
+        "en": "Mines now"
+      },
+      "text": {
+        "ko": "즉시: 광산마다 2점.",
+        "en": "Immediately: 2 VP per mine."
+      }
+    },
+    {
+      "id": "advanced-trading-stations-now",
+      "category": "advanced",
+      "name": {
+        "ko": "즉시: 교역소 (Trading stations now)",
+        "en": "Trading stations now"
+      },
+      "text": {
+        "ko": "즉시: 교역소마다 4점.",
+        "en": "Immediately: 4 VP per trading station."
+      }
+    },
+    {
+      "id": "advanced-federations-now",
+      "category": "advanced",
+      "name": {
+        "ko": "즉시: 연방 (Federations now)",
+        "en": "Federations now"
+      },
+      "text": {
+        "ko": "즉시: 연방 토큰마다 5점.",
+        "en": "Immediately: 5 VP per federation token."
+      }
+    },
+    {
+      "id": "advanced-sectors-now",
+      "category": "advanced",
+      "name": {
+        "ko": "즉시: 섹터 (Sectors now)",
+        "en": "Sectors now"
+      },
+      "text": {
+        "ko": "즉시: 내 건물이 있는 섹터마다 2점.",
+        "en": "Immediately: 2 VP per sector you have a building in."
+      }
+    },
+    {
+      "id": "advanced-sector-ore",
+      "category": "advanced",
+      "name": {
+        "ko": "즉시: 섹터 광석 (Sector ore)",
+        "en": "Sector ore"
+      },
+      "text": {
+        "ko": "즉시: 내 건물이 있는 섹터마다 광석 1.",
+        "en": "Immediately: 1 ore per sector you have a building in."
+      }
+    },
+    {
+      "id": "advanced-gaia-planets-now",
+      "category": "advanced",
+      "name": {
+        "ko": "즉시: 가이아 행성 (Gaia planets now)",
+        "en": "Gaia planets now"
+      },
+      "text": {
+        "ko": "즉시: 가이아 행성마다 2점.",
+        "en": "Immediately: 2 VP per Gaia planet."
+      }
+    },
+    {
+      "id": "advanced-mine-vp",
+      "category": "advanced",
+      "name": {
+        "ko": "광산 점수 (Mine VP)",
+        "en": "Mine VP"
+      },
+      "text": {
+        "ko": "지속: 광산을 지을 때마다 +3점.",
+        "en": "Passive: +3 VP whenever you build a mine."
+      }
+    },
+    {
+      "id": "advanced-trading-station-vp",
+      "category": "advanced",
+      "name": {
+        "ko": "교역소 점수 (Trading station VP)",
+        "en": "Trading station VP"
+      },
+      "text": {
+        "ko": "지속: 교역소를 지을 때마다 +3점.",
+        "en": "Passive: +3 VP whenever you build a trading station."
+      }
+    },
+    {
+      "id": "advanced-research-vp",
+      "category": "advanced",
+      "name": {
+        "ko": "연구 점수 (Research VP)",
+        "en": "Research VP"
+      },
+      "text": {
+        "ko": "지속: 연구 단계를 올릴 때마다 +2점.",
+        "en": "Passive: +2 VP whenever you advance a research level."
+      }
+    },
+    {
+      "id": "advanced-ore-action",
+      "category": "advanced",
+      "name": {
+        "ko": "광석 행동 (Ore action)",
+        "en": "Ore action"
+      },
+      "text": {
+        "ko": "행동(라운드당 1번): 광석 3.",
+        "en": "Action (once per round): 3 ore."
+      }
+    },
+    {
+      "id": "advanced-qic-and-credits-action",
+      "category": "advanced",
+      "name": {
+        "ko": "QIC·크레딧 행동 (QIC and credits action)",
+        "en": "QIC and credits action"
+      },
+      "text": {
+        "ko": "행동(라운드당 1번): QIC 1 + 크레딧 5.",
+        "en": "Action (once per round): 1 QIC + 5 credits."
+      }
+    },
+    {
+      "id": "advanced-knowledge-action",
+      "category": "advanced",
+      "name": {
+        "ko": "지식 행동 (Knowledge action)",
+        "en": "Knowledge action"
+      },
+      "text": {
+        "ko": "행동(라운드당 1번): 지식 3.",
+        "en": "Action (once per round): 3 knowledge."
+      }
+    },
+    {
+      "id": "boosters-1-ore-knowledge",
+      "category": "boosters",
+      "number": "1",
+      "name": {
+        "ko": "광석 + 지식 (Ore + knowledge)",
+        "en": "Ore + knowledge"
+      },
+      "text": {
+        "ko": "수입: 광석 1 + 지식 1.",
+        "en": "Income: 1 ore + 1 knowledge."
+      }
+    },
+    {
+      "id": "boosters-2-credits-qic",
+      "category": "boosters",
+      "number": "2",
+      "name": {
+        "ko": "크레딧 + QIC (Credits + QIC)",
+        "en": "Credits + QIC"
+      },
+      "text": {
+        "ko": "수입: 크레딧 2 + QIC 1.",
+        "en": "Income: 2 credits + 1 QIC."
+      }
+    },
+    {
+      "id": "boosters-3-power-tokens-ore",
+      "category": "boosters",
+      "number": "3",
+      "name": {
+        "ko": "파워 토큰 + 광석 (Power tokens + ore)",
+        "en": "Power tokens + ore"
+      },
+      "text": {
+        "ko": "수입: 파워 토큰 2개 + 광석 1.",
+        "en": "Income: 2 power tokens + 1 ore."
+      }
+    },
+    {
+      "id": "boosters-4-terraform-action",
+      "category": "boosters",
+      "number": "4",
+      "name": {
+        "ko": "테라포밍 행동 (Terraform action)",
+        "en": "Terraform action"
+      },
+      "text": {
+        "ko": "수입: 크레딧 2. 행동: 테라포밍 1단계 무료로 광산 건설.",
+        "en": "Income: 2 credits. Action: build a mine with 1 free terraforming step."
+      }
+    },
+    {
+      "id": "boosters-5-range-action",
+      "category": "boosters",
+      "number": "5",
+      "name": {
+        "ko": "거리 행동 (Range action)",
+        "en": "Range action"
+      },
+      "text": {
+        "ko": "수입: 파워 2 충전. 행동: 거리 +3으로 광산 건설 또는 가이아 프로젝트 시작.",
+        "en": "Income: charge 2 power. Action: build a mine or start a Gaia project with range +3."
+      }
+    },
+    {
+      "id": "boosters-6-pass-mines",
+      "category": "boosters",
+      "number": "6",
+      "name": {
+        "ko": "패스: 광산 (Pass: mines)",
+        "en": "Pass: mines"
+      },
+      "text": {
+        "ko": "수입: 광석 1. 패스할 때: 광산마다 1점.",
+        "en": "Income: 1 ore. When passing: 1 VP per mine."
+      }
+    },
+    {
+      "id": "boosters-7-pass-research-labs",
+      "category": "boosters",
+      "number": "7",
+      "name": {
+        "ko": "패스: 연구소 (Pass: research labs)",
+        "en": "Pass: research labs"
+      },
+      "text": {
+        "ko": "수입: 지식 1. 패스할 때: 연구소마다 3점.",
+        "en": "Income: 1 knowledge. When passing: 3 VP per research lab."
+      }
+    },
+    {
+      "id": "boosters-8-pass-trading-stations",
+      "category": "boosters",
+      "number": "8",
+      "name": {
+        "ko": "패스: 교역소 (Pass: trading stations)",
+        "en": "Pass: trading stations"
+      },
+      "text": {
+        "ko": "수입: 광석 1. 패스할 때: 교역소마다 2점.",
+        "en": "Income: 1 ore. When passing: 2 VP per trading station."
+      }
+    },
+    {
+      "id": "boosters-9-pass-big-buildings",
+      "category": "boosters",
+      "number": "9",
+      "name": {
+        "ko": "패스: 큰 건물 (Pass: big buildings)",
+        "en": "Pass: big buildings"
+      },
+      "text": {
+        "ko": "수입: 파워 4 충전. 패스할 때: 행성 의회·아카데미마다 4점.",
+        "en": "Income: charge 4 power. When passing: 4 VP per PI and academy."
+      }
+    },
+    {
+      "id": "boosters-10-pass-gaia-planets",
+      "category": "boosters",
+      "number": "10",
+      "name": {
+        "ko": "패스: 가이아 행성 (Pass: Gaia planets)",
+        "en": "Pass: Gaia planets"
+      },
+      "text": {
+        "ko": "수입: 크레딧 4. 패스할 때: 가이아 행성마다 1점.",
+        "en": "Income: 4 credits. When passing: 1 VP per Gaia planet."
+      }
+    },
+    {
+      "id": "round-scoring-r1-mine",
+      "category": "round-scoring",
+      "number": "R1",
+      "name": {
+        "ko": "광산 (Mine)",
+        "en": "Mine"
+      },
+      "text": {
+        "ko": "광산을 지을 때마다 +2점.",
+        "en": "+2 VP per mine built."
+      }
+    },
+    {
+      "id": "round-scoring-r2-trading-station-3",
+      "category": "round-scoring",
+      "number": "R2",
+      "name": {
+        "ko": "교역소 (3) (Trading station (3))",
+        "en": "Trading station (3)"
+      },
+      "text": {
+        "ko": "교역소를 지을 때마다 +3점.",
+        "en": "+3 VP per trading station built."
+      }
+    },
+    {
+      "id": "round-scoring-r3-trading-station-4",
+      "category": "round-scoring",
+      "number": "R3",
+      "name": {
+        "ko": "교역소 (4) (Trading station (4))",
+        "en": "Trading station (4)"
+      },
+      "text": {
+        "ko": "교역소를 지을 때마다 +4점.",
+        "en": "+4 VP per trading station built."
+      }
+    },
+    {
+      "id": "round-scoring-r4-gaia-mine-3",
+      "category": "round-scoring",
+      "number": "R4",
+      "name": {
+        "ko": "가이아 광산 (3) (Gaia mine (3))",
+        "en": "Gaia mine (3)"
+      },
+      "text": {
+        "ko": "가이아 행성에 광산을 지을 때마다 +3점.",
+        "en": "+3 VP per mine on a Gaia planet."
+      }
+    },
+    {
+      "id": "round-scoring-r5-gaia-mine-4",
+      "category": "round-scoring",
+      "number": "R5",
+      "name": {
+        "ko": "가이아 광산 (4) (Gaia mine (4))",
+        "en": "Gaia mine (4)"
+      },
+      "text": {
+        "ko": "가이아 행성에 광산을 지을 때마다 +4점.",
+        "en": "+4 VP per mine on a Gaia planet."
+      }
+    },
+    {
+      "id": "round-scoring-r6-big-building",
+      "category": "round-scoring",
+      "number": "R6",
+      "name": {
+        "ko": "큰 건물 (Big building)",
+        "en": "Big building"
+      },
+      "text": {
+        "ko": "행성 의회·아카데미를 지을 때마다 +5점 (2장).",
+        "en": "+5 VP per PI or academy built (2 copies)."
+      }
+    },
+    {
+      "id": "round-scoring-r7-federation",
+      "category": "round-scoring",
+      "number": "R7",
+      "name": {
+        "ko": "연방 (Federation)",
+        "en": "Federation"
+      },
+      "text": {
+        "ko": "연방 토큰을 얻을 때마다 +5점.",
+        "en": "+5 VP per federation token gained."
+      }
+    },
+    {
+      "id": "round-scoring-r8-research",
+      "category": "round-scoring",
+      "number": "R8",
+      "name": {
+        "ko": "연구 (Research)",
+        "en": "Research"
+      },
+      "text": {
+        "ko": "연구 단계를 올릴 때마다 +2점.",
+        "en": "+2 VP per research step."
+      }
+    },
+    {
+      "id": "round-scoring-r9-terraforming",
+      "category": "round-scoring",
+      "number": "R9",
+      "name": {
+        "ko": "테라포밍 (Terraforming)",
+        "en": "Terraforming"
+      },
+      "text": {
+        "ko": "테라포밍 1단계마다 +2점.",
+        "en": "+2 VP per terraforming step."
+      }
+    },
+    {
+      "id": "final-scoring-buildings-in-federations",
+      "category": "final-scoring",
+      "name": {
+        "ko": "연방 안 건물 (Buildings in federations)",
+        "en": "Buildings in federations"
+      },
+      "text": {
+        "ko": "연방에 속한 건물 수(잃어버린 행성 포함).",
+        "en": "Most buildings that are part of federations (lost planet counts)."
+      }
+    },
+    {
+      "id": "final-scoring-buildings",
+      "category": "final-scoring",
+      "name": {
+        "ko": "건물 수 (Buildings)",
+        "en": "Buildings"
+      },
+      "text": {
+        "ko": "지도 위 건물 수(잃어버린 행성 포함).",
+        "en": "Most buildings on the map (lost planet counts)."
+      }
+    },
+    {
+      "id": "final-scoring-planet-types",
+      "category": "final-scoring",
+      "name": {
+        "ko": "행성 종류 (Planet types)",
+        "en": "Planet types"
+      },
+      "text": {
+        "ko": "개척한 행성 종류 수(가이아·잃어버린 행성 포함).",
+        "en": "Most different planet types colonized (Gaia and lost planet count)."
+      }
+    },
+    {
+      "id": "final-scoring-gaia-planets",
+      "category": "final-scoring",
+      "name": {
+        "ko": "가이아 행성 (Gaia planets)",
+        "en": "Gaia planets"
+      },
+      "text": {
+        "ko": "개척한 가이아 행성 수.",
+        "en": "Most Gaia planets colonized."
+      }
+    },
+    {
+      "id": "final-scoring-sectors",
+      "category": "final-scoring",
+      "name": {
+        "ko": "섹터 (Sectors)",
+        "en": "Sectors"
+      },
+      "text": {
+        "ko": "내 건물이 있는 섹터 수.",
+        "en": "Most sectors with at least one of your buildings."
+      }
+    },
+    {
+      "id": "final-scoring-satellites",
+      "category": "final-scoring",
+      "name": {
+        "ko": "위성 (Satellites)",
+        "en": "Satellites"
+      },
+      "text": {
+        "ko": "위성 수(이비츠 우주 정거장 포함).",
+        "en": "Most satellites (Ivits space stations count)."
+      }
+    },
+    {
+      "id": "federations-3-12-vp",
+      "category": "federations",
+      "number": "×3",
+      "name": {
+        "ko": "12점 (12 VP)",
+        "en": "12 VP"
+      },
+      "text": {
+        "ko": "12점. 양면이 회색이라 레벨 5·고급 기술에 뒤집어 쓸 수 없습니다.",
+        "en": "12 VP. Grey on both sides, so it cannot be flipped for level 5 or an advanced tile."
+      }
+    },
+    {
+      "id": "federations-3-8-vp-qic",
+      "category": "federations",
+      "number": "×3",
+      "name": {
+        "ko": "8점 + QIC (8 VP + QIC)",
+        "en": "8 VP + QIC"
+      },
+      "text": {
+        "ko": "8점 + QIC 1.",
+        "en": "8 VP + 1 QIC."
+      }
+    },
+    {
+      "id": "federations-3-8-vp-power-tokens",
+      "category": "federations",
+      "number": "×3",
+      "name": {
+        "ko": "8점 + 파워 토큰 (8 VP + power tokens)",
+        "en": "8 VP + power tokens"
+      },
+      "text": {
+        "ko": "8점 + 파워 토큰 2개.",
+        "en": "8 VP + 2 power tokens."
+      }
+    },
+    {
+      "id": "federations-3-7-vp-ore",
+      "category": "federations",
+      "number": "×3",
+      "name": {
+        "ko": "7점 + 광석 (7 VP + ore)",
+        "en": "7 VP + ore"
+      },
+      "text": {
+        "ko": "7점 + 광석 2.",
+        "en": "7 VP + 2 ore."
+      }
+    },
+    {
+      "id": "federations-3-7-vp-credits",
+      "category": "federations",
+      "number": "×3",
+      "name": {
+        "ko": "7점 + 크레딧 (7 VP + credits)",
+        "en": "7 VP + credits"
+      },
+      "text": {
+        "ko": "7점 + 크레딧 6.",
+        "en": "7 VP + 6 credits."
+      }
+    },
+    {
+      "id": "federations-3-6-vp-knowledge",
+      "category": "federations",
+      "number": "×3",
+      "name": {
+        "ko": "6점 + 지식 (6 VP + knowledge)",
+        "en": "6 VP + knowledge"
+      },
+      "text": {
+        "ko": "6점 + 지식 2.",
+        "en": "6 VP + 2 knowledge."
+      }
+    },
+    {
+      "id": "federations-1-gleens-token",
+      "category": "federations",
+      "number": "×1",
+      "name": {
+        "ko": "글린 전용 (Gleens token)",
+        "en": "Gleens token"
+      },
+      "text": {
+        "ko": "글린 전용(행성 의회 보상): 광석 1 + 지식 1 + 크레딧 2.",
+        "en": "Gleens only (PI reward): 1 ore + 1 knowledge + 2 credits."
+      }
+    },
+    {
+      "id": "actions-7-pw-knowledge",
+      "category": "actions",
+      "number": "7 PW",
+      "name": {
+        "ko": "지식 (Knowledge)",
+        "en": "Knowledge"
+      },
+      "text": {
+        "ko": "파워 7: 지식 3.",
+        "en": "Spend 7 power: 3 knowledge."
+      }
+    },
+    {
+      "id": "actions-5-pw-2-terraforming-steps",
+      "category": "actions",
+      "number": "5 PW",
+      "name": {
+        "ko": "테라포밍 2단계 (2 terraforming steps)",
+        "en": "2 terraforming steps"
+      },
+      "text": {
+        "ko": "파워 5: 테라포밍 2단계 무료로 광산 건설.",
+        "en": "Spend 5 power: build a mine with 2 free terraforming steps."
+      }
+    },
+    {
+      "id": "actions-4-pw-ore",
+      "category": "actions",
+      "number": "4 PW",
+      "name": {
+        "ko": "광석 (Ore)",
+        "en": "Ore"
+      },
+      "text": {
+        "ko": "파워 4: 광석 2.",
+        "en": "Spend 4 power: 2 ore."
+      }
+    },
+    {
+      "id": "actions-4-pw-credits",
+      "category": "actions",
+      "number": "4 PW",
+      "name": {
+        "ko": "크레딧 (Credits)",
+        "en": "Credits"
+      },
+      "text": {
+        "ko": "파워 4: 크레딧 7.",
+        "en": "Spend 4 power: 7 credits."
+      }
+    },
+    {
+      "id": "actions-4-pw-knowledge-2",
+      "category": "actions",
+      "number": "4 PW",
+      "name": {
+        "ko": "지식 (2) (Knowledge (2))",
+        "en": "Knowledge (2)"
+      },
+      "text": {
+        "ko": "파워 4: 지식 2.",
+        "en": "Spend 4 power: 2 knowledge."
+      }
+    },
+    {
+      "id": "actions-3-pw-1-terraforming-step",
+      "category": "actions",
+      "number": "3 PW",
+      "name": {
+        "ko": "테라포밍 1단계 (1 terraforming step)",
+        "en": "1 terraforming step"
+      },
+      "text": {
+        "ko": "파워 3: 테라포밍 1단계 무료로 광산 건설.",
+        "en": "Spend 3 power: build a mine with 1 free terraforming step."
+      }
+    },
+    {
+      "id": "actions-3-pw-power-tokens",
+      "category": "actions",
+      "number": "3 PW",
+      "name": {
+        "ko": "파워 토큰 (Power tokens)",
+        "en": "Power tokens"
+      },
+      "text": {
+        "ko": "파워 3: 파워 토큰 2개.",
+        "en": "Spend 3 power: 2 power tokens."
+      }
+    },
+    {
+      "id": "actions-4-qic-tech-tile",
+      "category": "actions",
+      "number": "4 QIC",
+      "name": {
+        "ko": "기술 타일 (Tech tile)",
+        "en": "Tech tile"
+      },
+      "text": {
+        "ko": "QIC 4: 기본 기술 타일 1개.",
+        "en": "Spend 4 QIC: take a standard tech tile."
+      }
+    },
+    {
+      "id": "actions-3-qic-federation-again",
+      "category": "actions",
+      "number": "3 QIC",
+      "name": {
+        "ko": "연방 다시 받기 (Federation again)",
+        "en": "Federation again"
+      },
+      "text": {
+        "ko": "QIC 3: 내 연방 토큰 하나의 보상을 다시 받습니다.",
+        "en": "Spend 3 QIC: gain the reward of one of your federation tokens again."
+      }
+    },
+    {
+      "id": "actions-2-qic-planet-types-vp",
+      "category": "actions",
+      "number": "2 QIC",
+      "name": {
+        "ko": "행성 종류 점수 (Planet types VP)",
+        "en": "Planet types VP"
+      },
+      "text": {
+        "ko": "QIC 2: 3점 + 개척한 행성 종류마다 1점.",
+        "en": "Spend 2 QIC: 3 VP + 1 VP per planet type colonized."
+      }
+    }
+  ]
+}

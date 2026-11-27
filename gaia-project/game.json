@@ -1,0 +1,104 @@
+{
+  "id": "gaia-project",
+  "order": 90,
+  "title": "Gaia Project",
+  "titles": {
+    "ko": "가이아 프로젝트",
+    "en": "Gaia Project"
+  },
+  "href": "./gaia-project/",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "reference": "gaia-project/reference.json",
+  "cover": "https://cdn.shoplightspeed.com/shops/629666/files/19056948/1600x2048x2/gaia-project.jpg",
+  "bg": "linear-gradient(135deg, #111927 0%, #313b56 48%, #171014 100%)",
+  "tag": {
+    "ko": "종족 · 기술 · 부스터 · 점수",
+    "en": "Factions, tech, boosters & scoring"
+  },
+  "description": {
+    "ko": "14종족 · 연구 트랙 · 기술 타일 24종 · 부스터 · 점수 타일 · 연방 · 파워 행동",
+    "en": "14 factions · research tracks · 24 tech tiles · boosters · scoring tiles · federations · power actions"
+  },
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN",
+  "setup": {
+    "players": [
+      2,
+      3,
+      4
+    ],
+    "rows": [
+      [
+        "gpSectors",
+        "gpSectors2",
+        "gpSectors34",
+        "gpSectors34"
+      ],
+      [
+        "gpBoosters",
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "7"
+        }
+      ],
+      [
+        "gpNeutral",
+        "gpNeutral2",
+        "gpNone",
+        "gpNone"
+      ]
+    ],
+    "common": "gpCommon",
+    "scope": "gpScope",
+    "source": {
+      "type": "official-rulebook",
+      "rulebook": "GAIA_PROJECT_EN_rules_Web.pdf pp. 4–7, 19"
+    },
+    "text": {
+      "gpSectors": {
+        "ko": "섹터 타일",
+        "en": "Sector tiles"
+      },
+      "gpSectors2": {
+        "ko": "01–07 · 05–07은 테두리 면",
+        "en": "01–07 · 05–07 outlined side up"
+      },
+      "gpSectors34": {
+        "ko": "01–10 전부 · 05–07은 채운 면",
+        "en": "All 01–10 · 05–07 solid side up"
+      },
+      "gpBoosters": {
+        "ko": "라운드 부스터 (인원 + 3)",
+        "en": "Round boosters (players + 3)"
+      },
+      "gpNeutral": {
+        "ko": "중립 위성 (최종 점수)",
+        "en": "Neutral satellites (final scoring)"
+      },
+      "gpNeutral2": {
+        "ko": "사용 안 하는 색 위성 2개를 각 최종 점수 타일 번호 칸에 놓습니다",
+        "en": "2 satellites of an unused colour, one per ranking track at the number on each final scoring tile"
+      },
+      "gpNone": {
+        "ko": "없음",
+        "en": "None"
+      },
+      "gpCommon": {
+        "ko": "시작 플레이어를 정하고 시작 플레이어 마커를 줍니다.\n섹터 타일로 게임판을 만듭니다(위 표). 게임판 옆에 연구판을 놓습니다.\n뒷면에 초록 표시가 있는 기본 기술 타일 9장을 연구판의 기술 칸에 무작위로 놓고, 나머지를 같은 종류끼리 그 위에 쌓습니다(4장씩 9더미).\n각 연구 트랙의 레벨 4와 5 사이 칸에 고급 기술 타일을 1장씩 무작위로 놓고, 나머지는 상자에 넣습니다.\n글린 전용 연방 토큰을 따로 두고, 나머지 중 1개를 무작위로 테라포밍 레벨 5에 놓습니다. 남은 연방 토큰은 종류별 6더미로 초록 면이 위로 오게 둡니다.\n점수판에 라운드 점수 타일 6장, 최종 점수 타일 2장을 무작위로 놓고 나머지는 상자에 넣습니다.\n라운드 부스터를 인원 + 3장 무작위로 꺼내 놓습니다(위 표). 행동 토큰·가이아 행성 토큰·잃어버린 행성·파워 토큰·QIC·기록 토큰을 공용 공급처로 둡니다.\n각자 종족을 고릅니다. 첫 게임 뒤에는 시작 플레이어부터 시계 방향으로 종족 판 1장을 골라 원하는 면을 씁니다.\n종족 판에 표시된 대로 광석·지식·크레딧 마커를 놓고, QIC와 파워 토큰(I·II·III 영역)을 받습니다.\n연구 트랙 6개의 레벨 0에 내 토큰을 놓고, 종족 판에 레벨 1이 그려진 트랙은 1칸 올리며 별 표시 보너스를 받습니다(경제·과학 레벨 1 수입은 받지 않음).\n점수 마커를 10점에 놓고, 위성 1개씩을 점수판의 0칸마다 놓습니다. 나머지 위성과 플레이어 도움말은 내 앞에 둡니다.\n타클론은 브레인스톤을 I 영역에, 글린은 전용 연방 토큰을 옆에, 이비츠는 우주 정거장 6개를 옆에 둡니다.\n첫 광산: 시작 플레이어부터 시계 방향으로 고향 행성에 1개씩, 이어서 마지막 플레이어부터 반시계 방향으로 다른 고향 행성에 1개씩 놓습니다. 제노스는 그 뒤 3번째, 이비츠는 맨 마지막에 빨간 행성에 행성 의회를 놓습니다.\n마지막 플레이어부터 반시계 방향으로 라운드 부스터를 1장씩 고릅니다.",
+        "en": "Choose a first player and give them the first player marker.\nBuild the board from sector tiles (table above). Put the research board next to it.\nPlace the 9 standard tech tiles with green-marked backs randomly on the tech spaces, then stack the rest on matching tiles (9 piles of 4).\nPlace one advanced tech tile at random on each space between levels 4 and 5; return the rest.\nSet aside the Gleens federation token. Put one random federation token on Terraforming level 5 and the rest in 6 piles by type, green side up.\nPlace 6 random round scoring tiles and 2 final scoring tiles on the scoring board; return the rest.\nDraw round boosters equal to players + 3 (table above). Put action tokens, Gaia planet tokens, the lost planet, power tokens, QIC and record tokens in a general supply.\nEach player chooses a faction. After the first game, starting with the first player and going clockwise, take a faction board and pick either side.\nSet ore, knowledge and credit markers as shown on your faction board and take the QIC and power tokens (bowls I, II, III) it shows.\nPut your token on level 0 of all 6 research tracks. Where your board shows level 1, advance and gain any starred bonus (not the Economy or Science level-1 income).\nPut your VP marker on 10 and a satellite on each 0 space of the scoring board. Keep the other satellites and a player aid.\nTaklons put the brainstone in bowl I; Gleens keep their federation token; Ivits take the 6 space stations.\nFirst mines: clockwise from the first player, each places a mine on a home-type planet; then counter-clockwise from the last player, a second one. Then the Xenos place a third, and finally the Ivits place their PI on a red planet.\nCounter-clockwise from the last player, each chooses a round booster."
+      },
+      "gpScope": {
+        "ko": "본판 2–4인 기준 · 솔로(오토마) 제외 · 첫 게임 고정 배치는 규칙서 4·7쪽 그림 참고",
+        "en": "Base game, 2–4 players · solo (Automa) not covered · for the fixed first-game layout see the pictures on rulebook pp. 4 and 7"
+      }
+    }
+  }
+}
