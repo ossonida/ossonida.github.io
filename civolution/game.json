@@ -1,0 +1,27 @@
+{
+  "id": "civolution",
+  "order": 80,
+  "title": "Civolution",
+  "titles": {
+    "ko": "시볼루션",
+    "en": "Civolution"
+  },
+  "href": "./civolution/",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "reference": "civolution/reference.json",
+  "cover": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/3be3d5bcd8af426eb8fdd63c9f5af5ac_Large.jpg",
+  "bg": "linear-gradient(135deg, #142432 0%, #316374 50%, #101821 100%)",
+  "tag": {
+    "ko": "카드 · 칩 · 장소 타일",
+    "en": "Cards, chips & site tiles"
+  },
+  "description": {
+    "ko": "연구 카드 160장 · 이벤트 · 목표/수입/성향 칩 · 장소 · 모듈",
+    "en": "160 research cards · events · goal, income & attribute chips · sites · modules"
+  },
+  "actionKey": "enterAction",
+  "statusLabel": "OPEN"
+}

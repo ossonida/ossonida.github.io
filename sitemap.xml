@@ -377,4 +377,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/teotihuacan/?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/teotihuacan/" />
   </url>
+  <url><loc>https://ossonida.github.io/civolution/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/civolution/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/civolution/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/civolution/" />
+  </url>
+  <url><loc>https://ossonida.github.io/civolution/?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/civolution/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/civolution/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/civolution/" />
+  </url>
+  <url><loc>https://ossonida.github.io/civolution/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ossonida.github.io/civolution/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ossonida.github.io/civolution/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ossonida.github.io/civolution/" />
+  </url>
 </urlset>

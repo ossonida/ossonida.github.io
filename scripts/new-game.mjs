@@ -34,7 +34,8 @@ const game = {
   cover: upcoming?.cover?.startsWith('assets/') ? upcoming.cover : `assets/covers/${id}.webp`,
   bg: upcoming?.bg || 'linear-gradient(135deg, #1f2a36 0%, #4c5f73 48%, #151b24 100%)',
   ...(upcoming?.tagKey ? { tagKey: upcoming.tagKey } : { tag: byLang(() => '') }),
-  ...(upcoming?.descKey ? { descKey: upcoming.descKey } : { description: byLang(() => '') }),
+  // Coming-soon descriptions say "being prepared", so a real page always gets its own description.
+  description: byLang(() => ''),
   actionKey: 'enterAction',
   statusLabel: 'OPEN',
 };
