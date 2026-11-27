@@ -394,7 +394,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-1.webp"
     },
     {
       "id": "favors-2-early-bird",
@@ -410,7 +411,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-2.webp"
     },
     {
       "id": "favors-3-optimal-conditions",
@@ -426,7 +428,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-3.webp"
     },
     {
       "id": "favors-4-friendly-gift",
@@ -442,7 +445,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-4.webp"
     },
     {
       "id": "favors-5-sticky-fingers",
@@ -458,7 +462,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-5.webp"
     },
     {
       "id": "favors-6-high-demand",
@@ -474,7 +479,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-6.webp"
     },
     {
       "id": "favors-7-rich-find",
@@ -490,7 +496,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-7.webp"
     },
     {
       "id": "favors-8-free-choice",
@@ -506,7 +513,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-8.webp"
     },
     {
       "id": "favors-9-hard-cash",
@@ -522,7 +530,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-9.webp"
     },
     {
       "id": "favors-10-happy-stay",
@@ -538,7 +547,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-10.webp"
     },
     {
       "id": "favors-11-glorious-deed",
@@ -554,7 +564,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-11.webp"
     },
     {
       "id": "favors-12-private-lessons",
@@ -570,7 +581,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-12.webp"
     },
     {
       "id": "favors-13-privileged-trade",
@@ -586,7 +598,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-13.webp"
     },
     {
       "id": "favors-14-good-friendship",
@@ -602,7 +615,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-14.webp"
     },
     {
       "id": "favors-15-wise-foresight",
@@ -618,7 +632,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-15.webp"
     },
     {
       "id": "favors-16-mutual-exchange",
@@ -634,7 +649,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-16.webp"
     },
     {
       "id": "favors-17-free-bonus",
@@ -650,7 +666,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-17.webp"
     },
     {
       "id": "favors-18-generous-gift",
@@ -666,7 +683,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-18.webp"
     },
     {
       "id": "favors-19-high-return",
@@ -682,7 +700,8 @@
       },
       "source": {
         "page": 11
-      }
+      },
+      "image": "images/favor-19.webp"
     },
     {
       "id": "knowledge-haggling",
@@ -847,7 +866,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-6-letters.webp"
     },
     {
       "id": "rods-15-prestige",
@@ -862,7 +882,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-15-prestige.webp"
     },
     {
       "id": "rods-5-knowledge-markers",
@@ -877,7 +898,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-5-knowledge-markers.webp"
     },
     {
       "id": "rods-6-instrument-types",
@@ -892,7 +914,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-6-instrument-types.webp"
     },
     {
       "id": "rods-4-recipe-books",
@@ -907,7 +930,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-4-recipe-books.webp"
     },
     {
       "id": "rods-5-market-stalls",
@@ -922,7 +946,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-5-market-stalls.webp"
     },
     {
       "id": "rods-apprentices-in-5-locations",
@@ -937,7 +962,8 @@
       },
       "source": {
         "page": 12
-      }
+      },
+      "image": "images/rod-apprentices-in-5-locations.webp"
     }
   ]
 }
